@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1132 762" style="enable-background:new 0 0 1132 762;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{fill:none;stroke:#999999;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#999999;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1" class="st0">
+	
+		<image style="display:inline;overflow:visible;opacity:0.26;" width="1920" height="944" xlink:href="AB09491D.jpg"  transform="matrix(1 0 0 1 -438 -133)">
+	</image>
+</g>
+<g id="FLOOR_BASMENT">
+	<rect id="BASEMENT_x5F_MAIN_x5F_WALLS" x="2" y="2" class="st1" width="1128" height="758"/>
+	<rect id="ZN-EMPTY_1_" x="2" y="681" class="st1" width="147" height="79"/>
+	<rect id="ZN-12" x="2" y="539" class="st1" width="147" height="71"/>
+	<rect id="ZN-23" x="2" y="396" class="st1" width="147" height="143"/>
+	<rect id="ZN-23_1_" x="990" y="451" class="st1" width="140" height="143"/>
+	<rect id="ZN-23_2_" x="990" y="594" class="st1" width="140" height="166"/>
+	<rect id="ZN-19" x="2" y="610" class="st1" width="147" height="71"/>
+	<polygon id="ZN-27" class="st1" points="281.9,2 281.9,102 409,102 409,42 312,42 355,42 355,14 345,14 365,14 365,2 	"/>
+	<polygon id="ZN-27_1_" class="st1" points="569.4,2 569.4,102 409,102 409,42 355,42 355,14 365,14 365,2 	"/>
+	<rect id="ZN-1" x="569" y="2" class="st1" width="180" height="100"/>
+	<polygon id="ZN-2" class="st1" points="848.9,2.5 848.9,102 749,102 749,2 	"/>
+	<polygon id="ZN-2_1_" class="st1" points="945,2.6 944.9,102.1 848.9,101.9 849,2 	"/>
+	<g id="MIDDLE_x5F_LIFTI_x26_STUFF">
+		<polyline class="st2" points="413.5,140.5 413.5,190.5 445.5,190.5 445.5,163.5 462.5,163.5 462.5,195.5 529.5,195.5 529.5,163.5 
+			543.5,163.5 543.5,147.5 601.5,147.5 601.5,161.5 682.5,161.5 682.5,149.5 727.5,149.5 727.5,140.5 835.5,140.5 835.5,133.5 
+			873.5,133.5 873.5,194.5 863.5,194.5 863.5,278.5 863.5,231.5 929.5,231.5 929.5,202.5 929.5,278.5 863.5,278.5 863.5,365.5 
+			870.5,365.5 870.5,391.5 858.5,391.5 858.5,400.5 283.5,400.5 283.5,391.5 243.5,391.5 243.5,141.5 413.5,141.5 367.5,141.5 
+			367.5,167 315,167 		"/>
+		<polyline class="st2" points="929.5,199.5 929.5,203.9 929.5,194.5 871.5,194.5 863.5,194.5 863.5,231.5 929.5,231.5 929.5,194.5 
+					"/>
+		<polyline class="st2" points="243.5,192.3 382,192.3 382,254 414,254 414,264 368,264 368,352 446,352 446,220 522,220 522,299 
+			539,299 539,228 620,228 620,400.5 620,383 684,383 684,400.5 684,219 692,219 692,207 769,207 769,400.5 769,219 832,219 
+			832,383 769,383 769,324 832,324 832,267 769,267 769,219 		"/>
+		<path class="st2" d="M934,146"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,1120 @@
+package stepdefs;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import pageobjects.pages.BuildingPanel;
+import pageobjects.pages.DevicePanel;
+import pageobjects.pages.PageObjectUtils;
+import selenium.WebDriverFactory;
+
+import java.util.List;
+
+public class WebsiteStepDefs extends CommonStepObjects {
+
+    //Building Panel Methods
+    @Given("^Open KodeLabs Page$")
+    public void thePreconditionForTheTestGoesToWebsiteOrLogsIn() throws Throwable {
+        if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
+        //driver.navigate().to(System.getProperty("websiteUrl"));
+        //driver.navigate().to("https://Test:Test1234@emsol.zag-apps.com/real-estate/buildings");
+        driver.navigate().to("http://localhost:4200/real-estate/buildings");
+        Thread.sleep(1000);
+        List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@ng-reflect-placeholder='Email Address']"));
+        if (isLoggedIn.isEmpty()) {
+
+        } else {
+            driver.findElement(By.xpath("//*[@ng-reflect-placeholder='Email Address']")).sendKeys("user@super.com");
+            driver.findElement(By.xpath("//*[@ng-reflect-placeholder='Enter your password']")).sendKeys("123456");
+            Thread.sleep(1000);
+            driver.findElement((By.xpath("//*[contains(text(),'Login')]"))).click();
+        }
+//        System.setProperty("webdriver.chrome.driver","C:/Framework/src/main/resources/chromedriver.exe");
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--headless");
+//        options.addArguments("--disable-gpu");
+//        options.addArguments("--remote-debugging-port=9222");
+//        driver = new ChromeDriver(options);
+//
+//        driver.navigate().to(System.getProperty("websiteUrl"));
+//        //driver.navigate().to("https://Test:Test1234@emsol.zag-apps.com/real-estate/buildings");
+//        driver.navigate().to("http://localhost:4200/real-estate/buildings");
+//        Thread.sleep(1000);
+//        List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@ng-reflect-placeholder='Email Address']"));
+//        if(isLoggedIn.isEmpty()){
+//
+//        }
+//        else {
+//            driver.findElement(By.xpath("//*[@ng-reflect-placeholder='Email Address']")).sendKeys("edi@kodelabs.co");
+//            driver.findElement(By.xpath("//*[@ng-reflect-placeholder='Enter your password']")).sendKeys("123456");
+//            Thread.sleep(1000);
+//            driver.findElement((By.xpath("//*[contains(text(),'Login')]"))).click();
+//        }
+    }
+
+    @When("^User Search For Chrysler House and click it$")
+    public void theNextStepThatGetsRepeatedBeforeEveryTest() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.className("building-list-header-search-bar"), 5);
+        Thread.sleep(1000);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(By.className("building-list-header-search-bar")));
+        actions.click();
+        actions.sendKeys("Chrysler House");
+        actions.build().perform();
+        PageObjectUtils.CheckContainsText(driver, "Chrysler House");
+        PageObjectUtils.ContainsText(driver, "Chrysler House").click();
+        PageObjectUtils.ContainsText(driver, "Chrysler House").click();
+    }
+
+    @When("^User Open (.*)")
+    public void openBuilding(String building) throws Throwable {
+        try {
+            Thread.sleep(3000);
+        /*    PageObjectUtils.CheckContainsText(driver, building);
+            PageObjectUtils.ContainsText(driver, building).click();*/
+
+            driver.findElement((By.xpath("//*[contains(text(),'" + building + "')]"))).click();
+        } catch (Exception ex) {
+            BuildingPanel.AddNewBuildingButton.getElement().click();
+            PageObjectUtils.CheckContainsText(driver, "Add Building");
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+            //Add Name
+            BuildingPanel.Name.getElement().sendKeys("Auto Test Building");
+            Thread.sleep(1000);
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+            //Add Address 1
+            BuildingPanel.Address1.getElement().sendKeys("277 Gratiot Ave");
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+            //Add ZIP code
+            BuildingPanel.ZipCode.getElement().sendKeys("48127");
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+            //Add City
+            BuildingPanel.City.getElement().sendKeys("Detroid");
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+            //Add State
+            BuildingPanel.State.getElement().click();
+            PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//span[contains( text(),'Alabama')]", 5);
+            driver.findElement(By.xpath("//span[contains( text(),'Alabama')]")).click();
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+            //Add Country
+            BuildingPanel.Country.getElement().sendKeys("USA");
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+            //Add latitude
+            BuildingPanel.Latitude.getElement().sendKeys("42.3314");
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+            //Add longitude
+            BuildingPanel.Longitude.getElement().sendKeys("-83.0458");
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Save.getBy(), 5);
+
+            //Save
+            Thread.sleep(1000);
+            BuildingPanel.Save.getElement().click();
+
+            Thread.sleep(2000);
+            driver.findElement((By.xpath("//*[contains(text(),'" + building + "')]"))).click();
+        }
+    }
+
+    @And("^User click on Areas Tab$")
+    public void openAreaTab() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Areas");
+        PageObjectUtils.ContainsText(driver, "Areas").click();
+    }
+
+    @And("^User opens menu popup$")
+    public void openMenuTab() throws Throwable {
+        Thread.sleep(2000);
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.OpenMenu.getBy(), 5);
+        BuildingPanel.OpenMenu.getElement().click();
+    }
+
+    @And("^User click Save button$")
+    public void AreaTabSaveButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.SaveButton.getBy(), 5);
+        DevicePanel.SaveButton.getElement().click();
+    }
+
+    @And("^User click Update Points button$")
+    public void TemplateSaveButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.UpdatePointButton.getBy(), 5);
+        DevicePanel.UpdatePointButton.getElement().click();
+    }
+
+    @And("^User click Save changes$")
+    public void SaveButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Save.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.Save.getElement().click();
+    }
+
+    @And("^User click delete")
+    public void DeleteButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.DeleteAreas.getBy(), 15);
+        Thread.sleep(1000);
+        BuildingPanel.DeleteAreas.getElement().click();
+    }
+
+    @And("^click the Assign Users button")
+    public void AssignUsersButton() throws Throwable {
+        Thread.sleep(1000);
+
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.AssignUsers.getBy(), 15);
+        BuildingPanel.AssignUsers.getElement().click();
+    }
+
+    @And("^click Remove Users button")
+    public void RemoveUsersButton() throws Throwable {
+        Thread.sleep(1000);
+
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.RemoveUsers.getBy(), 15);
+        BuildingPanel.RemoveUsers.getElement().click();
+    }
+
+    @And("^User select user (.*)$")
+    public void SelectUser(String test) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 15);
+        Thread.sleep(1000);
+        List<WebElement> inside = driver.findElements(BuildingPanel.SecondSearchField.getBy());
+        inside.get(1).sendKeys(test);
+        Thread.sleep(1000);
+        PageObjectUtils.CheckContainsText(driver, test);
+        PageObjectUtils.ContainsText(driver, test).click();
+    }
+
+    @And("^Enter SVG File")
+    public void EnterSVG() throws Throwable {
+        WebElement fileInput = BuildingPanel.AddFloorOverlay.getElement();
+        Thread.sleep(1000);
+        fileInput.sendKeys(PageObjectUtils.filePathForUpload("svg.svg"));
+        Thread.sleep(3000);
+    }
+
+    @And("^Enter Building Image")
+    public void EnterImage() throws Throwable {
+        WebElement fileInput = BuildingPanel.AddImage.getElement();
+        Thread.sleep(1000);
+        fileInput.sendKeys(PageObjectUtils.filePathForUpload("test.png"));
+        Thread.sleep(3000);
+    }
+
+    @And("^User Enter (.*) in name field$")
+    public void addfloorfield(String test) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+        BuildingPanel.Name.getElement().sendKeys(test);
+    }
+
+    @And("^Enter new name (.*)$")
+    public void editfloorfield(String test) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Edit.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.Edit.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.Name.getElement().clear();
+        BuildingPanel.Name.getElement().sendKeys(test);
+    }
+
+    @And("^User Search for (.*)$")
+    public void Searchfield(String test) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.SearchField.getElement().sendKeys(test);
+        Thread.sleep(1000);
+    }
+
+    @And("^User Search for Users inside pop-up (.*)$")
+    public void SearchfieldPopups(String test) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+        Thread.sleep(1000);
+        WebElement inside = driver.findElement(BuildingPanel.ContainerForUserTab.getBy());
+        inside.findElement(BuildingPanel.SecondSearchField.getBy()).sendKeys(test);
+    }
+
+    @And("^User Select all floors with name (.*)$")
+    public void Selectfield(String test) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+        Thread.sleep(1000);
+        List<WebElement> inside = driver.findElements(BuildingPanel.SecondSearchField.getBy());
+        inside.get(1).sendKeys(test);
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.CheckBox.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.CheckBox.getElement().click();
+        Thread.sleep(1000);
+    }
+
+    @And("^User click on three dots button$")
+    public void thredotMenu() throws Throwable {
+
+        try {
+            Thread.sleep(2000);
+            BuildingPanel.ThreedotMenu.getElement().click();
+        } catch (Exception ex) {
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.OpenMenu.getBy(), 5);
+            BuildingPanel.OpenMenu.getElement().click();
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.AddFloor.getBy(), 5);
+            BuildingPanel.AddFloor.getElement().click();
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+            BuildingPanel.Name.getElement().sendKeys("autoArea");
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Save.getBy(), 5);
+            Thread.sleep(1000);
+            BuildingPanel.Save.getElement().click();
+            Thread.sleep(1000);
+
+            PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+            Thread.sleep(1000);
+            BuildingPanel.SearchField.getElement().clear();
+            BuildingPanel.SearchField.getElement().sendKeys("autoArea");
+            Thread.sleep(1000);
+
+            BuildingPanel.ThreedotMenu.getElement().click();
+        }
+    }
+
+    @And("^User Enter (.*) in name field and Range from (.*) to (.*)$")
+    public void addMultiplefloorfield(String test, String n, String m) throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+        BuildingPanel.Name.getElement().sendKeys(test);
+        BuildingPanel.From.getElement().sendKeys(n);
+        BuildingPanel.To.getElement().sendKeys(m);
+    }
+
+    @Then("Check if floors with name (.*) until (.*) appears on list$")
+    public void CheckFloorsAppears(String test, String test2) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.SearchField.getElement().sendKeys("TEST");
+        Assert.assertEquals(PageObjectUtils.ContainsText(driver, test).getText(), test);
+        Assert.assertEquals(PageObjectUtils.ContainsText(driver, test2).getText(), test2);
+    }
+
+    @Then("Check if user (.*) appears on list$")
+    public void CheckUserAppears(String test) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.SearchField.getElement().sendKeys(test);
+        Assert.assertEquals(PageObjectUtils.ContainsText(driver, test).getText(), test);
+    }
+
+    @Then("Check if user (.*) disappears from list$")
+    public void CheckUserDisappears(String test) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.SearchField.getElement().clear();
+        BuildingPanel.SearchField.getElement().sendKeys(test);
+        Thread.sleep(1000);
+        List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + test + "')]]"));
+        Assert.assertTrue("Deleted User is still on list", users.isEmpty());
+    }
+
+    @Then("Check if floor (.*) appears on list$")
+    public void CheckFloorAppears(String test) throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.SearchField.getElement().sendKeys(test);
+        Assert.assertEquals(driver.findElement(By.xpath("//*[text()[contains(.,'" + test + "')]]")).getText(), test);
+    }
+
+    @Then("Check if floor overlays appear on image$")
+    public void CheckFloorOverlaysAppears() throws Throwable {
+        Thread.sleep(3000);
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.CheckFloorOverlay.getBy(), 5);
+    }
+
+    @Then("Check if building image appears on page$")
+    public void CheckImageAppears() throws Throwable {
+        Thread.sleep(3000);
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.CheckBuildingImage.getBy(), 5);
+    }
+
+    @Then("Check if floors has the new name (.*)$")
+    public void CheckFloorNewNameAppears(String test) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.SearchField.getElement().clear();
+        BuildingPanel.SearchField.getElement().sendKeys(test);
+        Assert.assertEquals(PageObjectUtils.ContainsText(driver, test).getText(), test);
+    }
+
+    @Then("Check if floor with name (.*) is deleted$")
+    public void CheckFloorDeleted(String test) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.SearchField.getElement().clear();
+        BuildingPanel.SearchField.getElement().sendKeys(test);
+        List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + test + "')]]"));
+        Assert.assertTrue("Deleted User is still on list", users.isEmpty());
+    }
+
+    @And("^User click Add Image button$")
+    public void AreaTabAddImageButton() throws Throwable {
+        Thread.sleep(1000);
+        BuildingPanel.AddImage.getElement().click();
+    }
+
+    @And("^User click Add Multiple Floors button$")
+    public void AreaTabAddMultipleButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.AddMultipleFloor.getBy(), 15);
+        BuildingPanel.AddMultipleFloor.getElement().click();
+    }
+
+    @And("^User click Add Single floor button$")
+    public void AreaTabAddSingleButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.AddFloor.getBy(), 15);
+        BuildingPanel.AddFloor.getElement().click();
+    }
+
+    @And("^User click Add Floor Overlays button$")
+    public void AreaTabAddOverlayButton() throws Throwable {
+        Thread.sleep(1000);
+        BuildingPanel.AddFloorOverlay.getElement().click();
+    }
+
+    @And("^User click Delete button$")
+    public void AreaTabDeleteButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.RemoveUsers.getBy(), 15);
+        BuildingPanel.RemoveUsers.getElement().click();
+    }
+
+    @And("^User goto on Users Tab$")
+    public void openUsersTab() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.GoToUserTab.getBy(), 5);
+        WebElement inside = driver.findElement(BuildingPanel.GoToUserTab.getBy());
+        inside.click();
+    }
+
+    @And("^User goto on Connectors Tab$")
+    public void openConnectorsTab() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.GoToConnectorTab.getBy(), 5);
+        WebElement inside = driver.findElement(BuildingPanel.GoToConnectorTab.getBy());
+        inside.click();
+    }
+
+    @And("^User click connector menu button$")
+    public void openConnectorsMenu() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ConnectorsMenu.getBy(), 5);
+        WebElement inside = driver.findElement(BuildingPanel.ConnectorsMenu.getBy());
+        inside.click();
+    }
+
+    @And("^User click create new connector$")
+    public void openAddConnector() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.AddConnector.getBy(), 5);
+        WebElement inside = driver.findElement(BuildingPanel.AddConnector.getBy());
+        inside.click();
+    }
+
+    @And("^User click test connector$")
+    public void TestConnector() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.CheckConnection.getBy(), 5);
+        WebElement inside = driver.findElement(BuildingPanel.CheckConnection.getBy());
+        Thread.sleep(1000);
+        inside.click();
+    }
+
+    @And("^User click edit connector$")
+    public void clickEditConnector() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ThreedotMenu.getBy(), 5);
+        WebElement inside = driver.findElement(BuildingPanel.ThreedotMenu.getBy());
+        inside.click();
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EditButton.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.EditButton.getElement().click();
+    }
+
+    @And("^User delete connector from building$")
+    public void clickDeleteExistingConnector() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ThreedotMenu.getBy(), 5);
+        WebElement inside = driver.findElement(BuildingPanel.ThreedotMenu.getBy());
+        inside.click();
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.DeleteButton.getBy(), 5);
+        Thread.sleep(1000);
+        BuildingPanel.DeleteButton.getElement().click();
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ConfirmationYesButton.getBy(), 5);
+        BuildingPanel.ConfirmationYesButton.getElement().click();
+    }
+
+    @And("^User fill mandatory fields for connector and click add$")
+    public void addnewConnector() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+        BuildingPanel.Name.getElement().sendKeys("jace");
+        Thread.sleep(1000);
+        BuildingPanel.UserName.getElement().sendKeys("nHaystack");
+        BuildingPanel.Password.getElement().sendKeys("K0d35227!!");
+        Thread.sleep(1000);
+        BuildingPanel.Protocol.getElement().click();
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SelectHTTP.getBy(), 5);
+        BuildingPanel.SelectHTTP.getElement().click();
+        Thread.sleep(1000);
+        BuildingPanel.AreaConnectors.getElement().click();
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SelectArea.getBy(), 5);
+        BuildingPanel.SelectArea.getElement().click();
+        Thread.sleep(1000);
+        BuildingPanel.IP.getElement().sendKeys("178.132.223.132");
+        BuildingPanel.Port.getElement().sendKeys("80");
+        BuildingPanel.Model.getElement().sendKeys("Automation");
+        Thread.sleep(1000);
+        BuildingPanel.Save.getElement().click();
+    }
+
+    @And("^User change connector name to (.*)$")
+    public void editExistingConnector(String name) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+        BuildingPanel.Name.getElement().clear();
+        Thread.sleep(1000);
+        BuildingPanel.Name.getElement().sendKeys(name);
+        Thread.sleep(1000);
+        BuildingPanel.Save.getElement().click();
+    }
+
+    @Then("^Check if connector with name (.*) appears on list$")
+    public void checkConnector(String connector) throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'" + connector + "')]]"), 5);
+    }
+
+    @Then("^Check if connector connection is good$")
+    public void checkConnectConnector() throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'check_circle')]]"), 9);
+    }
+
+    @Then("^Check if connector with name (.*) disappears from list$")
+    public void checkDeletedConnector(String connector) throws Throwable {
+        Thread.sleep(1000);
+
+        List<WebElement> conn = driver.findElements(By.xpath("//*[text()[contains(.,'" + connector + "')]]"));
+        Assert.assertTrue("Connector is not added", conn.isEmpty());
+    }
+
+    @And("^Click on Edit Button, then change some values and click save$")
+    public void editBuilding() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EditButton.getBy(), 5);
+        BuildingPanel.EditButton.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Edit Address 1
+        Thread.sleep(1000);
+        BuildingPanel.Address1.getElement().clear();
+        Thread.sleep(1000);
+        BuildingPanel.Address1.getElement().sendKeys("277 Gratiot Avenue");
+
+        //Click Save
+        BuildingPanel.Save.getElement().click();
+    }
+
+    @And("^Click on Delete Button, then click Delete again$")
+    public void deleteBuilding() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.DeleteButton.getBy(), 5);
+
+        //Click Delete
+        BuildingPanel.DeleteButton.getElement().click();
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ConfirmationYesButton.getBy(), 5);
+
+        //Click Yes
+        BuildingPanel.ConfirmationYesButton.getElement().click();
+    }
+
+    @Then("^Check if (.*) is removed from list$")
+    public void checkDeletedBuilding(String building) throws Throwable {
+        Thread.sleep(4000);
+        //PageObjectUtils.IsElementVisible(driver, BuildingPanel.CheckIsRemoved.getBy(),5);
+        List<WebElement> buildings = driver.findElements(By.xpath("//*[text()[contains(.,'" + building + "')]]"));
+        Assert.assertTrue("Building is still on list", buildings.isEmpty());
+    }
+
+    @Then("^Check if All Changed fields are saved successful for (.*)$")
+    public void checkEditBuilding(String building) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'" + building + "')]]", 5);
+        Assert.assertTrue(driver.findElement(By.xpath("//*[text()[contains(.,'" + building + "')]]")).isDisplayed());
+    }
+
+    @And("^User add (.*) as Name$")
+    public void FillName(String name) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add Name
+        BuildingPanel.Name.getElement().sendKeys(name);
+        Thread.sleep(1000);
+    }
+
+    @And("^User add (.*) as Address 1")
+    public void FillAdd1(String address) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add Address 1
+        BuildingPanel.Address1.getElement().sendKeys(address);
+    }
+
+    @And("^User add (.*) as Address 2")
+    public void FillAdd2(String address) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add Address 2
+        BuildingPanel.Address2.getElement().sendKeys(address);
+    }
+
+    @And("^User add (.*) as ZIP code")
+    public void FillZip(String zip) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add ZIP code
+        BuildingPanel.ZipCode.getElement().sendKeys(zip);
+    }
+
+    @And("^User add (.*) as City")
+    public void FillCity(String city) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add City
+        BuildingPanel.City.getElement().sendKeys(city);
+    }
+
+    @And("^User add (.*) as State")
+    public void FillState(String state) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add State
+        WebElement element = BuildingPanel.State.getElement();
+        BuildingPanel.State.getElement().click();
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//span[contains( text(),'" + state + "')]", 5);
+        driver.findElement(By.xpath("//span[contains( text(),'" + state + "')]")).click();
+    }
+
+    @And("^User add (.*) as Country")
+    public void FillCountry(String country) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add Country
+        BuildingPanel.Country.getElement().sendKeys(country);
+    }
+
+    @And("^User add (.*) as Latitude")
+    public void FillLat(String latitude) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add latitude
+        BuildingPanel.Latitude.getElement().sendKeys(latitude);
+    }
+
+    @And("^User add (.*) as Longitude")
+    public void FillLong(String longitude) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+        //Add longitude
+        BuildingPanel.Longitude.getElement().sendKeys(longitude);
+    }
+
+    @And("^User add (.*) as Year build")
+    public void FillYear(String year) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add Year build
+        BuildingPanel.Year.getElement().sendKeys(year);
+    }
+
+    @And("^User add (.*) as Area")
+    public void FillArea(String area) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add Area
+        BuildingPanel.Area.getElement().sendKeys(area);
+    }
+
+    @And("^User add (.*) as Image")
+    public void FillImage(String image) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+
+        //Add building image
+        WebElement fileInput = BuildingPanel.AddBuildingImage.getElement();
+        Thread.sleep(1000);
+        fileInput.sendKeys(PageObjectUtils.filePathForUpload(image));
+        Thread.sleep(2000);
+    }
+
+    @Then("^Check if (.*) appear on list$")
+    public void checkBuildingIsAdded(String building) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, building);
+        Assert.assertEquals(PageObjectUtils.ContainsText(driver, building).getText(), building);
+        Thread.sleep(2000);
+    }
+
+    @When("^User clicks on Add new button$")
+    public void OpenClickAddBuildingButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.AddNewBuildingButton.getBy(), 5);
+        BuildingPanel.AddNewBuildingButton.getElement().click();
+        PageObjectUtils.CheckContainsText(driver, "Add Building");
+    }
+
+    @Then("^Check if User is on Devices page$")
+    public void checkDevicePage() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Chrysler House - 1106 Devices");
+        Assert.assertEquals(PageObjectUtils.ContainsText(driver, "Chrysler House - 1106 Devices").getText(), "Chrysler House - 1106 Devices");
+    }
+
+    @And("^User Go To admin panel$")
+    public void clickAdminPanel() throws Throwable {
+        BuildingPanel.AdminPanel.getElement().click();
+    }
+
+    @Then("^Check if user is at Admin panel$")
+    public void checkDevicesButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
+    }
+
+    @Then("^Check if Chrysler House is Opened$")
+    public void UserAppears() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Chrysler House");
+        Assert.assertEquals(PageObjectUtils.ContainsText(driver, "Chrysler House").getText(), "Chrysler House");
+    }
+
+    @Then("^Check if user is logged in$")
+    public void theAssertionThatTheTestHasPassedAndWorkedFine() throws Throwable {
+        try {
+            Alert alert = driver.switchTo().alert();
+            alert.dismiss();
+            if (driver.findElement(By.xpath("//*[text()[contains(.,'Continue without saving data ?')]]")).isDisplayed()) {
+                driver.findElement(By.xpath("//*[text()[contains(.,'Yes')]]")).click();
+            }
+        } catch (Throwable ex) {
+            PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//img[@class='logo']", 15);
+        }
+
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//img[@class='logo']", 15);
+    }
+
+    @And("^Log in using Username (.*) and Password (.*)$")
+    public void login(String username, String password) throws Throwable {
+        driver.findElement(By.id("userID")).sendKeys(username);
+        driver.findElement(By.id("password")).sendKeys(password);
+
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.CLASSNAME, "company-name", 5);
+    }
+
+    //User Panel Methods
+    @And("^Click User Panel tab$")
+    public void clickUserPanel() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Users");
+        PageObjectUtils.ContainsText(driver, "Users").click();
+    }
+
+    @Then("^Check if user is at User panel$")
+    public void checkUserPanel() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.FirstName.getBy(), 10);
+    }
+
+    @When("^User clicks on Add new User$")
+    public void clickNewUser() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.AddNewUser.getBy(), 10);
+        BuildingPanel.AddNewUser.getElement().click();
+    }
+
+    @And("^User Fill (.*) as First Name$")
+    public void U_FirstName(String name) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.FirstName.getBy(), 15);
+
+        //Add First Name
+        BuildingPanel.EnterFirstName.getElement().sendKeys(name);
+        Thread.sleep(1000);
+    }
+
+    @And("^User Fill (.*) as Last Name")
+    public void U_LastName(String lastName) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterLastName.getBy(), 15);
+
+        //Add Last Name
+        BuildingPanel.EnterLastName.getElement().sendKeys(lastName);
+    }
+
+    @And("^User Fill (.*) as Email")
+    public void U_Email(String email) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterEmail.getBy(), 15);
+
+        //Add Email
+        BuildingPanel.EnterEmail.getElement().sendKeys(email);
+    }
+
+    @And("^User Fill (.*) as Phone number")
+    public void U_Phone(String phone) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterPhone.getBy(), 15);
+
+        //Add Phone
+        BuildingPanel.EnterPhone.getElement().sendKeys(phone);
+    }
+
+    @And("^User Fill (.*) as Position")
+    public void U_Position(String position) throws Throwable {
+        //Add Position
+        BuildingPanel.EnterPosition.getElement().click();
+        PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'" + position + "')]]", 5);
+        driver.findElement(By.xpath("//span[text()[contains(.,'" + position + "')]]")).click();
+    }
+
+    @And("^User Fill (.*) as Role")
+    public void U_Role(String role) throws Throwable {
+        //Add Role
+        WebElement element = BuildingPanel.EnterRole.getElement();
+        element.click();
+        PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'" + role + "')]]", 5);
+        driver.findElement(By.xpath("//span[text()[contains(.,'" + role + "')]]")).click();
+    }
+
+    @Then("^Check if User with name (.*) appear on the list$")
+    public void checkUserIsAdded(String user) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, user);
+        Assert.assertEquals(PageObjectUtils.ContainsText(driver, user).getText(), user);
+        Thread.sleep(2000);
+    }
+
+    @When("^User click (.*) User")
+    public void openUser(String users) throws Throwable {
+        //click user
+        PageObjectUtils.CheckContainsText(driver, users);
+        PageObjectUtils.ContainsText(driver, users).click();
+        PageObjectUtils.CheckContainsText(driver, users);
+    }
+
+    @And("^Click on Edit Button, then change some values for user and click save")
+    public void editUser() throws Throwable {
+        //click user
+        PageObjectUtils.CheckContainsText(driver, "Edit");
+        PageObjectUtils.ContainsText(driver, "Edit").click();
+
+        PageObjectUtils.CheckContainsText(driver, "Edit");
+        Thread.sleep(1000);
+        BuildingPanel.EnterLastName.getElement().clear();
+        Thread.sleep(1000);
+        BuildingPanel.EnterLastName.getElement().sendKeys("sopo");
+
+        //Click save
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
+    }
+
+    @Then("^Check if All Changed fields for (.*) are saved successful$")
+    public void checkEditedUser(String user) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "sopo");
+    }
+
+    @And("^User go to buildings tab")
+    public void goToBuildingsTab() throws Throwable {
+        //click building tab
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.OpenBuildingTab.getBy(), 5);
+        BuildingPanel.OpenBuildingTab.getElement().click();
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.CheckEditButton.getBy(), 5);
+        Thread.sleep(1000);
+    }
+
+    @And("^User click assign buildings")
+    public void ClickAssignBuilding() throws Throwable {
+        //click assign
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.OpenBuildingTab.getBy(), 5);
+        BuildingPanel.CheckEditButton.getElement().click();
+        PageObjectUtils.CheckContainsText(driver, "add_box");
+        Thread.sleep(1000);
+        PageObjectUtils.ContainsText(driver, "add_box").click();
+        Thread.sleep(1000);
+    }
+
+    @And("^User assign (.*) Building")
+    public void AssignBuilding(String building) throws Throwable {
+        //assign building
+        PageObjectUtils.CheckContainsText(driver, "Assign Buildings");
+        driver.findElement(By.xpath("//*[@class='search-widget']//*[@placeholder='Search for Buildings']")).sendKeys(building);
+        PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin']", 5);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@class='mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin']")).click();
+        Thread.sleep(1000);
+
+        //Click save
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
+        Thread.sleep(1000);
+    }
+
+    @Then("^Check if (.*) is assigned to that user$")
+    public void checkAssignedBuilding(String building) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Chrysler House");
+    }
+
+    @And("^User clicks delete assigned buildings")
+    public void ClickRemoveBuilding() throws Throwable {
+        //click remove
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.DeleteAssignBuildings.getBy(), 5);
+        BuildingPanel.DeleteAssignBuildings.getElement().click();
+        PageObjectUtils.CheckContainsText(driver, "delete_outline");
+        Thread.sleep(1000);
+        PageObjectUtils.ContainsText(driver, "delete_outline").click();
+        Thread.sleep(1000);
+    }
+
+    @And("^User remove (.*) Building")
+    public void removedBuilding(String building) throws Throwable {
+        //remove building
+        PageObjectUtils.CheckContainsText(driver, "Remove Buildings");
+        driver.findElement(By.xpath("//*[@class='search-widget']//*[@placeholder='Search for Buildings']")).sendKeys(building);
+        PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin']", 5);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@class='mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin']")).click();
+        Thread.sleep(1000);
+
+        //Click delete
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Delete')]")).click();
+        Thread.sleep(1000);
+    }
+
+    @Then("^Check if (.*) is removed from user")
+    public void checkRemovedBuilding(String building) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@placeholder='Search for Buildings']", 15);
+        Thread.sleep(1000);
+        List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + building + "')]]"));
+        Assert.assertTrue("Building is still on list", users.isEmpty());
+    }
+
+    @And("^User click on Delete user button")
+    public void removedUser() throws Throwable {
+        //remove user
+        PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-button-wrapper' and contains(text(), 'Delete')]", 5);
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Delete')]")).click();
+        PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-button-wrapper' and contains(text(), 'Yes')]", 5);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Yes')]")).click();
+        Thread.sleep(1000);
+    }
+
+    @Then("^Check if User (.*) dissapears from the list")
+    public void checkRemovedUser(String user) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Edon");
+        Thread.sleep(1000);
+        List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + user + "')]]"));
+        Assert.assertTrue("User is still on list", users.isEmpty());
+    }
+
+    //Templates Methods
+    @And("^Click Templates tab")
+    public void goToTemplates() throws Throwable {
+        //click assign
+        PageObjectUtils.CheckContainsText(driver, "Templates");
+        PageObjectUtils.ContainsText(driver, "Templates").click();
+    }
+
+    @And("^Click Units tab")
+    public void goToUnits() throws Throwable {
+        //click assign
+        PageObjectUtils.CheckContainsText(driver, "Units");
+        PageObjectUtils.ContainsText(driver, "Units").click();
+    }
+
+    @And("^Click Tags tab")
+    public void goToTags() throws Throwable {
+        //click assign
+        PageObjectUtils.CheckContainsText(driver, "Tags");
+        PageObjectUtils.ContainsText(driver, "Tags").click();
+    }
+
+    @Then("^Check if user is at Templates page")
+    public void userAtTemplatesPage() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "AHU");
+    }
+
+    @Then("^Check if user is at Units page")
+    public void userAtUnitsPage() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "angular velocity");
+    }
+
+    @Then("^Check if user is at Tags page")
+    public void userAtTagsPage() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Tag");
+    }
+
+    @When("^User go to (.*) template")
+    public void goToOneTemplate(String template) throws Throwable {
+        //remove building
+        PageObjectUtils.CheckContainsText(driver, template);
+        driver.findElement(By.xpath("//*[contains(text(), '" + template + "')]")).click();
+        PageObjectUtils.CheckContainsText(driver, template);
+        Thread.sleep(1000);
+    }
+
+    @And("^Click add new section button")
+    public void openNewSection() throws Throwable {
+        //click assign
+        PageObjectUtils.CheckContainsText(driver, "Add Group");
+        PageObjectUtils.ContainsText(driver, "Add Group").click();
+    }
+
+    @And("^enter (.*) for this section name")
+    public void enterTemplateName(String template) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Add Group");
+        BuildingPanel.Name.getElement().sendKeys(template);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@class='dialog-container']//span[text()[contains(.,' Add ')]]")).click();
+    }
+
+    @And("^Click on Edit Button, then change section name to (.*)")
+    public void changeSectionName(String template) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "more_vert");
+        Thread.sleep(1000);
+        PageObjectUtils.ContainsText(driver, "more_vert").click();
+
+        PageObjectUtils.CheckContainsText(driver, "Edit Group");
+        Thread.sleep(1000);
+        PageObjectUtils.ContainsText(driver, "Edit Group").click();
+
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
+        BuildingPanel.Name.getElement().clear();
+        Thread.sleep(1000);
+        BuildingPanel.Name.getElement().sendKeys(template);
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
+        Thread.sleep(1000);
+    }
+
+    @Then("^Check if template with (.*) name appears on list")
+    public void checkTemplatedIsAdded(String name) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, name);
+    }
+
+    @And("^Click on Delete Button, then click delete Section")
+    public void changeDeletedSectionName() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "more_vert");
+        PageObjectUtils.ContainsText(driver, "more_vert").click();
+        Thread.sleep(1000);
+        PageObjectUtils.CheckContainsText(driver, "Delete Group");
+        Thread.sleep(1000);
+        PageObjectUtils.ContainsText(driver, "Delete Group").click();
+
+        PageObjectUtils.CheckContainsText(driver, "Yes");
+        PageObjectUtils.ContainsText(driver, "Yes").click();
+
+        Thread.sleep(2000);
+    }
+
+    @Then("^Check if template with (.*) name Disappears from list")
+    public void checkTemplateIsDeleted(String name) throws Throwable {
+        Thread.sleep(1000);
+        List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + name + "')]]"));
+        Assert.assertTrue("Section is still on list", users.isEmpty());
+    }
+
+    @And("^Click add new point button")
+    public void addNewPointButton() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "more_vert");
+        PageObjectUtils.ContainsText(driver, "more_vert").click();
+
+        PageObjectUtils.CheckContainsText(driver, "Add Point");
+        Thread.sleep(1000);
+        PageObjectUtils.ContainsText(driver, "Add Point").click();
+
+        Thread.sleep(1000);
+    }
+
+    @And("^Fill point mandatory fields with name (.*)")
+    public void fillPointFields(String name) throws Throwable {
+        //PageObjectUtils.CheckContainsText(driver,"Add New Point");
+        BuildingPanel.Description.getElement().sendKeys(name);
+        PageObjectUtils.ContainsText(driver, "Choose type").click();
+        driver.findElement(By.xpath("//mat-option//*[contains(text(), 'Bool')]")).click();
+
+        driver.findElement(By.xpath("//span[contains(text(), 'Add')]")).click();
+        Thread.sleep(1000);
+    }
+
+    @Then("^Check if Point with name (.*) is added on Section with name (.*)")
+    public void checkpointisadded(String point, String section) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "NewPoint");
+    }
+
+    @And("^Click on Edit Button, then change point name to (.*)")
+    public void changePointName(String template) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "NewPoint");
+        PageObjectUtils.ContainsText(driver, "NewPoint").click();
+
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Description.getBy(), 5);
+        BuildingPanel.Description.getElement().clear();
+        BuildingPanel.Description.getElement().sendKeys(template);
+
+        PageObjectUtils.ContainsText(driver, "Save").click();
+    }
+
+    @Then("^Check if Point name is changed from (.*) to (.*)")
+    public void checkpointIsEdited(String point, String section) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, section);
+    }
+
+    @And("^Open Point with name (.*) and click Delete")
+    public void DeletePointName(String template) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, template);
+        PageObjectUtils.ContainsText(driver, template).click();
+        Thread.sleep(1000);
+        PageObjectUtils.ContainsText(driver, "Delete").click();
+        Thread.sleep(1000);
+        PageObjectUtils.ContainsText(driver, "Yes").click();
+        Thread.sleep(1000);
+    }
+
+    @Then("^Check if point with name (.*) is deleted from list")
+    public void checkpointIsDeleted(String point) throws Throwable {
+        Thread.sleep(1000);
+        List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + point + "')]]"));
+        Assert.assertTrue("point is still on list", users.isEmpty());
+    }
+
+    @And("^user select Connect Points")
+    public void connectPointsButton() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Connect Points");
+        PageObjectUtils.ContainsText(driver, "Connect Points").click();
+    }
+
+    @And("^user select point with name (.*)")
+    public void selectFirstPoint(String point) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, point);
+        PageObjectUtils.ContainsText(driver, point).click();
+    }
+
+    @And("^it links it with point with name (.*)")
+    public void selectSecondPoint(String point) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, point);
+        PageObjectUtils.ContainsText(driver, point).click();
+    }
+
+    @And("^Click Connect Button")
+    public void connectPointsSave() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Save");
+        PageObjectUtils.ContainsText(driver, "Save").click();
+    }
+
+    @Then("^Check if points (.*) and (.*) are linked")
+    public void checkpointLinked(String point1, String point2) throws Throwable {
+        Thread.sleep(2000);
+        PageObjectUtils.CheckContainsText(driver, point1);
+        PageObjectUtils.CheckContainsText(driver, point2);
+    }
+}
