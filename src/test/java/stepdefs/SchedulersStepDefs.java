@@ -1,16 +1,11 @@
-package stepdefs.websitesteps;
+package stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import pageobjects.pages.DevicePanel;
 import pageobjects.pages.PageObjectUtils;
 import pageobjects.pages.Schedulers;
-import pageobjects.pages.Systems;
-import stepdefs.CommonStepObjects;
 
 public class SchedulersStepDefs extends CommonStepObjects {
 
@@ -22,67 +17,66 @@ public class SchedulersStepDefs extends CommonStepObjects {
     }
 
     @When("^User click Discovery button$")
-    public void clickSystems() throws Throwable {
+    public void clickDiscoverSchedulers() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Schedulers.discovery.getBy(), 5);
         Thread.sleep(2000);
         Schedulers.discovery.getElement().click();
     }
 
     @Then("^Check if points with schedulers appears on list$")
-    public void addSystem() throws Throwable {
+    public void checkSchedulers() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'BR126_str')]]"), 5);
         Thread.sleep(1000);
     }
 
-
     @And("^User click (.*) from the list$")
-    public void addDeviceWithPoint(String name) throws Throwable {
+    public void clickScheduler(String name) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, name);
         PageObjectUtils.ContainsText(driver, name).click();
         Thread.sleep(1000);
     }
 
     @And("^User click add scheduler button$")
-    public void dragDevice() throws Throwable {
+    public void addScheduler() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Schedulers.addScheduler.getBy(), 5);
         Thread.sleep(1000);
         Schedulers.addScheduler.getElement().click();
     }
 
     @And("^User click save scheduler button$")
-    public void dragPoint() throws Throwable {
+    public void saveScheduler() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Schedulers.saveButton.getBy(), 5);
         Schedulers.saveButton.getElement().click();
         Thread.sleep(1000);
     }
 
     @And("^User go to calendar$")
-    public void saveChanges() throws Throwable {
+    public void goToCalendar() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Schedulers.calendar.getBy(), 5);
         Schedulers.calendar.getElement().click();
         Thread.sleep(1000);
     }
 
     @Then("^Check if Scheduler appears on calendar$")
-    public void checkChanges() throws Throwable {
+    public void checkSchedulerIsAdded() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'BR126_str')]]"), 5);
     }
 
     @Then("^Check if Scheduler disappears on calendar$")
-    public void checkDisappearChanges() throws Throwable {
+    public void checkSchedulerDisappears() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.ElementIsNotVisible(driver, By.xpath("//*[text()[contains(.,'BR126_str')]]"), 5);
     }
 
     @And("^User click existing scheduler$")
-    public void checkSys() throws Throwable {
+    public void clickExistingScheduler() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//tr[@class='mat-row ng-tns-c54-161 ng-star-inserted']"), 5);
     }
 
     @And("^User change date to Saturday$")
-    public void checkScheduler() throws Throwable {
+    public void changeSchedulerDate() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, Schedulers.selectDay.getBy(), 5);
         Schedulers.selectDay.getElement().click();
@@ -92,14 +86,14 @@ public class SchedulersStepDefs extends CommonStepObjects {
     }
 
     @And("^User clicks delete scheduler button$")
-    public void delete() throws Throwable {
+    public void deleteScheduler() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Schedulers.removeScheduler.getBy(), 5);
         Schedulers.removeScheduler.getElement().click();
         Thread.sleep(1000);
     }
 
     @When("^Check if Schedulers page appears$")
-    public void clickSystem() throws Throwable {
+    public void checkSchedulerPage() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Schedulers.discovery.getBy(), 5);
         Thread.sleep(1000);
     }

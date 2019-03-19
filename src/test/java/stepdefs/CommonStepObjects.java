@@ -43,7 +43,6 @@ public class CommonStepObjects {
         driver = webDriver;
     }
 
-
     public static void closeDriver() {
         driver.close();
     }

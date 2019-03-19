@@ -1,19 +1,15 @@
-package stepdefs.websitesteps;
+package stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import pageobjects.pages.PageObjectUtils;
 import pageobjects.pages.TagsPanel;
-import pageobjects.pages.UnitsPanel;
-import stepdefs.CommonStepObjects;
 
-import javax.swing.text.html.HTML;
 import java.util.List;
 
 public class TagsStepDefs extends CommonStepObjects {
@@ -30,7 +26,7 @@ public class TagsStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if Tag with name (.*) appears on list$")
-    public void CheckTag(String name) throws Throwable {
+    public void checkTagIsAdded(String name) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + name + "')]]"), 5);
     }
 

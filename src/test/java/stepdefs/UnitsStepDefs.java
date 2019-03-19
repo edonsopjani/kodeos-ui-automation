@@ -1,4 +1,4 @@
-package stepdefs.websitesteps;
+package stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -8,10 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import pageobjects.pages.FloorPanel;
 import pageobjects.pages.PageObjectUtils;
 import pageobjects.pages.UnitsPanel;
-import stepdefs.CommonStepObjects;
 
 import java.util.List;
 
@@ -27,7 +25,7 @@ public class UnitsStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if category with name (.*) appears on list$")
-    public void CheckCategory(String name) throws Throwable {
+    public void checkCategoryIsAdded(String name) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, name);
     }
 
@@ -57,7 +55,7 @@ public class UnitsStepDefs extends CommonStepObjects {
     }
 
     @And("^User fill mandatory fields and click add$")
-    public void fillMandatory() throws Throwable {
+    public void fillMandatoryFields() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UnitsPanel.addUnitName.getBy(), 5);
         UnitsPanel.addUnitName.getElement().sendKeys("AutoUnit");

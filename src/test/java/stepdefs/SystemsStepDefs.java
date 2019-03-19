@@ -1,20 +1,14 @@
-package stepdefs.websitesteps;
+package stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import pageobjects.pages.DashboardPanel;
 import pageobjects.pages.DevicePanel;
 import pageobjects.pages.PageObjectUtils;
 import pageobjects.pages.Systems;
-import stepdefs.CommonStepObjects;
-
-import java.util.List;
 
 public class SystemsStepDefs extends CommonStepObjects {
 
@@ -90,7 +84,7 @@ public class SystemsStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if Systems page appears$")
-    public void checkSys() throws Throwable {
+    public void checkSystemIsAdded() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, Systems.addSystemButton.getBy(), 5);
     }

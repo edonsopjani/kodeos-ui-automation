@@ -1,4 +1,4 @@
-package stepdefs.websitesteps;
+package stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pageobjects.pages.DashboardPanel;
 import pageobjects.pages.PageObjectUtils;
-import stepdefs.CommonStepObjects;
 
 import java.util.List;
 
@@ -47,38 +46,38 @@ public class DashboardStepDefs extends CommonStepObjects {
     }
 
     @When("^User Click on Edit Dashboard$")
-    public void clickDashboard() throws Throwable {
+    public void clickEditDashboard() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditDashboard.getBy(), 5);
         DashboardPanel.EditDashboard.getElement().click();
     }
 
     @Then("^Check if list of floors appears")
-    public void openFloors() throws Throwable {
+    public void checkFloorPageAppears() throws Throwable {
         Thread.sleep(1000);
         Assert.assertTrue(DashboardPanel.CheckFloorList.getElement().isDisplayed());
     }
 
     @Then("^Check if all floors for that building appears on list")
-    public void openBuilding() throws Throwable {
+    public void checkFloorsPageAppears() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, "Floor 2");
     }
 
     @And("^User clicks on Expand button$")
-    public void openAreaTab() throws Throwable {
+    public void clickExpandButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DashboardPanel.ExpandButton.getBy(), 5);
         DashboardPanel.ExpandButton.getElement().click();
         DashboardPanel.ExpandButton.getElement().click();
     }
 
     @Then("^Check if (.*) page is opened$")
-    public void openMenuTab(String building) throws Throwable {
+    public void checkBuildingPageAppears(String building) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, "Names");
     }
 
     @And("^Clicks (.*) from the list$")
-    public void AreaTabSaveButton(String building) throws Throwable {
+    public void clickBuildingFromList(String building) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, building);
         PageObjectUtils.ContainsText(driver, building).click();
@@ -87,25 +86,25 @@ public class DashboardStepDefs extends CommonStepObjects {
 
     //
     @And("^Click at (.*) Device$")
-    public void openAreasTab(String building) throws Throwable {
+    public void clickDevice(String building) throws Throwable {
         PageObjectUtils.ContainsText(driver, building).click();
         PageObjectUtils.ContainsText(driver, building).click();
     }
 
     @And("^Click Save Dashboard$")
-    public void SaveClick() throws Throwable {
+    public void saveClick() throws Throwable {
         DashboardPanel.SaveButton.getElement().click();
         Thread.sleep(1000);
     }
 
     @Then("^Check if the list of (.*) appears$")
-    public void openMensuTab(String point) throws Throwable {
+    public void checkIfListOfPointsAppears(String point) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + point + "')]]"), 5);
     }
 
     @And("^Add (.*) and (.*) points for (.*) Device at Summary Widget$")
-    public void openMenTab(String point1, String point2, String device) throws Throwable {
+    public void addPointsToWidget(String point1, String point2, String device) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='mat-row ng-star-inserted']"), 10);
         List<WebElement> elements = driver.findElements(By.xpath("//*[@class='mat-row ng-star-inserted']"));
         for (WebElement element : elements
@@ -132,7 +131,7 @@ public class DashboardStepDefs extends CommonStepObjects {
     }
 
     @And("^Add (.*) Device at Widget$")
-    public void openaddseTab(String device) throws Throwable {
+    public void addDeviceAtWidget(String device) throws Throwable {
         List<WebElement> exist = driver.findElements(By.xpath("//*[@class='selected-device-content ng-star-inserted']//*[contains(text(),'" + device + "')]"));
         if (exist.isEmpty()) {
             PageObjectUtils.ContainsText(driver, device).click();
@@ -148,7 +147,7 @@ public class DashboardStepDefs extends CommonStepObjects {
     }
 
     @And("^Click add for (.*) Widget$")
-    public void openAreassTab(String building) throws Throwable {
+    public void clickAddButtonForWidget(String building) throws Throwable {
         List<WebElement> elements = driver.findElements(By.cssSelector(".inactive-widget-item.ng-star-inserted"));
         for (WebElement element : elements
         ) {
@@ -163,7 +162,7 @@ public class DashboardStepDefs extends CommonStepObjects {
     }
 
     @And("^Click edit for (.*) Widget$")
-    public void openEditTab(String building) throws Throwable {
+    public void clickEditButtonForWidget(String building) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditNavigationWidget.getBy(), 5);
         if (building.equals("Navigation")) {
             PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditNavigationWidget.getBy(), 5);
@@ -177,20 +176,20 @@ public class DashboardStepDefs extends CommonStepObjects {
     }
 
     @When("^User Click (.*) from Navigation Widget$")
-    public void ClickDeviceNavWidget(String device) throws Throwable {
+    public void goToDeviceFromNavigationWidget(String device) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='device-label' and contains(text(),'" + device + "')]"), 5);
         driver.findElement(By.xpath("//*[@class='device-label' and contains(text(),'" + device + "')]")).click();
     }
 
     @When("^User Click (.*) from Summary Widget$")
-    public void ClickDeviceSumWidget(String device) throws Throwable {
+    public void goToDeviceFromSummaryWidget(String device) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='device-title-label' and contains(text(),'" + device + "')]"), 5);
         Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@class='device-title-label' and contains(text(),'" + device + "')]")).click();
     }
 
     @And("^Click remove for (.*) Widget$")
-    public void openRemoveTab(String building) throws Throwable {
+    public void removeWidget(String building) throws Throwable {
 
         Thread.sleep(2000);
         if (building.equals("Navigation")) {
@@ -205,7 +204,7 @@ public class DashboardStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if (.*) Device pop-up appears$")
-    public void openMensuTsab(String building) throws Throwable {
+    public void checkDevicePopUpAppears(String building) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, building);
     }
@@ -223,7 +222,7 @@ public class DashboardStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if (.*) and (.*) points appears on Summary Widget$")
-    public void checkPoinsUpdated(String point1, String point2) throws Throwable {
+    public void checkPointIsUpdated(String point1, String point2) throws Throwable {
         Thread.sleep(2000);
         PageObjectUtils.CheckContainsText(driver, point1);
     }
@@ -241,7 +240,7 @@ public class DashboardStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if the Edit Dashboard page appears$")
-    public void EditDashboard() throws Throwable {
+    public void checkIfEditDashboardPageAppears() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, "Save");
     }

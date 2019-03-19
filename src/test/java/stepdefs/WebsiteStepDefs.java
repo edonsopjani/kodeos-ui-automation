@@ -152,33 +152,33 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User click Save button$")
-    public void AreaTabSaveButton() throws Throwable {
+    public void areaTabSaveButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.SaveButton.getBy(), 5);
         DevicePanel.SaveButton.getElement().click();
     }
 
     @And("^User click Update Points button$")
-    public void TemplateSaveButton() throws Throwable {
+    public void updatePointsButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.UpdatePointButton.getBy(), 5);
         DevicePanel.UpdatePointButton.getElement().click();
     }
 
     @And("^User click Save changes$")
-    public void SaveButton() throws Throwable {
+    public void saveButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Save.getBy(), 5);
         Thread.sleep(1000);
         BuildingPanel.Save.getElement().click();
     }
 
     @And("^User click delete")
-    public void DeleteButton() throws Throwable {
+    public void deleteButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.DeleteAreas.getBy(), 15);
         Thread.sleep(1000);
         BuildingPanel.DeleteAreas.getElement().click();
     }
 
     @And("^click the Assign Users button")
-    public void AssignUsersButton() throws Throwable {
+    public void assignUsersButton() throws Throwable {
         Thread.sleep(1000);
 
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.AssignUsers.getBy(), 15);
@@ -186,7 +186,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^click Remove Users button")
-    public void RemoveUsersButton() throws Throwable {
+    public void removeUsersButton() throws Throwable {
         Thread.sleep(1000);
 
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.RemoveUsers.getBy(), 15);
@@ -194,7 +194,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User select user (.*)$")
-    public void SelectUser(String test) throws Throwable {
+    public void selectUser(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 15);
         Thread.sleep(1000);
         List<WebElement> inside = driver.findElements(BuildingPanel.SecondSearchField.getBy());
@@ -205,7 +205,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^Enter SVG File")
-    public void EnterSVG() throws Throwable {
+    public void enterSVG() throws Throwable {
         WebElement fileInput = BuildingPanel.AddFloorOverlay.getElement();
         Thread.sleep(1000);
         fileInput.sendKeys(PageObjectUtils.filePathForUpload("svg.svg"));
@@ -213,7 +213,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^Enter Building Image")
-    public void EnterImage() throws Throwable {
+    public void enterImage() throws Throwable {
         WebElement fileInput = BuildingPanel.AddImage.getElement();
         Thread.sleep(1000);
         fileInput.sendKeys(PageObjectUtils.filePathForUpload("test.png"));
@@ -221,13 +221,13 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User Enter (.*) in name field$")
-    public void addfloorfield(String test) throws Throwable {
+    public void addBuildingName(String name) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
-        BuildingPanel.Name.getElement().sendKeys(test);
+        BuildingPanel.Name.getElement().sendKeys(name);
     }
 
     @And("^Enter new name (.*)$")
-    public void editfloorfield(String test) throws Throwable {
+    public void enterNewFloorName(String name) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Edit.getBy(), 5);
         Thread.sleep(1000);
         BuildingPanel.Edit.getElement().click();
@@ -235,11 +235,11 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
         Thread.sleep(1000);
         BuildingPanel.Name.getElement().clear();
-        BuildingPanel.Name.getElement().sendKeys(test);
+        BuildingPanel.Name.getElement().sendKeys(name);
     }
 
     @And("^User Search for (.*)$")
-    public void Searchfield(String test) throws Throwable {
+    public void searchField(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
         Thread.sleep(1000);
         BuildingPanel.SearchField.getElement().sendKeys(test);
@@ -247,7 +247,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User Search for Users inside pop-up (.*)$")
-    public void SearchfieldPopups(String test) throws Throwable {
+    public void searchFieldPopups(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
         Thread.sleep(1000);
         WebElement inside = driver.findElement(BuildingPanel.ContainerForUserTab.getBy());
@@ -255,7 +255,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User Select all floors with name (.*)$")
-    public void Selectfield(String test) throws Throwable {
+    public void selectField(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
         Thread.sleep(1000);
         List<WebElement> inside = driver.findElements(BuildingPanel.SecondSearchField.getBy());
@@ -268,7 +268,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User click on three dots button$")
-    public void thredotMenu() throws Throwable {
+    public void threeDotMenu() throws Throwable {
 
         try {
             Thread.sleep(2000);
@@ -299,7 +299,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User Enter (.*) in name field and Range from (.*) to (.*)$")
-    public void addMultiplefloorfield(String test, String n, String m) throws Throwable {
+    public void addMultipleFloorField(String test, String n, String m) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
         BuildingPanel.Name.getElement().sendKeys(test);
@@ -308,7 +308,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("Check if floors with name (.*) until (.*) appears on list$")
-    public void CheckFloorsAppears(String test, String test2) throws Throwable {
+    public void checkFloorsAppears(String test, String test2) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
         Thread.sleep(1000);
         BuildingPanel.SearchField.getElement().sendKeys("TEST");
@@ -317,7 +317,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("Check if user (.*) appears on list$")
-    public void CheckUserAppears(String test) throws Throwable {
+    public void checkUserAppears(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
         Thread.sleep(1000);
         BuildingPanel.SearchField.getElement().sendKeys(test);
@@ -325,7 +325,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("Check if user (.*) disappears from list$")
-    public void CheckUserDisappears(String test) throws Throwable {
+    public void checkUserDisappears(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
         Thread.sleep(1000);
         BuildingPanel.SearchField.getElement().clear();
@@ -336,7 +336,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("Check if floor (.*) appears on list$")
-    public void CheckFloorAppears(String test) throws Throwable {
+    public void checkFloorAppears(String test) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
         Thread.sleep(1000);
@@ -345,19 +345,19 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("Check if floor overlays appear on image$")
-    public void CheckFloorOverlaysAppears() throws Throwable {
+    public void checkFloorOverlaysAppears() throws Throwable {
         Thread.sleep(3000);
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.CheckFloorOverlay.getBy(), 5);
     }
 
     @Then("Check if building image appears on page$")
-    public void CheckImageAppears() throws Throwable {
+    public void checkImageAppears() throws Throwable {
         Thread.sleep(3000);
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.CheckBuildingImage.getBy(), 5);
     }
 
     @Then("Check if floors has the new name (.*)$")
-    public void CheckFloorNewNameAppears(String test) throws Throwable {
+    public void checkFloorNewNameAppears(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
         Thread.sleep(1000);
         BuildingPanel.SearchField.getElement().clear();
@@ -366,7 +366,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("Check if floor with name (.*) is deleted$")
-    public void CheckFloorDeleted(String test) throws Throwable {
+    public void checkFloorDeleted(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
         Thread.sleep(1000);
         BuildingPanel.SearchField.getElement().clear();
@@ -376,31 +376,31 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User click Add Image button$")
-    public void AreaTabAddImageButton() throws Throwable {
+    public void areaTabAddImageButton() throws Throwable {
         Thread.sleep(1000);
         BuildingPanel.AddImage.getElement().click();
     }
 
     @And("^User click Add Multiple Floors button$")
-    public void AreaTabAddMultipleButton() throws Throwable {
+    public void areaTabAddMultipleButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.AddMultipleFloor.getBy(), 15);
         BuildingPanel.AddMultipleFloor.getElement().click();
     }
 
     @And("^User click Add Single floor button$")
-    public void AreaTabAddSingleButton() throws Throwable {
+    public void areaTabAddSingleButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.AddFloor.getBy(), 15);
         BuildingPanel.AddFloor.getElement().click();
     }
 
     @And("^User click Add Floor Overlays button$")
-    public void AreaTabAddOverlayButton() throws Throwable {
+    public void areaTabAddOverlayButton() throws Throwable {
         Thread.sleep(1000);
         BuildingPanel.AddFloorOverlay.getElement().click();
     }
 
     @And("^User click Delete button$")
-    public void AreaTabDeleteButton() throws Throwable {
+    public void areaTabDeleteButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.RemoveUsers.getBy(), 15);
         BuildingPanel.RemoveUsers.getElement().click();
     }
@@ -434,7 +434,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User click test connector$")
-    public void TestConnector() throws Throwable {
+    public void testConnector() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.CheckConnection.getBy(), 5);
         WebElement inside = driver.findElement(BuildingPanel.CheckConnection.getBy());
         Thread.sleep(1000);
@@ -464,7 +464,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User fill mandatory fields for connector and click add$")
-    public void addnewConnector() throws Throwable {
+    public void addNewConnector() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
         BuildingPanel.Name.getElement().sendKeys("jace");
         Thread.sleep(1000);
@@ -560,7 +560,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as Name$")
-    public void FillName(String name) throws Throwable {
+    public void fillName(String name) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add Name
@@ -569,7 +569,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as Address 1")
-    public void FillAdd1(String address) throws Throwable {
+    public void fillAdd1(String address) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add Address 1
@@ -577,7 +577,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as Address 2")
-    public void FillAdd2(String address) throws Throwable {
+    public void fillAdd2(String address) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add Address 2
@@ -585,7 +585,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as ZIP code")
-    public void FillZip(String zip) throws Throwable {
+    public void fillZip(String zip) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add ZIP code
@@ -593,7 +593,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as City")
-    public void FillCity(String city) throws Throwable {
+    public void fillCity(String city) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add City
@@ -601,7 +601,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as State")
-    public void FillState(String state) throws Throwable {
+    public void fillState(String state) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add State
@@ -612,7 +612,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as Country")
-    public void FillCountry(String country) throws Throwable {
+    public void fillCountry(String country) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add Country
@@ -620,7 +620,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as Latitude")
-    public void FillLat(String latitude) throws Throwable {
+    public void fillLat(String latitude) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add latitude
@@ -628,14 +628,14 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as Longitude")
-    public void FillLong(String longitude) throws Throwable {
+    public void fillLong(String longitude) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
         //Add longitude
         BuildingPanel.Longitude.getElement().sendKeys(longitude);
     }
 
     @And("^User add (.*) as Year build")
-    public void FillYear(String year) throws Throwable {
+    public void fillYear(String year) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add Year build
@@ -643,7 +643,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as Area")
-    public void FillArea(String area) throws Throwable {
+    public void fillArea(String area) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add Area
@@ -651,7 +651,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User add (.*) as Image")
-    public void FillImage(String image) throws Throwable {
+    public void fillImage(String image) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 5);
 
         //Add building image
@@ -669,7 +669,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @When("^User clicks on Add new button$")
-    public void OpenClickAddBuildingButton() throws Throwable {
+    public void openClickAddBuildingButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.AddNewBuildingButton.getBy(), 5);
         BuildingPanel.AddNewBuildingButton.getElement().click();
         PageObjectUtils.CheckContainsText(driver, "Add Building");
@@ -683,22 +683,23 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @And("^User Go To admin panel$")
     public void clickAdminPanel() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.AdminPanel.getBy(), 10);
         BuildingPanel.AdminPanel.getElement().click();
     }
 
     @Then("^Check if user is at Admin panel$")
-    public void checkDevicesButton() throws Throwable {
+    public void checkIfAdminPanelPageAppears() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 5);
     }
 
     @Then("^Check if Chrysler House is Opened$")
-    public void UserAppears() throws Throwable {
+    public void checkIfBuildingDashboardAppears() throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "Chrysler House");
         Assert.assertEquals(PageObjectUtils.ContainsText(driver, "Chrysler House").getText(), "Chrysler House");
     }
 
     @Then("^Check if user is logged in$")
-    public void theAssertionThatTheTestHasPassedAndWorkedFine() throws Throwable {
+    public void checkIfUserIsLoggedIn() throws Throwable {
         try {
             Alert alert = driver.switchTo().alert();
             alert.dismiss();
@@ -739,7 +740,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User Fill (.*) as First Name$")
-    public void U_FirstName(String name) throws Throwable {
+    public void u_FirstName(String name) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.FirstName.getBy(), 15);
 
         //Add First Name
@@ -748,7 +749,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User Fill (.*) as Last Name")
-    public void U_LastName(String lastName) throws Throwable {
+    public void u_LastName(String lastName) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterLastName.getBy(), 15);
 
         //Add Last Name
@@ -756,7 +757,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User Fill (.*) as Email")
-    public void U_Email(String email) throws Throwable {
+    public void u_Email(String email) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterEmail.getBy(), 15);
 
         //Add Email
@@ -764,7 +765,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User Fill (.*) as Phone number")
-    public void U_Phone(String phone) throws Throwable {
+    public void u_Phone(String phone) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterPhone.getBy(), 15);
 
         //Add Phone
@@ -772,7 +773,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User Fill (.*) as Position")
-    public void U_Position(String position) throws Throwable {
+    public void u_Position(String position) throws Throwable {
         //Add Position
         BuildingPanel.EnterPosition.getElement().click();
         PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'" + position + "')]]", 5);
@@ -780,7 +781,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User Fill (.*) as Role")
-    public void U_Role(String role) throws Throwable {
+    public void u_Role(String role) throws Throwable {
         //Add Role
         WebElement element = BuildingPanel.EnterRole.getElement();
         element.click();
@@ -834,7 +835,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User click assign buildings")
-    public void ClickAssignBuilding() throws Throwable {
+    public void clickAssignBuilding() throws Throwable {
         //click assign
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.OpenBuildingTab.getBy(), 5);
         BuildingPanel.CheckEditButton.getElement().click();
@@ -845,7 +846,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User assign (.*) Building")
-    public void AssignBuilding(String building) throws Throwable {
+    public void assignBuilding(String building) throws Throwable {
         //assign building
         PageObjectUtils.CheckContainsText(driver, "Assign Buildings");
         driver.findElement(By.xpath("//*[@class='search-widget']//*[@placeholder='Search for Buildings']")).sendKeys(building);
@@ -865,7 +866,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User clicks delete assigned buildings")
-    public void ClickRemoveBuilding() throws Throwable {
+    public void clickRemoveBuilding() throws Throwable {
         //click remove
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.DeleteAssignBuildings.getBy(), 5);
         BuildingPanel.DeleteAssignBuildings.getElement().click();
@@ -902,6 +903,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     public void removedUser() throws Throwable {
         //remove user
         PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-button-wrapper' and contains(text(), 'Delete')]", 5);
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Delete')]")).click();
         PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-button-wrapper' and contains(text(), 'Yes')]", 5);
         Thread.sleep(1000);
@@ -998,7 +1000,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if template with (.*) name appears on list")
-    public void checkTemplatedIsAdded(String name) throws Throwable {
+    public void checkTemplateIsAdded(String name) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, name);
     }
 
@@ -1048,7 +1050,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if Point with name (.*) is added on Section with name (.*)")
-    public void checkpointisadded(String point, String section) throws Throwable {
+    public void checkPointIsAdded(String point, String section) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "NewPoint");
     }
 
@@ -1065,12 +1067,12 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if Point name is changed from (.*) to (.*)")
-    public void checkpointIsEdited(String point, String section) throws Throwable {
+    public void checkPointIsEdited(String point, String section) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, section);
     }
 
     @And("^Open Point with name (.*) and click Delete")
-    public void DeletePointName(String template) throws Throwable {
+    public void deletePointName(String template) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, template);
         PageObjectUtils.ContainsText(driver, template).click();
         Thread.sleep(1000);
@@ -1081,7 +1083,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if point with name (.*) is deleted from list")
-    public void checkpointIsDeleted(String point) throws Throwable {
+    public void checkPointIsDeleted(String point) throws Throwable {
         Thread.sleep(1000);
         List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + point + "')]]"));
         Assert.assertTrue("point is still on list", users.isEmpty());
@@ -1112,7 +1114,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if points (.*) and (.*) are linked")
-    public void checkpointLinked(String point1, String point2) throws Throwable {
+    public void checkPointIsLinked(String point1, String point2) throws Throwable {
         Thread.sleep(2000);
         PageObjectUtils.CheckContainsText(driver, point1);
         PageObjectUtils.CheckContainsText(driver, point2);

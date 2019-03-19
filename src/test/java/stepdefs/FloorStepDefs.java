@@ -1,4 +1,4 @@
-package stepdefs.websitesteps;
+package stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -6,14 +6,10 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import pageobjects.pages.DevicePanel;
 import pageobjects.pages.FloorPanel;
 import pageobjects.pages.PageObjectUtils;
-import pageobjects.pages.VirtualDevicePanel;
-import stepdefs.CommonStepObjects;
 
 import java.util.List;
-import java.util.Random;
 
 public class FloorStepDefs extends CommonStepObjects {
 
@@ -28,7 +24,7 @@ public class FloorStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if floor plan appears$")
-    public void CheckFloorPlan() throws Throwable {
+    public void checkFloorPlan() throws Throwable {
         Thread.sleep(1000);
     }
 
@@ -124,7 +120,7 @@ public class FloorStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if Floor is reseted to default$")
-    public void checkFloorIsResseted() throws Throwable {
+    public void checkFloorIsReset() throws Throwable {
         Thread.sleep(2000);
     }
 

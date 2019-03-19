@@ -1,4 +1,4 @@
-package stepdefs.websitesteps;
+package stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -8,12 +8,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import pageobjects.pages.DashboardPanel;
 import pageobjects.pages.DevicePanel;
 import pageobjects.pages.PageObjectUtils;
-import stepdefs.CommonStepObjects;
 
-import java.sql.Driver;
 import java.util.List;
 
 public class DeviceStepDefs extends CommonStepObjects {
@@ -25,7 +22,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @When("^User is Searching for (.*)$")
-    public void Searchfield(String test) throws Throwable {
+    public void searchField(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.SearchField.getBy(), 5);
         Thread.sleep(1000);
         DevicePanel.SearchField.getElement().sendKeys(test);
@@ -33,7 +30,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @When("^User is Search connector (.*)$")
-    public void SearchConnectorfield(String test) throws Throwable {
+    public void searchConnectors(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.SearchForConnectors.getBy(), 5);
         Thread.sleep(1000);
         DevicePanel.SearchForConnectors.getElement().sendKeys(test);
@@ -48,13 +45,13 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if all Devices with (.*) type appears$")
-    public void CheckType(String Type) throws Throwable {
+    public void checkType(String Type) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, Type);
     }
 
     @Then("^Check if (.*) Device appears on list$")
-    public void CheckDeviceisAppeared(String device) throws Throwable {
+    public void checkDeviceAppearsOnList(String device) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + device + "')]]"), 5);
     }
@@ -67,13 +64,13 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if all Devices with (.*) area appears$")
-    public void CheckArea(String area) throws Throwable {
+    public void checkArea(String area) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, area);
     }
 
     @When("^User clicks on Connectors button$")
-    public void filterConnector() throws Throwable {
+    public void connectorsButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ConnectorsButton.getBy(), 5);
         DevicePanel.ConnectorsButton.getElement().click();
     }
@@ -86,7 +83,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if all Devices with (.*) connector appears$")
-    public void CheckConnector(String connector) throws Throwable {
+    public void checkConnector(String connector) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, connector);
     }
@@ -98,13 +95,13 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @Then("^Check if (.*) Device details page appears$")
-    public void CheckDeviceDetails(String device) throws Throwable {
+    public void checkDeviceDetailsPage(String device) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, device);
     }
 
     @Then("^Check if (.*) popup appears$")
-    public void CheckPointPopup(String device) throws Throwable {
+    public void checkPointPopup(String device) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + device + "')]]"), 5);
     }
@@ -116,7 +113,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @When("^User click on threedots button$")
-    public void openThreedot() throws Throwable {
+    public void openThreeDot() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ThreedotMenu.getBy(), 5);
         DevicePanel.ThreedotMenu.getElement().click();
     }
@@ -137,7 +134,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @And("^Click Apply Point template button$")
-    public void batchPointsUpdate() throws Throwable {
+    public void applyPointTemplate() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.PointsBatchUpdate.getBy(), 5);
         Thread.sleep(1000);
         DevicePanel.PointsBatchUpdate.getElement().click();
@@ -150,7 +147,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @And("^Select (.*) as Tag$")
-    public void openAreasTab(String type) throws Throwable {
+    public void selectTag(String type) throws Throwable {
         Thread.sleep(1000);
 
         //Add State
@@ -163,7 +160,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @And("^Select (.*) as Tags$")
-    public void openTagTab(String type) throws Throwable {
+    public void selectMultipleTags(String type) throws Throwable {
         Thread.sleep(1000);
 
         //Add State
@@ -176,26 +173,26 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @And("^Open Device Details Pop-up$")
-    public void ConfirmClick() throws Throwable {
+    public void openDeviceDetailsPopUp() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceDetailsPopUp.getBy(), 5);
         DevicePanel.DeviceDetailsPopUp.getElement().click();
     }
 
     @Then("^Check if Device has tag (.*)$")
-    public void CheckTypeIsChanged(String type) throws Throwable {
+    public void checkTagIsAddedToDevice(String type) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, type);
     }
 
     @Then("^Check if Device are Discover successfully$")
-    public void CheckDiscover() throws Throwable {
+    public void checkDiscover() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.CheckDiscover.getBy(), 10);
     }
 
     @And("^User click open (.*) Device Page$")
-    public void openDevicepage(String device) throws Throwable {
+    public void openDevicePage(String device) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, device);
         PageObjectUtils.ContainsText(driver, device).click();
 
@@ -205,14 +202,14 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @And("^User click open (.*) Device from Point Page$")
-    public void openDevices(String device) throws Throwable {
+    public void openDeviceFromPointPage(String device) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, device);
         PageObjectUtils.ContainsText(driver, device).click();
         Thread.sleep(1000);
     }
 
     @And("^User click open (.*) point pop-up$")
-    public void openPoint(String device) throws Throwable {
+    public void openPointPopUp(String device) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + device + "')]]"), 5);
         Thread.sleep(1000);
         driver.findElement(By.xpath("//label[text()[contains(.,'" + device + "')]]")).click();
@@ -220,35 +217,35 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @And("^User Click edit Device button$")
-    public void openEditPage() throws Throwable {
+    public void openEditDevicePage() throws Throwable {
         Thread.sleep(2000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.EditDeviceButton.getBy(), 5);
         DevicePanel.EditDeviceButton.getElement().click();
     }
 
     @And("^User click edit button$")
-    public void openEditButton() throws Throwable {
+    public void clickEditButton() throws Throwable {
         Thread.sleep(2000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.EditButton.getBy(), 5);
         DevicePanel.EditButton.getElement().click();
     }
 
     @And("^User Click edit groups button$")
-    public void openEditGroupPage() throws Throwable {
+    public void clickEditGroupButton() throws Throwable {
         Thread.sleep(2000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.EditGroupButton.getBy(), 5);
         DevicePanel.EditGroupButton.getElement().click();
     }
 
     @And("^User Click Add new Points group button$")
-    public void openAddPointPage() throws Throwable {
+    public void addGroupPoints() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.AddPointGroupButton.getBy(), 5);
         Thread.sleep(1000);
         DevicePanel.AddPointGroupButton.getElement().click();
     }
 
     @And("^User Click delete group$")
-    public void deleteGroup() throws Throwable {
+    public void deleteGroupPoints() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ThreedotMenu.getBy(), 5);
         Thread.sleep(2000);
         DevicePanel.ThreedotMenu.getElement().click();
@@ -272,35 +269,35 @@ public class DeviceStepDefs extends CommonStepObjects {
     }
 
     @And("^Remove Point from Template$")
-    public void removePointToTemplate() throws Throwable {
+    public void removePointFromTemplate() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.PointToDrag.getBy(), 5);
         Actions action = new Actions(driver);
         action.dragAndDrop(DevicePanel.PointToDrag.getElement(), DevicePanel.RemovePointFromTemplate.getElement()).build().perform();
     }
 
     @Then("^Check if Point appears on Template$")
-    public void CheckpointIsInTemplate() throws Throwable {
+    public void checkPointAppearsOnTemplate() throws Throwable {
         Thread.sleep(2000);
         List<WebElement> groups = driver.findElements(By.xpath("//*[@class='template-item ng-star-inserted']//*[text()[contains(.,' DEV277127_systemStatus')]]"));
         Assert.assertFalse(groups.isEmpty());
     }
 
     @Then("^Check if Point disappears from Template$")
-    public void CheckpointIsDeletedFromTemplate() throws Throwable {
+    public void checkPointDisappearsFromTemplate() throws Throwable {
         Thread.sleep(1000);
         List<WebElement> groups = driver.findElements(By.xpath("//*[@class='template-item ng-star-inserted']//*[text()[contains(.,' DEV277127_systemStatus')]]"));
         Assert.assertTrue(groups.isEmpty());
     }
 
     @Then("^Check if Point appears on new (.*)$")
-    public void CheckpointIsChanged(String group) throws Throwable {
+    public void checkPointAppearsOnNewGroup(String group) throws Throwable {
         Thread.sleep(1000);
         List<WebElement> groups = driver.findElements(By.xpath("//*[@ng-reflect-model='Group 1']"));
         Assert.assertFalse(groups.isEmpty());
     }
 
     @Then("^Checks if (.*) is deleted$")
-    public void CheckGroupisDeleted(String group) throws Throwable {
+    public void checkGroupIsDeleted(String group) throws Throwable {
         Thread.sleep(1000);
         List<WebElement> groups = driver.findElements(By.xpath("//*[@ng-reflect-model='Group 1']"));
         Assert.assertTrue(groups.isEmpty());
@@ -312,6 +309,5 @@ public class DeviceStepDefs extends CommonStepObjects {
         PageObjectUtils.CheckContainsText(driver, "Confirm");
         PageObjectUtils.ContainsText(driver, "Confirm").click();
     }
-
 
 }

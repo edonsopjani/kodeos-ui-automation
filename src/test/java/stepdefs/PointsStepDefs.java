@@ -1,4 +1,4 @@
-package stepdefs.websitesteps;
+package stepdefs;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -7,11 +7,8 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import pageobjects.pages.DevicePanel;
 import pageobjects.pages.PageObjectUtils;
 import pageobjects.pages.PointsPanel;
-import stepdefs.CommonStepObjects;
 
 import java.util.List;
 

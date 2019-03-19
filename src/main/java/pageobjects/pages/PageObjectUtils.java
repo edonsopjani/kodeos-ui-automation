@@ -1,9 +1,11 @@
 package pageobjects.pages;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import selenium.WebDriverFactory;
 
 import java.io.File;
 
@@ -13,13 +15,6 @@ public class PageObjectUtils {
         WebDriverWait wait = new WebDriverWait(drv, 20);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("loading")));
     }
-
-    public static void scrollToTop() throws InterruptedException {
-        WebDriver driver = WebDriverFactory.getInstance().getWebDriver();
-        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0)");
-    }
-
-
 
     public static void IsElementVisible(WebDriver driver, LocatorType locatorType, String value, int seconds) {
 
@@ -45,7 +40,7 @@ public class PageObjectUtils {
     }
 
     public static void CheckContainsText(WebDriver driver, String value) {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 5);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 10);
     }
 
     public static void IsElementClickable(WebDriver driver, LocatorType locatorType, String value, int seconds) {
@@ -124,7 +119,6 @@ public class PageObjectUtils {
         }
         return null;
     }
-
 
     public static String filePathForUpload(String fileName) {
         return new File("src/main/resources/fileContainer/" + fileName).getAbsolutePath();
