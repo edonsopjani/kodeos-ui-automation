@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>KodeLabs Automation Tests</td>
+                          <td>1</td>
+                        <td>18 Mar 2019, 16:35</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">DashboardStepDefs.AreaTabSaveButton(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="12689267447">12s 689ms</td>
+                <td class="duration" data-value="2114877907">2s 114ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.ClickDeviceNavWidget(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="86873850">086ms</td>
+                <td class="duration" data-value="86873850">086ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.ClickDeviceSumWidget(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1091959525">1s 091ms</td>
+                <td class="duration" data-value="1091959525">1s 091ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.EditDashboard()</td>
+                <td>1</td>
+                <td class="duration" data-value="1022804838">1s 022ms</td>
+                <td class="duration" data-value="1022804838">1s 022ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.SaveClick()</td>
+                <td>2</td>
+                <td class="duration" data-value="2140430181">2s 140ms</td>
+                <td class="duration" data-value="1070215090">1s 070ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.checkPoinsUpdated(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2028041701">2s 028ms</td>
+                <td class="duration" data-value="2028041701">2s 028ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.checkWidgetAdded(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="2046088283">2s 046ms</td>
+                <td class="duration" data-value="1023044141">1s 023ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.checkWidgetRemoved(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="2025915790">2s 025ms</td>
+                <td class="duration" data-value="1012957895">1s 012ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.checkWidgetUpdated(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1022137013">1s 022ms</td>
+                <td class="duration" data-value="1022137013">1s 022ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.clickDashboard()</td>
+                <td>4</td>
+                <td class="duration" data-value="360369122">360ms</td>
+                <td class="duration" data-value="90092280">090ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.clickFloors()</td>
+                <td>1</td>
+                <td class="duration" data-value="2127591243">2s 127ms</td>
+                <td class="duration" data-value="2127591243">2s 127ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.clickPoint()</td>
+                <td>1</td>
+                <td class="duration" data-value="1144701944">1s 144ms</td>
+                <td class="duration" data-value="1144701944">1s 144ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.clickSystems()</td>
+                <td>19</td>
+                <td class="duration" data-value="21702865569">21s 702ms</td>
+                <td class="duration" data-value="1142256082">1s 142ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.openAreasTab(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="686165770">686ms</td>
+                <td class="duration" data-value="686165770">686ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.openAreassTab(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="214997033">214ms</td>
+                <td class="duration" data-value="107498516">107ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.openEditTab(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="4438461072">4s 438ms</td>
+                <td class="duration" data-value="2219230536">2s 219ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.openFloors()</td>
+                <td>1</td>
+                <td class="duration" data-value="1024746169">1s 024ms</td>
+                <td class="duration" data-value="1024746169">1s 024ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.openMenTab(String,String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="6124422784">6s 124ms</td>
+                <td class="duration" data-value="6124422784">6s 124ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.openMensuTab(String)</td>
+                <td>20</td>
+                <td class="duration" data-value="20406552943">20s 406ms</td>
+                <td class="duration" data-value="1020327647">1s 020ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.openMensuTsab(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="3053217782">3s 053ms</td>
+                <td class="duration" data-value="1017739260">1s 017ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.openMenuTab(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="6143310641">6s 143ms</td>
+                <td class="duration" data-value="1023885106">1s 023ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.openRemoveTab(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="6234469239">6s 234ms</td>
+                <td class="duration" data-value="3117234619">3s 117ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DashboardStepDefs.openaddseTab(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1739632594">1s 739ms</td>
+                <td class="duration" data-value="1739632594">1s 739ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckArea(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1023250055">1s 023ms</td>
+                <td class="duration" data-value="1023250055">1s 023ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckDeviceDetails(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1020270349">1s 020ms</td>
+                <td class="duration" data-value="1020270349">1s 020ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckDeviceisAppeared(String)</td>
+                <td>4</td>
+                <td class="duration" data-value="4091550482">4s 091ms</td>
+                <td class="duration" data-value="1022887620">1s 022ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckDiscover()</td>
+                <td>1</td>
+                <td class="duration" data-value="5621382555">5s 621ms</td>
+                <td class="duration" data-value="5621382555">5s 621ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckGroupisDeleted(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1012340852">1s 012ms</td>
+                <td class="duration" data-value="1012340852">1s 012ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckPointPopup(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1013230359">1s 013ms</td>
+                <td class="duration" data-value="1013230359">1s 013ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckType(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1022438925">1s 022ms</td>
+                <td class="duration" data-value="1022438925">1s 022ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckTypeIsChanged(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="3063512955">3s 063ms</td>
+                <td class="duration" data-value="1021170985">1s 021ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckpointIsChanged(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1010895753">1s 010ms</td>
+                <td class="duration" data-value="1010895753">1s 010ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckpointIsDeletedFromTemplate()</td>
+                <td>1</td>
+                <td class="duration" data-value="1008265727">1s 008ms</td>
+                <td class="duration" data-value="1008265727">1s 008ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.CheckpointIsInTemplate()</td>
+                <td>1</td>
+                <td class="duration" data-value="2011590477">2s 011ms</td>
+                <td class="duration" data-value="2011590477">2s 011ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.ConfirmClick()</td>
+                <td>2</td>
+                <td class="duration" data-value="2183580034">2s 183ms</td>
+                <td class="duration" data-value="1091790017">1s 091ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.Searchfield(String)</td>
+                <td>12</td>
+                <td class="duration" data-value="25277768888">25s 277ms</td>
+                <td class="duration" data-value="2106480740">2s 106ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.batchDeviceUpdate()</td>
+                <td>3</td>
+                <td class="duration" data-value="264857601">264ms</td>
+                <td class="duration" data-value="88285867">088ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.batchPointsUpdate()</td>
+                <td>4</td>
+                <td class="duration" data-value="4414738901">4s 414ms</td>
+                <td class="duration" data-value="1103684725">1s 103ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.clickCheckbox()</td>
+                <td>7</td>
+                <td class="duration" data-value="7534252241">7s 534ms</td>
+                <td class="duration" data-value="1076321748">1s 076ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.clickDevice(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="97811806">097ms</td>
+                <td class="duration" data-value="97811806">097ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.confirmButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="1100041136">1s 100ms</td>
+                <td class="duration" data-value="1100041136">1s 100ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.deleteGroup()</td>
+                <td>1</td>
+                <td class="duration" data-value="3708600985">3s 708ms</td>
+                <td class="duration" data-value="3708600985">3s 708ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.discoverDevices()</td>
+                <td>1</td>
+                <td class="duration" data-value="693760890">693ms</td>
+                <td class="duration" data-value="693760890">693ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.dragPointToGroup()</td>
+                <td>1</td>
+                <td class="duration" data-value="174636278">174ms</td>
+                <td class="duration" data-value="174636278">174ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.dragPointToTemplate()</td>
+                <td>1</td>
+                <td class="duration" data-value="713302196">713ms</td>
+                <td class="duration" data-value="713302196">713ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.filterArea(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="651856716">651ms</td>
+                <td class="duration" data-value="651856716">651ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.goToFilters()</td>
+                <td>2</td>
+                <td class="duration" data-value="206079713">206ms</td>
+                <td class="duration" data-value="103039856">103ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.openAddPointPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="1580834902">1s 580ms</td>
+                <td class="duration" data-value="1580834902">1s 580ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.openAreasTab(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3371872874">3s 371ms</td>
+                <td class="duration" data-value="3371872874">3s 371ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.openDeviceDetails()</td>
+                <td>1</td>
+                <td class="duration" data-value="633427988">633ms</td>
+                <td class="duration" data-value="633427988">633ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.openDevicepage(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="10413601744">10s 413ms</td>
+                <td class="duration" data-value="1735600290">1s 735ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.openEditButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="2156573927">2s 156ms</td>
+                <td class="duration" data-value="2156573927">2s 156ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.openEditGroupPage()</td>
+                <td>2</td>
+                <td class="duration" data-value="4151976600">4s 151ms</td>
+                <td class="duration" data-value="2075988300">2s 075ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.openEditPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="2119053284">2s 119ms</td>
+                <td class="duration" data-value="2119053284">2s 119ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.openPoint(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2091017148">2s 091ms</td>
+                <td class="duration" data-value="2091017148">2s 091ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.openTagTab(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="6858666864">6s 858ms</td>
+                <td class="duration" data-value="3429333432">3s 429ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.openThreedot()</td>
+                <td>8</td>
+                <td class="duration" data-value="798423468">798ms</td>
+                <td class="duration" data-value="99802933">099ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.removePointToTemplate()</td>
+                <td>1</td>
+                <td class="duration" data-value="721691749">721ms</td>
+                <td class="duration" data-value="721691749">721ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">DeviceStepDefs.selectFilter(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="645036552">645ms</td>
+                <td class="duration" data-value="645036552">645ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.CheckFloorPlan()</td>
+                <td>1</td>
+                <td class="duration" data-value="999935072">999ms</td>
+                <td class="duration" data-value="999935072">999ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.checkDeviceAppearsAtFloor()</td>
+                <td>1</td>
+                <td class="duration" data-value="2000566260">2s</td>
+                <td class="duration" data-value="2000566260">2s</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.checkFloorIsResseted()</td>
+                <td>1</td>
+                <td class="duration" data-value="2000554202">2s</td>
+                <td class="duration" data-value="2000554202">2s</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.checkNamesAreHidden()</td>
+                <td>1</td>
+                <td class="duration" data-value="2000161854">2s</td>
+                <td class="duration" data-value="2000161854">2s</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.dragDeviceToFloor()</td>
+                <td>1</td>
+                <td class="duration" data-value="1693514629">1s 693ms</td>
+                <td class="duration" data-value="1693514629">1s 693ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.dragPointToDevice()</td>
+                <td>1</td>
+                <td class="duration" data-value="1155014741">1s 155ms</td>
+                <td class="duration" data-value="1155014741">1s 155ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.goToEditPage()</td>
+                <td>3</td>
+                <td class="duration" data-value="358632313">358ms</td>
+                <td class="duration" data-value="119544104">119ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.goToListView()</td>
+                <td>1</td>
+                <td class="duration" data-value="1098578414">1s 098ms</td>
+                <td class="duration" data-value="1098578414">1s 098ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.hideNames()</td>
+                <td>1</td>
+                <td class="duration" data-value="62710173">062ms</td>
+                <td class="duration" data-value="62710173">062ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.resetFloor()</td>
+                <td>1</td>
+                <td class="duration" data-value="3218242015">3s 218ms</td>
+                <td class="duration" data-value="3218242015">3s 218ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.saveChanges()</td>
+                <td>3</td>
+                <td class="duration" data-value="12455253628">12s 455ms</td>
+                <td class="duration" data-value="4151751209">4s 151ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FloorStepDefs.uploadFloorPlan()</td>
+                <td>1</td>
+                <td class="duration" data-value="4062090117">4s 062ms</td>
+                <td class="duration" data-value="4062090117">4s 062ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.CheckPointUpdated()</td>
+                <td>1</td>
+                <td class="duration" data-value="1023148953">1s 023ms</td>
+                <td class="duration" data-value="1023148953">1s 023ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.addTag(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3547594832">3s 547ms</td>
+                <td class="duration" data-value="3547594832">3s 547ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.changePointName(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="4929681257">4s 929ms</td>
+                <td class="duration" data-value="2464840628">2s 464ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.checkPoint(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="4025463617">4s 025ms</td>
+                <td class="duration" data-value="2012731808">2s 012ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.checkPointsConnected()</td>
+                <td>1</td>
+                <td class="duration" data-value="1021440898">1s 021ms</td>
+                <td class="duration" data-value="1021440898">1s 021ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.connectPointsButton()</td>
+                <td>2</td>
+                <td class="duration" data-value="658580417">658ms</td>
+                <td class="duration" data-value="329290208">329ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.connectTwoPoints(String,String)</td>
+                <td>2</td>
+                <td class="duration" data-value="6422840919">6s 422ms</td>
+                <td class="duration" data-value="3211420459">3s 211ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.editPointButton()</td>
+                <td>3</td>
+                <td class="duration" data-value="6423130309">6s 423ms</td>
+                <td class="duration" data-value="2141043436">2s 141ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.pointBatchUpdate()</td>
+                <td>1</td>
+                <td class="duration" data-value="90273265">090ms</td>
+                <td class="duration" data-value="90273265">090ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.removeTag(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3700690503">3s 700ms</td>
+                <td class="duration" data-value="3700690503">3s 700ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">PointsStepDefs.selectPoint(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="4215704743">4s 215ms</td>
+                <td class="duration" data-value="2107852371">2s 107ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.AreaTabSaveButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="1090492164">1s 090ms</td>
+                <td class="duration" data-value="1090492164">1s 090ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.AssignUsersButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="2017037890">2s 017ms</td>
+                <td class="duration" data-value="2017037890">2s 017ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.DeleteButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="1091682192">1s 091ms</td>
+                <td class="duration" data-value="1091682192">1s 091ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.EnterSVG(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1021085188">1s 021ms</td>
+                <td class="duration" data-value="1021085188">1s 021ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.SaveButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="2021449709">2s 021ms</td>
+                <td class="duration" data-value="2021449709">2s 021ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.Searchfields(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="3278305004">3s 278ms</td>
+                <td class="duration" data-value="1092768334">1s 092ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.addfloorfield(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1018921713">1s 018ms</td>
+                <td class="duration" data-value="1018921713">1s 018ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.openAreaTab()</td>
+                <td>1</td>
+                <td class="duration" data-value="1094442536">1s 094ms</td>
+                <td class="duration" data-value="1094442536">1s 094ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.openBuilding()</td>
+                <td>1</td>
+                <td class="duration" data-value="1084087999">1s 084ms</td>
+                <td class="duration" data-value="1084087999">1s 084ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.openMenuTab()</td>
+                <td>1</td>
+                <td class="duration" data-value="2020909884">2s 020ms</td>
+                <td class="duration" data-value="2020909884">2s 020ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.seeresults(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1063954926">1s 063ms</td>
+                <td class="duration" data-value="1063954926">1s 063ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchStepDefs.theNextStepThatGetsRepeatedBeforeEveryTest()</td>
+                <td>7</td>
+                <td class="duration" data-value="589148397">589ms</td>
+                <td class="duration" data-value="84164056">084ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SitesStepDefs.AreaTabSaveButton(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1277607498">1s 277ms</td>
+                <td class="duration" data-value="1277607498">1s 277ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SitesStepDefs.Searchfields(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="3515316617">3s 515ms</td>
+                <td class="duration" data-value="1171772205">1s 171ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SitesStepDefs.openAreaTab(String)</td>
+                <td>37</td>
+                <td class="duration" data-value="79617869982">1m 19s 617ms</td>
+                <td class="duration" data-value="2151834323">2s 151ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SitesStepDefs.openBuilding(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1023482866">1s 023ms</td>
+                <td class="duration" data-value="1023482866">1s 023ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SitesStepDefs.openMenuTab(String)</td>
+                <td>38</td>
+                <td class="duration" data-value="66496776120">1m 6s 496ms</td>
+                <td class="duration" data-value="1749915161">1s 749ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.addDeviceWithPoint()</td>
+                <td>1</td>
+                <td class="duration" data-value="2115359375">2s 115ms</td>
+                <td class="duration" data-value="2115359375">2s 115ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.addSystem()</td>
+                <td>1</td>
+                <td class="duration" data-value="2115100129">2s 115ms</td>
+                <td class="duration" data-value="2115100129">2s 115ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.addTag(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3471233199">3s 471ms</td>
+                <td class="duration" data-value="3471233199">3s 471ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.checkChanges()</td>
+                <td>2</td>
+                <td class="duration" data-value="2060641771">2s 060ms</td>
+                <td class="duration" data-value="1030320885">1s 030ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.checkSys()</td>
+                <td>5</td>
+                <td class="duration" data-value="5099354297">5s 099ms</td>
+                <td class="duration" data-value="1019870859">1s 019ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.checkSystem(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1022902229">1s 022ms</td>
+                <td class="duration" data-value="1022902229">1s 022ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.clickSystem(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="6545346025">6s 545ms</td>
+                <td class="duration" data-value="2181782008">2s 181ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.clickSystems()</td>
+                <td>4</td>
+                <td class="duration" data-value="8563670406">8s 563ms</td>
+                <td class="duration" data-value="2140917601">2s 140ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.deleteButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="2157216709">2s 157ms</td>
+                <td class="duration" data-value="2157216709">2s 157ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.dragDevice()</td>
+                <td>1</td>
+                <td class="duration" data-value="137421722">137ms</td>
+                <td class="duration" data-value="137421722">137ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.dragPoint()</td>
+                <td>1</td>
+                <td class="duration" data-value="2121361455">2s 121ms</td>
+                <td class="duration" data-value="2121361455">2s 121ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.editButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="2093787232">2s 093ms</td>
+                <td class="duration" data-value="2093787232">2s 093ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.editContent()</td>
+                <td>1</td>
+                <td class="duration" data-value="2077274327">2s 077ms</td>
+                <td class="duration" data-value="2077274327">2s 077ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.fillMandatory()</td>
+                <td>1</td>
+                <td class="duration" data-value="4930998821">4s 930ms</td>
+                <td class="duration" data-value="4930998821">4s 930ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SystemsStepDefs.saveChanges()</td>
+                <td>1</td>
+                <td class="duration" data-value="1068354223">1s 068ms</td>
+                <td class="duration" data-value="1068354223">1s 068ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">TagsStepDefs.CheckTag(String)</td>
+                <td>5</td>
+                <td class="duration" data-value="1128300806">1s 128ms</td>
+                <td class="duration" data-value="225660161">225ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">TagsStepDefs.addTag(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3502878837">3s 502ms</td>
+                <td class="duration" data-value="3502878837">3s 502ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">TagsStepDefs.changeTag(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1188894346">1s 188ms</td>
+                <td class="duration" data-value="1188894346">1s 188ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">TagsStepDefs.checkTagDeleted(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3013494706">3s 013ms</td>
+                <td class="duration" data-value="3013494706">3s 013ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">TagsStepDefs.deleteTag(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2355296897">2s 355ms</td>
+                <td class="duration" data-value="2355296897">2s 355ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">TagsStepDefs.editTag(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2168988982">2s 168ms</td>
+                <td class="duration" data-value="2168988982">2s 168ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">TagsStepDefs.newTag()</td>
+                <td>1</td>
+                <td class="duration" data-value="820613814">820ms</td>
+                <td class="duration" data-value="820613814">820ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">TagsStepDefs.searchTag(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="15414838147">15s 414ms</td>
+                <td class="duration" data-value="5138279382">5s 138ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.CheckCategory(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="1075220302">1s 075ms</td>
+                <td class="duration" data-value="537610151">537ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.addCategory(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="4571297525">4s 571ms</td>
+                <td class="duration" data-value="2285648762">2s 285ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.addCategoryButton()</td>
+                <td>2</td>
+                <td class="duration" data-value="377196460">377ms</td>
+                <td class="duration" data-value="188598230">188ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.addNewUnit()</td>
+                <td>1</td>
+                <td class="duration" data-value="1103317653">1s 103ms</td>
+                <td class="duration" data-value="1103317653">1s 103ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.categoryOptions()</td>
+                <td>1</td>
+                <td class="duration" data-value="1096840213">1s 096ms</td>
+                <td class="duration" data-value="1096840213">1s 096ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.changeSymbol(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="4191235444">4s 191ms</td>
+                <td class="duration" data-value="4191235444">4s 191ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.checkSymbol(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2022937476">2s 022ms</td>
+                <td class="duration" data-value="2022937476">2s 022ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.checkUnitIsDeleted(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2012662707">2s 012ms</td>
+                <td class="duration" data-value="2012662707">2s 012ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.checkUnitsAdded(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="20893652">020ms</td>
+                <td class="duration" data-value="20893652">020ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.clickUnit(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="2258100047">2s 258ms</td>
+                <td class="duration" data-value="1129050023">1s 129ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.deleteButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="1137277954">1s 137ms</td>
+                <td class="duration" data-value="1137277954">1s 137ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.fillMandatory()</td>
+                <td>1</td>
+                <td class="duration" data-value="5736836076">5s 736ms</td>
+                <td class="duration" data-value="5736836076">5s 736ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">UnitsStepDefs.yesButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="1089348977">1s 089ms</td>
+                <td class="duration" data-value="1089348977">1s 089ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">VirtualDeviceStepDefs.CheckArea()</td>
+                <td>1</td>
+                <td class="duration" data-value="2120462673">2s 120ms</td>
+                <td class="duration" data-value="2120462673">2s 120ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">VirtualDeviceStepDefs.CheckAreas()</td>
+                <td>1</td>
+                <td class="duration" data-value="2107523561">2s 107ms</td>
+                <td class="duration" data-value="2107523561">2s 107ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">VirtualDeviceStepDefs.CheckDeviceisAppeared(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="20281479">020ms</td>
+                <td class="duration" data-value="20281479">020ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">VirtualDeviceStepDefs.CheckType()</td>
+                <td>3</td>
+                <td class="duration" data-value="3056702066">3s 056ms</td>
+                <td class="duration" data-value="1018900688">1s 018ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">VirtualDeviceStepDefs.SearchConnectorfield(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2418503302">2s 418ms</td>
+                <td class="duration" data-value="2418503302">2s 418ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">VirtualDeviceStepDefs.Searchfield(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="196915203">196ms</td>
+                <td class="duration" data-value="65638401">065ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">VirtualDeviceStepDefs.clickCheckbox()</td>
+                <td>2</td>
+                <td class="duration" data-value="2001694606">2s 001ms</td>
+                <td class="duration" data-value="1000847303">1s</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">VirtualDeviceStepDefs.filterArea(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="1176247407">1s 176ms</td>
+                <td class="duration" data-value="588123703">588ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">VirtualDeviceStepDefs.filterConnector()</td>
+                <td>3</td>
+                <td class="duration" data-value="6174078830">6s 174ms</td>
+                <td class="duration" data-value="2058026276">2s 058ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">VirtualDeviceStepDefs.goToFilters()</td>
+                <td>3</td>
+                <td class="duration" data-value="236073411">236ms</td>
+                <td class="duration" data-value="78691137">078ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.AreaTabAddMultipleButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="711768981">711ms</td>
+                <td class="duration" data-value="711768981">711ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.AreaTabAddSingleButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="658040127">658ms</td>
+                <td class="duration" data-value="658040127">658ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.AreaTabDeleteButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="679928561">679ms</td>
+                <td class="duration" data-value="679928561">679ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.AreaTabSaveButton()</td>
+                <td>5</td>
+                <td class="duration" data-value="522653881">522ms</td>
+                <td class="duration" data-value="104530776">104ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.AssignBuilding(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3228888725">3s 228ms</td>
+                <td class="duration" data-value="3228888725">3s 228ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.AssignUsersButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="1114311725">1s 114ms</td>
+                <td class="duration" data-value="1114311725">1s 114ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.CheckFloorAppears(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2095643230">2s 095ms</td>
+                <td class="duration" data-value="2095643230">2s 095ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.CheckFloorDeleted(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1153502859">1s 153ms</td>
+                <td class="duration" data-value="1153502859">1s 153ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.CheckFloorNewNameAppears(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1158960474">1s 158ms</td>
+                <td class="duration" data-value="1158960474">1s 158ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.CheckFloorsAppears(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1168127303">1s 168ms</td>
+                <td class="duration" data-value="1168127303">1s 168ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.CheckUserAppears(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1106815851">1s 106ms</td>
+                <td class="duration" data-value="1106815851">1s 106ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.CheckUserDisappears(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2092282770">2s 092ms</td>
+                <td class="duration" data-value="2092282770">2s 092ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.ClickAssignBuilding()</td>
+                <td>1</td>
+                <td class="duration" data-value="2188363796">2s 188ms</td>
+                <td class="duration" data-value="2188363796">2s 188ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.ClickRemoveBuilding()</td>
+                <td>1</td>
+                <td class="duration" data-value="2716592626">2s 716ms</td>
+                <td class="duration" data-value="2716592626">2s 716ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.DeleteButton()</td>
+                <td>2</td>
+                <td class="duration" data-value="2129806660">2s 129ms</td>
+                <td class="duration" data-value="1064903330">1s 064ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.DeletePointName(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3240303898">3s 240ms</td>
+                <td class="duration" data-value="3240303898">3s 240ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillAdd1(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="273644605">273ms</td>
+                <td class="duration" data-value="273644605">273ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillAdd2(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="187000783">187ms</td>
+                <td class="duration" data-value="187000783">187ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillArea(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="106568664">106ms</td>
+                <td class="duration" data-value="106568664">106ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillCity(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="162878845">162ms</td>
+                <td class="duration" data-value="162878845">162ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillCountry(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="136437144">136ms</td>
+                <td class="duration" data-value="136437144">136ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillImage(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3050970828">3s 050ms</td>
+                <td class="duration" data-value="3050970828">3s 050ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillLat(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="159153865">159ms</td>
+                <td class="duration" data-value="159153865">159ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillLong(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="165208350">165ms</td>
+                <td class="duration" data-value="165208350">165ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillName(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1395781015">1s 395ms</td>
+                <td class="duration" data-value="1395781015">1s 395ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillState(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="198095029">198ms</td>
+                <td class="duration" data-value="198095029">198ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillYear(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="117855836">117ms</td>
+                <td class="duration" data-value="117855836">117ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.FillZip(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="153519555">153ms</td>
+                <td class="duration" data-value="153519555">153ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.OpenClickAddBuildingButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="739550971">739ms</td>
+                <td class="duration" data-value="739550971">739ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.RemoveUsersButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="1115991955">1s 115ms</td>
+                <td class="duration" data-value="1115991955">1s 115ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.SaveButton()</td>
+                <td>6</td>
+                <td class="duration" data-value="6450952649">6s 450ms</td>
+                <td class="duration" data-value="1075158774">1s 075ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.Searchfield(String)</td>
+                <td>5</td>
+                <td class="duration" data-value="10385513205">10s 385ms</td>
+                <td class="duration" data-value="2077102641">2s 077ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.SelectUser(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="4312509710">4s 312ms</td>
+                <td class="duration" data-value="2156254855">2s 156ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.Selectfield(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="4185813539">4s 185ms</td>
+                <td class="duration" data-value="4185813539">4s 185ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.TemplateSaveButton()</td>
+                <td>2</td>
+                <td class="duration" data-value="167932984">167ms</td>
+                <td class="duration" data-value="83966492">083ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.TestConnector()</td>
+                <td>1</td>
+                <td class="duration" data-value="1599353601">1s 599ms</td>
+                <td class="duration" data-value="1599353601">1s 599ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.U_Email(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="267171338">267ms</td>
+                <td class="duration" data-value="267171338">267ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.U_FirstName(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1208767710">1s 208ms</td>
+                <td class="duration" data-value="1208767710">1s 208ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.U_LastName(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="126493505">126ms</td>
+                <td class="duration" data-value="126493505">126ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.U_Phone(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="201067778">201ms</td>
+                <td class="duration" data-value="201067778">201ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.U_Role(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="154451263">154ms</td>
+                <td class="duration" data-value="154451263">154ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.addMultiplefloorfield(String,String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1255879992">1s 255ms</td>
+                <td class="duration" data-value="1255879992">1s 255ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.addNewPointButton()</td>
+                <td>3</td>
+                <td class="duration" data-value="6632026484">6s 632ms</td>
+                <td class="duration" data-value="2210675494">2s 210ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.addfloorfield(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="119984529">119ms</td>
+                <td class="duration" data-value="119984529">119ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.addnewConnector()</td>
+                <td>1</td>
+                <td class="duration" data-value="6134872856">6s 134ms</td>
+                <td class="duration" data-value="6134872856">6s 134ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.changeDeletedSectionName()</td>
+                <td>2</td>
+                <td class="duration" data-value="8601856554">8s 601ms</td>
+                <td class="duration" data-value="4300928277">4s 300ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.changePointName(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="372258265">372ms</td>
+                <td class="duration" data-value="372258265">372ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.changeSectionName(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="5405104132">5s 405ms</td>
+                <td class="duration" data-value="5405104132">5s 405ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkAssignedBuilding(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="31416536">031ms</td>
+                <td class="duration" data-value="31416536">031ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkBuildingIsAdded(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3093313262">3s 093ms</td>
+                <td class="duration" data-value="3093313262">3s 093ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkConnectConnector()</td>
+                <td>1</td>
+                <td class="duration" data-value="1021582811">1s 021ms</td>
+                <td class="duration" data-value="1021582811">1s 021ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkConnector(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="2042786722">2s 042ms</td>
+                <td class="duration" data-value="1021393361">1s 021ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkDeletedBuilding(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="4014888327">4s 014ms</td>
+                <td class="duration" data-value="4014888327">4s 014ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkDeletedConnector(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1012476736">1s 012ms</td>
+                <td class="duration" data-value="1012476736">1s 012ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkDevicesButton()</td>
+                <td>32</td>
+                <td class="duration" data-value="16981919558">16s 981ms</td>
+                <td class="duration" data-value="530684986">530ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkEditBuilding(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="44760054">044ms</td>
+                <td class="duration" data-value="44760054">044ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkEditedUser(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="533032070">533ms</td>
+                <td class="duration" data-value="533032070">533ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkRemovedBuilding(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1032703027">1s 032ms</td>
+                <td class="duration" data-value="1032703027">1s 032ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkRemovedUser(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkTemplateIsDeleted(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1012382592">1s 012ms</td>
+                <td class="duration" data-value="1012382592">1s 012ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkTemplatedIsAdded(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="1085783533">1s 085ms</td>
+                <td class="duration" data-value="361927844">361ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkUserIsAdded(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2566510052">2s 566ms</td>
+                <td class="duration" data-value="2566510052">2s 566ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkUserPanel()</td>
+                <td>5</td>
+                <td class="duration" data-value="112910219">112ms</td>
+                <td class="duration" data-value="22582043">022ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkpointIsDeleted(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1013074996">1s 013ms</td>
+                <td class="duration" data-value="1013074996">1s 013ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkpointIsEdited(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="535712182">535ms</td>
+                <td class="duration" data-value="535712182">535ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkpointLinked(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2042291883">2s 042ms</td>
+                <td class="duration" data-value="2042291883">2s 042ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.checkpointisadded(String,String)</td>
+                <td>2</td>
+                <td class="duration" data-value="38949047">038ms</td>
+                <td class="duration" data-value="19474523">019ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.clickAdminPanel()</td>
+                <td>32</td>
+                <td class="duration" data-value="1714407351">1s 714ms</td>
+                <td class="duration" data-value="53575229">053ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.clickDeleteExistingConnector()</td>
+                <td>1</td>
+                <td class="duration" data-value="1798343701">1s 798ms</td>
+                <td class="duration" data-value="1798343701">1s 798ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.clickEditConnector()</td>
+                <td>1</td>
+                <td class="duration" data-value="1845091926">1s 845ms</td>
+                <td class="duration" data-value="1845091926">1s 845ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.clickNewUser()</td>
+                <td>1</td>
+                <td class="duration" data-value="650569298">650ms</td>
+                <td class="duration" data-value="650569298">650ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.clickUserPanel()</td>
+                <td>5</td>
+                <td class="duration" data-value="537393340">537ms</td>
+                <td class="duration" data-value="107478668">107ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.connectPointsButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="120988121">120ms</td>
+                <td class="duration" data-value="120988121">120ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.connectPointsSave()</td>
+                <td>1</td>
+                <td class="duration" data-value="108388023">108ms</td>
+                <td class="duration" data-value="108388023">108ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.deleteBuilding()</td>
+                <td>1</td>
+                <td class="duration" data-value="666513160">666ms</td>
+                <td class="duration" data-value="666513160">666ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.editBuilding()</td>
+                <td>1</td>
+                <td class="duration" data-value="3283695373">3s 283ms</td>
+                <td class="duration" data-value="3283695373">3s 283ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.editExistingConnector(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2313797592">2s 313ms</td>
+                <td class="duration" data-value="2313797592">2s 313ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.editUser()</td>
+                <td>1</td>
+                <td class="duration" data-value="2847373662">2s 847ms</td>
+                <td class="duration" data-value="2847373662">2s 847ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.editfloorfield(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2268507453">2s 268ms</td>
+                <td class="duration" data-value="2268507453">2s 268ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.enterTemplateName(String)</td>
+                <td>2</td>
+                <td class="duration" data-value="2332370552">2s 332ms</td>
+                <td class="duration" data-value="1166185276">1s 166ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.fillPointFields(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="3929072794">3s 929ms</td>
+                <td class="duration" data-value="1309690931">1s 309ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.goToBuildingsTab()</td>
+                <td>2</td>
+                <td class="duration" data-value="4242796648">4s 242ms</td>
+                <td class="duration" data-value="2121398324">2s 121ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.goToOneTemplate(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="10041105102">10s 041ms</td>
+                <td class="duration" data-value="1673517517">1s 673ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.goToTags()</td>
+                <td>4</td>
+                <td class="duration" data-value="324736013">324ms</td>
+                <td class="duration" data-value="81184003">081ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.goToTemplates()</td>
+                <td>6</td>
+                <td class="duration" data-value="469252447">469ms</td>
+                <td class="duration" data-value="78208741">078ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.goToUnits()</td>
+                <td>4</td>
+                <td class="duration" data-value="384832855">384ms</td>
+                <td class="duration" data-value="96208213">096ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.openAddConnector()</td>
+                <td>1</td>
+                <td class="duration" data-value="685297598">685ms</td>
+                <td class="duration" data-value="685297598">685ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.openAreaTab()</td>
+                <td>4</td>
+                <td class="duration" data-value="3426787580">3s 426ms</td>
+                <td class="duration" data-value="856696895">856ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.openBuilding(String)</td>
+                <td>12</td>
+                <td class="duration" data-value="36658334155">36s 658ms</td>
+                <td class="duration" data-value="3054861179">3s 054ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.openConnectorsTab()</td>
+                <td>4</td>
+                <td class="duration" data-value="2400259617">2s 400ms</td>
+                <td class="duration" data-value="600064904">600ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.openMenuTab()</td>
+                <td>9</td>
+                <td class="duration" data-value="18602054583">18s 602ms</td>
+                <td class="duration" data-value="2066894953">2s 066ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.openNewSection()</td>
+                <td>2</td>
+                <td class="duration" data-value="224436094">224ms</td>
+                <td class="duration" data-value="112218047">112ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.openUser(String)</td>
+                <td>4</td>
+                <td class="duration" data-value="4580254266">4s 580ms</td>
+                <td class="duration" data-value="1145063566">1s 145ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.openUsersTab()</td>
+                <td>2</td>
+                <td class="duration" data-value="1196565988">1s 196ms</td>
+                <td class="duration" data-value="598282994">598ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.removedBuilding(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="3263620271">3s 263ms</td>
+                <td class="duration" data-value="3263620271">3s 263ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.removedUser()</td>
+                <td>1</td>
+                <td class="duration" data-value="563819273">563ms</td>
+                <td class="duration" data-value="563819273">563ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.selectFirstPoint(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="80722438">080ms</td>
+                <td class="duration" data-value="80722438">080ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.selectSecondPoint(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="84831418">084ms</td>
+                <td class="duration" data-value="84831418">084ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.theAssertionThatTheTestHasPassedAndWorkedFine()</td>
+                <td>78</td>
+                <td class="duration" data-value="5718813612">5s 718ms</td>
+                <td class="duration" data-value="73318123">073ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn()</td>
+                <td>78</td>
+                <td class="duration" data-value="577795710898">9m 37s 795ms</td>
+                <td class="duration" data-value="7407637319">7s 407ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.thredotMenu()</td>
+                <td>2</td>
+                <td class="duration" data-value="4149558980">4s 149ms</td>
+                <td class="duration" data-value="2074779490">2s 074ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.userAtTagsPage()</td>
+                <td>4</td>
+                <td class="duration" data-value="77574384">077ms</td>
+                <td class="duration" data-value="19393596">019ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.userAtTemplatesPage()</td>
+                <td>6</td>
+                <td class="duration" data-value="3714745442">3s 714ms</td>
+                <td class="duration" data-value="619124240">619ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">WebsiteStepDefs.userAtUnitsPage()</td>
+                <td>4</td>
+                <td class="duration" data-value="2151123732">2s 151ms</td>
+                <td class="duration" data-value="537780933">537ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>249</td>
+              <td>783</td>
+              <td class="duration">23m 16s 859ms</td>
+              <td class="duration">1s 783ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

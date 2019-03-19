@@ -16,7 +16,7 @@ public enum FloorPanel implements PageObjects {
     DragDeviceHere(PageObjectUtils.LocatorType.XPATH, "//div[@class='device-container']"),
     DragPointHere(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Drop Points Here ')]]"),
     CatchDevice(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'BR126')]]"),
-    CatchPoint(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'DEV277126~2dsystemStatus')]]"),
+    CatchPoint(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'DEV277126_systemStatus')]]"),
     EditFloor(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' edit')]]");
 
     public PageObjectUtils.LocatorType locator;

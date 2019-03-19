@@ -6,7 +6,7 @@ import pageobjects.PageElementIds;
 
 public enum UnitsPanel implements PageObjects {
 
-    addCategory(PageObjectUtils.LocatorType.XPATH, "//*[@class='add-category-button']"),
+    addCategory(PageObjectUtils.LocatorType.XPATH, "//*[@class='add-category-button ng-star-inserted']"),
     addUnit(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Add Unit')]]"),
     editCategory(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Edit Category')]]"),
     openCategoryMenu(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'more_vert')]]"),

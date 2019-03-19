@@ -8,18 +8,18 @@ Feature: Tags Tests
     And Click Tags tab
     Then Check if user is at Tags page
 
-  @Admin @SmokeTest @Unit
+  @Admin @SmokeTest @Tags
   Scenario: Add New Tag
     When User Click Add New Tag Button
     And user add AutoTag as Tag Name and click Add
     Then Check if Tag with name AutoTag appears on list
 
-  @Admin @SmokeTest @Unit
+  @Admin @SmokeTest @Tags
   Scenario: Search Tag
     When At Tags page User Search for Tag with name AutoTag
     Then Check if Tag with name AutoTag appears on list
 
-  @Admin @SmokeTest @Unit
+  @Admin @SmokeTest @Tags
   Scenario: Edit Tag
     When At Tags page User Search for Tag with name AutoTag
     Then Check if Tag with name AutoTag appears on list
@@ -27,7 +27,7 @@ Feature: Tags Tests
     And User Change tag name to AutoTag2
     Then Check if Tag with name AutoTag2 appears on list
 
-  @Admin @SmokeTest @Unit
+  @Admin @SmokeTest @Tags
   Scenario: Delete Tag
     When At Tags page User Search for Tag with name AutoTag2
     Then Check if Tag with name AutoTag2 appears on list
