@@ -43,12 +43,14 @@ public class UserProfileStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.enterOldPassword.getBy(), 10);
         UserProfilePanel.enterOldPassword.getElement().sendKeys("123456");
+
         Thread.sleep(1000);
         UserProfilePanel.enterNewPassword.getElement().sendKeys("123456");
+
         Thread.sleep(1000);
         UserProfilePanel.confirmNewPassword.getElement().sendKeys("123456");
-        Thread.sleep(1000);
 
+        Thread.sleep(1000);
         UserProfilePanel.updateButton.getElement().click();
     }
 
@@ -69,8 +71,8 @@ public class UserProfileStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.clickTerminateSession.getBy(), 10);
         UserProfilePanel.clickTerminateSession.getElement().click();
-        Thread.sleep(1000);
 
+        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.confirmButton.getBy(), 10);
         UserProfilePanel.confirmButton.getElement().click();
     }
@@ -81,10 +83,12 @@ public class UserProfileStepDefs extends CommonStepObjects {
     }
 
     @When("^User Enter (.*) as username and (.*) as password and click Login$")
-    public void loginAs(String username, String password)throws Throwable{
+    public void loginAs(String username, String password) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@ng-reflect-placeholder='Email Address']"), 10);
+
         driver.findElement(By.xpath("//*[@ng-reflect-placeholder='Email Address']")).sendKeys(username);
         driver.findElement(By.xpath("//*[@ng-reflect-placeholder='Enter your password']")).sendKeys(password);
+
         Thread.sleep(1000);
         driver.findElement((By.xpath("//*[contains(text(),'Login')]"))).click();
     }
