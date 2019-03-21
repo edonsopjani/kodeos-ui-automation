@@ -789,6 +789,17 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//span[text()[contains(.,'" + role + "')]]")).click();
     }
 
+    @And("^User Fill (.*) as Password")
+    public void u_Password(String password) throws Throwable {
+        //Add Role
+        WebElement element = BuildingPanel.ClickCreateAccount.getElement();
+        element.click();
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterPassword.getBy(), 5);
+        BuildingPanel.EnterPassword.getElement().click();
+        Thread.sleep(1000);
+        BuildingPanel.EnterPassword.getElement().sendKeys(password);
+    }
+
     @Then("^Check if User with name (.*) appear on the list$")
     public void checkUserIsAdded(String user) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, user);
@@ -820,9 +831,111 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
     }
 
+    @And("^Click on Edit Role Button, change role and click save")
+    public void editUserRole() throws Throwable {
+        //click user
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickUpdateRole.getBy(), 5);
+        BuildingPanel.ClickUpdateRole.getElement().click();
+
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterRole.getBy(), 5);
+        WebElement element = BuildingPanel.EnterRole.getElement();
+        element.click();
+        PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'ViewOnly')]]", 5);
+        driver.findElement(By.xpath("//span[text()[contains(.,'ViewOnly')]]")).click();
+
+        //Click save
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
+    }
+
+    @And("^Click on Edit email Button, change email and click save")
+    public void editUserEmail() throws Throwable {
+        //click user
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickUpdateEmail.getBy(), 5);
+        BuildingPanel.ClickUpdateEmail.getElement().click();
+
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterEmail.getBy(), 5);
+        WebElement element = BuildingPanel.EnterEmail.getElement();
+        element.clear();
+        element.sendKeys("test@email.com");
+
+        //Click save
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
+    }
+
+    @And("^Click on Edit password Button, change password and click save")
+    public void editUserPassword() throws Throwable {
+        //click user
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickChangePassword.getBy(), 5);
+        BuildingPanel.ClickChangePassword.getElement().click();
+
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterPassword.getBy(), 5);
+        WebElement element = BuildingPanel.EnterPassword.getElement();
+        element.clear();
+        element.sendKeys("123456");
+
+        //Click save
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
+    }
+
+    @And("^Click on deactivate Button and click save")
+    public void deactivateUserAccount() throws Throwable {
+        //click user
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickDeactivate.getBy(), 5);
+        BuildingPanel.ClickDeactivate.getElement().click();
+
+        Thread.sleep(1000);
+
+        //Click save
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Confirm')]")).click();
+    }
+
+    @And("^Click on Create account Button, enter password and click save")
+    public void createAccount() throws Throwable {
+        //click user
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickCreateAccountButton.getBy(), 5);
+        BuildingPanel.ClickCreateAccountButton.getElement().click();
+
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterPassword.getBy(), 5);
+        WebElement element = BuildingPanel.EnterPassword.getElement();
+        element.clear();
+        element.sendKeys("123456");
+
+        //Click save
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
+    }
+
     @Then("^Check if All Changed fields for (.*) are saved successful$")
     public void checkEditedUser(String user) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "sopo");
+    }
+
+    @Then("^Check if Role is updated$")
+    public void checkUpdatedRole() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "ViewOnly");
+    }
+
+    @Then("^Check if User account is updated$")
+    public void checkUserAccount() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Active");
+    }
+
+    @Then("^Check if email is updated$")
+    public void checkUpdatedEmail() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "test@email.com");
+    }
+
+    @Then("^Check if password is updated$")
+    public void checkUpdatedPassword() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "test@email.com");
+    }
+
+    @Then("^Check if user account is deactivated$")
+    public void checkUserIsDeactivated() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Inactive");
     }
 
     @And("^User go to buildings tab")

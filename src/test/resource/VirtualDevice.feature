@@ -12,14 +12,14 @@ Feature:Virtual Devices Tests
     And User goes to Virtual Device Page
     Then Check if user is at Virtual Device page
 
-  @SmokeTest @VirtualDevice
+  @VirtualDevice
   Scenario: Create Virtual Device
     When User select ExactLogic Device
     And User Click Add Virtual Device and add VirtualDevice as name
     And User save the changes
     Then Check if Virtual Device with name VirtualDevice appears on list
 
-  @SmokeTest @VirtualDevice
+  @VirtualDevice
   Scenario: Add Points to Virtual Device
     When User select ExactLogic Device
     And  User also select VirtualDevice Device
@@ -27,7 +27,7 @@ Feature:Virtual Devices Tests
     And User save the changes
     Then Check if points are moved to Virtual Device
 
-  @SmokeTest @VirtualDevice
+  @VirtualDevice
   Scenario: Remove Points to Virtual Device
     When User select ExactLogic Device
     And  User also select VirtualDevice Device

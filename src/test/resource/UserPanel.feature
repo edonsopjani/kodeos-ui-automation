@@ -20,6 +20,48 @@ Feature: User Panel Tests
     Then Check if User with name Edonis appear on the list
 
   @Admin @SmokeTest @UserPanel
+  Scenario: Add New User Account
+    When User clicks on Add new User
+    And User Fill Michael as First Name
+    And User Fill Sopi as Last Name
+    And User Fill don@kodelabs.co as Email
+    And User Fill 123-456-7889 as Phone number
+    And User Fill User as Role
+    And User Fill 123456 as Password
+    And User click Save changes
+    Then Check if User with name Michael appear on the list
+
+  @Admin @SmokeTest @UserPanel
+  Scenario: Update User Account Role
+    When User click Michael User
+    And Click on Edit Role Button, change role and click save
+    Then Check if Role is updated
+
+  @Admin @SmokeTest @UserPanel
+  Scenario: Update User Account Email
+    When User click Michael User
+    And Click on Edit email Button, change email and click save
+    Then Check if email is updated
+
+  @Admin @SmokeTest @UserPanel
+  Scenario: Update User Account Password
+    When User click Michael User
+    And Click on Edit password Button, change password and click save
+    Then Check if password is updated
+
+  @Admin @SmokeTest @UserPanel
+  Scenario: Deactivate User Account
+    When User click Michael User
+    And Click on deactivate Button and click save
+    Then Check if user account is deactivated
+
+  @Admin @SmokeTest @UserPanel
+  Scenario: Update User to User Account
+    When User click Edonis User
+    And Click on Create account Button, enter password and click save
+    Then Check if User account is updated
+
+  @Admin @SmokeTest @UserPanel
   Scenario: Edit User
     When User click Edonis User
     And Click on Edit Button, then change some values for user and click save
@@ -46,3 +88,9 @@ Feature: User Panel Tests
     When User click Edonis User
     And User click on Delete user button
     Then Check if User Edonis dissapears from the list
+
+  @Admin @SmokeTest @UserPanel
+  Scenario: Delete Users Account
+    When User click Michael User
+    And User click on Delete user button
+    Then Check if User Michael dissapears from the list
