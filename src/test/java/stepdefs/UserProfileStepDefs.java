@@ -3,6 +3,7 @@ package stepdefs;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.By;
 import pageobjects.pages.PageObjectUtils;
 import pageobjects.pages.UserProfilePanel;
 
@@ -18,6 +19,11 @@ public class UserProfileStepDefs extends CommonStepObjects {
     @Then("^Check If user is at User Profile")
     public void checkUserIsAtUserProfile() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.checkUserIsAtProfilePage.getBy(), 15);
+    }
+
+    @Then("^Check If user is at Login Page")
+    public void checkUserIsAtLoginPage() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@ng-reflect-placeholder='Email Address']"), 10);
     }
 
     @When("^User is at User Profile, click change password$")
@@ -72,5 +78,19 @@ public class UserProfileStepDefs extends CommonStepObjects {
     @Then("^Check if User session is terminated$")
     public void checkUserSessionIsTerminated() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.checkUserIsLoggedOut.getBy(), 10);
+    }
+
+    @When("^User Enter (.*) as username and (.*) as password and click Login$")
+    public void loginAs(String username, String password)throws Throwable{
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@ng-reflect-placeholder='Email Address']"), 10);
+        driver.findElement(By.xpath("//*[@ng-reflect-placeholder='Email Address']")).sendKeys(username);
+        driver.findElement(By.xpath("//*[@ng-reflect-placeholder='Enter your password']")).sendKeys(password);
+        Thread.sleep(1000);
+        driver.findElement((By.xpath("//*[contains(text(),'Login')]"))).click();
+    }
+
+    @Then("^Check if user role is (.*)$")
+    public void checkUserRole(String role) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, role);
     }
 }

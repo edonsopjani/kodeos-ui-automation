@@ -58,6 +58,15 @@ public class WebsiteStepDefs extends CommonStepObjects {
 //        }
     }
 
+    @Given("^User goes to Login page$")
+    public void goToKodeLabsPage() throws Throwable {
+        if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
+        //driver.navigate().to(System.getProperty("websiteUrl"));
+        //driver.navigate().to("https://Test:Test1234@emsol.zag-apps.com/real-estate/buildings");
+        driver.navigate().to("http://localhost:4200/real-estate/buildings");
+        Thread.sleep(1000);
+    }
+
     @When("^User Search For Chrysler House and click it$")
     public void theNextStepThatGetsRepeatedBeforeEveryTest() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.className("building-list-header-search-bar"), 5);

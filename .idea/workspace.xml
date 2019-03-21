@@ -3,58 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generalUtils/RestAPIUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generalUtils/RestAPIUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/BuildingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/BuildingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/UserPanel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/UserPanel.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/VirtualDevice.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/VirtualDevice.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/generalUtils/RestAPIUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generalUtils/RestAPIUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/BuildingPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/BuildingPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$LocatorType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$LocatorType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/BuildingPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/BuildingPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Device.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Device.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Devices.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Devices.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Points.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Points.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Sites.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Sites.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/SmokeTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/SmokeTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Template.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Unit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Unit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/UserPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/UserPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/VirtualDevice.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/VirtualDevice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/failures-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/failures-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/feature-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/feature-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-BuildingDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-BuildingDetails-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-BuildingPanel-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-BuildingPanel-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-DeviceDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-DeviceDetails-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-FloorDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-FloorDetails-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-PointsDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-PointsDetails-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Search-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Search-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Sites-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Sites-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Systems-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Systems-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Tags-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Tags-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Templates-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Templates-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Units-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Units-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-UserPanel-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-UserPanel-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-VirtualDevice-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-VirtualDevice-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/step-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/step-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/tag-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/tag-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/RunCukesTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/RunCukesTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCukesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCukesTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junit-noframes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junit-noframes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/CommonStepObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/CommonStepObjects.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/UserProfileStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/UserProfileStepDefs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/websitesteps/DashboardStepDefs.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/websitesteps/DeviceStepDefs.class" beforeDir="false" />
@@ -81,37 +38,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resource/UserProfile.feature">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resource/Roles.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="408">
+              <caret line="24" column="85" lean-forward="true" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resource/Schedulers.feature">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RunCukesTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="453">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#810#867#0" />
+                <element signature="e#1601#1708#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resource/VirtualDevice.feature">
+        <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+            <state relative-caret-position="190">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,13 +126,14 @@
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/CommonStepObjects.java" />
         <option value="$PROJECT_DIR$/src/main/java/generalUtils/RestAPIUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/BuildingPanel.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" />
         <option value="$PROJECT_DIR$/src/test/resource/UserPanel.feature" />
         <option value="$PROJECT_DIR$/src/test/resource/UserAccount.feature" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/UserProfilePanel.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" />
         <option value="$PROJECT_DIR$/src/test/resource/UserProfile.feature" />
         <option value="$PROJECT_DIR$/src/test/resource/VirtualDevice.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" />
+        <option value="$PROJECT_DIR$/src/test/resource/Roles.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" />
       </list>
     </option>
   </component>
@@ -186,7 +144,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="2156" />
     <option name="y" value="-16" />
     <option name="width" value="1918" />
@@ -200,6 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -237,11 +196,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553080180600" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553162384956" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -273,15 +231,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Change Password">
-    <configuration name="Feature: UserProfile" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Feature: Roles">
+    <configuration name="Feature: Roles" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserProfile.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Roles.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="cmdCucumber" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: UserProfile" />
+      <option name="SUGGESTED_NAME" value="Feature: Roles" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa" />
       <extension name="coverage">
         <pattern>
@@ -293,15 +251,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Change Password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login as Super Admin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserProfile.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Roles.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="cmdCucumber" />
-      <option name="NAME_FILTER" value="^Change Password$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Change Password$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Change Password" />
+      <option name="NAME_FILTER" value="^Login as Super Admin$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Login as Super Admin$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login as Super Admin" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa" />
       <extension name="coverage">
         <pattern>
@@ -313,15 +271,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Logout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login as User Admin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserProfile.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Roles.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="cmdCucumber" />
-      <option name="NAME_FILTER" value="^Logout$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Logout$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Logout" />
+      <option name="NAME_FILTER" value="^Login as User Admin$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Login as User Admin$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login as User Admin" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa" />
       <extension name="coverage">
         <pattern>
@@ -333,15 +291,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Terminate Session" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login as User" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserProfile.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Roles.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="cmdCucumber" />
-      <option name="NAME_FILTER" value="^Terminate Session$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Terminate Session$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Terminate Session" />
+      <option name="NAME_FILTER" value="^Login as User$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Login as User$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login as User" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa" />
       <extension name="coverage">
         <pattern>
@@ -353,15 +311,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Update User to User Account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login as ViewOnly" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Roles.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="cmdCucumber" />
-      <option name="NAME_FILTER" value="^Update User to User Account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Update User to User Account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Update User to User Account" />
+      <option name="NAME_FILTER" value="^Login as ViewOnly$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Login as ViewOnly$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login as ViewOnly" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa" />
       <extension name="coverage">
         <pattern>
@@ -374,19 +332,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Scenario: Update User to User Account" />
-      <item itemvalue="Cucumber java.Scenario: Change Password" />
-      <item itemvalue="Cucumber java.Scenario: Logout" />
-      <item itemvalue="Cucumber java.Scenario: Terminate Session" />
-      <item itemvalue="Cucumber java.Feature: UserProfile" />
+      <item itemvalue="Cucumber java.Scenario: Login as User Admin" />
+      <item itemvalue="Cucumber java.Scenario: Login as User" />
+      <item itemvalue="Cucumber java.Scenario: Login as ViewOnly" />
+      <item itemvalue="Cucumber java.Feature: Roles" />
+      <item itemvalue="Cucumber java.Scenario: Login as Super Admin" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Change Password" />
-        <item itemvalue="Cucumber java.Feature: UserProfile" />
-        <item itemvalue="Cucumber java.Scenario: Terminate Session" />
-        <item itemvalue="Cucumber java.Scenario: Logout" />
-        <item itemvalue="Cucumber java.Scenario: Update User to User Account" />
+        <item itemvalue="Cucumber java.Feature: Roles" />
+        <item itemvalue="Cucumber java.Scenario: Login as Super Admin" />
+        <item itemvalue="Cucumber java.Scenario: Login as ViewOnly" />
+        <item itemvalue="Cucumber java.Scenario: Login as User" />
+        <item itemvalue="Cucumber java.Scenario: Login as User Admin" />
       </list>
     </recent_temporary>
   </component>
@@ -404,35 +362,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Delete_Users_Account - 2019.03.20 at 11h 16m 06s.xml">
-      <configuration name="Scenario: Delete Users Account" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Login_as_System_Admin - 2019.03.21 at 10h 52m 26s.xml">
+      <configuration name="Scenario: Login as System Admin" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_User_to_User_Account - 2019.03.20 at 11h 34m 29s.xml">
-      <configuration name="Scenario: Update User to User Account" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Login_as_User_Admin - 2019.03.21 at 10h 52m 32s.xml">
+      <configuration name="Scenario: Login as User Admin" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_User_to_User_Account - 2019.03.20 at 11h 34m 51s.xml">
-      <configuration name="Scenario: Update User to User Account" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Login_as_User - 2019.03.21 at 10h 52m 38s.xml">
+      <configuration name="Scenario: Login as User" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_User_to_User_Account - 2019.03.20 at 11h 37m 14s.xml">
-      <configuration name="Scenario: Update User to User Account" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Login_as_ViewOnly - 2019.03.21 at 10h 52m 46s.xml">
+      <configuration name="Scenario: Login as ViewOnly" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Change_Password - 2019.03.20 at 12h 05m 13s.xml">
-      <configuration name="Scenario: Change Password" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Roles - 2019.03.21 at 10h 52m 57s.xml">
+      <configuration name="Feature: Roles" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Logout - 2019.03.20 at 12h 05m 28s.xml">
-      <configuration name="Scenario: Logout" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Login_as_Super_Admin - 2019.03.21 at 10h 54m 25s.xml">
+      <configuration name="Scenario: Login as Super Admin" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Terminate_Session - 2019.03.20 at 12h 05m 35s.xml">
-      <configuration name="Scenario: Terminate Session" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Login_as_Super_Admin - 2019.03.21 at 10h 54m 50s.xml">
+      <configuration name="Scenario: Login as Super Admin" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__UserProfile - 2019.03.20 at 12h 05m 42s.xml">
-      <configuration name="Feature: UserProfile" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Login_as_Super_Admin - 2019.03.21 at 10h 55m 53s.xml">
+      <configuration name="Scenario: Login as Super Admin" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__UserProfile - 2019.03.20 at 12h 06m 40s.xml">
-      <configuration name="Feature: UserProfile" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Roles - 2019.03.21 at 10h 56m 00s.xml">
+      <configuration name="Feature: Roles" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Change_Password - 2019.03.20 at 12h 07m 51s.xml">
-      <configuration name="Scenario: Change Password" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Roles - 2019.03.21 at 10h 57m 03s.xml">
+      <configuration name="Feature: Roles" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -446,8 +404,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29957357" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30277187" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -456,7 +415,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,13 +435,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/appium/AppiumServerUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/masterthought/cucumber/CucumberReportGeneratorMojoTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/net/masterthought/cucumber/CucumberReportGeneratorMojo.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjects.java">
@@ -905,16 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resource/BuildingPanel.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -933,75 +875,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resource/UserAccount.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="891" column="101" selection-start-line="891" selection-start-column="37" selection-end-line="891" selection-end-column="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2815#3549#0" />
-            <element signature="e#3555#6129#0" />
-            <element signature="e#6135#6346#0" />
-            <element signature="e#6352#6604#0" />
-            <element signature="e#6610#6841#0" />
-            <element signature="e#6847#7102#0" />
-            <element signature="e#7108#7353#0" />
-            <element signature="e#7359#7614#0" />
-            <element signature="e#7620#7893#0" />
-            <element signature="e#7899#8168#0" />
-            <element signature="e#8174#8666#0" />
-            <element signature="e#8672#8952#0" />
-            <element signature="e#8958#9240#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/BuildingPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="65" column="90" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resource/UserPanel.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/UserProfilePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="102" selection-start-line="10" selection-start-column="102" selection-end-line="10" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="71" column="50" lean-forward="true" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-          <folding>
-            <element signature="method#goToUserProfile#0;class#UserProfileStepDefs#0" />
-            <element signature="method#checkUserIsAtUserProfile#0;class#UserProfileStepDefs#0" />
-            <element signature="method#changePassword#0;class#UserProfileStepDefs#0" />
-            <element signature="method#checkPasswordIsUpdated#0;class#UserProfileStepDefs#0" />
-            <element signature="method#addNewPassword#0;class#UserProfileStepDefs#0" />
-            <element signature="method#clickLogout#0;class#UserProfileStepDefs#0" />
-            <element signature="method#checkUserIsLoggedOut#0;class#UserProfileStepDefs#0" />
-            <element signature="method#clickTerminateSession#0;class#UserProfileStepDefs#0" />
-            <element signature="method#checkUserSessionIsTerminated#0;class#UserProfileStepDefs#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resource/UserProfile.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -1022,6 +899,80 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resource/UserPanel.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resource/UserProfile.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
+          <folding>
+            <element signature="method#goToUserProfile#0;class#UserProfileStepDefs#0" />
+            <element signature="method#checkUserIsAtUserProfile#0;class#UserProfileStepDefs#0" />
+            <element signature="method#checkUserIsAtUserProfile#1;class#UserProfileStepDefs#0" />
+            <element signature="method#changePassword#0;class#UserProfileStepDefs#0" />
+            <element signature="method#checkPasswordIsUpdated#0;class#UserProfileStepDefs#0" />
+            <element signature="method#addNewPassword#0;class#UserProfileStepDefs#0" />
+            <element signature="method#clickLogout#0;class#UserProfileStepDefs#0" />
+            <element signature="method#checkUserIsLoggedOut#0;class#UserProfileStepDefs#0" />
+            <element signature="method#clickTerminateSession#0;class#UserProfileStepDefs#0" />
+            <element signature="method#checkUserSessionIsTerminated#0;class#UserProfileStepDefs#0" />
+            <element signature="method#loginAs#0;class#UserProfileStepDefs#0" />
+            <element signature="method#checkUserSessionIsTerminated#1;class#UserProfileStepDefs#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/BuildingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#810#867#0" />
+            <element signature="e#1601#1708#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resource/Roles.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="85" lean-forward="true" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
         </state>
       </provider>
     </entry>
