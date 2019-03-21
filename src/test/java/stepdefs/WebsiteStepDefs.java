@@ -12,6 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import pageobjects.pages.BuildingPanel;
 import pageobjects.pages.DevicePanel;
 import pageobjects.pages.PageObjectUtils;
+import pageobjects.pages.UserProfilePanel;
 import selenium.WebDriverFactory;
 
 import java.util.List;
@@ -64,7 +65,22 @@ public class WebsiteStepDefs extends CommonStepObjects {
         //driver.navigate().to(System.getProperty("websiteUrl"));
         //driver.navigate().to("https://Test:Test1234@emsol.zag-apps.com/real-estate/buildings");
         driver.navigate().to("http://localhost:4200/real-estate/buildings");
-        Thread.sleep(1000);
+        Thread.sleep(2000);
+
+        List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@ng-reflect-placeholder='Email Address']"));
+        if (isLoggedIn.isEmpty()) {
+            Thread.sleep(1000);
+            PageObjectUtils.IsElementVisible(driver, UserProfilePanel.goToUserProfile.getBy(), 10);
+            UserProfilePanel.goToUserProfile.getElement().click();
+
+            Thread.sleep(1000);
+            PageObjectUtils.IsElementVisible(driver, UserProfilePanel.clickLogout.getBy(), 10);
+            UserProfilePanel.clickLogout.getElement().click();
+
+            PageObjectUtils.IsElementVisible(driver, UserProfilePanel.checkUserIsLoggedOut.getBy(), 10);
+        } else {
+
+        }
     }
 
     @When("^User Search For Chrysler House and click it$")
