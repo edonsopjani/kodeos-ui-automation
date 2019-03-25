@@ -35,7 +35,7 @@ public class PageObjectUtils {
     }
 
     public static WebElement ContainsText(WebDriver driver, String value) {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 5);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 10);
         return driver.findElement(By.xpath("//*[contains(text(), '" + value + "')]"));
     }
 
