@@ -9,14 +9,14 @@ Feature:Floor Tests
     When Clicks Basement from the list
     Then Check if Basement page is opened
 
-  @SmokeTest @VirtualDevice
+  @SmokeTest @FloorPlan
   Scenario: Add Floor plan
     When User go to edit page
     And User upload floor plan
     And User save the changes at Floor
     Then Check if floor plan appears
 
-  @SmokeTest @VirtualDevice
+  @SmokeTest @FloorPlan
   Scenario: Add Devices at Floor
     When User go to edit page
     And user go to list view
@@ -25,12 +25,12 @@ Feature:Floor Tests
     And User save the changes at Floor
     Then Check if device appears at floor plan
 
-  @SmokeTest @VirtualDevice
+  @SmokeTest @FloorPlan
   Scenario: Hide Zones and Names at Floor
     When User click hide Names
     Then Check if Names are hided from Floor
 
-  @SmokeTest @VirtualDevice
+  @SmokeTest @FloorPlan
   Scenario: Reset Floor to Default
     When User go to edit page
     And user Click reset floor to default
