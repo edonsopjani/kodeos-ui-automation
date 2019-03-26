@@ -12,26 +12,23 @@ Feature:Virtual Devices Tests
     And User goes to Virtual Device Page
     Then Check if user is at Virtual Device page
 
-  @VirtualDevice
+  @VirtualDevice @SmokeTest
   Scenario: Create Virtual Device
-    When User select ExactLogic Device
-    And User Click Add Virtual Device and add VirtualDevice as name
-    And User save the changes
+    When User Click Add Virtual Device and add VirtualDevice as name
     Then Check if Virtual Device with name VirtualDevice appears on list
 
-  @VirtualDevice
+  @VirtualDevice @SmokeTest
   Scenario: Add Points to Virtual Device
     When User select ExactLogic Device
     And  User also select VirtualDevice Device
     And User check all points and move to Virtual device
-    And User save the changes
+    And User select Flex Device
+    And User check all points and move to Virtual device
     Then Check if points are moved to Virtual Device
 
-  @VirtualDevice
+  @VirtualDevice @SmokeTest
   Scenario: Remove Points to Virtual Device
-    When User select ExactLogic Device
-    And  User also select VirtualDevice Device
+    When  User also select VirtualDevice Device
     And User check all points and move to real device
-    And User save the changes
     Then Check if points are moved to Virtual Device
 

@@ -3,9 +3,12 @@ package stepdefs;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import pageobjects.pages.PageObjectUtils;
 import pageobjects.pages.VirtualDevicePanel;
 
+import java.util.List;
 import java.util.Random;
 
 public class VirtualDeviceStepDefs extends CommonStepObjects {
@@ -14,7 +17,7 @@ public class VirtualDeviceStepDefs extends CommonStepObjects {
 
     @And("^User goes to Virtual Device Page$")
     public void goToVirtualDevicesPage() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.SetupVirtualDevicesButton.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.SetupVirtualDevicesButton.getBy(), 15);
         VirtualDevicePanel.SetupVirtualDevicesButton.getElement().click();
     }
 
@@ -35,11 +38,11 @@ public class VirtualDeviceStepDefs extends CommonStepObjects {
         Random rand = new Random();
         n = rand.nextInt(50) + 1;
 
-        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.AddButton.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.AddButton.getBy(), 15);
         VirtualDevicePanel.AddButton.getElement().click();
         Thread.sleep(1000);
 
-        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.VirtualDeviceName.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.VirtualDeviceName.getBy(), 15);
         VirtualDevicePanel.VirtualDeviceName.getElement().sendKeys(name + n);
         Thread.sleep(1000);
         VirtualDevicePanel.CreateVirtualDevice.getElement().click();
@@ -58,7 +61,8 @@ public class VirtualDeviceStepDefs extends CommonStepObjects {
 
     @And("^User check all points and move to Virtual device$")
     public void checkPointsAreAddedToVirtualDevice() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.CheckBox.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.CheckBox.getBy(), 15);
+        Thread.sleep(1000);
         VirtualDevicePanel.CheckBox.getElement().click();
         Thread.sleep(1000);
         VirtualDevicePanel.MoveToVirtual.getElement().click();
@@ -67,17 +71,25 @@ public class VirtualDeviceStepDefs extends CommonStepObjects {
 
     @And("^User check all points and move to real device$")
     public void checkPointsAreAddedToPseudoDevice() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.CheckBox.getBy(), 5);
-        VirtualDevicePanel.CheckBox.getElement().click();
-        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.CheckBox.getBy(), 15);
+
+        List<WebElement> points = driver.findElements(By.xpath("//*[text()[contains(.,'check_box_outline_blank')]]"));
+
+        for (WebElement point:
+             points) {
+            point.click();
+        }
+
         VirtualDevicePanel.MoveToDevice.getElement().click();
+        Thread.sleep(1000);
+        VirtualDevicePanel.Confrim.getElement().click();
         Thread.sleep(1000);
     }
 
     @And("^User save the changes$")
     public void saveChanges() throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.SaveButton.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.SaveButton.getBy(), 15);
         VirtualDevicePanel.SaveButton.getElement().click();
         Thread.sleep(1000);
     }
