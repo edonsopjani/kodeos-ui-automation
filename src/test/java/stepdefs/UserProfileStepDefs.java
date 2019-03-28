@@ -4,8 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
-import pageobjects.pages.PageObjectUtils;
-import pageobjects.pages.UserProfilePanel;
+import pageobjects.pages.*;
 
 public class UserProfileStepDefs extends CommonStepObjects {
 
@@ -64,6 +63,36 @@ public class UserProfileStepDefs extends CommonStepObjects {
     @Then("^Check if user is logged out$")
     public void checkUserIsLoggedOut() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.checkUserIsLoggedOut.getBy(), 10);
+    }
+
+    @Then("^Check if Admin Panel button do not appear$")
+    public void checkAdminPanelIsNotVisible() throws Throwable {
+        PageObjectUtils.ElementIsNotVisible(driver, UserProfilePanel.adminPanel.getBy(), 10);
+    }
+
+    @Then("^Check if user can't add new Units$")
+    public void checkAddUnitIsInvisible() throws Throwable {
+        PageObjectUtils.ElementIsNotVisible(driver, UnitsPanel.addCategory.getBy(), 10);
+    }
+
+    @Then("^Check if user can't add new Tags$")
+    public void checkAddTagsIsInvisible() throws Throwable {
+        PageObjectUtils.ElementIsNotVisible(driver, TagsPanel.addTag.getBy(), 10);
+    }
+
+    @Then("^Check if Template page do not appear$")
+    public void checkTemplatesIsNotVisible() throws Throwable {
+        PageObjectUtils.ElementIsNotVisible(driver, UserProfilePanel.templatesPage.getBy(), 10);
+    }
+
+    @Then("^Check if Chrysler House Building do not appear at Buildings list$")
+    public void checkUnassignedBuildings() throws Throwable {
+        PageObjectUtils.ElementIsNotVisible(driver, UserProfilePanel.chryslerBuilding.getBy(), 10);
+    }
+
+    @Then("^Check if Edit Dashboard button is not visible$")
+    public void checkEditDashboardButton() throws Throwable {
+        PageObjectUtils.ElementIsNotVisible(driver, DashboardPanel.EditDashboard.getBy(), 10);
     }
 
     @When("^User Click Terminate Session$")

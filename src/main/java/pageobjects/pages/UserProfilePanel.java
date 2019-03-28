@@ -8,6 +8,9 @@ public enum UserProfilePanel implements PageObjects {
 
     goToUserProfile(PageObjectUtils.LocatorType.XPATH, "//*[@routerlink='/real-estate/profile']"),
     clickLogout(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Logout')]]"),
+    adminPanel(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Admin')]]"),
+    templatesPage(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Templates')]]"),
+    chryslerBuilding(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Chrysler House')]]"),
     checkUserIsAtProfilePage(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'User Super')]]"),
     checkUserIsLoggedOut(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Log in to your account')]]"),
     clickChangePassword(PageObjectUtils.LocatorType.XPATH, "//i[@ng-reflect-message='Change Password']"),
