@@ -15,6 +15,8 @@ public class WebDriverFactory {
 
     public WebDriver getWebDriver() { return driver;}
 
+
+
     private static WebDriverFactory ourInstance = new WebDriverFactory();
 
     public static WebDriverFactory getInstance() {
