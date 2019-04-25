@@ -9,7 +9,7 @@ public enum VirtualDevicePanel implements PageObjects {
     SetupVirtualDevicesButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Virtual Devices')]]"),
     SaveButton(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'save')]]"),
     AddButton(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'add')]]"),
-    VirtualDeviceName(PageObjectUtils.LocatorType.XPATH, "//input[@ng-reflect-placeholder='Device Name']"),
+    VirtualDeviceName(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='name']"),
     CreateVirtualDevice(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Create')]]"),
     MoveToVirtual(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'MOVE')]]"),
     MoveToDevice(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'REMOVE POINTS')]]"),

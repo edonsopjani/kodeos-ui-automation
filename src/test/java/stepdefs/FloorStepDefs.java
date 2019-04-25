@@ -30,7 +30,7 @@ public class FloorStepDefs extends CommonStepObjects {
 
     @When("^User go to edit page$")
     public void goToEditPage() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, FloorPanel.EditFloor.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.EditFloor.getBy(), 15);
         FloorPanel.EditFloor.getElement().click();
     }
 
@@ -50,14 +50,14 @@ public class FloorStepDefs extends CommonStepObjects {
 
     @And("^user go to list view$")
     public void goToListView() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, FloorPanel.ListView.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.ListView.getBy(), 15);
         Thread.sleep(1000);
         FloorPanel.ListView.getElement().click();
     }
 
     @And("^user drag and drop the device to floor$")
     public void dragDeviceToFloor() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, FloorPanel.CatchDevice.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.CatchDevice.getBy(), 15);
         Actions action = new Actions(driver);
         action.dragAndDrop(FloorPanel.CatchDevice.getElement(), FloorPanel.DragDeviceHere.getElement()).build().perform();
         Thread.sleep(1000);
@@ -65,7 +65,7 @@ public class FloorStepDefs extends CommonStepObjects {
 
     @And("^user drag and drop point to device$")
     public void dragPointToDevice() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, FloorPanel.CatchPoint.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.CatchPoint.getBy(), 15);
         Actions action = new Actions(driver);
         action.dragAndDrop(FloorPanel.CatchPoint.getElement(), FloorPanel.DragPointHere.getElement()).build().perform();
         Thread.sleep(1000);
@@ -74,7 +74,7 @@ public class FloorStepDefs extends CommonStepObjects {
     @And("^User save the changes at Floor$")
     public void saveChanges() throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, FloorPanel.OpenInsideMenu.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.OpenInsideMenu.getBy(), 15);
         FloorPanel.OpenInsideMenu.getElement().click();
         Thread.sleep(1000);
         FloorPanel.SaveButton.getElement().click();
@@ -88,13 +88,13 @@ public class FloorStepDefs extends CommonStepObjects {
 
     @And("^User click hide Names$")
     public void hideNames() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, FloorPanel.ShowHideNames.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.ShowHideNames.getBy(), 15);
         FloorPanel.ShowHideNames.getElement().click();
     }
 
     @And("^User click hide Zones$")
     public void hideZones() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, FloorPanel.ShowHideZones.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.ShowHideZones.getBy(), 15);
         FloorPanel.ShowHideZones.getElement().click();
     }
 
@@ -111,7 +111,7 @@ public class FloorStepDefs extends CommonStepObjects {
     @And("^user Click reset floor to default$")
     public void resetFloor() throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, FloorPanel.OpenInsideMenu.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.OpenInsideMenu.getBy(), 15);
         FloorPanel.OpenInsideMenu.getElement().click();
         Thread.sleep(1000);
         FloorPanel.ResetButton.getElement().click();

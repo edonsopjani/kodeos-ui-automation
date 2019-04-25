@@ -17,7 +17,7 @@ public class TagsStepDefs extends CommonStepObjects {
     @And("^user add (.*) as Tag Name and click Add$")
     public void addTag(String name) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, TagsPanel.addTagName.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, TagsPanel.addTagName.getBy(), 15);
         TagsPanel.addTagName.getElement().sendKeys(name);
         Thread.sleep(1000);
         TagsPanel.addTagDescription.getElement().sendKeys("automation");
@@ -27,19 +27,19 @@ public class TagsStepDefs extends CommonStepObjects {
 
     @Then("^Check if Tag with name (.*) appears on list$")
     public void checkTagIsAdded(String name) throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + name + "')]]"), 5);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + name + "')]]"), 15);
     }
 
     @When("^User Click Add New Tag Button$")
     public void newTag() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, TagsPanel.addTag.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, TagsPanel.addTag.getBy(), 15);
         TagsPanel.addTag.getElement().click();
     }
 
     @And("^At Tags page User Search for Tag with name (.*)$")
     public void searchTag(String name) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, TagsPanel.searchTag.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, TagsPanel.searchTag.getBy(), 15);
         Thread.sleep(1000);
         TagsPanel.searchTag.getElement().sendKeys(name);
         Thread.sleep(3000);
@@ -60,7 +60,7 @@ public class TagsStepDefs extends CommonStepObjects {
         action.moveToElement(driver.findElement(By.xpath("//*[text()[contains(.,'" + name + "')]]"))).build().perform();
         action.moveToElement(TagsPanel.openTagMenu.getElement()).click().build().perform();
 
-        PageObjectUtils.IsElementVisible(driver, TagsPanel.editTag.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, TagsPanel.editTag.getBy(), 15);
         Thread.sleep(1000);
         TagsPanel.editTag.getElement().click();
     }
@@ -74,18 +74,18 @@ public class TagsStepDefs extends CommonStepObjects {
 
         action.moveToElement(TagsPanel.openTagMenu.getElement()).click().build().perform();
 
-        PageObjectUtils.IsElementVisible(driver, TagsPanel.deleteTag.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, TagsPanel.deleteTag.getBy(), 15);
         Thread.sleep(1000);
         TagsPanel.deleteTag.getElement().click();
 
-        PageObjectUtils.IsElementVisible(driver, TagsPanel.yesButton.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, TagsPanel.yesButton.getBy(), 15);
         TagsPanel.yesButton.getElement().click();
     }
 
     @And("^User Change tag name to (.*)$")
     public void changeTag(String name) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, TagsPanel.addTagName.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, TagsPanel.addTagName.getBy(), 15);
         TagsPanel.addTagName.getElement().clear();
         TagsPanel.addTagName.getElement().sendKeys(name);
         TagsPanel.saveButton.getElement().click();

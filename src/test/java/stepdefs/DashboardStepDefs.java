@@ -15,7 +15,7 @@ public class DashboardStepDefs extends CommonStepObjects {
 
     @When("^User clicks on (.*) building from the list$")
     public void goToBuilding(String test) throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, DashboardPanel.ExpandButton.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, DashboardPanel.ExpandButton.getBy(), 15);
         Thread.sleep(1000);
         DashboardPanel.ExpandButton.getElement().click();
         Thread.sleep(1000);
@@ -26,14 +26,14 @@ public class DashboardStepDefs extends CommonStepObjects {
     @When("^User Click on floors button$")
     public void clickFloors() throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, DashboardPanel.FloorsButton.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, DashboardPanel.FloorsButton.getBy(), 15);
         Thread.sleep(1000);
         DashboardPanel.FloorsButton.getElement().click();
     }
 
     @When("^User Click on Devices button$")
     public void clickSystems() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, DashboardPanel.DevicesButton.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, DashboardPanel.DevicesButton.getBy(), 15);
         Thread.sleep(1000);
         DashboardPanel.DevicesButton.getElement().click();
     }
@@ -47,7 +47,7 @@ public class DashboardStepDefs extends CommonStepObjects {
 
     @When("^User Click on Edit Dashboard$")
     public void clickEditDashboard() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditDashboard.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditDashboard.getBy(), 15);
         DashboardPanel.EditDashboard.getElement().click();
     }
 
@@ -65,7 +65,7 @@ public class DashboardStepDefs extends CommonStepObjects {
 
     @And("^User clicks on Expand button$")
     public void clickExpandButton() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, DashboardPanel.ExpandButton.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, DashboardPanel.ExpandButton.getBy(), 15);
         DashboardPanel.ExpandButton.getElement().click();
         DashboardPanel.ExpandButton.getElement().click();
     }
@@ -100,18 +100,18 @@ public class DashboardStepDefs extends CommonStepObjects {
     @Then("^Check if the list of (.*) appears$")
     public void checkIfListOfPointsAppears(String point) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + point + "')]]"), 5);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + point + "')]]"), 15);
     }
 
     @And("^Add (.*) and (.*) points for (.*) Device at Summary Widget$")
     public void addPointsToWidget(String point1, String point2, String device) throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='mat-row ng-star-inserted']"), 10);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='mat-row ng-star-inserted']"), 15);
         List<WebElement> elements = driver.findElements(By.xpath("//*[@class='mat-row ng-star-inserted']"));
         for (WebElement element : elements
         ) {
             String text = element.getText();
             if (text.contains(device)) {
-                PageObjectUtils.IsElementVisible(driver, By.xpath("//tr[@class='mat-row ng-star-inserted']//*[contains(text(),'" + device + "')]"), 10);
+                PageObjectUtils.IsElementVisible(driver, By.xpath("//tr[@class='mat-row ng-star-inserted']//*[contains(text(),'" + device + "')]"), 15);
                 Thread.sleep(1000);
                 driver.findElement(By.xpath("//tr[@class='mat-row ng-star-inserted']//*[contains(text(),'" + device + "')]")).click();
                 break;
@@ -121,7 +121,7 @@ public class DashboardStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
         PageObjectUtils.ContainsText(driver, device).click();
 
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='points-list-element__container']//*[contains(text(),'" + point1 + "')]"), 10);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='points-list-element__container']//*[contains(text(),'" + point1 + "')]"), 15);
         driver.findElement(By.xpath("//*[@class='points-list-element__container']//*[contains(text(),'" + point1 + "')]")).click();
         driver.findElement(By.xpath("//*[@class='points-list-element__container']//*[contains(text(),'" + point2 + "')]")).click();
         Thread.sleep(1000);
@@ -163,13 +163,13 @@ public class DashboardStepDefs extends CommonStepObjects {
 
     @And("^Click edit for (.*) Widget$")
     public void clickEditButtonForWidget(String building) throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditNavigationWidget.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditNavigationWidget.getBy(), 15);
         if (building.equals("Navigation")) {
-            PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditNavigationWidget.getBy(), 5);
+            PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditNavigationWidget.getBy(), 15);
             Thread.sleep(1000);
             DashboardPanel.EditNavigationWidget.getElement().click();
         } else {
-            PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditSummaryWidget.getBy(), 5);
+            PageObjectUtils.IsElementVisible(driver, DashboardPanel.EditSummaryWidget.getBy(), 15);
             Thread.sleep(1000);
             DashboardPanel.EditSummaryWidget.getElement().click();
         }
@@ -177,13 +177,13 @@ public class DashboardStepDefs extends CommonStepObjects {
 
     @When("^User Click (.*) from Navigation Widget$")
     public void goToDeviceFromNavigationWidget(String device) throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='device-label' and contains(text(),'" + device + "')]"), 5);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='device-label' and contains(text(),'" + device + "')]"), 15);
         driver.findElement(By.xpath("//*[@class='device-label' and contains(text(),'" + device + "')]")).click();
     }
 
     @When("^User Click (.*) from Summary Widget$")
     public void goToDeviceFromSummaryWidget(String device) throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='device-title-label' and contains(text(),'" + device + "')]"), 5);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='device-title-label' and contains(text(),'" + device + "')]"), 15);
         Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@class='device-title-label' and contains(text(),'" + device + "')]")).click();
     }
@@ -193,11 +193,11 @@ public class DashboardStepDefs extends CommonStepObjects {
 
         Thread.sleep(2000);
         if (building.equals("Navigation")) {
-            PageObjectUtils.IsElementVisible(driver, DashboardPanel.RemoveNavigationWidget.getBy(), 5);
+            PageObjectUtils.IsElementVisible(driver, DashboardPanel.RemoveNavigationWidget.getBy(), 15);
             DashboardPanel.RemoveNavigationWidget.getElement().click();
             Thread.sleep(1000);
         } else {
-            PageObjectUtils.IsElementVisible(driver, DashboardPanel.RemoveSummaryWidget.getBy(), 5);
+            PageObjectUtils.IsElementVisible(driver, DashboardPanel.RemoveSummaryWidget.getBy(), 15);
             DashboardPanel.RemoveSummaryWidget.getElement().click();
             Thread.sleep(1000);
         }

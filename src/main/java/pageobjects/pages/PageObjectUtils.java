@@ -35,12 +35,12 @@ public class PageObjectUtils {
     }
 
     public static WebElement ContainsText(WebDriver driver, String value) {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 10);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 15);
         return driver.findElement(By.xpath("//*[contains(text(), '" + value + "')]"));
     }
 
     public static void CheckContainsText(WebDriver driver, String value) {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 10);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 15);
     }
 
     public static void IsElementClickable(WebDriver driver, LocatorType locatorType, String value, int seconds) {

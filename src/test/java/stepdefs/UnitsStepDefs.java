@@ -18,7 +18,7 @@ public class UnitsStepDefs extends CommonStepObjects {
     @And("^user add (.*) as Category Name and click Add$")
     public void addCategory(String name) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, UnitsPanel.addCategoryName.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, UnitsPanel.addCategoryName.getBy(), 15);
         UnitsPanel.addCategoryName.getElement().sendKeys(name);
         Thread.sleep(1000);
         UnitsPanel.saveCategory.getElement().click();
@@ -31,14 +31,14 @@ public class UnitsStepDefs extends CommonStepObjects {
 
     @When("^User Click Add Category Button$")
     public void addCategoryButton() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, UnitsPanel.addCategory.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, UnitsPanel.addCategory.getBy(), 15);
         UnitsPanel.addCategory.getElement().click();
     }
 
     @And("^Click category options button$")
     public void categoryOptions() throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, UnitsPanel.openCategoryMenu.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, UnitsPanel.openCategoryMenu.getBy(), 15);
         UnitsPanel.openCategoryMenu.getElement().click();
     }
 
@@ -49,7 +49,7 @@ public class UnitsStepDefs extends CommonStepObjects {
 
     @And("^Click Add new Unit$")
     public void addNewUnit() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, UnitsPanel.addUnit.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, UnitsPanel.addUnit.getBy(), 15);
         Thread.sleep(1000);
         UnitsPanel.addUnit.getElement().click();
     }
@@ -57,7 +57,7 @@ public class UnitsStepDefs extends CommonStepObjects {
     @And("^User fill mandatory fields and click add$")
     public void fillMandatoryFields() throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, UnitsPanel.addUnitName.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, UnitsPanel.addUnitName.getBy(), 15);
         UnitsPanel.addUnitName.getElement().sendKeys("AutoUnit");
         UnitsPanel.addUnitSymbol.getElement().sendKeys("~!");
         UnitsPanel.addUnitCOV.getElement().sendKeys("0.1");
@@ -98,14 +98,14 @@ public class UnitsStepDefs extends CommonStepObjects {
     @And("^user Click delete Unit button$")
     public void deleteButton() throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, UnitsPanel.deleteUnit.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, UnitsPanel.deleteUnit.getBy(), 15);
         UnitsPanel.deleteUnit.getElement().click();
     }
 
     @And("^User click Yes button to delete Unit$")
     public void yesButton() throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, UnitsPanel.yesButton.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, UnitsPanel.yesButton.getBy(), 15);
         UnitsPanel.yesButton.getElement().click();
     }
 

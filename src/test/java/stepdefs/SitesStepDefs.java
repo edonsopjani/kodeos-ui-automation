@@ -11,7 +11,7 @@ public class SitesStepDefs extends CommonStepObjects {
     @When("^User At Home page search for (.*)$")
     public void searchFields(String test) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, SitesPanel.Search.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, SitesPanel.Search.getBy(), 15);
         SitesPanel.Search.getElement().click();
         SitesPanel.Search.getElement().sendKeys(test);
     }
