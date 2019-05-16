@@ -36,7 +36,7 @@ Feature: Devices Tests
   Scenario: Update Device using Batch Update
     When User click on threedots button
     And Click Device batch update button
-    And User is Searching for Flex
+    And User is Searching for ExactLogic
     And Click checkbox
     And Select AutomatedTag as Tag
     And User click Save button
@@ -104,9 +104,3 @@ Feature: Devices Tests
     And User click open Flex Device Page
     And User click change details view to dashboard view
     Then Check if device details view is changed to dashboard view
-
-  @SmokeTest @Device
-  Scenario: Discover Devices
-    When User click on threedots button
-    And Click Discover Devices button
-    Then Check if Device are Discover successfully

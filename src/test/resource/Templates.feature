@@ -57,5 +57,4 @@ Feature: Templates Tests
   Scenario: Delete Section
     When User go to CHILLER template
     And Click on Delete Button, then click delete Section
-    And Click on Delete Button, then click delete Section
     Then Check if template with AutoSection name Disappears from list
