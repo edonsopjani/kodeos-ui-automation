@@ -45,3 +45,9 @@ Feature: Search Tests
     When User clicks on Search button
     And search for BR126
     Then Search results shows all devices with BR126 search keyword
+
+  @SmokeTest @Search
+  Scenario: User Search with Point name
+    When User clicks on Search button
+    And search for BO1
+    Then Search results shows all points with BO1 search keyword

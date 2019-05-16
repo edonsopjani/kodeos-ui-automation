@@ -18,7 +18,7 @@ public enum PointsPanel implements PageObjects {
     RemoveTag(PageObjectUtils.LocatorType.XPATH, "//*[@placeholder='Add tags to remove']"),
     SearchField(PageObjectUtils.LocatorType.CLASSNAME, "search-input"),
     ConfirmButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Confirm')]]"),
-    EditPointsButton(PageObjectUtils.LocatorType.XPATH, "//label[text()[contains(.,'Edit Points')]]"),
+    EditPointsButton(PageObjectUtils.LocatorType.XPATH, "//div[@mattooltip='Edit Points']"),
     ClickCheckBox(PageObjectUtils.LocatorType.CSS, ".mat-checkbox-inner-container.mat-checkbox-inner-container-no-side-margin");
 
     public PageObjectUtils.LocatorType locator;

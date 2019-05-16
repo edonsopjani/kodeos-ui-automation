@@ -42,6 +42,7 @@ public enum BuildingPanel implements PageObjects {
     SelectHTTP(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'http')]]"),
     SelectArea(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'TEST')]]"),
     Description(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='description']"),
+    DisplayName(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='displayName']"),
     From(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='from']"),
     To(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='to']"),
     Address1(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='address1']"),

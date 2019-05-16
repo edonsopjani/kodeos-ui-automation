@@ -179,6 +179,45 @@ public class DeviceStepDefs extends CommonStepObjects {
         DevicePanel.DeviceDetailsPopUp.getElement().click();
     }
 
+    @And("^User click references button$")
+    public void DeviceReferences() throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceReferences.getBy(), 15);
+        DevicePanel.DeviceReferences.getElement().click();
+    }
+
+    @And("^User click change details view to dashboard view$")
+    public void changeToDashboardView() throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.ChangeView.getBy(), 15);
+        DevicePanel.ChangeView.getElement().click();
+    }
+
+    @And("^User click change details view to default view$")
+    public void changeToDefaultView() throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.ChangeView.getBy(), 15);
+        DevicePanel.ChangeView.getElement().click();
+    }
+
+    @Then("^Check if device details view is changed to dashboard view$")
+    public void checkDeviceViewIsChangedToDashboardView() throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.CheckContainsText(driver, " Other Points ");
+    }
+
+    @Then("^Check if device details view is changed to default view$")
+    public void checkDeviceViewIsChangedToDefaultView() throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.CheckContainsText(driver, "INPUT");
+    }
+
+    @Then("^Check if Device references appears on list$")
+    public void checkDeviceReferences() throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.CheckContainsText(driver, "ExactLogic");
+    }
+
     @Then("^Check if Device has tag (.*)$")
     public void checkTagIsAddedToDevice(String type) throws Throwable {
         Thread.sleep(1000);

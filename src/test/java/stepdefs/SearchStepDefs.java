@@ -29,9 +29,10 @@ public class SearchStepDefs extends CommonStepObjects {
     public void checkButtonsAppearsOnList() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.ID, "search-overlay-input", 15);
-        PageObjectUtils.CheckContainsText(driver, "BUILDINGS");
-        PageObjectUtils.CheckContainsText(driver, "AREAS");
-        PageObjectUtils.CheckContainsText(driver, "DEVICES");
+        PageObjectUtils.CheckContainsText(driver, "Buildings");
+        PageObjectUtils.CheckContainsText(driver, "Areas");
+        PageObjectUtils.CheckContainsText(driver, "Devices");
+        PageObjectUtils.CheckContainsText(driver, "Points");
     }
 
     @And("^User click on View all button for Buildings$")
@@ -90,21 +91,25 @@ public class SearchStepDefs extends CommonStepObjects {
     @Then("^Search results shows the Building with (.*) search keyword, also shows the Floors and Devices for that Building")
     public void seeAllSearchResults(String text) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-building-item-title' and contains(text(), '" + text + "')]", 15);
-        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-area-item-building' and contains(text(), '" + text + "')]", 15);
-        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-device-item-building' and contains(text(), '" + text + "')]", 15);
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title' and contains(text(), '" + text + "')]", 15);
     }
 
     @Then("^Search results shows all floors with (.*) search keyword, and all devices that are assign to that floor")
     public void checkAllSearchResultsWithFloors(String text) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-area-item-title' and contains(text(), '" + text + "')]", 15);
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title' and contains(text(), '" + text + "')]", 15);
     }
 
     @Then("^Search results shows all devices with (.*) search keyword$")
     public void checkAllResultsWithDevices(String text) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-device-item-title' and contains(text(), '" + text + "')]", 15);
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title' and contains(text(), '" + text + "')]", 15);
+    }
+
+    @Then("^Search results shows all points with (.*) search keyword$")
+    public void checkAllResultsWithPoints(String text) throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title' and contains(text(), '" + text + "')]", 15);
     }
 
 }

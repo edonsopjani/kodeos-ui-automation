@@ -44,25 +44,6 @@ Feature: Devices Tests
     Then Check if Device has tag AutomationTag
 
   @SmokeTest @Device
-  Scenario: Create Point Group and add some points
-    When User Search for BR127
-    And User click open BR127 Device Page
-    And User Click edit groups button
-    And User Click Add new Points group button
-    And User Drag Point to New Point Group
-    And User click Save button
-    Then Check if Point appears on new Group 1
-
-  @SmokeTest @Device
-  Scenario: Delete Points Group
-    When User Search for BR127
-    And User click open BR127 Device Page
-    And User Click edit groups button
-    And User Click delete group
-    And User click Save button
-    Then Checks if Group 1 is deleted
-
-  @SmokeTest @Device
   Scenario: Add point to Template from Point Batch Update
     When User click on threedots button
     And Click Device batch update button
@@ -109,6 +90,20 @@ Feature: Devices Tests
     And User click Save button
     And Open Device Details Pop-up
     Then Check if Device has tag AutomationTag
+
+  @SmokeTest @Device
+  Scenario: Show Device References on Details page
+    When User Search for Flex
+    And User click open Flex Device Page
+    And User click references button
+    Then Check if Device references appears on list
+
+  @SmokeTest @Device
+  Scenario: Change Default view to Dashboard view
+    When User Search for Flex
+    And User click open Flex Device Page
+    And User click change details view to dashboard view
+    Then Check if device details view is changed to dashboard view
 
   @SmokeTest @Device
   Scenario: Discover Devices

@@ -85,6 +85,7 @@ public class PointsStepDefs extends CommonStepObjects {
     @And("^User click connect points button$")
     public void connectPointsButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.ConnectPointsButton.getBy(), 15);
+        Thread.sleep(1000);
         PointsPanel.ConnectPointsButton.getElement().click();
     }
 

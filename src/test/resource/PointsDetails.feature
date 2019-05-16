@@ -18,7 +18,6 @@ Feature: Points Tests
     And User Click edit Points button
     And User click connect points button
     And User connect point BO1 with DEV277127_systemStatus
-    And User Click edit Points button
     And User click connect points button
     And User connect point BO1 with DEV277127_systemStatus
     Then Check if points are connected

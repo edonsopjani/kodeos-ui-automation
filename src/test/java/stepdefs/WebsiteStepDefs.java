@@ -1189,6 +1189,8 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @And("^Fill point mandatory fields with name (.*)")
     public void fillPointFields(String name) throws Throwable {
         //PageObjectUtils.CheckContainsText(driver,"Add New Point");
+        BuildingPanel.DisplayName.getElement().sendKeys(name);
+        Thread.sleep(1000);
         BuildingPanel.Description.getElement().sendKeys(name);
         PageObjectUtils.ContainsText(driver, "Choose type").click();
         driver.findElement(By.xpath("//mat-option//*[contains(text(), 'Bool')]")).click();
@@ -1210,6 +1212,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Description.getBy(), 15);
         BuildingPanel.Description.getElement().clear();
         BuildingPanel.Description.getElement().sendKeys(template);
+
+        BuildingPanel.DisplayName.getElement().clear();
+        BuildingPanel.DisplayName.getElement().sendKeys(template);
 
         PageObjectUtils.ContainsText(driver, "Save").click();
     }
