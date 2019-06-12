@@ -16,6 +16,13 @@ public class SchedulersStepDefs extends CommonStepObjects {
         Schedulers.schedulersButton.getElement().click();
     }
 
+    @When("^User select (.*) building$")
+    public void selectBuilding(String name) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, name);
+        PageObjectUtils.ContainsText(driver, name).click();
+        Thread.sleep(1000);
+    }
+
     @When("^User click Discovery button$")
     public void clickDiscoverSchedulers() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Schedulers.discovery.getBy(), 15);
@@ -36,11 +43,51 @@ public class SchedulersStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
     }
 
+    @And("^User click (.*) three dots menu$")
+    public void clickSchedulerMenu(String name) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Schedulers.showSchedulerMenu.getBy(), 15);
+        Schedulers.showSchedulerMenu.getElement().click();
+    }
+
+
     @And("^User click add scheduler button$")
     public void addScheduler() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Schedulers.addScheduler.getBy(), 15);
         Thread.sleep(1000);
         Schedulers.addScheduler.getElement().click();
+    }
+
+    @And("^User click disabled Button$")
+    public void disableButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Schedulers.disableSchedulerPoint.getBy(), 15);
+        Thread.sleep(1000);
+        Schedulers.disableSchedulerPoint.getElement().click();
+    }
+
+    @Then("^Check if Scheduler point is disabled$")
+    public void checkPointIsDisabled() throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, Schedulers.enableSchedulerPoint.getBy(), 15);
+    }
+
+    @And("^User click enable Button$")
+    public void enableButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Schedulers.enableSchedulerPoint.getBy(), 15);
+        Thread.sleep(1000);
+        Schedulers.enableSchedulerPoint.getElement().click();
+    }
+
+    @Then("^Check if Scheduler point is enabled")
+    public void checkPointIsEnable() throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, Schedulers.disableSchedulerPoint.getBy(), 15);
+    }
+
+    @And("^User click add scheduler in list$")
+    public void addSchedulerInList() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Schedulers.addSchedulerInList.getBy(), 15);
+        Thread.sleep(1000);
+        Schedulers.addSchedulerInList.getElement().click();
     }
 
     @And("^User click save scheduler button$")
@@ -75,20 +122,32 @@ public class SchedulersStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//tr[@class='mat-row ng-tns-c54-161 ng-star-inserted']"), 15);
     }
 
-    @And("^User change date to Saturday$")
-    public void changeSchedulerDate() throws Throwable {
+    @And("^User change date to (.*)$")
+    public void changeSchedulerDate(String name) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, Schedulers.selectDay.getBy(), 15);
         Schedulers.selectDay.getElement().click();
-        PageObjectUtils.IsElementVisible(driver, Schedulers.selectSaturday.getBy(), 15);
-        Schedulers.selectSaturday.getElement().click();
+        PageObjectUtils.CheckContainsText(driver, name);
+        PageObjectUtils.ContainsText(driver, name).click();
         Thread.sleep(1000);
+    }
+
+    @And("^Close date dropdown$")
+    public void closePopup() throws Throwable {
+        Schedulers.closeDropdown.getElement().click();
     }
 
     @And("^User clicks delete scheduler button$")
     public void deleteScheduler() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Schedulers.removeScheduler.getBy(), 15);
         Schedulers.removeScheduler.getElement().click();
+        Thread.sleep(1000);
+    }
+
+    @And("^User select existing Time-Period")
+    public void selectTimePeriod() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Schedulers.selectPeriod.getBy(), 15);
+        Schedulers.selectPeriod.getElement().click();
         Thread.sleep(1000);
     }
 

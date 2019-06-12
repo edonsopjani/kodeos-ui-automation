@@ -26,8 +26,6 @@ public class SitesStepDefs extends CommonStepObjects {
     public void openBuilding(String building) throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.ContainsText(driver, building).click();
-        Thread.sleep(1000);
-        PageObjectUtils.ContainsText(driver, building).click();
     }
 
     @Then("^Check if (.*) Dashboard appears$")

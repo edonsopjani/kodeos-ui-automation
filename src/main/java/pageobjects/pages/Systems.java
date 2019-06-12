@@ -21,9 +21,9 @@ public enum Systems implements PageObjects {
     createButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,' Create ')]]"),
     dragPoint(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'BO1')]]"),
     dropPoint(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Drop Points Here ')]]"),
-    editSystem(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Edit System')]]"),
-    editContent(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Edit Content')]]"),
-    deleteSystem(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Delete System')]]"),
+    editSystem(PageObjectUtils.LocatorType.XPATH, "//div[@mattooltip='Edit System']"),
+    editContent(PageObjectUtils.LocatorType.XPATH, "//div[@mattooltip='Edit Content']"),
+    deleteSystem(PageObjectUtils.LocatorType.XPATH, "//div[@mattooltip='Delete System']"),
     yesButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' Yes ')]]"),
     systemsDetails(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'System Details')]]");
 

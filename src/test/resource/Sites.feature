@@ -16,10 +16,5 @@ Feature: Sites Page Tests
     And User click twice on Chrysler House building
     Then Check if Chrysler House Dashboard appears
 
-  @SmokeTest @Sites
-  Scenario: Select Building from Map
-    When User At Home page search for Chrysler House
-    And Select Chrysler House from Map
-    Then Check if Chrysler House Dashboard appears
 
 

@@ -4,38 +4,47 @@ Feature: Schedulers Tests
   Background: Steps That execute before every scenario
     Given Open KodeLabs Page
     Then Check if user is logged in
-    And User click twice on Automation Testing building
-    Then Check if Automation Testing Dashboard appears
     And User Click on Schedulers button
+    And User select KODE Labs building
     Then Check if Schedulers page appears
 
-  @Schedulers
+  @Schedulers @SmokeTest
   Scenario: Discover Schedulers
     When User click Discovery button
     Then Check if points with schedulers appears on list
 
-  @Schedulers
-  Scenario: Add Scheduler
+  @Schedulers @SmokeTest
+  Scenario: Add Time-Period on Scheduler
     When User click BR126_str from the list
-    And User click add scheduler button
-    And User click save scheduler button
-    And User go to calendar
-    Then Check if Scheduler appears on calendar
-
- @Schedulers
-  Scenario: Edit Scheduler
-    When User click BR126_str from the list
-    And User clicks delete scheduler button
     And User click add scheduler button
     And User change date to Saturday
+    And Close date dropdown
+    And User click add scheduler in list
     And User click save scheduler button
     And User go to calendar
     Then Check if Scheduler appears on calendar
 
-  @Schedulers
-  Scenario: Delete Scheduler
+
+  Scenario: Edit Time-Period on Scheduler
+    When User click BR126_str from the list
+    And User select existing Time-Period
+    And User change date to Friday
+    And User click save scheduler button
+    And User go to calendar
+    Then Check if Scheduler appears on calendar
+
+  @Schedulers @SmokeTest
+  Scenario: Delete Time-Period on Scheduler
     When User click BR126_str from the list
     And User clicks delete scheduler button
     And User click save scheduler button
     And User go to calendar
     Then Check if Scheduler disappears on calendar
+
+  @Schedulers
+  Scenario: Hide/Show Scheduler Point
+    When User click BR126_str three dots menu
+    And User click disabled Button
+    Then Check if Scheduler point is disabled
+    And User click enable Button
+    Then Check if Scheduler point is enabled

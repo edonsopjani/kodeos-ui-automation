@@ -91,25 +91,25 @@ public class SearchStepDefs extends CommonStepObjects {
     @Then("^Search results shows the Building with (.*) search keyword, also shows the Floors and Devices for that Building")
     public void seeAllSearchResults(String text) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title' and contains(text(), '" + text + "')]", 15);
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title building-title' and contains(text(), '" + text + "')]", 15);
     }
 
     @Then("^Search results shows all floors with (.*) search keyword, and all devices that are assign to that floor")
     public void checkAllSearchResultsWithFloors(String text) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title' and contains(text(), '" + text + "')]", 15);
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title area-title' and contains(text(), '" + text + "')]", 15);
     }
 
     @Then("^Search results shows all devices with (.*) search keyword$")
     public void checkAllResultsWithDevices(String text) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title' and contains(text(), '" + text + "')]", 15);
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title device-title' and contains(text(), '" + text + "')]", 15);
     }
 
     @Then("^Search results shows all points with (.*) search keyword$")
     public void checkAllResultsWithPoints(String text) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title' and contains(text(), '" + text + "')]", 15);
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='search-item-title point-title' and contains(text(), '" + text + "')]", 15);
     }
 
 }

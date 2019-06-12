@@ -20,9 +20,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @Given("^Open KodeLabs Page$")
     public void thePreconditionForTheTestGoesToWebsiteOrLogsIn() throws Throwable {
         if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
-        //driver.navigate().to(System.getProperty("websiteUrl"));
+        driver.navigate().to(System.getProperty("websiteUrl"));
         //driver.navigate().to("https://Test:Test1234@emsol.zag-apps.com/real-estate/buildings");
-        driver.navigate().to("http://localhost:4200/real-estate/buildings");
+        //driver.navigate().to("http://localhost:4200/real-estate/buildings");
         //driver.navigate().to("https://qa-kode.kode-dev.com/real-estate/buildings");
         Thread.sleep(1000);
         List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
@@ -60,9 +60,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @Given("^User goes to Login page$")
     public void goToKodeLabsPage() throws Throwable {
         if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
-        //driver.navigate().to(System.getProperty("websiteUrl"));
+        driver.navigate().to(System.getProperty("websiteUrl"));
         //driver.navigate().to("https://Test:Test1234@emsol.zag-apps.com/real-estate/buildings");
-        driver.navigate().to("http://localhost:4200/real-estate/buildings");
+        //driver.navigate().to("http://localhost:4200/real-estate/buildings");
         //driver.navigate().to("https://qa-kode.kode-dev.com/real-estate/buildings");
         Thread.sleep(2000);
 

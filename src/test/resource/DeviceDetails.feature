@@ -93,8 +93,8 @@ Feature: Devices Tests
 
   @SmokeTest @Device
   Scenario: Show Device References on Details page
-    When User Search for Flex
-    And User click open Flex Device Page
+    When User Search for BR126
+    And User click open BR126 Device Page
     And User click references button
     Then Check if Device references appears on list
 
