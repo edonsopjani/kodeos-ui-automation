@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PointsPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PointsPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/selenium/WebDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/selenium/WebDriverFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/BuildingPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/BuildingPanel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Dashboard.html" afterDir="false" />
@@ -43,7 +35,6 @@
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-VirtualDevice-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-VirtualDevice-feature.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/step-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/step-overview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/tag-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/tag-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
@@ -51,7 +42,6 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCukesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCukesTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/junit-noframes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junit-noframes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/PointsStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/PointsStepDefs.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,15 +60,15 @@
         <entry file="file://$PROJECT_DIR$/src/test/resource/Units.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-874">
+            <state relative-caret-position="17">
               <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -87,17 +77,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+            <state relative-caret-position="351">
+              <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#367#368#0" expanded="true" />
                 <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,8 +155,8 @@
         <option value="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java" />
       </list>
     </option>
   </component>
@@ -179,7 +167,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -193,6 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,11 +273,10 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561024238342" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561042750800" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/backend" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -441,12 +429,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Add_New_Unit_Category - 2019.06.20 at 11h 37m 59s.xml">
-      <configuration name="Scenario: Add New Unit Category" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Add_New_Unit_Category - 2019.06.20 at 11h 40m 33s.xml">
-      <configuration name="Scenario: Add New Unit Category" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__Add_New_Unit_Category - 2019.06.20 at 11h 41m 56s.xml">
       <configuration name="Scenario: Add New Unit Category" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -471,6 +453,12 @@
     <history-entry file="Scenario__Add_New_Unit_Category - 2019.06.20 at 11h 46m 44s.xml">
       <configuration name="Scenario: Add New Unit Category" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Scenario__Add_New_Unit_Category - 2019.06.20 at 16h 58m 42s.xml">
+      <configuration name="Scenario: Add New Unit Category" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Add_New_Unit_Category - 2019.06.20 at 16h 59m 04s.xml">
+      <configuration name="Scenario: Add New Unit Category" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,8 +471,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.46055436" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.46588486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -494,7 +483,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33261105" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -895,30 +884,28 @@
     <entry file="file://$PROJECT_DIR$/src/test/resource/Units.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-          </folding>
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-874">
+        <state relative-caret-position="17">
           <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
           </folding>
         </state>
       </provider>

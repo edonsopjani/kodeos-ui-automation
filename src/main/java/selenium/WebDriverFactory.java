@@ -46,17 +46,18 @@ public class WebDriverFactory {
                 options.addArguments("start-maximized");
                 options.addArguments("--disable-notifications");
                 driver = new ChromeDriver(options);
-                //driver.manage().window().maximize();
                 browserName = ((ChromeDriver) driver).getCapabilities().getBrowserName();
                 browserVersion = ((ChromeDriver) driver).getCapabilities().getVersion();
                 break;
             }
             case 'h': {
+                if (System.getProperty("os.name").contains("Windows"))
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/chromedriver.exe");
+                else
+                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/chromedriverlinux");
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
                 driver = new ChromeDriver(options);
-                //driver.manage().window().setSize(new Dimension(1024,768));
                 browserName = ((ChromeDriver) driver).getCapabilities().getBrowserName();
                 browserVersion = ((ChromeDriver) driver).getCapabilities().getVersion();
             }
