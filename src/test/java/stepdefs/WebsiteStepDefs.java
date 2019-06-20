@@ -21,9 +21,6 @@ public class WebsiteStepDefs extends CommonStepObjects {
     public void thePreconditionForTheTestGoesToWebsiteOrLogsIn() throws Throwable {
         if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
         driver.navigate().to(System.getProperty("websiteUrl"));
-        //driver.navigate().to("https://Test:Test1234@emsol.zag-apps.com/real-estate/buildings");
-        //driver.navigate().to("http://localhost:4200/real-estate/buildings");
-        //driver.navigate().to("https://qa-kode.kode-dev.com/real-estate/buildings");
         Thread.sleep(1000);
         List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
         if (isLoggedIn.isEmpty()) {
@@ -34,36 +31,12 @@ public class WebsiteStepDefs extends CommonStepObjects {
             Thread.sleep(1000);
             driver.findElement((By.xpath("//*[contains(text(),'Login')]"))).click();
         }
-//        System.setProperty("webdriver.chrome.driver","C:/Framework/src/main/resources/chromedriver.exe");
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--headless");
-//        options.addArguments("--disable-gpu");
-//        options.addArguments("--remote-debugging-port=9222");
-//        driver = new ChromeDriver(options);
-//
-//        driver.navigate().to(System.getProperty("websiteUrl"));
-//        //driver.navigate().to("https://Test:Test1234@emsol.zag-apps.com/real-estate/buildings");
-//        driver.navigate().to("http://localhost:4200/real-estate/buildings");
-//        Thread.sleep(1000);
-//        List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@ng-reflect-placeholder='Email Address']"));
-//        if(isLoggedIn.isEmpty()){
-//
-//        }
-//        else {
-//            driver.findElement(By.xpath("//*[@ng-reflect-placeholder='Email Address']")).sendKeys("edi@kodelabs.co");
-//            driver.findElement(By.xpath("//*[@ng-reflect-placeholder='Enter your password']")).sendKeys("123456");
-//            Thread.sleep(1000);
-//            driver.findElement((By.xpath("//*[contains(text(),'Login')]"))).click();
-//        }
     }
 
     @Given("^User goes to Login page$")
     public void goToKodeLabsPage() throws Throwable {
         if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
         driver.navigate().to(System.getProperty("websiteUrl"));
-        //driver.navigate().to("https://Test:Test1234@emsol.zag-apps.com/real-estate/buildings");
-        //driver.navigate().to("http://localhost:4200/real-estate/buildings");
-        //driver.navigate().to("https://qa-kode.kode-dev.com/real-estate/buildings");
         Thread.sleep(2000);
 
         List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
@@ -100,8 +73,6 @@ public class WebsiteStepDefs extends CommonStepObjects {
     public void openBuilding(String building) throws Throwable {
         try {
             Thread.sleep(3000);
-        /*    PageObjectUtils.CheckContainsText(driver, building);
-            PageObjectUtils.ContainsText(driver, building).click();*/
 
             driver.findElement((By.xpath("//*[contains(text(),'" + building + "')]"))).click();
         } catch (Exception ex) {

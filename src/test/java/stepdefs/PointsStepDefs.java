@@ -89,6 +89,36 @@ public class PointsStepDefs extends CommonStepObjects {
         PointsPanel.ConnectPointsButton.getElement().click();
     }
 
+    @And("^User click (.*) point write button$")
+    public void clickWritePoint(String point) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, PointsPanel.WritePoint.getBy(), 15);
+        Thread.sleep(1000);
+        PointsPanel.WritePoint.getElement().click();
+    }
+
+    @And("^User turn on point and click save$")
+    public void turnOnPoint() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, PointsPanel.TurnOn.getBy(), 15);
+        Thread.sleep(1000);
+        PointsPanel.TurnOn.getElement().click();
+        Thread.sleep(1000);
+        PointsPanel.SaveChanges.getElement().click();
+    }
+
+    @And("^User turn off point and click save$")
+    public void turnOffPoint() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, PointsPanel.TurnOff.getBy(), 15);
+        Thread.sleep(1000);
+        PointsPanel.TurnOff.getElement().click();
+        Thread.sleep(1000);
+        PointsPanel.SaveChanges.getElement().click();
+    }
+
+    @Then("^Check if write point is saved successfully$")
+    public void checkPointIsUpdated() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, PointsPanel.SavedSuccessfully.getBy(), 15);
+    }
+
     @And("^User connect point (.*) with (.*)$")
     public void connectTwoPoints(String point1, String point2) throws Throwable {
         Thread.sleep(1000);

@@ -6,17 +6,18 @@ import pageobjects.PageElementIds;
 
 public enum PointsPanel implements PageObjects {
 
-    ChooseUnit(PageObjectUtils.LocatorType.XPATH, "//*[@placeholder='Choose unit']"),
-    AddTagEditPoints(PageObjectUtils.LocatorType.XPATH, "//*[@placeholder='Add tags']"),
+    WritePoint(PageObjectUtils.LocatorType.XPATH, "//label[text()[contains(.,'BO1')]]/../../div[@class='test-action-container']"),
+    TurnOn(PageObjectUtils.LocatorType.XPATH, "//div[@class='selection-control' and text()[contains(.,'Active')]]"),
+    TurnOff(PageObjectUtils.LocatorType.XPATH, "//div[@class='selection-control' and text()[contains(.,'Inactive')]]"),
     EditName(PageObjectUtils.LocatorType.XPATH, "//*[@formcontrolname='name']"),
     ConnectPointsButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Connect Points')]]"),
     AddTag(PageObjectUtils.LocatorType.XPATH, "//*[@placeholder='Add tags to append']"),
-    ThreedotMenu(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'more_horiz')]]"),
+    SaveChanges(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,' Save Changes ')]]"),
     SaveButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Save')]]"),
     SaveConnectedPointsButton(PageObjectUtils.LocatorType.XPATH, "//*[@class='action-buttons-container ng-star-inserted']//*[text()[contains(.,'Save')]]"),
     PointsBatchUpdate(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Points - Batch Update')]]"),
     RemoveTag(PageObjectUtils.LocatorType.XPATH, "//*[@placeholder='Add tags to remove']"),
-    SearchField(PageObjectUtils.LocatorType.CLASSNAME, "search-input"),
+    SavedSuccessfully(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Saved Successfully')]]"),
     ConfirmButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Confirm')]]"),
     EditPointsButton(PageObjectUtils.LocatorType.XPATH, "//div[@mattooltip='Edit Points']"),
     ClickCheckBox(PageObjectUtils.LocatorType.CSS, ".mat-checkbox-inner-container.mat-checkbox-inner-container-no-side-margin");
