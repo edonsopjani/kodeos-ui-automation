@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@Admin","@BuildingPanel","@Dashboard","@Device","@Devices","@Points","@Search","@Sites","@SmokeTest","@Tags","@Template","@Test","@Unit","@UserPanel","@VirtualDevice"],
+        labels: ["@Sites","@SmokeTest"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [98.86, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00, 99.50, 100.00, 100.00, 100.00, 100.00, 91.67, 100.00]
+                data: [0.00, 0.00]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [0.57, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.25, 0.00, 0.00, 0.00, 0.00, 4.17, 0.00]
+                data: [0.00, 0.00]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [0.57, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.25, 0.00, 0.00, 0.00, 0.00, 4.17, 0.00]
+                data: [100.00, 100.00]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>KodeLabs Automation Tests</td>
                           <td>1</td>
-                        <td>18 Mar 2019, 16:35</td>
+                        <td>20 Jun 2019, 15:59</td>
           </tr>
         </tbody>
       </table>
@@ -192,260 +192,65 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="Admin.html">@Admin</a></td>
-        
-        <td  class="passed"    >31</td>
-        <td  class="failed"    >1</td>
-        <td class="total">32</td>
-        <td      class="passed"    >173</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">175</td>
-        <td class="duration" data-value="272296933620">4m 32s 296ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="BuildingPanel.html">@BuildingPanel</a></td>
-        
-        <td  class="passed"    >13</td>
-        <td >0</td>
-        <td class="total">13</td>
-        <td      class="passed"    >86</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">86</td>
-        <td class="duration" data-value="137619721809">2m 17s 619ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Dashboard.html">@Dashboard</a></td>
-        
-        <td  class="passed"    >9</td>
-        <td >0</td>
-        <td class="total">9</td>
-        <td      class="passed"    >35</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">35</td>
-        <td class="duration" data-value="45948165176">45s 948ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Device.html">@Device</a></td>
-        
-        <td  class="passed"    >14</td>
-        <td >0</td>
-        <td class="total">14</td>
-        <td      class="passed"    >83</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">83</td>
-        <td class="duration" data-value="110303842820">1m 50s 303ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Devices.html">@Devices</a></td>
+        <td class="tagname"><a href="Sites.html">@Sites</a></td>
         
         <td  class="passed"    >2</td>
         <td >0</td>
         <td class="total">2</td>
-        <td      class="passed"    >5</td>
         <td >0</td>
         <td >0</td>
+        <td     class="skipped"   >5</td>
         <td >0</td>
         <td >0</td>
         <td class="total">5</td>
-        <td class="duration" data-value="11155136711">11s 155ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Points.html">@Points</a></td>
-        
-        <td  class="passed"    >4</td>
-        <td >0</td>
-        <td class="total">4</td>
-        <td      class="passed"    >42</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">42</td>
-        <td class="duration" data-value="69413502957">1m 9s 413ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Search.html">@Search</a></td>
-        
-        <td  class="passed"    >7</td>
-        <td >0</td>
-        <td class="total">7</td>
-        <td      class="passed"    >20</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">20</td>
-        <td class="duration" data-value="17391517602">17s 391ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Sites.html">@Sites</a></td>
-        
-        <td  class="passed"    >3</td>
-        <td >0</td>
-        <td class="total">3</td>
-        <td      class="passed"    >8</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">8</td>
-        <td class="duration" data-value="11913520817">11s 913ms</td>
+        <td class="duration" data-value="0">000ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="SmokeTest.html">@SmokeTest</a></td>
         
-        <td  class="passed"    >77</td>
-        <td  class="failed"    >1</td>
-        <td class="total">78</td>
-        <td      class="passed"    >396</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">398</td>
-        <td class="duration" data-value="585743580182">9m 45s 743ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Tags.html">@Tags</a></td>
-        
-        <td  class="passed"    >4</td>
-        <td >0</td>
-        <td class="total">4</td>
-        <td      class="passed"    >14</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">14</td>
-        <td class="duration" data-value="29593306535">29s 593ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Template.html">@Template</a></td>
-        
-        <td  class="passed"    >6</td>
-        <td >0</td>
-        <td class="total">6</td>
-        <td      class="passed"    >34</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">34</td>
-        <td class="duration" data-value="46901658108">46s 901ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Test.html">@Test</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
+        <td  class="passed"    >2</td>
         <td >0</td>
         <td class="total">2</td>
-        <td class="duration" data-value="1165294611">1s 165ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="Unit.html">@Unit</a></td>
-        
-        <td  class="passed"    >4</td>
-        <td >0</td>
-        <td class="total">4</td>
-        <td      class="passed"    >17</td>
         <td >0</td>
         <td >0</td>
+        <td     class="skipped"   >5</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">17</td>
-        <td class="duration" data-value="26693164486">26s 693ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="UserPanel.html">@UserPanel</a></td>
-        
-        <td  class="passed"    >4</td>
-        <td  class="failed"    >1</td>
         <td class="total">5</td>
-        <td      class="passed"    >22</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">24</td>
-        <td class="duration" data-value="31489082682">31s 489ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="VirtualDevice.html">@VirtualDevice</a></td>
-        
-        <td  class="passed"    >7</td>
-        <td >0</td>
-        <td class="total">7</td>
-        <td      class="passed"    >30</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">30</td>
-        <td class="duration" data-value="47320960479">47s 320ms</td>
+        <td class="duration" data-value="0">000ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>15</td>
-            <td>186</td>
-      <td>3</td>
-      <td>189</td>
-      <td>967</td>
-      <td>3</td>
-      <td>3</td>
+      <td>2</td>
+            <td>4</td>
+      <td>0</td>
+      <td>4</td>
       <td>0</td>
       <td>0</td>
-      <td>973</td>
-      <td class="duration">24m 4s 949ms</td>
+      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10</td>
+      <td class="duration">000ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>98.41%</td>
-      <td>1.59%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
-      <td>99.38%</td>
-      <td>0.31%</td>
-      <td>0.31%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td>100.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>1.59%</td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>
