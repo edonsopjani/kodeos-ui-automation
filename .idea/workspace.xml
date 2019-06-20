@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/BuildingPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/BuildingPanel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Dashboard.html" afterDir="false" />
@@ -80,7 +79,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
+            <state relative-caret-position="453">
               <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -167,9 +166,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-292" />
+    <option name="y" value="-1101" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -276,7 +275,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561042750800" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561042851267" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/backend" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -399,10 +398,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Scenario: Delete Systems" />
-      <item itemvalue="Cucumber java.Scenario: Write Point on Device details" />
-      <item itemvalue="Cucumber java.Scenario: Search for Building" />
       <item itemvalue="Cucumber java.Scenario: Add New Unit Category" />
+      <item itemvalue="Cucumber java.Scenario: Delete Systems" />
+      <item itemvalue="Cucumber java.Scenario: Search for Building" />
+      <item itemvalue="Cucumber java.Scenario: Write Point on Device details" />
       <item itemvalue="JUnit.RunCukesTest" />
     </list>
     <recent_temporary>
@@ -470,8 +469,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.46588486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -483,7 +481,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33261105" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -900,7 +898,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="453">
           <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />

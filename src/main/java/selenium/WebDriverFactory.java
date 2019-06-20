@@ -54,7 +54,7 @@ public class WebDriverFactory {
                 if (System.getProperty("os.name").contains("Windows"))
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/chromedriver.exe");
                 else
-                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/chromedriverlinux");
+                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver");
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
                 driver = new ChromeDriver(options);
