@@ -8,7 +8,7 @@ public enum PointsPanel implements PageObjects {
 
     WritePoint(PageObjectUtils.LocatorType.XPATH, "//label[text()[contains(.,'BO1')]]/../../div[@class='test-action-container']"),
     TurnOn(PageObjectUtils.LocatorType.XPATH, "//div[@class='selection-control' and text()[contains(.,'Active')]]"),
-    TurnOff(PageObjectUtils.LocatorType.XPATH, "//div[@class='selection-control' and text()[contains(.,'Inactive')]]"),
+    TurnOff(PageObjectUtils.LocatorType.XPATH, "//div[@class='selection-control selected' and text()[contains(.,'Inactive')]]"),
     EditName(PageObjectUtils.LocatorType.XPATH, "//*[@formcontrolname='name']"),
     ConnectPointsButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Connect Points')]]"),
     AddTag(PageObjectUtils.LocatorType.XPATH, "//*[@placeholder='Add tags to append']"),
@@ -20,7 +20,7 @@ public enum PointsPanel implements PageObjects {
     SavedSuccessfully(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Saved Successfully')]]"),
     ConfirmButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Confirm')]]"),
     EditPointsButton(PageObjectUtils.LocatorType.XPATH, "//div[@mattooltip='Edit Points']"),
-    ClickCheckBox(PageObjectUtils.LocatorType.CSS, ".mat-checkbox-inner-container.mat-checkbox-inner-container-no-side-margin");
+    AddReason(PageObjectUtils.LocatorType.XPATH, "//textarea[@placeholder='Please specify']");
 
     public PageObjectUtils.LocatorType locator;
     public String id;

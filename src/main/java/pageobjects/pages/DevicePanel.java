@@ -34,7 +34,7 @@ public enum DevicePanel implements PageObjects {
     EditPointsButton(PageObjectUtils.LocatorType.XPATH, "//div[@mattooltip='Edit Points']"),
     DeviceReferences(PageObjectUtils.LocatorType.XPATH, "//div[@mattooltip='References']"),
     ChangeView(PageObjectUtils.LocatorType.XPATH, "//button[@class='menu-item bottom-aligned no-borders']"),
-    ShowGraph(PageObjectUtils.LocatorType.XPATH, "//mat-icon[@class='mat-icon material-icons mat-icon-no-color']"),
+    ClickPopUp(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='location']"),
     SelectFCUFilter(PageObjectUtils.LocatorType.XPATH, "//label[@class='filters-list-item__name' and contains(text(),'FCU')]"),
     SelectBasementFilter(PageObjectUtils.LocatorType.XPATH, "//label[@class='filters-list-item__name' and contains(text(),'Basement')]"),
     ApplyButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Apply')]]"),

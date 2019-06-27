@@ -108,7 +108,7 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @And("^Click at Device details button$")
     public void openDeviceDetails() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceDetailsButton.getBy(), 5);
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceDetailsButton.getBy(), 15);
         DevicePanel.DeviceDetailsButton.getElement().click();
     }
 
@@ -170,6 +170,13 @@ public class DeviceStepDefs extends CommonStepObjects {
         DevicePanel.Tag.getElement().sendKeys(type);
         DevicePanel.Tag.getElement().sendKeys(Keys.ENTER);
         Thread.sleep(1000);
+    }
+
+    @And("^User close autofill popup$")
+    public void closeSuggestFillTag() throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.ClickPopUp.getBy(), 15);
+        DevicePanel.ClickPopUp.getElement().click();
     }
 
     @And("^Open Device Details Pop-up$")

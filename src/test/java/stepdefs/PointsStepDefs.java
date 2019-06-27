@@ -96,6 +96,14 @@ public class PointsStepDefs extends CommonStepObjects {
         PointsPanel.WritePoint.getElement().click();
     }
 
+    @And("^User add (.*) as reason$")
+    public void addReason(String reason) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, PointsPanel.AddReason.getBy(), 15);
+        Thread.sleep(1000);
+        PointsPanel.AddReason.getElement().sendKeys(reason);
+        Thread.sleep(1000);
+    }
+
     @And("^User turn on point and click save$")
     public void turnOnPoint() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.TurnOn.getBy(), 15);

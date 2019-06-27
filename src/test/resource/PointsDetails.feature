@@ -30,8 +30,11 @@ Feature: Points Tests
     Then Check if BR126 Device appears on list
     And User click open BR126 Device Page
     And User click BO1 point write button
+    And User add automation as reason
     And User turn on point and click save
     Then Check if write point is saved successfully
+    And User click BO1 point write button
+    And User add automation as reason
     And User turn off point and click save
     Then Check if write point is saved successfully
 

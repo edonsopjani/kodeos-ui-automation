@@ -87,8 +87,8 @@ Feature: Devices Tests
     And User click open Flex Device Page
     And User Click edit Device button
     And Select AutomationTag as Tags
+    And User close autofill popup
     And User click Save button
-    And Open Device Details Pop-up
     Then Check if Device has tag AutomationTag
 
   @SmokeTest @Device
