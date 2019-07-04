@@ -153,4 +153,6 @@ public class SystemsStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceDetailsButton.getBy(), 15);
         DevicePanel.DeviceDetailsButton.getElement().click();
     }
+
+
 }

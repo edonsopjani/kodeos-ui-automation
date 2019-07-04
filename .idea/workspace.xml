@@ -3,21 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Events.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/geckodriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/geckodriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/geckodriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/EventsStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/EventsStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/SchedulersStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/SchedulersStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/SystemsStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/SystemsStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/geckodriver" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/geckodriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/geckodriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/DevicePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/DevicePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Events.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Events.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Schedulers.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Schedulers.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Systems.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Systems.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/Events.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/Events.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PointsPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PointsPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/selenium/WebDriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/selenium/WebDriverFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/BuildingPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/BuildingPanel.html" afterDir="false" />
@@ -59,8 +59,8 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCukesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCukesTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/junit-noframes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junit-noframes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/DeviceStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/DeviceStepDefs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/PointsStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/PointsStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/EventsStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/EventsStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/SchedulersStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/SchedulersStepDefs.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,36 +76,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resource/DeviceDetails.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/resource/Events.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="84" column="43" lean-forward="true" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
+            <state relative-caret-position="269">
+              <caret line="76" column="50" lean-forward="true" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/EventsStepDefs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="178" column="30" selection-start-line="178" selection-start-column="30" selection-end-line="178" selection-end-column="30" />
+            <state relative-caret-position="393">
+              <caret line="278" column="5" lean-forward="true" selection-start-line="278" selection-start-column="5" selection-end-line="278" selection-end-column="5" />
               <folding>
-                <element signature="e#1359#1665#0" />
-                <element signature="e#2155#2467#0" />
-                <element signature="e#2942#3195#0" />
-                <element signature="e#3430#3655#0" />
-                <element signature="e#4913#5306#0" />
-                <element signature="e#5604#5819#0" />
+                <element signature="method#eventsTab#0;class#EventsStepDefs#0" />
+                <element signature="method#checkEventsPageAppears#0;class#EventsStepDefs#0" />
+                <element signature="method#addEventPopUp#0;class#EventsStepDefs#0" />
+                <element signature="method#checkEventClassAppearsOnList#0;class#EventsStepDefs#0" />
+                <element signature="method#fillMandatoryFieldsClass#0;class#EventsStepDefs#0" />
+                <element signature="method#editButtonEvents#0;class#EventsStepDefs#0" />
+                <element signature="method#typeFillMandatoryFields#0;class#EventsStepDefs#0" />
+                <element signature="method#changeName#0;class#EventsStepDefs#0" />
+                <element signature="method#goToTypes#0;class#EventsStepDefs#0" />
+                <element signature="method#deleteButton#0;class#EventsStepDefs#0" />
+                <element signature="method#checkNameIsChanged#0;class#EventsStepDefs#0" />
+                <element signature="method#checkEventTypeAppearsOnList#0;class#EventsStepDefs#0" />
+                <element signature="method#checkEventIsDeleted#0;class#EventsStepDefs#0" />
+                <element signature="method#changeFilterToUnacknowledged#0;class#EventsStepDefs#0" />
+                <element signature="method#turnOffPoint#0;class#EventsStepDefs#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="152" column="5" lean-forward="true" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
+            <state relative-caret-position="291">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,10 +123,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resource/Schedulers.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="36" column="14" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="14" />
+            <state relative-caret-position="833">
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/SchedulersStepDefs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1887">
+              <caret line="116" column="85" selection-start-line="116" selection-start-column="85" selection-end-line="116" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -131,13 +149,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>@Device</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/DashboardPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/SitesPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/FloorPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/UnitsPanel.java" />
@@ -156,10 +178,8 @@
         <option value="$PROJECT_DIR$/src/test/resource/Routines.feature" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/RoutinesStepDefs.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/Routines.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/UnitsStepDefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/TagsStepDefs.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/SystemsStepDefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/FloorStepDefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/DashboardStepDefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" />
@@ -173,21 +193,24 @@
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/SearchStepDefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/SitesStepDefs.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/Schedulers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/EventsStepDefs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/Events.java" />
-        <option value="$PROJECT_DIR$/src/test/resource/Events.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/stepdefs/SchedulersStepDefs.java" />
-        <option value="$PROJECT_DIR$/src/test/resource/Schedulers.feature" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/Systems.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/WebDriverFactory.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java" />
         <option value="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" />
         <option value="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" />
+        <option value="$PROJECT_DIR$/src/test/resource/Systems.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/Events.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/SystemsStepDefs.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/SchedulersStepDefs.java" />
+        <option value="$PROJECT_DIR$/src/test/resource/Schedulers.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/resource/Events.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepdefs/EventsStepDefs.java" />
       </list>
     </option>
   </component>
@@ -212,8 +235,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,15 +325,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561558516036" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562169687546" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/backend" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -339,16 +362,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Update Device from Details page">
-    <configuration name="Scenario: Add New Unit Category" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: Create Event and check if it appears on Event Dashboard">
+    <configuration name="Feature: Schedulers" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Units.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Schedulers.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="cmdCucumber" />
-      <option name="NAME_FILTER" value="^Add New Unit Category$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add New Unit Category$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add New Unit Category" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: Schedulers" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=headless -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
@@ -360,15 +382,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Search for Building" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Acknowledge Event" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Sites.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Events.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="cmdCucumber" />
-      <option name="NAME_FILTER" value="^Search for Building$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Search for Building$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Search for Building" />
+      <option name="NAME_FILTER" value="^Acknowledge Event$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Acknowledge Event$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Acknowledge Event" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=headless -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
@@ -380,35 +402,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Update Device from Details page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Add Time-Period on Scheduler" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Schedulers.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="cmdCucumber" />
-      <option name="NAME_FILTER" value="^Update Device from Details page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Update Device from Details page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Update Device from Details page" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=headless -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Update Device from device page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="cmdCucumber" />
-      <option name="NAME_FILTER" value="^Update Device from device page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Update Device from device page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Update Device from device page" />
+      <option name="NAME_FILTER" value="^Add Time\-Period on Scheduler$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add Time\-Period on Scheduler$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add Time-Period on Scheduler" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
@@ -420,15 +422,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Write Point on Device details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create Event and check if it appears on Event Dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Events.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="cmdCucumber" />
-      <option name="NAME_FILTER" value="^Write Point on Device details$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Write Point on Device details$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Write Point on Device details" />
+      <option name="NAME_FILTER" value="^Create Event and check if it appears on Event Dashboard$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Create Event and check if it appears on Event Dashboard$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create Event and check if it appears on Event Dashboard" />
+      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=headless -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Create/Delete Event Configuration" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Events.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="cmdCucumber" />
+      <option name="NAME_FILTER" value="^Create\/Delete Event Configuration$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Create\/Delete Event Configuration$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create/Delete Event Configuration" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
@@ -441,19 +463,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Scenario: Add New Unit Category" />
-      <item itemvalue="Cucumber java.Scenario: Search for Building" />
-      <item itemvalue="Cucumber java.Scenario: Write Point on Device details" />
-      <item itemvalue="Cucumber java.Scenario: Update Device from device page" />
-      <item itemvalue="Cucumber java.Scenario: Update Device from Details page" />
+      <item itemvalue="Cucumber java.Scenario: Create/Delete Event Configuration" />
+      <item itemvalue="Cucumber java.Scenario: Add Time-Period on Scheduler" />
+      <item itemvalue="Cucumber java.Scenario: Create Event and check if it appears on Event Dashboard" />
+      <item itemvalue="Cucumber java.Scenario: Acknowledge Event" />
+      <item itemvalue="Cucumber java.Feature: Schedulers" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Update Device from Details page" />
-        <item itemvalue="Cucumber java.Scenario: Write Point on Device details" />
-        <item itemvalue="Cucumber java.Scenario: Update Device from device page" />
-        <item itemvalue="Cucumber java.Scenario: Add New Unit Category" />
-        <item itemvalue="Cucumber java.Scenario: Search for Building" />
+        <item itemvalue="Cucumber java.Scenario: Create Event and check if it appears on Event Dashboard" />
+        <item itemvalue="Cucumber java.Feature: Schedulers" />
+        <item itemvalue="Cucumber java.Scenario: Acknowledge Event" />
+        <item itemvalue="Cucumber java.Scenario: Add Time-Period on Scheduler" />
+        <item itemvalue="Cucumber java.Scenario: Create/Delete Event Configuration" />
       </list>
     </recent_temporary>
   </component>
@@ -471,35 +493,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Update_Device_from_Details_page - 2019.06.26 at 15h 17m 06s.xml">
-      <configuration name="Scenario: Update Device from Details page" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_Event_and_check_if_it_appears_on_Event_Dashboard - 2019.07.03 at 10h 23m 10s.xml">
+      <configuration name="Scenario: Create Event and check if it appears on Event Dashboard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_Device_from_Details_page - 2019.06.26 at 15h 20m 28s.xml">
-      <configuration name="Scenario: Update Device from Details page" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_Event_and_check_if_it_appears_on_Event_Dashboard - 2019.07.03 at 10h 24m 37s.xml">
+      <configuration name="Scenario: Create Event and check if it appears on Event Dashboard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_Device_from_Details_page - 2019.06.26 at 15h 22m 09s.xml">
-      <configuration name="Scenario: Update Device from Details page" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_Event_and_check_if_it_appears_on_Event_Dashboard - 2019.07.03 at 10h 27m 46s.xml">
+      <configuration name="Scenario: Create Event and check if it appears on Event Dashboard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_Device_from_Details_page - 2019.06.26 at 15h 23m 07s.xml">
-      <configuration name="Scenario: Update Device from Details page" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_Event_and_check_if_it_appears_on_Event_Dashboard - 2019.07.03 at 10h 30m 34s.xml">
+      <configuration name="Scenario: Create Event and check if it appears on Event Dashboard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_Device_from_Details_page - 2019.06.26 at 15h 23m 46s.xml">
-      <configuration name="Scenario: Update Device from Details page" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_Event_and_check_if_it_appears_on_Event_Dashboard - 2019.07.03 at 10h 33m 14s.xml">
+      <configuration name="Scenario: Create Event and check if it appears on Event Dashboard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_Device_from_Details_page - 2019.06.26 at 15h 24m 31s.xml">
-      <configuration name="Scenario: Update Device from Details page" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Acknowledge_Event - 2019.07.03 at 10h 33m 41s.xml">
+      <configuration name="Scenario: Acknowledge Event" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_Device_from_Details_page - 2019.06.26 at 16h 10m 00s.xml">
-      <configuration name="Scenario: Update Device from Details page" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Acknowledge_Event - 2019.07.03 at 10h 34m 01s.xml">
+      <configuration name="Scenario: Acknowledge Event" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_Device_from_Details_page - 2019.06.26 at 16h 13m 21s.xml">
-      <configuration name="Scenario: Update Device from Details page" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Schedulers - 2019.07.03 at 11h 09m 51s.xml">
+      <configuration name="Feature: Schedulers" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_Device_from_Details_page - 2019.06.26 at 16h 14m 07s.xml">
-      <configuration name="Scenario: Update Device from Details page" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Schedulers - 2019.07.03 at 11h 10m 56s.xml">
+      <configuration name="Feature: Schedulers" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Update_Device_from_Details_page - 2019.06.26 at 16h 14m 49s.xml">
-      <configuration name="Scenario: Update Device from Details page" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Create_Event_and_check_if_it_appears_on_Event_Dashboard - 2019.07.03 at 18h 01m 09s.xml">
+      <configuration name="Scenario: Create Event and check if it appears on Event Dashboard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -514,7 +536,7 @@
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4978678" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.52025586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -565,16 +587,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resource/Routines.feature" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="42" column="103" selection-start-line="42" selection-start-column="103" selection-end-line="42" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/UnitsStepDefs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -717,35 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resource/Events.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/EventsStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="method#eventsTab#0;class#EventsStepDefs#0" />
-            <element signature="method#checkEventsPageAppears#0;class#EventsStepDefs#0" />
-            <element signature="method#addEventPopUp#0;class#EventsStepDefs#0" />
-            <element signature="method#checkEventClassAppearsOnList#0;class#EventsStepDefs#0" />
-            <element signature="method#fillMandatoryFieldsClass#0;class#EventsStepDefs#0" />
-            <element signature="method#editButtonEvents#0;class#EventsStepDefs#0" />
-            <element signature="method#typeFillMandatoryFields#0;class#EventsStepDefs#0" />
-            <element signature="method#changeName#0;class#EventsStepDefs#0" />
-            <element signature="method#goToTypes#0;class#EventsStepDefs#0" />
-            <element signature="method#deleteButton#0;class#EventsStepDefs#0" />
-            <element signature="method#checkNameIsChanged#0;class#EventsStepDefs#0" />
-            <element signature="method#checkEventTypeAppearsOnList#0;class#EventsStepDefs#0" />
-            <element signature="method#checkEventIsDeleted#0;class#EventsStepDefs#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resource/FloorDetails.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -767,27 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resource/Schedulers.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/SchedulersStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="148" column="69" selection-start-line="148" selection-start-column="69" selection-end-line="148" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -815,16 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/SystemsStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
-          <folding>
-            <element signature="method#addTag#0;class#SystemsStepDefs#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/BuildingPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -832,13 +784,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resource/Systems.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -894,63 +839,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="88" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resource/PointsDetails.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="36" column="14" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="152" column="5" lean-forward="true" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="2584">
           <caret line="178" column="30" selection-start-line="178" selection-start-column="30" selection-end-line="178" selection-end-column="30" />
           <folding>
             <element signature="e#1359#1665#0" />
             <element signature="e#2155#2467#0" />
             <element signature="e#2942#3195#0" />
             <element signature="e#3430#3655#0" />
-            <element signature="e#4913#5306#0" />
-            <element signature="e#5604#5819#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resource/Systems.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resource/DeviceDetails.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="84" column="43" lean-forward="true" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
+        <state relative-caret-position="-833">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resource/PointsDetails.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="117" column="58" lean-forward="true" selection-start-line="117" selection-start-column="58" selection-end-line="117" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/SystemsStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="156" column="4" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="4" />
+          <folding>
+            <element signature="method#addTag#0;class#SystemsStepDefs#0" />
+            <element signature="method#checkNewChanges#0;class#SystemsStepDefs#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/Events.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/SchedulersStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="116" column="85" selection-start-line="116" selection-start-column="85" selection-end-line="116" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resource/Schedulers.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepdefs/EventsStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="278" column="5" lean-forward="true" selection-start-line="278" selection-start-column="5" selection-end-line="278" selection-end-column="5" />
+          <folding>
+            <element signature="method#eventsTab#0;class#EventsStepDefs#0" />
+            <element signature="method#checkEventsPageAppears#0;class#EventsStepDefs#0" />
+            <element signature="method#addEventPopUp#0;class#EventsStepDefs#0" />
+            <element signature="method#checkEventClassAppearsOnList#0;class#EventsStepDefs#0" />
+            <element signature="method#fillMandatoryFieldsClass#0;class#EventsStepDefs#0" />
+            <element signature="method#editButtonEvents#0;class#EventsStepDefs#0" />
+            <element signature="method#typeFillMandatoryFields#0;class#EventsStepDefs#0" />
+            <element signature="method#changeName#0;class#EventsStepDefs#0" />
+            <element signature="method#goToTypes#0;class#EventsStepDefs#0" />
+            <element signature="method#deleteButton#0;class#EventsStepDefs#0" />
+            <element signature="method#checkNameIsChanged#0;class#EventsStepDefs#0" />
+            <element signature="method#checkEventTypeAppearsOnList#0;class#EventsStepDefs#0" />
+            <element signature="method#checkEventIsDeleted#0;class#EventsStepDefs#0" />
+            <element signature="method#changeFilterToUnacknowledged#0;class#EventsStepDefs#0" />
+            <element signature="method#turnOffPoint#0;class#EventsStepDefs#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resource/Events.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="76" column="50" lean-forward="true" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
         </state>
       </provider>
     </entry>

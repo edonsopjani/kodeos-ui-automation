@@ -40,7 +40,7 @@ public class PageObjectUtils {
     }
 
     public static void CheckContainsText(WebDriver driver, String value) {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 15);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 50);
     }
 
     public static void IsElementClickable(WebDriver driver, LocatorType locatorType, String value, int seconds) {

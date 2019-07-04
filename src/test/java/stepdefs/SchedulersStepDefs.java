@@ -100,20 +100,21 @@ public class SchedulersStepDefs extends CommonStepObjects {
     @And("^User go to calendar$")
     public void goToCalendar() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Schedulers.calendar.getBy(), 15);
+        Thread.sleep(1000);
         Schedulers.calendar.getElement().click();
         Thread.sleep(1000);
     }
 
-    @Then("^Check if Scheduler appears on calendar$")
-    public void checkSchedulerIsAdded() throws Throwable {
+    @Then("^Check if (.*) Scheduler appears on calendar$")
+    public void checkSchedulerIsAdded(String scheduler) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'BR126_str')]]"), 15);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'"+scheduler+"')]]"), 15);
     }
 
-    @Then("^Check if Scheduler disappears on calendar$")
-    public void checkSchedulerDisappears() throws Throwable {
+    @Then("^Check if (.*) Scheduler disappears on calendar$")
+    public void checkSchedulerDisappears(String scheduler) throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.ElementIsNotVisible(driver, By.xpath("//*[text()[contains(.,'BR126_str')]]"), 15);
+        PageObjectUtils.ElementIsNotVisible(driver, By.xpath("//*[text()[contains(.,'"+scheduler+"')]]"), 15);
     }
 
     @And("^User click existing scheduler$")

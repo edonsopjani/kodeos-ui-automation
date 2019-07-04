@@ -1,4 +1,4 @@
-Feature: Events on Admin Page Tests
+Feature: Events
 
   Background: Steps That execute before every scenario
     Given Open KodeLabs Page
@@ -67,3 +67,66 @@ Feature: Events on Admin Page Tests
     And User goto Types tab
     And User Click delete button
     Then Check if event with name Automation2 is deleted
+
+  @SmokeTest @EventsDashboard
+  Scenario: Create Event and check if it appears on Event Dashboard
+    And User click twice on KODE Labs building
+    Then Check if KODE Labs Dashboard appears
+    And User click BO1 point write button
+    And User add automation as reason
+    And User make point value false and click save
+    Then Check if write point is saved successfully
+#    And User wait until event is created
+#    And User goes to Event Dashboard
+    Then Check if Light is OFF event appears on list
+#    And User click twice on KODE Labs building
+#    Then Check if KODE Labs Dashboard appears
+    And User click BO1 point write button
+    And User add automation as reason
+    And User turn on point and click save
+    Then Check if write point is saved successfully
+#    And User wait until event is finished
+#    And User goes to Event Dashboard
+    Then Check if Light is OFF event disappears on list
+
+  @SmokeTest @EventsDashboard
+  Scenario: Acknowledge Event
+    And User goes to Event Dashboard
+    And Change Filters to Events that are Unacknowledged
+    And Click Ack button and then Click Acknowledge
+    Then Check if Event is Acknowledged
+
+  @SmokeTest @EventsDetails
+  Scenario: Go To Event Details
+    And User goes to Event Dashboard
+    And Change Filters to Events that are Unacknowledged
+    And Click High/Low Temp Event
+    Then Check if High/Low Temp Event details page appear
+
+  @SmokeTest @EventsConfig
+  Scenario: Disable/Enable event configuration
+    And User goes to Event Dashboard
+    And User click twice on Automation Testing building
+    And Click create event configuration button
+    And Click disable config button
+    Then Check if config is disabled
+    And Click enable config button
+    Then Check if config is enabled
+
+  @SmokeTest @EventsConfig
+  Scenario: Create/Delete Event Configuration
+    And User goes to Event Dashboard
+    And User click twice on Automation Testing building
+    And Click create event configuration button
+    And Click Light is OFF Routine
+    And Click next button
+    And Add device to list and drag point to config
+    And Click next button
+    And Setup event class and click save button
+    Then Check if config is added
+    And Click Light is OFF Routine
+    And Click next button
+    And Remove device from list
+    And Click next button
+    And User click Save button
+    Then Check if config is removed

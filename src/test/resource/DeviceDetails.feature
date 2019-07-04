@@ -9,7 +9,7 @@ Feature: Devices Tests
     And User Click on Devices button
     Then Check if the list of Devices appears
 
-  @SmokeTest @Devices
+  @SmokeTest @Device
   Scenario: Search For Device
     When User is Searching for Flex
     Then Check if Flex Device appears on list

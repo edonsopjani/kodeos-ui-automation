@@ -9,13 +9,13 @@ Feature: Systems Tests
     And User Click on Systems button
     Then Check if Systems page appears
 
-  @SmokeTest @Devices
+  @SmokeTest @System
   Scenario: Create System
     When User click Add new System button
     And User fill mandatory fields for System and click add
     Then Check if Automation System is created
 
-  @SmokeTest @Device
+  @SmokeTest @System
   Scenario: Add content to System
     When User clicks Automation System from the list and go to Details page
     And User Click Edit Content button
@@ -25,14 +25,14 @@ Feature: Systems Tests
     And User Save changes for System
     Then Check if Changes Appears on System
 
-  @SmokeTest @Device
+  @SmokeTest @System
   Scenario: Edit System
     When User clicks Automation System from the list and go to Details page
     And User Click Edit System button
     And User add Automation as Tag
     Then Check if Changes Appears on System
 
-  @SmokeTest @Device
+  @SmokeTest @System
   Scenario: Delete Systems
     When User clicks Automation System from the list and go to Details page
     And user click delete System Button
