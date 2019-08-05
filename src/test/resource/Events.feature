@@ -1,4 +1,5 @@
 Feature: Events
+Create Event Config, Create Event, Acknowledge Events etc.
 
   Background: Steps That execute before every scenario
     Given Open KodeLabs Page
@@ -73,7 +74,7 @@ Feature: Events
     And User click twice on KODE Labs building
     Then Check if KODE Labs Dashboard appears
     And User click BO1 point write button
-    And User add automation as reason
+#    And User add automation as reason
     And User make point value false and click save
     Then Check if write point is saved successfully
 #    And User wait until event is created
@@ -82,7 +83,7 @@ Feature: Events
 #    And User click twice on KODE Labs building
 #    Then Check if KODE Labs Dashboard appears
     And User click BO1 point write button
-    And User add automation as reason
+#    And User add automation as reason
     And User turn on point and click save
     Then Check if write point is saved successfully
 #    And User wait until event is finished
@@ -108,10 +109,10 @@ Feature: Events
     And User goes to Event Dashboard
     And User click twice on Automation Testing building
     And Click create event configuration button
-    And Click disable config button
-    Then Check if config is disabled
     And Click enable config button
     Then Check if config is enabled
+    And Click disable config button
+    Then Check if config is disabled
 
   @SmokeTest @EventsConfig
   Scenario: Create/Delete Event Configuration

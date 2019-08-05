@@ -32,6 +32,7 @@ public class FloorStepDefs extends CommonStepObjects {
     public void goToEditPage() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, FloorPanel.EditFloor.getBy(), 15);
         FloorPanel.EditFloor.getElement().click();
+        Thread.sleep(1000);
     }
 
     @And("^user upload floor zones$")
@@ -53,11 +54,12 @@ public class FloorStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, FloorPanel.ListView.getBy(), 15);
         Thread.sleep(1000);
         FloorPanel.ListView.getElement().click();
+        Thread.sleep(1000);
     }
 
     @And("^user drag and drop the device to floor$")
     public void dragDeviceToFloor() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, FloorPanel.CatchDevice.getBy(), 15);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.CatchDevice.getBy(), 30);
         Actions action = new Actions(driver);
         action.dragAndDrop(FloorPanel.CatchDevice.getElement(), FloorPanel.DragDeviceHere.getElement()).build().perform();
         Thread.sleep(1000);
@@ -65,7 +67,7 @@ public class FloorStepDefs extends CommonStepObjects {
 
     @And("^user drag and drop point to device$")
     public void dragPointToDevice() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, FloorPanel.CatchPoint.getBy(), 15);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.CatchPoint.getBy(), 30);
         Actions action = new Actions(driver);
         action.dragAndDrop(FloorPanel.CatchPoint.getElement(), FloorPanel.DragPointHere.getElement()).build().perform();
         Thread.sleep(1000);
@@ -114,6 +116,7 @@ public class FloorStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, FloorPanel.OpenInsideMenu.getBy(), 15);
         FloorPanel.OpenInsideMenu.getElement().click();
         Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, FloorPanel.ResetButton.getBy(), 15);
         FloorPanel.ResetButton.getElement().click();
         Thread.sleep(1000);
         FloorPanel.YesButton.getElement().click();

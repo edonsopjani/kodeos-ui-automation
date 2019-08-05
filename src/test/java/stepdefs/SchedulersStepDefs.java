@@ -32,7 +32,7 @@ public class SchedulersStepDefs extends CommonStepObjects {
 
     @Then("^Check if points with schedulers appears on list$")
     public void checkSchedulers() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'BR126_str')]]"), 15);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'exactlogicschedule')]]"), 15);
         Thread.sleep(1000);
     }
 

@@ -6,7 +6,7 @@ import pageobjects.PageElementIds;
 
 public enum DashboardPanel implements PageObjects {
 
-    DevicesButton(PageObjectUtils.LocatorType.XPATH, "//div[@class='navigation-item devices-container']"),
+    DevicesButton(PageObjectUtils.LocatorType.XPATH, "//a[@class='navigation-item devices-container']"),
     PointsButton(PageObjectUtils.LocatorType.CSS, " .navigation-item.points-container"),
     ExpandButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'keyboard_arrow_down')]]"),
     CheckFloorList(PageObjectUtils.LocatorType.XPATH, "//*[@placeholder='Search for Areas']"),
@@ -17,7 +17,7 @@ public enum DashboardPanel implements PageObjects {
     EditSummaryWidget(PageObjectUtils.LocatorType.XPATH, "//*[@class='building-summary-widget-header drag-handler']//*[contains(text(), 'Edit')]"),
     EditNavigationWidget(PageObjectUtils.LocatorType.XPATH, "//*[@class='building-navigation-widget-header drag-handler']//*[contains(text(), 'Edit')]"),
     SaveButton(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'save_alt')]]"),
-    FloorsButton(PageObjectUtils.LocatorType.XPATH, "//div[@class='navigation-item floors-container']"),
+    FloorsButton(PageObjectUtils.LocatorType.XPATH, "//a[@class='navigation-item floors-container']"),
     EditDashboard(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Edit Dashboard')]]");
 
     public PageObjectUtils.LocatorType locator;

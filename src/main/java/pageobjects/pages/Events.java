@@ -6,7 +6,7 @@ import pageobjects.PageElementIds;
 
 public enum Events implements PageObjects {
 
-    events(PageObjectUtils.LocatorType.XPATH, "//div[@class='admin-menu-item ng-star-inserted']//*[text()[contains(.,'Events')]]"),
+    events(PageObjectUtils.LocatorType.XPATH, "//a[@class='admin-menu-item ng-star-inserted']//*[text()[contains(.,'Events')]]"),
     addButton(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'add')]]"),
     selectElement(PageObjectUtils.LocatorType.XPATH, "//li[@class='table-list-item ng-star-inserted' and contains(.,'Automation')]"),
     openThreeDotMenu(PageObjectUtils.LocatorType.XPATH, "//li[@class='table-list-item ng-star-inserted' and contains(.,'Automation')]//*[text()[contains(.,'more_vert')]]"),
