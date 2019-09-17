@@ -72,16 +72,18 @@ Feature: User Panel Tests
     When User click Edonis User
     And User go to buildings tab
     And User click assign buildings
-    And User assign Chrysler House Building
-    Then Check if Chrysler House is assigned to that user
+    And User select building KODE Labs
+    And User click Save changes
+    Then Check if KODE Labs is assigned to that user
 
   @Admin @SmokeTest @UserPanel
   Scenario: Remove Building from User
     When User click Edonis User
     And User go to buildings tab
     And User clicks delete assigned buildings
-    And User remove Chrysler House Building
-    Then Check if Chrysler House is removed from user
+    And User select building KODE Labs
+    And User click Save changes
+    Then Check if KODE Labs is removed from user
 
   @Admin @SmokeTest @UserPanel
   Scenario: Delete Users

@@ -7,14 +7,14 @@ Feature: Sites Page Tests
 
   @SmokeTest @Sites
   Scenario: Search for Building
-    When User At Home page search for Chrysler House
-    Then Check if Chrysler House appears on Search list
+    When User At Home page search for KODE Labs
+    Then Check if KODE Labs appears on Search list
 
   @SmokeTest @Sites
   Scenario: Go To Building Dashboard
-    When User At Home page search for Chrysler House
-    And User click twice on Chrysler House building
-    Then Check if Chrysler House Dashboard appears
+    When User At Home page search for KODE Labs
+    And User click twice on KODE Labs building
+    Then Check if KODE Labs Dashboard appears
 
 
 

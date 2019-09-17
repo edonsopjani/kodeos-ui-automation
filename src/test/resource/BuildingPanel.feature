@@ -78,7 +78,7 @@ Feature: Building Panel Tests
   Scenario: Assign Users
     When User Open Auto Test Building
     And User goto on Users Tab
-    And User opens menu popup
+#    And User opens menu popup
     And click the Assign Users button
     And User select user Edon
     And User click Save changes
@@ -89,10 +89,10 @@ Feature: Building Panel Tests
     When User Open Auto Test Building
     And User goto on Users Tab
     And User Search for ttestt
-    And User opens menu popup
+#    And User opens menu popup
     And click Remove Users button
     And User select user Edon
-    And User click delete
+    And User click Save changes
     Then Check if user Edon disappears from list
 
   @Admin @SmokeTest @BuildingPanel

@@ -19,8 +19,8 @@ public class SchedulersStepDefs extends CommonStepObjects {
     @When("^User select (.*) building$")
     public void selectBuilding(String name) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, name);
-        PageObjectUtils.ContainsText(driver, name).click();
         Thread.sleep(1000);
+        PageObjectUtils.ContainsText(driver, name).click();
     }
 
     @When("^User click Discovery button$")

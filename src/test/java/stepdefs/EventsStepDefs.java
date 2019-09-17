@@ -123,8 +123,9 @@ public class EventsStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
 
         Events.deleteButton.getElement().click();
-
+        Thread.sleep(1000);
         Events.yesButton.getElement().click();
+        Thread.sleep(1000);
     }
 
     @Then("^Check if name is Changed to (.*)$")
@@ -224,28 +225,34 @@ public class EventsStepDefs extends CommonStepObjects {
     @And("^Click disable config button$")
     public void disableConfig() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.disableConfig.getBy(), 15);
+        Thread.sleep(1000);
         Events.disableConfig.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Events.yesButton.getBy(), 15);
+        Thread.sleep(1000);
         Events.yesButton.getElement().click();
     }
 
     @Then("^Check if config is disabled$")
     public void checkConfigIsDisabled() throws Throwable {
+        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, Events.enableConfig.getBy(), 15);
     }
 
     @Then("^Check if config is enabled$")
     public void checkConfigIsEnabled() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.disableConfig.getBy(), 15);
+        Thread.sleep(1000);
     }
 
     @And("^Click enable config button$")
     public void enableConfig() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.enableConfig.getBy(), 15);
+        Thread.sleep(1000);
         Events.enableConfig.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Events.yesButton.getBy(), 15);
+        Thread.sleep(1000);
         Events.yesButton.getElement().click();
     }
 
@@ -300,14 +307,18 @@ public class EventsStepDefs extends CommonStepObjects {
     @And("^Setup event class and click save button$")
     public void setupEventClassAndSaveConfig() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.selectEventClass.getBy(), 15);
+        Thread.sleep(1000);
         Events.selectEventClass.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Events.selectFireClass.getBy(), 15);
+        Thread.sleep(1000);
+
         Events.selectFireClass.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Events.saveButton.getBy(), 15);
+        Thread.sleep(1000);
         Events.saveButton.getElement().click();
-
+        Thread.sleep(1000);
     }
 
     @And("^Remove device from list$")

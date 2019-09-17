@@ -6,7 +6,7 @@ Create Event Config, Create Event, Acknowledge Events etc.
     Then Check if user is logged in
 
 
-  @Admin @SmokeTest @Events
+  @Admin @SmokeTest @Events @EventsPanel
   Scenario: Add New Event Class
     And User Go To admin panel
     Then Check if user is at Admin panel
@@ -14,20 +14,20 @@ Create Event Config, Create Event, Acknowledge Events etc.
     Then Check if user is at Events page
     And User click Add Event
     And User Fill mandatory fields for Event Class
-    And User click Save button
+#    And User click Save button
     Then Check if Event Class Automation Appears on List
 
-  @Admin @SmokeTest @Events
-  Scenario: Edit Event Class
-    And User Go To admin panel
-    Then Check if user is at Admin panel
-    And Click Events tab
-    Then Check if user is at Events page
-    And User Click edit button
-    And User change Event name to Automation2
-    Then Check if name is Changed to Automation2
+#  @Admin @SmokeTest @Events @EventsPanel
+#  Scenario: Edit Event Class
+#    And User Go To admin panel
+#    Then Check if user is at Admin panel
+#    And Click Events tab
+#    Then Check if user is at Events page
+#    And User Click edit button
+#    And User change Event name to Automation2
+#    Then Check if name is Changed to Automation2
 
-  @Admin @SmokeTest @Events
+  @Admin @SmokeTest @Events @EventsPanel
   Scenario: Delete Event Class
     And User Go To admin panel
     Then Check if user is at Admin panel
@@ -36,7 +36,7 @@ Create Event Config, Create Event, Acknowledge Events etc.
     And User Click delete button
     Then Check if event with name Automation2 is deleted
 
-  @Admin @SmokeTest @Events
+  @Admin @SmokeTest @Events @EventsPanel
   Scenario: Add New Event Type
     And User Go To admin panel
     Then Check if user is at Admin panel
@@ -45,21 +45,21 @@ Create Event Config, Create Event, Acknowledge Events etc.
     And User goto Types tab
     And User click Add Event
     And User Fill mandatory fields for Event Type
-    And User click Save button
+#    And User click Save button
     Then Check if Event Type Automation Appears on List
 
-  @Admin @SmokeTest @Events
-  Scenario: Edit Event Type
-    And User Go To admin panel
-    Then Check if user is at Admin panel
-    And Click Events tab
-    Then Check if user is at Events page
-    And User goto Types tab
-    And User Click edit button
-    And User change Event name to Automation2
-    Then Check if name is Changed to Automation2
+#  @Admin @SmokeTest @Events @EventsPanel
+#  Scenario: Edit Event Type
+#    And User Go To admin panel
+#    Then Check if user is at Admin panel
+#    And Click Events tab
+#    Then Check if user is at Events page
+#    And User goto Types tab
+#    And User Click edit button
+#    And User change Event name to Automation2
+#    Then Check if name is Changed to Automation2
 
-  @Admin @SmokeTest @Events
+  @Admin @SmokeTest @Events @EventsPanel
   Scenario: Delete Event Type
     And User Go To admin panel
     Then Check if user is at Admin panel
@@ -69,7 +69,7 @@ Create Event Config, Create Event, Acknowledge Events etc.
     And User Click delete button
     Then Check if event with name Automation2 is deleted
 
-  @SmokeTest @EventsDashboard
+  @SmokeTest @EventsDashboard @Events
   Scenario: Create Event and check if it appears on Event Dashboard
     And User click twice on KODE Labs building
     Then Check if KODE Labs Dashboard appears
@@ -90,31 +90,31 @@ Create Event Config, Create Event, Acknowledge Events etc.
 #    And User goes to Event Dashboard
     Then Check if Light is OFF event disappears on list
 
-  @SmokeTest @EventsDashboard
+  @SmokeTest @EventsDashboard @Events
   Scenario: Acknowledge Event
     And User goes to Event Dashboard
     And Change Filters to Events that are Unacknowledged
     And Click Ack button and then Click Acknowledge
     Then Check if Event is Acknowledged
 
-  @SmokeTest @EventsDetails
+  @SmokeTest @EventsDetails @Events
   Scenario: Go To Event Details
     And User goes to Event Dashboard
     And Change Filters to Events that are Unacknowledged
     And Click High/Low Temp Event
     Then Check if High/Low Temp Event details page appear
 
-  @SmokeTest @EventsConfig
+  @SmokeTest @EventsConfig @Events
   Scenario: Disable/Enable event configuration
     And User goes to Event Dashboard
-    And User click twice on Automation Testing building
+    And User click twice on KODE Labs building
     And Click create event configuration button
-    And Click enable config button
-    Then Check if config is enabled
     And Click disable config button
     Then Check if config is disabled
+    And Click enable config button
+    Then Check if config is enabled
 
-  @SmokeTest @EventsConfig
+  @SmokeTest @EventsConfig @Events
   Scenario: Create/Delete Event Configuration
     And User goes to Event Dashboard
     And User click twice on Automation Testing building

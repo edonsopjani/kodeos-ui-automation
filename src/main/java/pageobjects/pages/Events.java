@@ -32,6 +32,7 @@ public enum Events implements PageObjects {
     stateDropDown(PageObjectUtils.LocatorType.XPATH, "//mat-select[@placeholder='State']"),
     stateSelectNone(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'None')]]"),
     eventCreation(PageObjectUtils.LocatorType.XPATH, "//label[text()[contains(.,'Create Event')]]"),
+    save(PageObjectUtils.LocatorType.XPATH, "//button//span[text()[contains(.,'Save')]]"),
     disableConfig(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'toggle_on')]]"),
     enableConfig(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'toggle_off')]]"),
     waitForInactiveElement(PageObjectUtils.LocatorType.XPATH, "//label[text()[contains(.,'BO1')]]/../label[text()[contains(.,'Inactive')]]/../../../../../../div[@class='summary-widget-device-header']/label[text()[contains(.,'BR127')]]"),

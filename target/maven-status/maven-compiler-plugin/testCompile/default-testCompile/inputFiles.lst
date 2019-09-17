@@ -1,17 +1,18 @@
-/kode/src/test/java/stepdefs/VirtualDeviceStepDefs.java
-/kode/src/test/java/stepdefs/SchedulersStepDefs.java
-/kode/src/test/java/stepdefs/WebsiteStepDefs.java
-/kode/src/test/java/stepdefs/SystemsStepDefs.java
-/kode/src/test/java/stepdefs/CommonStepObjects.java
-/kode/src/test/java/stepdefs/FloorStepDefs.java
-/kode/src/test/java/stepdefs/UserProfileStepDefs.java
-/kode/src/test/java/stepdefs/DeviceStepDefs.java
-/kode/src/test/java/stepdefs/PointsStepDefs.java
-/kode/src/test/java/stepdefs/DashboardStepDefs.java
-/kode/src/test/java/stepdefs/RoutinesStepDefs.java
-/kode/src/test/java/RunCukesTest.java
-/kode/src/test/java/stepdefs/EventsStepDefs.java
-/kode/src/test/java/stepdefs/SitesStepDefs.java
-/kode/src/test/java/stepdefs/UnitsStepDefs.java
-/kode/src/test/java/stepdefs/TagsStepDefs.java
-/kode/src/test/java/stepdefs/SearchStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\WebsiteStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\SchedulersStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\SystemsStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\PointsStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\TagsStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\FloorStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\RunCukesTest.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\DashboardStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\DeviceStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\AuditStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\VirtualDeviceStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\SearchStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\CommonStepObjects.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\UnitsStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\UserProfileStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\EventsStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\RoutinesStepDefs.java
+C:\KODE Labs Automation Framework\src\test\java\stepdefs\SitesStepDefs.java
