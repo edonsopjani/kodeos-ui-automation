@@ -1020,10 +1020,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @Then("^Check if (.*) is removed from user")
     public void checkRemovedBuilding(String building) throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[@placeholder='Search for Buildings']", 15);
-        Thread.sleep(5000);
-        List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + building + "')]]"));
-        Assert.assertTrue("Building is still on list", users.isEmpty());
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[contains(text(), 'Saved Successfully')]", 15);
     }
 
     @And("^User click on Delete user button")

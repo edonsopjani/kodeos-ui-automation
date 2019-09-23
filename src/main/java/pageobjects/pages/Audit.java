@@ -6,12 +6,12 @@ import pageobjects.PageElementIds;
 
 public enum Audit implements PageObjects {
 
-    auditButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Audit')]]"),
+    auditButton(PageObjectUtils.LocatorType.ID, "audit"),
     addTemplate(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Add a template')]]"),
     allBuildings(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' All Buildings ')]]"),
     editTemplate(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Edit Template')]]"),
     deleteTemplate(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Delete Template')]]"),
-    addTemplateButton(PageObjectUtils.LocatorType.XPATH, "//div[@class=' menu-option']"),
+    addTemplateButton(PageObjectUtils.LocatorType.XPATH, "//div[@class='menu-option ng-star-inserted']"),
     exportCSV(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Export CSV')]]"),
     saveAsNew(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Save As New')]]"),
     saveButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' Save')]]"),

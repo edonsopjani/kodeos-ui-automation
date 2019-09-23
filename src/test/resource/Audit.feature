@@ -61,7 +61,7 @@ Feature: Audit Tests
     Then Check if VAV Template Template is deleted
 
   @Audit @SmokeTest
-  Scenario: Delete Specific Audit Template
+  Scenario: Delete Edited Audit Template
     When User click on Edited Template template
     And User click on threedots button
     And User click Delete Template Button

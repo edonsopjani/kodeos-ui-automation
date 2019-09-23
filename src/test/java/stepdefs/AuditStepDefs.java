@@ -148,6 +148,7 @@ public class AuditStepDefs extends CommonStepObjects {
     @And("^User select (.*) point$")
     public void selectSpecificPoint(String point) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, point);
+        Thread.sleep(1000);
         PageObjectUtils.ContainsText(driver, point).click();
     }
 

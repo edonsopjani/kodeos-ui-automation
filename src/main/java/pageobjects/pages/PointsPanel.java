@@ -6,7 +6,7 @@ import pageobjects.PageElementIds;
 
 public enum PointsPanel implements PageObjects {
 
-    WritePoint(PageObjectUtils.LocatorType.XPATH, "//label[text()[contains(.,'BO1')]]/../../../div[@class='test-action-container']"),
+    WritePoint(PageObjectUtils.LocatorType.XPATH, "//label[text()[contains(.,'BO1')]]/../../div[@class='test-action-container']"),
     TurnOn(PageObjectUtils.LocatorType.XPATH, "//div[@class='selection-control' and text()[contains(.,'Active')]]"),
     TurnOff(PageObjectUtils.LocatorType.XPATH, "//div[@class='selection-control selected' and text()[contains(.,'Inactive')]]"),
     TurnOffAgain(PageObjectUtils.LocatorType.XPATH, "//div[@class='selection-control' and text()[contains(.,'Inactive')]]"),
