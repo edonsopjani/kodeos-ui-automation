@@ -3,51 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Audit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Audit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PointsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/AuditStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/AuditStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Audit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Audit.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/Audit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/Audit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/BuildingPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/BuildingPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Device.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Device.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Points.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Points.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Sites.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Sites.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/SmokeTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/SmokeTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Template.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Unit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Unit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/UserPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/UserPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/VirtualDevice.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/VirtualDevice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/failures-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/failures-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/feature-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/feature-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-BuildingDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-BuildingDetails-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-BuildingPanel-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-BuildingPanel-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-DeviceDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-DeviceDetails-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-FloorDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-FloorDetails-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-PointsDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-PointsDetails-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Search-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Search-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Sites-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Sites-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Systems-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Systems-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Tags-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Tags-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Templates-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Templates-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Units-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-Units-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-UserPanel-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-UserPanel-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-VirtualDevice-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-VirtualDevice-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/step-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/step-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/tag-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/tag-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/RunCukesTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/RunCukesTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCukesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCukesTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junit-noframes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junit-noframes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/AuditStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/AuditStepDefs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Access.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Access.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,8 +45,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pageobjects.pages" />
       <recent name="stepdefs" />
+      <recent name="pageobjects.pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\KODE Labs Automation Framework\src\test\resource" />
@@ -112,7 +68,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Add Widget on Dashboard">
+  <component name="RunManager" selected="Cucumber java.Feature: Access">
+    <configuration name="Feature: Access" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: Access" />
+      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=headless -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Add New Event Class" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Events.feature" />
@@ -133,15 +108,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Add New User" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Admin approve request from user to specific building" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Add New User$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add New User$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add New User" />
+      <option name="NAME_FILTER" value="^Admin approve request from user to specific building$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Admin approve request from user to specific building$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Admin approve request from user to specific building" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
@@ -153,35 +128,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Add Widget on Dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Admin reject request from user to specific building" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/BuildingDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Add Widget on Dashboard$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add Widget on Dashboard$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add Widget on Dashboard" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Delete Edited Audit Template" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Audit.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Delete Edited Audit Template$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Delete Edited Audit Template$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Delete Edited Audit Template" />
+      <option name="NAME_FILTER" value="^Admin reject request from user to specific building$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Admin reject request from user to specific building$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Admin reject request from user to specific building" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
@@ -213,15 +168,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Delete Specific Audit Template" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User delete the request from access page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Audit.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Delete Specific Audit Template$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Delete Specific Audit Template$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Delete Specific Audit Template" />
+      <option name="NAME_FILTER" value="^User delete the request from access page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User delete the request from access page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User delete the request from access page" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
@@ -233,16 +188,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Remove Building from User" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User log in to see if building appears on Sites page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Remove Building from User$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Remove Building from User$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Remove Building from User" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=headless -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
+      <option name="NAME_FILTER" value="^User log in to see if building appears on Sites page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User log in to see if building appears on Sites page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User log in to see if building appears on Sites page" />
+      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -256,19 +211,19 @@
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Scenario: Delete Specific Audit Template" />
-      <item itemvalue="Cucumber java.Scenario: Delete Edited Audit Template" />
-      <item itemvalue="Cucumber java.Scenario: Add New User" />
-      <item itemvalue="Cucumber java.Scenario: Remove Building from User" />
-      <item itemvalue="Cucumber java.Scenario: Add Widget on Dashboard" />
+      <item itemvalue="Cucumber java.Scenario: Admin approve request from user to specific building" />
+      <item itemvalue="Cucumber java.Scenario: User log in to see if building appears on Sites page" />
+      <item itemvalue="Cucumber java.Scenario: Admin reject request from user to specific building" />
+      <item itemvalue="Cucumber java.Scenario: User delete the request from access page" />
+      <item itemvalue="Cucumber java.Feature: Access" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Add Widget on Dashboard" />
-        <item itemvalue="Cucumber java.Scenario: Remove Building from User" />
-        <item itemvalue="Cucumber java.Scenario: Add New User" />
-        <item itemvalue="Cucumber java.Scenario: Delete Edited Audit Template" />
-        <item itemvalue="Cucumber java.Scenario: Delete Specific Audit Template" />
+        <item itemvalue="Cucumber java.Feature: Access" />
+        <item itemvalue="Cucumber java.Scenario: User delete the request from access page" />
+        <item itemvalue="Cucumber java.Scenario: Admin reject request from user to specific building" />
+        <item itemvalue="Cucumber java.Scenario: User log in to see if building appears on Sites page" />
+        <item itemvalue="Cucumber java.Scenario: Admin approve request from user to specific building" />
       </list>
     </recent_temporary>
   </component>
