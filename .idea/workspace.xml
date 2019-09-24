@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chromedriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chromedriverlinux" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/DeviceStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/DeviceStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$LocatorType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$LocatorType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +48,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pageobjects.pages" />
       <recent name="stepdefs" />
+      <recent name="pageobjects.pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\KODE Labs Automation Framework\src\test\resource" />
@@ -72,7 +71,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Go to Device Details Page">
+  <component name="RunManager" selected="Cucumber java.Feature: Access">
+    <configuration name="Feature: Access" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: Access" />
+      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=headless -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Add New Event Class" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Events.feature" />
@@ -93,15 +111,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Add New User" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Admin approve request from user to specific building" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Add New User$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add New User$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add New User" />
+      <option name="NAME_FILTER" value="^Admin approve request from user to specific building$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Admin approve request from user to specific building$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Admin approve request from user to specific building" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
@@ -113,35 +131,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Add Widget on Dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Admin reject request from user to specific building" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/BuildingDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Add Widget on Dashboard$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add Widget on Dashboard$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add Widget on Dashboard" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Delete Edited Audit Template" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Audit.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Delete Edited Audit Template$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Delete Edited Audit Template$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Delete Edited Audit Template" />
+      <option name="NAME_FILTER" value="^Admin reject request from user to specific building$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Admin reject request from user to specific building$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Admin reject request from user to specific building" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
@@ -173,16 +171,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Go to Device Details Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User delete the request from access page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Go to Device Details Page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Go to Device Details Page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Go to Device Details Page" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=headless -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
+      <option name="NAME_FILTER" value="^User delete the request from access page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User delete the request from access page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User delete the request from access page" />
+      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -193,16 +191,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Remove Building from User" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User log in to see if building appears on Sites page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Remove Building from User$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Remove Building from User$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Remove Building from User" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=headless -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
+      <option name="NAME_FILTER" value="^User log in to see if building appears on Sites page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User log in to see if building appears on Sites page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User log in to see if building appears on Sites page" />
+      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -216,19 +214,19 @@
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Scenario: Delete Edited Audit Template" />
-      <item itemvalue="Cucumber java.Scenario: Add New User" />
-      <item itemvalue="Cucumber java.Scenario: Remove Building from User" />
-      <item itemvalue="Cucumber java.Scenario: Add Widget on Dashboard" />
-      <item itemvalue="Cucumber java.Scenario: Go to Device Details Page" />
+      <item itemvalue="Cucumber java.Scenario: Admin approve request from user to specific building" />
+      <item itemvalue="Cucumber java.Scenario: User log in to see if building appears on Sites page" />
+      <item itemvalue="Cucumber java.Scenario: Admin reject request from user to specific building" />
+      <item itemvalue="Cucumber java.Scenario: User delete the request from access page" />
+      <item itemvalue="Cucumber java.Feature: Access" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Go to Device Details Page" />
-        <item itemvalue="Cucumber java.Scenario: Add Widget on Dashboard" />
-        <item itemvalue="Cucumber java.Scenario: Remove Building from User" />
-        <item itemvalue="Cucumber java.Scenario: Add New User" />
-        <item itemvalue="Cucumber java.Scenario: Delete Edited Audit Template" />
+        <item itemvalue="Cucumber java.Feature: Access" />
+        <item itemvalue="Cucumber java.Scenario: User delete the request from access page" />
+        <item itemvalue="Cucumber java.Scenario: Admin reject request from user to specific building" />
+        <item itemvalue="Cucumber java.Scenario: User log in to see if building appears on Sites page" />
+        <item itemvalue="Cucumber java.Scenario: Admin approve request from user to specific building" />
       </list>
     </recent_temporary>
   </component>

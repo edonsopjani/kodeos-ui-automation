@@ -39,6 +39,11 @@ public class PageObjectUtils {
         return driver.findElement(By.xpath("//*[contains(text(), '" + value + "')]"));
     }
 
+    public static WebElement ContainsNumber(WebDriver driver, int value) {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 15);
+        return driver.findElement(By.xpath("//*[contains(text(), '" + value + "')]"));
+    }
+
     public static void CheckContainsText(WebDriver driver, String value) {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(), '" + value + "')]"), 50);
     }
