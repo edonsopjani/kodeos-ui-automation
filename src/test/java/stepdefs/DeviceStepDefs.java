@@ -109,6 +109,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     @And("^Click at Device details button$")
     public void openDeviceDetails() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceDetailsButton.getBy(), 15);
+        Thread.sleep(1000);
         DevicePanel.DeviceDetailsButton.getElement().click();
     }
 
