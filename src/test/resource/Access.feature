@@ -5,7 +5,7 @@ Feature: Access Tests
     Given User goes to Login page
     Then Check If user is at Login Page
 
-  @Audit @SmokeTest
+  @Access @SmokeTest
   Scenario: User request access to building
     When User Enter user@admin.com as username and 123456 as password and click Login
     Then Check if user is logged in
@@ -17,7 +17,7 @@ Feature: Access Tests
     And User select shift and Just for Testing as reason and click save
     Then Check if request appears on list with status pending
 
-  @Audit @SmokeTest
+  @Access @SmokeTest
   Scenario: Admin approve request from user to specific building
     When User Enter user@super.com as username and 123456 as password and click Login
     Then Check if user is logged in
@@ -26,13 +26,13 @@ Feature: Access Tests
     And User Click request from Access User and approves it
     Then Check if request status changes to active
 
-  @Audit @SmokeTest
+  @Access @SmokeTest
   Scenario: User log in to see if building appears on Sites page
     When User Enter user@access.com as username and 123456 as password and click Login
     Then Check if user is logged in
     Then Check if Automation Testing building appears on list
 
-  @Audit @SmokeTest
+  @Access @SmokeTest
   Scenario: Admin reject request from user to specific building
     When User Enter user@super.com as username and 123456 as password and click Login
     Then Check if user is logged in
@@ -41,7 +41,7 @@ Feature: Access Tests
     And User Click request from Access User and reject it with reason You are not allowed to view this building
     Then Check if request status changes to rejected
 
-  @Audit @SmokeTest
+  @Access @SmokeTest
   Scenario: User delete the request from access page
     When User Enter user@admin.com as username and 123456 as password and click Login
     Then Check if user is logged in
