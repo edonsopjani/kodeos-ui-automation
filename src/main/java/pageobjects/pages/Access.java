@@ -17,7 +17,7 @@ public enum Access implements PageObjects {
     deleteButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'delete_outline')]]"),
     rejectButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' Reject ')]]"),
     approveButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' Approve ')]]"),
-    shift(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' 8:00am – 5:00pm ')]]"),
+    shift(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'8:00')]]"),
     deletedSuccessfully(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Deleted Successfully')]]"),
     saveButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' Save')]]"),
     archiveButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Archives')]]"),
