@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Access.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Access.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/Access.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/Access.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
