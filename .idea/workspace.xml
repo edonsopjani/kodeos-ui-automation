@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/AccessStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/AccessStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Access.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Access.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/AccessStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/AccessStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Audit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Audit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: Access">
+  <component name="RunManager" selected="Cucumber java.Scenario: Create Specific Building Audit Template">
     <configuration name="Feature: Access" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
@@ -221,8 +221,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Feature: Access" />
         <item itemvalue="Cucumber java.Scenario: Create Specific Building Audit Template" />
+        <item itemvalue="Cucumber java.Feature: Access" />
         <item itemvalue="Cucumber java.Scenario: User delete the request from access page" />
         <item itemvalue="Cucumber java.Scenario: Admin reject request from user to specific building" />
         <item itemvalue="Cucumber java.Scenario: User log in to see if building appears on Sites page" />

@@ -34,8 +34,8 @@ public class AccessStepDefs extends CommonStepObjects {
     @And("^User select (.*) and select (.*) building for access$")
     public void selectUserAndBuilding(String user, String building) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Access.userInput.getBy(), 15);
-        //Thread.sleep(1000);
-        //Access.userInput.getElement().sendKeys("Access");
+        Thread.sleep(1000);
+        Access.userInput.getElement().sendKeys("Access");
         Thread.sleep(2000);
         PageObjectUtils.ContainsText(driver, user).click();
         Thread.sleep(1000);
