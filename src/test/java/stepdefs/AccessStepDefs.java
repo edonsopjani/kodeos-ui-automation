@@ -50,7 +50,7 @@ public class AccessStepDefs extends CommonStepObjects {
     public void selectStartAndEndDate(String startDay, String endDay) throws Throwable {
         Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
         String StartDay = String.valueOf(calendar.get(Calendar.DATE));
-        String EndDay =  String.valueOf(calendar.get(Calendar.DATE) + 1);
+        String EndDay =  String.valueOf(calendar.get(Calendar.DATE));
 
         PageObjectUtils.IsElementVisible(driver, Access.startInput.getBy(), 15);
         Access.startInput.getElement().click();
