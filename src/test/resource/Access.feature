@@ -7,7 +7,7 @@ Feature: Access Tests
 
   @Access @SmokeTest
   Scenario: User request access to building
-    When User Enter user@admin.com as username and 123456 as password and click Login
+    When User Enter user@access.com as username and 123456 as password and click Login
     Then Check if user is logged in
     And User Click on Access button
     Then Check if Access page appears
