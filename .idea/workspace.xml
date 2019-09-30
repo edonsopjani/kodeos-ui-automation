@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Access.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Access.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/AccessStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/AccessStepDefs.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: User delete the request from access page">
+  <component name="RunManager" selected="Cucumber java.Feature: FloorDetails">
     <configuration name="Feature: FireDashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" />
@@ -78,6 +79,44 @@
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: FireDashboard" />
       <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=headless -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: FloorDetails" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/FloorDetails.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: FloorDetails" />
+      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://staging-kode.kode-dev.com/real-estate/buildings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: PointsDetails" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: PointsDetails" />
+      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://staging-kode.kode-dev.com/real-estate/buildings" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -148,46 +187,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Delete Specific Note" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Delete Specific Note$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Delete Specific Note$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Delete Specific Note" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Edit Note" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Edit Note$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Edit Note$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Edit Note" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: User delete the request from access page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
@@ -211,19 +210,19 @@
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Scenario: Edit Note" />
       <item itemvalue="Cucumber java.Scenario: Delete Global Note" />
-      <item itemvalue="Cucumber java.Scenario: Delete Specific Note" />
       <item itemvalue="Cucumber java.Feature: FireDashboard" />
       <item itemvalue="Cucumber java.Scenario: User delete the request from access page" />
+      <item itemvalue="Cucumber java.Feature: FloorDetails" />
+      <item itemvalue="Cucumber java.Feature: PointsDetails" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: FloorDetails" />
+        <item itemvalue="Cucumber java.Feature: PointsDetails" />
         <item itemvalue="Cucumber java.Scenario: User delete the request from access page" />
         <item itemvalue="Cucumber java.Feature: FireDashboard" />
         <item itemvalue="Cucumber java.Scenario: Delete Global Note" />
-        <item itemvalue="Cucumber java.Scenario: Delete Specific Note" />
-        <item itemvalue="Cucumber java.Scenario: Edit Note" />
       </list>
     </recent_temporary>
   </component>

@@ -64,7 +64,9 @@ Feature: Fire Dashboard Tests
 
   @SmokeTest @FireDashboard
   Scenario: Delete Global Note
-    When User Enter fire@user.com as username and 123456 as password and click Login
+    When User Enter user@super.com as username and 123456 as password and click Login
+    Then Check if user is logged in
+    And User switch to Fire Dashboard view
     Then Check if user is at Fire Dashboard
     And User Click delete note button
     Then Check if note message automationNote is deleted
