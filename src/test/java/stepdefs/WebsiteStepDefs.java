@@ -722,6 +722,21 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//img[@class='logo']", 15);
     }
 
+    @Then("^Check if user is at Fire Dashboard$")
+    public void checkIfUserIsLoggedIntoFireDashboard() throws Throwable {
+        try {
+            Alert alert = driver.switchTo().alert();
+            alert.dismiss();
+            if (driver.findElement(By.xpath("//*[text()[contains(.,'Continue without saving data ?')]]")).isDisplayed()) {
+                driver.findElement(By.xpath("//*[text()[contains(.,'Yes')]]")).click();
+            }
+        } catch (Throwable ex) {
+            PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Events Dashboard')]]", 30);
+        }
+
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Events Dashboard')]]", 30);
+    }
+
     @And("^Log in using Username (.*) and Password (.*)$")
     public void login(String username, String password) throws Throwable {
         driver.findElement(By.id("userID")).sendKeys(username);
