@@ -17,4 +17,14 @@ Feature: Sites Page Tests
     Then Check if KODE Labs Dashboard appears
 
 
+  @SmokeTest @Sites
+  Scenario: Sort by Down Device
+    When User click sort by down devices
+    Then Check if list of buildings is sorted by down devices
+
+  @SmokeTest @Sites
+  Scenario: Sort by Active Events
+    When User click sort by active events
+    Then Check if list of buildings is sorted by active events
+
 

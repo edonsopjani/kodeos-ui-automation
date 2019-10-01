@@ -8,7 +8,11 @@ public enum SitesPanel implements PageObjects {
 
     Search(PageObjectUtils.LocatorType.XPATH, "//*[@name='search']"),
     ClickMapMarker(PageObjectUtils.LocatorType.XPATH, "//*[@class='leaflet-marker-icon building-cicle leaflet-zoom-animated leaflet-interactive selected']"),
-    EditButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Edit')]]");
+    sortButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'filter_list')]]"),
+    clickSortButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Apply Sort')]]"),
+    sortIsApplied(PageObjectUtils.LocatorType.XPATH, "//div[@class='filter-option selected']"),
+    sortByEvents(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'arrow_downward')]]"),
+    sortByDownDevices(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'arrow_downward')]]");
 
     public PageObjectUtils.LocatorType locator;
     public String id;
