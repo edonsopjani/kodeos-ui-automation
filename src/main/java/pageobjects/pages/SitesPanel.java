@@ -11,7 +11,7 @@ public enum SitesPanel implements PageObjects {
     sortButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'filter_list')]]"),
     clickSortButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Apply Sort')]]"),
     sortIsApplied(PageObjectUtils.LocatorType.XPATH, "//div[@class='filter-option selected']"),
-    sortByEvents(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'arrow_downward')]]"),
+    sortByEvents(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'arrow_upward')]]"),
     sortByDownDevices(PageObjectUtils.LocatorType.XPATH, "//i[text()[contains(.,'arrow_downward')]]");
 
     public PageObjectUtils.LocatorType locator;
