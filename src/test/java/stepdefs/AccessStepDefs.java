@@ -55,13 +55,13 @@ public class AccessStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, Access.startInput.getBy(), 15);
         Access.startInput.getElement().click();
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//div[contains(text(), '" + StartDay + "')]")).click();
+        driver.findElement(By.xpath("//td//div[contains(text(), '" + StartDay + "')]")).click();
         Thread.sleep(1000);
 
         PageObjectUtils.IsElementVisible(driver, Access.endInput.getBy(), 15);
         Access.endInput.getElement().click();
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//div[contains(text(), '" + EndDay + "')]")).click();
+        driver.findElement(By.xpath("//td//div[contains(text(), '" + EndDay + "')]")).click();
         Thread.sleep(1000);
     }
 
