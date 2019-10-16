@@ -22,21 +22,21 @@ Feature: Points Tests
     And User connect point BO1 with DEV277127_systemStatus
     Then Check if points are connected
 
-  @SmokeTest @Points
-  Scenario: Write Point on Device details
-    And User Click on Devices button
-    Then Check if the list of Devices appears
-    When User is Searching for BR126
-    Then Check if BR126 Device appears on list
-    And User click open BR126 Device Page
-    And User click BO1 point write button
-#    And User add automation as reason
-    And User turn on point and click save
-    Then Check if write point is saved successfully
-    And User click BO1 point write button
-#    And User add automation as reason
-    And User turn off point and click save
-    Then Check if write point is saved successfully
+#  @SmokeTest @Points
+#  Scenario: Write Point on Device details
+#    And User Click on Devices button
+##    Then Check if the list of Devices appears
+#    When User is Searching for BR126
+#    Then Check if BR126 Device appears on list
+#    And User click open BR126 Device Page
+#    And User click BO1 point write button
+##    And User add automation as reason
+#    And User turn on point and click save
+#    Then Check if write point is saved successfully
+#    And User click BO1 point write button
+##    And User add automation as reason
+#    And User turn off point and click save
+#    Then Check if write point is saved successfully
 
   @SmokeTest @Points
   Scenario: Edit Point Using Point batch Update

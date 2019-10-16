@@ -113,6 +113,15 @@ public class PointsStepDefs extends CommonStepObjects {
         PointsPanel.SaveChanges.getElement().click();
     }
 
+    @And("^User click save changes$")
+    public void saveChanges() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, PointsPanel.TurnOn.getBy(), 15);
+        Thread.sleep(1000);
+        PointsPanel.TurnOn.getElement().click();
+        Thread.sleep(1000);
+        PointsPanel.SaveChanges.getElement().click();
+    }
+
     @And("^User turn off point and click save$")
     public void turnOffPoint() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.TurnOff.getBy(), 15);
