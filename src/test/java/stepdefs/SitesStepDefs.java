@@ -52,7 +52,7 @@ public class SitesStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, SitesPanel.sortByEvents.getBy(), 15);
         Thread.sleep(1000);
         SitesPanel.sortByEvents.getElement().click();
-
+        
         PageObjectUtils.IsElementVisible(driver, SitesPanel.clickSortButton.getBy(), 15);
         Thread.sleep(1000);
         SitesPanel.clickSortButton.getElement().click();

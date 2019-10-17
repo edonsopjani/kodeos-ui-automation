@@ -710,11 +710,13 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @Then("^Check if user is logged in$")
     public void checkIfUserIsLoggedIn() throws Throwable {
         try {
-            Alert alert = driver.switchTo().alert();
-            alert.dismiss();
+            if (driver.findElement(By.xpath("//*[text()[contains(.,'New Version Released')]]")).isDisplayed()) {
+                driver.findElement(By.xpath("//*[text()[contains(.,'Skip')]]")).click();
+            }
             if (driver.findElement(By.xpath("//*[text()[contains(.,'Continue without saving data ?')]]")).isDisplayed()) {
                 driver.findElement(By.xpath("//*[text()[contains(.,'Yes')]]")).click();
             }
+
         } catch (Throwable ex) {
             PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//img[@class='logo']", 15);
         }
