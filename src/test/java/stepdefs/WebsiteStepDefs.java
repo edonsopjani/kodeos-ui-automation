@@ -710,6 +710,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @Then("^Check if user is logged in$")
     public void checkIfUserIsLoggedIn() throws Throwable {
         try {
+            PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'New Version Released')]]", 2);
             if (driver.findElement(By.xpath("//*[text()[contains(.,'New Version Released')]]")).isDisplayed()) {
                 driver.findElement(By.xpath("//*[text()[contains(.,'Skip')]]")).click();
             }
