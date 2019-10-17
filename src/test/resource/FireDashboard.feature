@@ -22,7 +22,7 @@ Feature: Fire Dashboard Tests
     When User Enter fire@user.com as username and 123456 as password and click Login
     Then Check if user is at Fire Dashboard
     And Click Sites button
-    Then Check if Automation Testing building appears on list
+    Then Check if KODE Labs building appears on list
 
   @SmokeTest @FireDashboard
   Scenario: View Fire Event details page

@@ -5,7 +5,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -35,23 +34,49 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @Given("^User goes to Login page$")
     public void goToKodeLabsPage() throws Throwable {
-        if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
-        driver.navigate().to(System.getProperty("websiteUrl"));
-        Thread.sleep(2000);
+        try{
+            PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'New Version Released')]]", 2);
+            if (driver.findElement(By.xpath("//*[text()[contains(.,'New Version Released')]]")).isDisplayed()) {
+                driver.findElement(By.xpath("//*[text()[contains(.,'Skip')]]")).click();
+            }
 
-        List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
-        if (isLoggedIn.isEmpty()) {
-            Thread.sleep(1000);
-            PageObjectUtils.IsElementVisible(driver, UserProfilePanel.goToUserProfile.getBy(), 15);
-            UserProfilePanel.goToUserProfile.getElement().click();
+            if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
+            driver.navigate().to(System.getProperty("websiteUrl"));
+            Thread.sleep(2000);
 
-            Thread.sleep(1000);
-            PageObjectUtils.IsElementVisible(driver, UserProfilePanel.clickLogout.getBy(), 15);
-            UserProfilePanel.clickLogout.getElement().click();
+            List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
+            if (isLoggedIn.isEmpty()) {
+                Thread.sleep(1000);
+                PageObjectUtils.IsElementVisible(driver, UserProfilePanel.goToUserProfile.getBy(), 15);
+                UserProfilePanel.goToUserProfile.getElement().click();
 
-            PageObjectUtils.IsElementVisible(driver, UserProfilePanel.checkUserIsLoggedOut.getBy(), 15);
-        } else {
+                Thread.sleep(1000);
+                PageObjectUtils.IsElementVisible(driver, UserProfilePanel.clickLogout.getBy(), 15);
+                UserProfilePanel.clickLogout.getElement().click();
 
+                PageObjectUtils.IsElementVisible(driver, UserProfilePanel.checkUserIsLoggedOut.getBy(), 15);
+            } else {
+
+            }
+        }catch (Exception e){
+            if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
+            driver.navigate().to(System.getProperty("websiteUrl"));
+            Thread.sleep(2000);
+
+            List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
+            if (isLoggedIn.isEmpty()) {
+                Thread.sleep(1000);
+                PageObjectUtils.IsElementVisible(driver, UserProfilePanel.goToUserProfile.getBy(), 15);
+                UserProfilePanel.goToUserProfile.getElement().click();
+
+                Thread.sleep(1000);
+                PageObjectUtils.IsElementVisible(driver, UserProfilePanel.clickLogout.getBy(), 15);
+                UserProfilePanel.clickLogout.getElement().click();
+
+                PageObjectUtils.IsElementVisible(driver, UserProfilePanel.checkUserIsLoggedOut.getBy(), 15);
+            } else {
+
+            }
         }
     }
 
@@ -728,8 +753,10 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @Then("^Check if user is at Fire Dashboard$")
     public void checkIfUserIsLoggedIntoFireDashboard() throws Throwable {
         try {
-            Alert alert = driver.switchTo().alert();
-            alert.dismiss();
+            PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'New Version Released')]]", 2);
+            if (driver.findElement(By.xpath("//*[text()[contains(.,'New Version Released')]]")).isDisplayed()) {
+                driver.findElement(By.xpath("//*[text()[contains(.,'Skip')]]")).click();
+            }
             if (driver.findElement(By.xpath("//*[text()[contains(.,'Continue without saving data ?')]]")).isDisplayed()) {
                 driver.findElement(By.xpath("//*[text()[contains(.,'Yes')]]")).click();
             }

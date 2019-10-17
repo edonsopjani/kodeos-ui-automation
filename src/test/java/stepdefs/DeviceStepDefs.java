@@ -211,7 +211,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     @Then("^Check if device details view is changed to dashboard view$")
     public void checkDeviceViewIsChangedToDashboardView() throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.CheckContainsText(driver, " Other Points ");
+        PageObjectUtils.CheckContainsText(driver, " Other Points");
     }
 
     @Then("^Check if device details view is changed to default view$")
@@ -325,7 +325,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     @Then("^Check if Point appears on Template$")
     public void checkPointAppearsOnTemplate() throws Throwable {
         Thread.sleep(3000);
-        List<WebElement> groups = driver.findElements(By.xpath("//*[@class='template-item ng-star-inserted']//*[text()[contains(.,' DEV277127_systemStatus')]]"));
+        List<WebElement> groups = driver.findElements(By.xpath("//*[@class='template-item ng-star-inserted']//*[text()[contains(.,'systemStatus')]]"));
         Assert.assertFalse(groups.isEmpty());
     }
 

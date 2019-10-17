@@ -17,9 +17,9 @@ Feature: Points Tests
     And User click open BR127 Device Page
     And User Click edit Points button
     And User click connect points button
-    And User connect point BO1 with DEV277127_systemStatus
+    And User connect point BO1 with systemStatus
     And User click connect points button
-    And User connect point BO1 with DEV277127_systemStatus
+    And User connect point BO1 with systemStatus
     Then Check if points are connected
 
 #  @SmokeTest @Points

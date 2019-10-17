@@ -20,7 +20,7 @@ public enum DevicePanel implements PageObjects {
     Tag(PageObjectUtils.LocatorType.XPATH, "//input[@placeholder='Add tags']"),
     AppendTag(PageObjectUtils.LocatorType.XPATH, "//input[@placeholder='Add tags']"),
     AddPointGroupButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Add New Group')]]"),
-    PointToDrag(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'DEV277127_systemStatus')]]"),
+    PointToDrag(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'systemStatus')]]"),
     DragPointHere(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Drop Points Here')]]"),
     RemovePointFromTemplate(PageObjectUtils.LocatorType.XPATH, "//*[@class='ungrouped']"),
     UpdatePointButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Update Points')]]"),
