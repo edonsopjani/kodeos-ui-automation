@@ -802,7 +802,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
     }
 
-    @And("^User Fill (.*) as Last Name")
+    @And("^User Fill (.*) as Last Name$")
     public void u_LastName(String lastName) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterLastName.getBy(), 15);
 
@@ -810,7 +810,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         BuildingPanel.EnterLastName.getElement().sendKeys(lastName);
     }
 
-    @And("^User Fill (.*) as Email")
+    @And("^User Fill (.*) as Email$")
     public void u_Email(String email) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterEmail.getBy(), 15);
 
@@ -818,7 +818,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         BuildingPanel.EnterEmail.getElement().sendKeys(email);
     }
 
-    @And("^User Fill (.*) as Phone number")
+    @And("^User Fill (.*) as Phone number$")
     public void u_Phone(String phone) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterPhone.getBy(), 15);
 
@@ -826,7 +826,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         BuildingPanel.EnterPhone.getElement().sendKeys(phone);
     }
 
-    @And("^User Fill (.*) as Position")
+    @And("^User Fill (.*) as Position$")
     public void u_Position(String position) throws Throwable {
         //Add Position
         BuildingPanel.EnterPosition.getElement().click();
@@ -834,7 +834,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//span[text()[contains(.,'" + position + "')]]")).click();
     }
 
-    @And("^User Fill (.*) as Role")
+    @And("^User Fill (.*) as Role$")
     public void u_Role(String role) throws Throwable {
         //Add Role
         WebElement element = BuildingPanel.EnterRole.getElement();
@@ -843,15 +843,12 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//span[text()[contains(.,'" + role + "')]]")).click();
     }
 
-    @And("^User Fill (.*) as Password")
+    @And("^User click create account$")
     public void u_Password(String password) throws Throwable {
         //Add Role
+        Thread.sleep(1000);
         WebElement element = BuildingPanel.ClickCreateAccount.getElement();
         element.click();
-        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterPassword.getBy(), 15);
-        BuildingPanel.EnterPassword.getElement().click();
-        Thread.sleep(1000);
-        BuildingPanel.EnterPassword.getElement().sendKeys(password);
     }
 
     @Then("^Check if User with name (.*) appear on the list$")
@@ -861,7 +858,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(2000);
     }
 
-    @When("^User click (.*) User")
+    @When("^User click (.*) User$")
     public void openUser(String users) throws Throwable {
         //click user
         PageObjectUtils.CheckContainsText(driver, users);
@@ -869,7 +866,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.CheckContainsText(driver, users);
     }
 
-    @And("^Click on Edit Button, then change some values for user and click save")
+    @And("^Click on Edit Button, then change some values for user and click save$")
     public void editUser() throws Throwable {
         //click user
         PageObjectUtils.CheckContainsText(driver, "Edit");
@@ -885,7 +882,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
     }
 
-    @And("^Click on Edit Role Button, change role and click save")
+    @And("^Click on Edit Role Button, change role and click save$")
     public void editUserRole() throws Throwable {
         //click user
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickUpdateRole.getBy(), 15);
@@ -902,7 +899,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
     }
 
-    @And("^Click on Edit email Button, change email and click save")
+    @And("^Click on Edit email Button, change email and click save$")
     public void editUserEmail() throws Throwable {
         //click user
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickUpdateEmail.getBy(), 15);
@@ -918,7 +915,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
     }
 
-    @And("^Click on Edit password Button, change password and click save")
+    @And("^Click on Edit password Button, change password and click save$")
     public void editUserPassword() throws Throwable {
         //click user
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickChangePassword.getBy(), 15);
@@ -934,7 +931,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
     }
 
-    @And("^Click on deactivate Button and click save")
+    @And("^Click on deactivate Button and click save$")
     public void deactivateUserAccount() throws Throwable {
         //click user
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickDeactivate.getBy(), 15);
@@ -946,7 +943,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Confirm')]")).click();
     }
 
-    @And("^Click on Create account Button, enter password and click save")
+    @And("^Click on Create account Button, enter password and click save$")
     public void createAccount() throws Throwable {
         //click user
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickCreateAccountButton.getBy(), 15);
@@ -992,7 +989,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.CheckContainsText(driver, "Inactive");
     }
 
-    @And("^User go to buildings tab")
+    @And("^User go to buildings tab$")
     public void goToBuildingsTab() throws Throwable {
         //click building tab
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.OpenBuildingTab.getBy(), 15);
@@ -1001,7 +998,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
     }
 
-    @And("^User click assign buildings")
+    @And("^User click assign buildings$")
     public void clickAssignBuilding() throws Throwable {
         Thread.sleep(1000);
 
@@ -1009,7 +1006,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         BuildingPanel.editButton.getElement().click();
     }
 
-    @And("^User assign (.*) Building")
+    @And("^User assign (.*) Building$")
     public void assignBuilding(String building) throws Throwable {
         //assign building
         PageObjectUtils.CheckContainsText(driver, "Assign Buildings");
@@ -1040,7 +1037,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.CheckContainsText(driver, building);
     }
 
-    @And("^User clicks delete assigned buildings")
+    @And("^User clicks delete assigned buildings$")
     public void clickRemoveBuilding() throws Throwable {
         Thread.sleep(1000);
 
@@ -1048,7 +1045,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         BuildingPanel.editButton.getElement().click();
     }
 
-    @And("^User remove (.*) Building")
+    @And("^User remove (.*) Building$")
     public void removedBuilding(String building) throws Throwable {
         //remove building
         PageObjectUtils.CheckContainsText(driver, "Remove Buildings");
@@ -1063,12 +1060,12 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
     }
 
-    @Then("^Check if (.*) is removed from user")
+    @Then("^Check if (.*) is removed from user$")
     public void checkRemovedBuilding(String building) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[contains(text(), 'Saved Successfully')]", 15);
     }
 
-    @And("^User click on Delete user button")
+    @And("^User click on Delete user button$")
     public void removedUser() throws Throwable {
         //remove user
         PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-button-wrapper' and contains(text(), 'Delete')]", 15);
@@ -1080,7 +1077,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
     }
 
-    @Then("^Check if User (.*) dissapears from the list")
+    @Then("^Check if User (.*) dissapears from the list$")
     public void checkRemovedUser(String user) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "Edon");
         Thread.sleep(2000);
@@ -1089,43 +1086,43 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     //Templates Methods
-    @And("^Click Templates tab")
+    @And("^Click Templates tab$")
     public void goToTemplates() throws Throwable {
         //click assign
         PageObjectUtils.CheckContainsText(driver, "Templates");
         PageObjectUtils.ContainsText(driver, "Templates").click();
     }
 
-    @And("^Click Units tab")
+    @And("^Click Units tab$")
     public void goToUnits() throws Throwable {
         //click assign
         PageObjectUtils.CheckContainsText(driver, "Units");
         PageObjectUtils.ContainsText(driver, "Units").click();
     }
 
-    @And("^Click Tags tab")
+    @And("^Click Tags tab$")
     public void goToTags() throws Throwable {
         //click assign
         PageObjectUtils.CheckContainsText(driver, "Tags");
         PageObjectUtils.ContainsText(driver, "Tags").click();
     }
 
-    @Then("^Check if user is at Templates page")
+    @Then("^Check if user is at Templates page$")
     public void userAtTemplatesPage() throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "AHU");
     }
 
-    @Then("^Check if user is at Units page")
+    @Then("^Check if user is at Units page$")
     public void userAtUnitsPage() throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "angular velocity");
     }
 
-    @Then("^Check if user is at Tags page")
+    @Then("^Check if user is at Tags page$")
     public void userAtTagsPage() throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "Tag");
     }
 
-    @When("^User go to (.*) template")
+    @When("^User go to (.*) template$")
     public void goToOneTemplate(String template) throws Throwable {
         //remove building
         PageObjectUtils.CheckContainsText(driver, template);
@@ -1134,14 +1131,14 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
     }
 
-    @And("^Click add new section button")
+    @And("^Click add new section button$")
     public void openNewSection() throws Throwable {
         //click assign
         PageObjectUtils.CheckContainsText(driver, "Add Group");
         PageObjectUtils.ContainsText(driver, "Add Group").click();
     }
 
-    @And("^enter (.*) for this section name")
+    @And("^enter (.*) for this section name$")
     public void enterTemplateName(String template) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "Add Group");
         BuildingPanel.Name.getElement().sendKeys(template);
@@ -1149,7 +1146,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//*[@class='dialog-container']//span[text()[contains(.,' Add ')]]")).click();
     }
 
-    @And("^Click on Edit Button, then change section name to (.*)")
+    @And("^Click on Edit Button, then change section name to (.*)$")
     public void changeSectionName(String template) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "more_vert");
         Thread.sleep(1000);
@@ -1168,12 +1165,12 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
     }
 
-    @Then("^Check if template with (.*) name appears on list")
+    @Then("^Check if template with (.*) name appears on list$")
     public void checkTemplateIsAdded(String name) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, name);
     }
 
-    @And("^Click on Delete Button, then click delete Section")
+    @And("^Click on Delete Button, then click delete Section$")
     public void changeDeletedSectionName() throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "more_vert");
         PageObjectUtils.ContainsText(driver, "more_vert").click();
@@ -1188,14 +1185,14 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(2000);
     }
 
-    @Then("^Check if template with (.*) name Disappears from list")
+    @Then("^Check if template with (.*) name Disappears from list$")
     public void checkTemplateIsDeleted(String name) throws Throwable {
         Thread.sleep(1000);
         List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + name + "')]]"));
         Assert.assertTrue("Section is still on list", users.isEmpty());
     }
 
-    @And("^Click add new point button")
+    @And("^Click add new point button$")
     public void addNewPointButton() throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "more_vert");
         PageObjectUtils.ContainsText(driver, "more_vert").click();
@@ -1207,7 +1204,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
     }
 
-    @And("^Fill point mandatory fields with name (.*)")
+    @And("^Fill point mandatory fields with name (.*)$")
     public void fillPointFields(String name) throws Throwable {
         //PageObjectUtils.CheckContainsText(driver,"Add New Point");
         BuildingPanel.DisplayName.getElement().sendKeys(name);
@@ -1220,7 +1217,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
     }
 
-    @Then("^Check if Point with name (.*) is added on Section with name (.*)")
+    @Then("^Check if Point with name (.*) is added on Section with name (.*)$")
     public void checkPointIsAdded(String point, String section) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "NewPoint");
     }
@@ -1240,12 +1237,12 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.ContainsText(driver, "Save").click();
     }
 
-    @Then("^Check if Point name is changed from (.*) to (.*)")
+    @Then("^Check if Point name is changed from (.*) to (.*)$")
     public void checkPointIsEdited(String point, String section) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, section);
     }
 
-    @And("^Open Point with name (.*) and click Delete")
+    @And("^Open Point with name (.*) and click Delete$")
     public void deletePointName(String template) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, template);
         PageObjectUtils.ContainsText(driver, template).click();
@@ -1256,38 +1253,38 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(1000);
     }
 
-    @Then("^Check if point with name (.*) is deleted from list")
+    @Then("^Check if point with name (.*) is deleted from list$")
     public void checkPointIsDeleted(String point) throws Throwable {
         Thread.sleep(1000);
         List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + point + "')]]"));
         Assert.assertTrue("point is still on list", users.isEmpty());
     }
 
-    @And("^user select Connect Points")
+    @And("^user select Connect Points$")
     public void connectPointsButton() throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "Connect Points");
         PageObjectUtils.ContainsText(driver, "Connect Points").click();
     }
 
-    @And("^user select point with name (.*)")
+    @And("^user select point with name (.*)$")
     public void selectFirstPoint(String point) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, point);
         PageObjectUtils.ContainsText(driver, point).click();
     }
 
-    @And("^it links it with point with name (.*)")
+    @And("^it links it with point with name (.*)$")
     public void selectSecondPoint(String point) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, point);
         PageObjectUtils.ContainsText(driver, point).click();
     }
 
-    @And("^Click Connect Button")
+    @And("^Click Connect Button$")
     public void connectPointsSave() throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "Save");
         PageObjectUtils.ContainsText(driver, "Save").click();
     }
 
-    @Then("^Check if points (.*) and (.*) are linked")
+    @Then("^Check if points (.*) and (.*) are linked$")
     public void checkPointIsLinked(String point1, String point2) throws Throwable {
         Thread.sleep(2000);
         PageObjectUtils.CheckContainsText(driver, point1);

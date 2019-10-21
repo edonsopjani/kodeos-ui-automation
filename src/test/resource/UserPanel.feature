@@ -27,7 +27,7 @@ Feature: User Panel Tests
     And User Fill don@kodelabs.co as Email
     And User Fill 123-456-7889 as Phone number
     And User Fill User as Role
-    And User Fill 123456 as Password
+    And User click create account
     And User click Save changes
     Then Check if User with name Michael appear on the list
 
