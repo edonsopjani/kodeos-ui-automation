@@ -58,7 +58,7 @@ Feature: User Panel Tests
   @Admin @SmokeTest @UserPanel
   Scenario: Update User to User Account
     When User click Edonis User
-    And Click on Create account Button, enter password and click save
+    And Click on Create account Button
     Then Check if User account is updated
 
   @Admin @SmokeTest @UserPanel

@@ -47,8 +47,8 @@ Feature: Dashboard Tests
   Scenario: Edit Summary Widget on Dashboard
     When User Click on Edit Dashboard
     And Click edit for Summary Widget
-    And Add DEV277126_systemStatus and BO1 points for BR126 Device at Summary Widget
-    Then Check if DEV277126_systemStatus and BO1 points appears on Summary Widget
+    And Add systemStatus and BO1 points for BR126 Device at Summary Widget
+    Then Check if systemStatus and BO1 points appears on Summary Widget
 
   @SmokeTest @Dashboard
   Scenario: Go to one Device from Summary Widget

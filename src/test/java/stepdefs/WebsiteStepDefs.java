@@ -844,7 +844,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     }
 
     @And("^User click create account$")
-    public void u_Password(String password) throws Throwable {
+    public void u_Password() throws Throwable {
         //Add Role
         Thread.sleep(1000);
         WebElement element = BuildingPanel.ClickCreateAccount.getElement();
@@ -943,20 +943,16 @@ public class WebsiteStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Confirm')]")).click();
     }
 
-    @And("^Click on Create account Button, enter password and click save$")
+    @And("^Click on Create account Button$")
     public void createAccount() throws Throwable {
         //click user
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickCreateAccountButton.getBy(), 15);
         BuildingPanel.ClickCreateAccountButton.getElement().click();
 
         Thread.sleep(1000);
-        PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterPassword.getBy(), 15);
-        WebElement element = BuildingPanel.EnterPassword.getElement();
-        element.clear();
-        element.sendKeys("123456");
 
         //Click save
-        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
+        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Create')]")).click();
     }
 
     @Then("^Check if All Changed fields for (.*) are saved successful$")
