@@ -687,7 +687,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @Then("^Check if (.*) appear on list$")
     public void checkBuildingIsAdded(String building) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, building);
-        Assert.assertEquals(PageObjectUtils.ContainsText(driver, building).getText(), building);
+        PageObjectUtils.ContainsText(driver, building);
         Thread.sleep(2000);
     }
 
