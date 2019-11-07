@@ -126,7 +126,7 @@ public class DashboardStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//*[@class='points-list-element__container']//*[contains(text(),'" + point2 + "')]")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//button[@tabindex='-1']//span[contains(text(),'Save')]")).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//span[contains(text(),'Save')]")).click();
     }
 
@@ -205,25 +205,22 @@ public class DashboardStepDefs extends CommonStepObjects {
 
     @Then("^Check if (.*) Device pop-up appears$")
     public void checkDevicePopUpAppears(String building) throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, building);
     }
 
     @Then("^Check if (.*) Widget appears on Dashboard$")
     public void checkWidgetAdded(String building) throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, building);
     }
 
     @Then("^Check if (.*) device appears on Navigation Widget$")
     public void checkWidgetUpdated(String device) throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, device);
     }
 
     @Then("^Check if (.*) and (.*) points appears on Summary Widget$")
     public void checkPointIsUpdated(String point1, String point2) throws Throwable {
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, point1);
     }
 
@@ -241,7 +238,6 @@ public class DashboardStepDefs extends CommonStepObjects {
 
     @Then("^Check if the Edit Dashboard page appears$")
     public void checkIfEditDashboardPageAppears() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, "Save");
     }
 
