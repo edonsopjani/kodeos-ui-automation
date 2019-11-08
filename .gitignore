@@ -53,3 +53,8 @@ target/surefire-reports/junit-noframes.html
 target/surefire-reports/RunCukesTest.txt
 target/surefire-reports/TEST-RunCukesTest.xml
 target/surefire-reports/TESTS-TestSuites.xml
+target/cucumber-report-html/cucumber-html-reports/1.html
+target/surefire-reports/2019-11-07T10-59-32_959-jvmRun1.dump
+target/surefire-reports/2019-11-07T10-59-32_959-jvmRun1.dumpstream
+target/surefire-reports/2019-11-07T11-41-06_005-jvmRun1.dump
+target/surefire-reports/2019-11-07T11-41-06_005-jvmRun1.dumpstream

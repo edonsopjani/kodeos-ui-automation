@@ -1,0 +1,1373 @@
+# Created at 2019-11-07T15:43:28.802
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2019-11-07T15:43:31.065
+Unexpected IOException with stream:     [31mGiven [0m[31mUser goes to Login page[0m                      [90m# WebsiteStepDefs.goToKodeLabsPage()[0m
+
+
+# Created at 2019-11-07T15:43:31.069
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at pageobjects.pages.PageObjectUtils.IsElementVisible(PageObjectUtils.java:28)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:69)
+	at ?.User goes to Login page(src/test/resource/Access.feature:5)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at pageobjects.pages.PageObjectUtils.IsElementVisible(PageObjectUtils.java:28)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 73 more
+[0m
+
+
+# Created at 2019-11-07T15:43:31.072
+Unexpected IOException with stream:     [36mThen [0m[36mCheck If user is at Login Page[0m                [90m# UserProfileStepDefs.checkUserIsAtLoginPage()[0m
+
+
+# Created at 2019-11-07T15:43:31.074
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:43:31.076
+Unexpected IOException with stream:   @Access @SmokeTest
+
+
+# Created at 2019-11-07T15:43:31.077
+Unexpected IOException with stream:   Scenario: Admin approve request from user to specific building                      [90m# src/test/resource/Access.feature:21[0m
+
+
+# Created at 2019-11-07T15:43:31.078
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Enter [0m[36m[1muser@super.com[0m[36m as username and [0m[36m[1m123456[0m[36m as password and click Login[0m [90m# UserProfileStepDefs.loginAs(String,String)[0m
+
+
+# Created at 2019-11-07T15:43:31.079
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                                                   [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-07T15:43:31.081
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Access button[0m                                                   [90m# AccessStepDefs.clickAccess()[0m
+
+
+# Created at 2019-11-07T15:43:31.082
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if Access page appears[0m                                                 [90m# AccessStepDefs.checkIfAccessPageAppears()[0m
+
+
+# Created at 2019-11-07T15:43:31.083
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click request from [0m[36m[1mAccess User[0m[36m and approves it[0m                           [90m# AccessStepDefs.userApprovesRequest(String)[0m
+
+
+# Created at 2019-11-07T15:43:31.085
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if request status changes to [0m[36m[1mactive[0m                                    [90m# AccessStepDefs.checkIfRequestStatusIsChanged(String)[0m
+
+
+# Created at 2019-11-07T15:43:31.086
+Unexpected IOException: 7,1,Access Tests,Admin approve request from user to specific building(Access Tests),null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,org.openqa.selenium.WebDriverException: \000Ajava.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver\000ACaused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ACaused by: java.net.ConnectException: Connection refused: connect\000A
+
+
+# Created at 2019-11-07T15:43:31.089
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:43:31.091
+Unexpected IOException with stream:   Background: Steps That execute before every scenario [90m# src/test/resource/Access.feature:4[0m
+
+
+# Created at 2019-11-07T15:43:31.092
+Unexpected IOException: 5,1,Access Tests,User log in to see if building appears on Sites page(Access Tests),null,null,null
+
+
+# Created at 2019-11-07T15:43:39.151
+Unexpected IOException with stream:     [31mGiven [0m[31mUser goes to Login page[0m                      [90m# WebsiteStepDefs.goToKodeLabsPage()[0m
+
+
+# Created at 2019-11-07T15:43:39.156
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at ?.User goes to Login page(src/test/resource/Access.feature:5)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 67 more
+[0m
+
+
+# Created at 2019-11-07T15:43:39.159
+Unexpected IOException with stream:     [36mThen [0m[36mCheck If user is at Login Page[0m                [90m# UserProfileStepDefs.checkUserIsAtLoginPage()[0m
+
+
+# Created at 2019-11-07T15:43:39.161
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:43:39.164
+Unexpected IOException with stream:   @Access @SmokeTest
+
+
+# Created at 2019-11-07T15:43:39.165
+Unexpected IOException with stream:   Scenario: User log in to see if building appears on Sites page                       [90m# src/test/resource/Access.feature:30[0m
+
+
+# Created at 2019-11-07T15:43:39.166
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Enter [0m[36m[1muser@access.com[0m[36m as username and [0m[36m[1m123456[0m[36m as password and click Login[0m [90m# UserProfileStepDefs.loginAs(String,String)[0m
+
+
+# Created at 2019-11-07T15:43:39.168
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                                                    [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-07T15:43:39.172
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mAutomation Testing[0m[36m building appears on list[0m                          [90m# AccessStepDefs.checkBuildingAppearsOnSitesPage(String)[0m
+
+
+# Created at 2019-11-07T15:43:39.174
+Unexpected IOException: 7,1,Access Tests,User log in to see if building appears on Sites page(Access Tests),null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,org.openqa.selenium.WebDriverException: \000Ajava.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver\000ACaused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ACaused by: java.net.ConnectException: Connection refused: connect\000A
+
+
+# Created at 2019-11-07T15:43:39.177
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:43:39.179
+Unexpected IOException with stream:   Background: Steps That execute before every scenario [90m# src/test/resource/Access.feature:4[0m
+
+
+# Created at 2019-11-07T15:43:39.182
+Unexpected IOException: 5,1,Access Tests,Admin reject request from user to specific building(Access Tests),null,null,null
+
+
+# Created at 2019-11-07T15:43:47.245
+Unexpected IOException with stream:     [31mGiven [0m[31mUser goes to Login page[0m                      [90m# WebsiteStepDefs.goToKodeLabsPage()[0m
+
+
+# Created at 2019-11-07T15:43:47.247
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at ?.User goes to Login page(src/test/resource/Access.feature:5)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 67 more
+[0m
+
+
+# Created at 2019-11-07T15:43:47.248
+Unexpected IOException with stream:     [36mThen [0m[36mCheck If user is at Login Page[0m                [90m# UserProfileStepDefs.checkUserIsAtLoginPage()[0m
+
+
+# Created at 2019-11-07T15:43:47.249
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:43:47.250
+Unexpected IOException with stream:   @Access @SmokeTest
+
+
+# Created at 2019-11-07T15:43:47.251
+Unexpected IOException with stream:   Scenario: Admin reject request from user to specific building                                                 [90m# src/test/resource/Access.feature:36[0m
+
+
+# Created at 2019-11-07T15:43:47.252
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Enter [0m[36m[1muser@super.com[0m[36m as username and [0m[36m[1m123456[0m[36m as password and click Login[0m                           [90m# UserProfileStepDefs.loginAs(String,String)[0m
+
+
+# Created at 2019-11-07T15:43:47.252
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                                                                             [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-07T15:43:47.253
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Access button[0m                                                                             [90m# AccessStepDefs.clickAccess()[0m
+
+
+# Created at 2019-11-07T15:43:47.254
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if Access page appears[0m                                                                           [90m# AccessStepDefs.checkIfAccessPageAppears()[0m
+
+
+# Created at 2019-11-07T15:43:47.255
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click request from [0m[36m[1mAccess User[0m[36m and reject it with reason [0m[36m[1mYou are not allowed to view this building[0m [90m# AccessStepDefs.rejectAccess(String,String)[0m
+
+
+# Created at 2019-11-07T15:43:47.256
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if request status changes to [0m[36m[1mrejected[0m                                                            [90m# AccessStepDefs.checkIfRequestStatusIsChanged(String)[0m
+
+
+# Created at 2019-11-07T15:43:47.257
+Unexpected IOException: 7,1,Access Tests,Admin reject request from user to specific building(Access Tests),null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,org.openqa.selenium.WebDriverException: \000Ajava.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver\000ACaused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ACaused by: java.net.ConnectException: Connection refused: connect\000A
+
+
+# Created at 2019-11-07T15:43:47.259
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:43:47.260
+Unexpected IOException with stream:   Background: Steps That execute before every scenario [90m# src/test/resource/Access.feature:4[0m
+
+
+# Created at 2019-11-07T15:43:47.261
+Unexpected IOException: 5,1,Access Tests,User delete the request from access page(Access Tests),null,null,null
+
+
+# Created at 2019-11-07T15:43:55.296
+Unexpected IOException with stream:     [31mGiven [0m[31mUser goes to Login page[0m                      [90m# WebsiteStepDefs.goToKodeLabsPage()[0m
+
+
+# Created at 2019-11-07T15:43:55.298
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at ?.User goes to Login page(src/test/resource/Access.feature:5)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 67 more
+[0m
+
+
+# Created at 2019-11-07T15:43:55.300
+Unexpected IOException with stream:     [36mThen [0m[36mCheck If user is at Login Page[0m                [90m# UserProfileStepDefs.checkUserIsAtLoginPage()[0m
+
+
+# Created at 2019-11-07T15:43:55.302
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:43:55.303
+Unexpected IOException with stream:   @Access @SmokeTest
+
+
+# Created at 2019-11-07T15:43:55.304
+Unexpected IOException with stream:   Scenario: User delete the request from access page                                   [90m# src/test/resource/Access.feature:45[0m
+
+
+# Created at 2019-11-07T15:43:55.305
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Enter [0m[36m[1muser@access.com[0m[36m as username and [0m[36m[1m123456[0m[36m as password and click Login[0m [90m# UserProfileStepDefs.loginAs(String,String)[0m
+
+
+# Created at 2019-11-07T15:43:55.306
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                                                    [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-07T15:43:55.307
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Access button[0m                                                    [90m# AccessStepDefs.clickAccess()[0m
+
+
+# Created at 2019-11-07T15:43:55.308
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if Access page appears[0m                                                  [90m# AccessStepDefs.checkIfAccessPageAppears()[0m
+
+
+# Created at 2019-11-07T15:43:55.309
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click request from [0m[36m[1mAccess User[0m[36m and click delete[0m                           [90m# AccessStepDefs.deleteRequest(String)[0m
+
+
+# Created at 2019-11-07T15:43:55.310
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if request disappears from list[0m                                         [90m# AccessStepDefs.checkRequestIsDeleted()[0m
+
+
+# Created at 2019-11-07T15:43:55.312
+Unexpected IOException: 7,1,Access Tests,User delete the request from access page(Access Tests),null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,org.openqa.selenium.WebDriverException: \000Ajava.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver\000ACaused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ACaused by: java.net.ConnectException: Connection refused: connect\000A
+
+
+# Created at 2019-11-07T15:43:55.314
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:43:55.316
+Unexpected IOException with stream: Feature: Audit Tests
+
+
+# Created at 2019-11-07T15:43:55.316
+Unexpected IOException with stream:   Create Audit page for Specific,Global buildings, create filter base Audit page, edit, delete Audit page and Download CSV file
+
+
+# Created at 2019-11-07T15:43:55.318
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:43:55.318
+Unexpected IOException with stream:   Background: Steps That execute before every scenario                                [90m# src/test/resource/Audit.feature:4[0m
+
+
+# Created at 2019-11-07T15:43:55.320
+Unexpected IOException: 5,1,Audit Tests,Create Specific Building Audit Template(Audit Tests),null,null,null
+
+
+# Created at 2019-11-07T15:44:03.362
+Unexpected IOException with stream:     [31mGiven [0m[31mUser goes to Login page[0m                                                     [90m# WebsiteStepDefs.goToKodeLabsPage()[0m
+
+
+# Created at 2019-11-07T15:44:03.365
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at ?.User goes to Login page(src/test/resource/Audit.feature:5)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 67 more
+[0m
+
+
+# Created at 2019-11-07T15:44:03.367
+Unexpected IOException with stream:     [36mThen [0m[36mCheck If user is at Login Page[0m                                               [90m# UserProfileStepDefs.checkUserIsAtLoginPage()[0m
+
+
+# Created at 2019-11-07T15:44:03.368
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Enter [0m[36m[1muser@super.com[0m[36m as username and [0m[36m[1m123456[0m[36m as password and click Login[0m [90m# UserProfileStepDefs.loginAs(String,String)[0m
+
+
+# Created at 2019-11-07T15:44:03.369
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                                                   [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-07T15:44:03.370
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Audit button[0m                                                    [90m# AuditStepDefs.clickAudit()[0m
+
+
+# Created at 2019-11-07T15:44:03.371
+Unexpected IOException with stream:     [36mAnd [0m[36mUser select [0m[36m[1mAutomation Testing[0m[36m building[0m                                       [90m# SchedulersStepDefs.selectBuilding(String)[0m
+
+
+# Created at 2019-11-07T15:44:03.371
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if Audit page appears[0m                                                  [90m# AuditStepDefs.checkIfAuditPageAppears()[0m
+
+
+# Created at 2019-11-07T15:44:03.372
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:44:03.373
+Unexpected IOException with stream:   @Audit @SmokeTest
+
+
+# Created at 2019-11-07T15:44:03.374
+Unexpected IOException with stream:   Scenario: Create Specific Building Audit Template                                    [90m# src/test/resource/Audit.feature:14[0m
+
+
+# Created at 2019-11-07T15:44:03.375
+Unexpected IOException with stream:     [36mWhen [0m[36mUser click Add Audit template[0m                                                 [90m# AuditStepDefs.addAuditTemplate()[0m
+
+
+# Created at 2019-11-07T15:44:03.375
+Unexpected IOException with stream:     [36mAnd [0m[36mUser select [0m[36m[1mVAV[0m[36m type and select [0m[36m[1mZone Temperature[0m[36m and [0m[36m[1mZone Temperature Setpoint[0m [90m# AuditStepDefs.selectTypeAndPoints(String,String,String)[0m
+
+
+# Created at 2019-11-07T15:44:03.376
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click next button[0m                                                         [90m# AuditStepDefs.clickNextButton()[0m
+
+
+# Created at 2019-11-07T15:44:03.376
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Add [0m[36m[1mVAV Template[0m[36m as Template name[0m                                         [90m# AuditStepDefs.addTemplateName(String)[0m
+
+
+# Created at 2019-11-07T15:44:03.378
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Save button[0m                                                         [90m# WebsiteStepDefs.areaTabSaveButton()[0m
+
+
+# Created at 2019-11-07T15:44:03.378
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mVAV Template[0m[36m is created[0m                                              [90m# SystemsStepDefs.checkSystem(String)[0m
+
+
+# Created at 2019-11-07T15:44:03.379
+Unexpected IOException: 7,1,Audit Tests,Create Specific Building Audit Template(Audit Tests),null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,org.openqa.selenium.WebDriverException: \000Ajava.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver\000ACaused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ACaused by: java.net.ConnectException: Connection refused: connect\000A
+
+
+# Created at 2019-11-07T15:44:03.381
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:44:03.382
+Unexpected IOException with stream:   Background: Steps That execute before every scenario                                [90m# src/test/resource/Audit.feature:4[0m
+
+
+# Created at 2019-11-07T15:44:03.383
+Unexpected IOException: 5,1,Audit Tests,Create Global Audit Template(Audit Tests),null,null,null
+
+
+# Created at 2019-11-07T15:44:11.437
+Unexpected IOException with stream:     [31mGiven [0m[31mUser goes to Login page[0m                                                     [90m# WebsiteStepDefs.goToKodeLabsPage()[0m
+
+
+# Created at 2019-11-07T15:44:11.439
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at ?.User goes to Login page(src/test/resource/Audit.feature:5)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 67 more
+[0m
+
+
+# Created at 2019-11-07T15:44:11.440
+Unexpected IOException with stream:     [36mThen [0m[36mCheck If user is at Login Page[0m                                               [90m# UserProfileStepDefs.checkUserIsAtLoginPage()[0m
+
+
+# Created at 2019-11-07T15:44:11.441
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Enter [0m[36m[1muser@super.com[0m[36m as username and [0m[36m[1m123456[0m[36m as password and click Login[0m [90m# UserProfileStepDefs.loginAs(String,String)[0m
+
+
+# Created at 2019-11-07T15:44:11.442
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                                                   [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-07T15:44:11.443
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Audit button[0m                                                    [90m# AuditStepDefs.clickAudit()[0m
+
+
+# Created at 2019-11-07T15:44:11.444
+Unexpected IOException with stream:     [36mAnd [0m[36mUser select [0m[36m[1mAutomation Testing[0m[36m building[0m                                       [90m# SchedulersStepDefs.selectBuilding(String)[0m
+
+
+# Created at 2019-11-07T15:44:11.445
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if Audit page appears[0m                                                  [90m# AuditStepDefs.checkIfAuditPageAppears()[0m
+
+
+# Created at 2019-11-07T15:44:11.446
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:44:11.447
+Unexpected IOException with stream:   @Audit @SmokeTest
+
+
+# Created at 2019-11-07T15:44:11.447
+Unexpected IOException with stream:   Scenario: Create Global Audit Template                                                           [90m# src/test/resource/Audit.feature:23[0m
+
+
+# Created at 2019-11-07T15:44:11.448
+Unexpected IOException with stream:     [36mWhen [0m[36mUser click on threedots button[0m                                                            [90m# DeviceStepDefs.openThreeDot()[0m
+
+
+# Created at 2019-11-07T15:44:11.449
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Add Template Button[0m                                                             [90m# AuditStepDefs.addTemplate()[0m
+
+
+# Created at 2019-11-07T15:44:11.449
+Unexpected IOException with stream:     [36mAnd [0m[36mUser select [0m[36m[1mAHU[0m[36m type and select [0m[36m[1mChiller Water Temp Entering[0m[36m and [0m[36m[1mChiller Water Temp Leaving[0m [90m# AuditStepDefs.selectTypeAndPoints(String,String,String)[0m
+
+
+# Created at 2019-11-07T15:44:11.450
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click next button[0m                                                                     [90m# AuditStepDefs.clickNextButton()[0m
+
+
+# Created at 2019-11-07T15:44:11.451
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click All Buildings button[0m                                                            [90m# AuditStepDefs.clickAllBuildingsButton()[0m
+
+
+# Created at 2019-11-07T15:44:11.452
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Add [0m[36m[1mGlobal Template[0m[36m as Template name[0m                                                  [90m# AuditStepDefs.addTemplateName(String)[0m
+
+
+# Created at 2019-11-07T15:44:11.452
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Save button[0m                                                                     [90m# WebsiteStepDefs.areaTabSaveButton()[0m
+
+
+# Created at 2019-11-07T15:44:11.453
+Unexpected IOException with stream:     [36mAnd [0m[36mUser select [0m[36m[1mKODE Labs[0m[36m building[0m                                                             [90m# SchedulersStepDefs.selectBuilding(String)[0m
+
+
+# Created at 2019-11-07T15:44:11.454
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mGlobal Template[0m[36m is created[0m                                                       [90m# SystemsStepDefs.checkSystem(String)[0m
+
+
+# Created at 2019-11-07T15:44:11.455
+Unexpected IOException: 7,1,Audit Tests,Create Global Audit Template(Audit Tests),null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,org.openqa.selenium.WebDriverException: \000Ajava.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver\000ACaused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ACaused by: java.net.ConnectException: Connection refused: connect\000A
+
+
+# Created at 2019-11-07T15:44:11.457
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:44:11.457
+Unexpected IOException with stream:   Background: Steps That execute before every scenario                                [90m# src/test/resource/Audit.feature:4[0m
+
+
+# Created at 2019-11-07T15:44:11.458
+Unexpected IOException: 5,1,Audit Tests,Create VAV Template with Alarm Filter(Audit Tests),null,null,null
+
+
+# Created at 2019-11-07T15:44:19.516
+Unexpected IOException with stream:     [31mGiven [0m[31mUser goes to Login page[0m                                                     [90m# WebsiteStepDefs.goToKodeLabsPage()[0m
+
+
+# Created at 2019-11-07T15:44:19.518
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at ?.User goes to Login page(src/test/resource/Audit.feature:5)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 67 more
+[0m
+
+
+# Created at 2019-11-07T15:44:19.519
+Unexpected IOException with stream:     [36mThen [0m[36mCheck If user is at Login Page[0m                                               [90m# UserProfileStepDefs.checkUserIsAtLoginPage()[0m
+
+
+# Created at 2019-11-07T15:44:19.520
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Enter [0m[36m[1muser@super.com[0m[36m as username and [0m[36m[1m123456[0m[36m as password and click Login[0m [90m# UserProfileStepDefs.loginAs(String,String)[0m
+
+
+# Created at 2019-11-07T15:44:19.521
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                                                   [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-07T15:44:19.521
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Audit button[0m                                                    [90m# AuditStepDefs.clickAudit()[0m
+
+
+# Created at 2019-11-07T15:44:19.522
+Unexpected IOException with stream:     [36mAnd [0m[36mUser select [0m[36m[1mAutomation Testing[0m[36m building[0m                                       [90m# SchedulersStepDefs.selectBuilding(String)[0m
+
+
+# Created at 2019-11-07T15:44:19.523
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if Audit page appears[0m                                                  [90m# AuditStepDefs.checkIfAuditPageAppears()[0m
+
+
+# Created at 2019-11-07T15:44:19.524
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:44:19.525
+Unexpected IOException with stream:   @Audit @SmokeTest
+
+
+# Created at 2019-11-07T15:44:19.526
+Unexpected IOException with stream:   Scenario: Create VAV Template with Alarm Filter [90m# src/test/resource/Audit.feature:35[0m
+
+
+# Created at 2019-11-07T15:44:19.526
+Unexpected IOException with stream:     [36mWhen [0m[36mUser click on [0m[36m[1mVAV Template[0m[36m template[0m      [90m# AuditStepDefs.clickVAVTemplate(String)[0m
+
+
+# Created at 2019-11-07T15:44:19.528
+Unexpected IOException with stream:     [36mAnd [0m[36mUser clicks on Filters button[0m             [90m# DeviceStepDefs.goToFilters()[0m
+
+
+# Created at 2019-11-07T15:44:19.528
+Unexpected IOException with stream:     [36mAnd [0m[36mUser select [0m[36m[1mAlarm[0m[36m filter[0m                  [90m# AuditStepDefs.selectAlarmFilter(String)[0m
+
+
+# Created at 2019-11-07T15:44:19.529
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click apply button[0m                   [90m# AuditStepDefs.clickApplyButton()[0m
+
+
+# Created at 2019-11-07T15:44:19.529
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Save Filters button[0m            [90m# AuditStepDefs.saveFilters()[0m
+
+
+# Created at 2019-11-07T15:44:19.530
+Unexpected IOException with stream:     [36mAnd [0m[36mUser add [0m[36m[1mAlarm Points[0m[36m as filter name[0m      [90m# AuditStepDefs.addFilterName(String)[0m
+
+
+# Created at 2019-11-07T15:44:19.531
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Save button on filter[0m          [90m# AuditStepDefs.saveFilterPopUp()[0m
+
+
+# Created at 2019-11-07T15:44:19.532
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mAlarm Points[0m[36m is created[0m         [90m# SystemsStepDefs.checkSystem(String)[0m
+
+
+# Created at 2019-11-07T15:44:19.533
+Unexpected IOException: 7,1,Audit Tests,Create VAV Template with Alarm Filter(Audit Tests),null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,org.openqa.selenium.WebDriverException: \000Ajava.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver\000ACaused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ACaused by: java.net.ConnectException: Connection refused: connect\000A
+
+
+# Created at 2019-11-07T15:44:19.534
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:44:19.535
+Unexpected IOException with stream:   Background: Steps That execute before every scenario                                [90m# src/test/resource/Audit.feature:4[0m
+
+
+# Created at 2019-11-07T15:44:19.536
+Unexpected IOException: 5,1,Audit Tests,Edit Specific Audit Template(Audit Tests),null,null,null
+
+
+# Created at 2019-11-07T15:44:27.559
+Unexpected IOException with stream:     [31mGiven [0m[31mUser goes to Login page[0m                                                     [90m# WebsiteStepDefs.goToKodeLabsPage()[0m
+
+
+# Created at 2019-11-07T15:44:27.561
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at ?.User goes to Login page(src/test/resource/Audit.feature:5)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.goToKodeLabsPage(WebsiteStepDefs.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 67 more
+[0m
+
+
+# Created at 2019-11-07T15:44:27.561
+Unexpected IOException with stream:     [36mThen [0m[36mCheck If user is at Login Page[0m                                               [90m# UserProfileStepDefs.checkUserIsAtLoginPage()[0m
+
+
+# Created at 2019-11-07T15:44:27.562
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Enter [0m[36m[1muser@super.com[0m[36m as username and [0m[36m[1m123456[0m[36m as password and click Login[0m [90m# UserProfileStepDefs.loginAs(String,String)[0m
+
+
+# Created at 2019-11-07T15:44:27.563
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                                                   [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-07T15:44:27.565
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Audit button[0m                                                    [90m# AuditStepDefs.clickAudit()[0m
+
+
+# Created at 2019-11-07T15:44:27.565
+Unexpected IOException with stream:     [36mAnd [0m[36mUser select [0m[36m[1mAutomation Testing[0m[36m building[0m                                       [90m# SchedulersStepDefs.selectBuilding(String)[0m
+
+
+# Created at 2019-11-07T15:44:27.566
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if Audit page appears[0m                                                  [90m# AuditStepDefs.checkIfAuditPageAppears()[0m
+
+
+# Created at 2019-11-07T15:44:27.567
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:44:27.568
+Unexpected IOException with stream:   @Audit @SmokeTest
+
+
+# Created at 2019-11-07T15:44:27.569
+Unexpected IOException with stream:   Scenario: Edit Specific Audit Template             [90m# src/test/resource/Audit.feature:46[0m
+
+
+# Created at 2019-11-07T15:44:27.569
+Unexpected IOException with stream:     [36mWhen [0m[36mUser click on [0m[36m[1mVAV Template[0m[36m template[0m         [90m# AuditStepDefs.clickVAVTemplate(String)[0m
+
+
+# Created at 2019-11-07T15:44:27.570
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click on threedots button[0m               [90m# DeviceStepDefs.openThreeDot()[0m
+
+
+# Created at 2019-11-07T15:44:27.571
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Edit Template Button[0m              [90m# AuditStepDefs.editTemplate()[0m
+
+
+# Created at 2019-11-07T15:44:27.571
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Point Selection button[0m            [90m# AuditStepDefs.pointSelectionButton()[0m
+
+
+# Created at 2019-11-07T15:44:27.572
+Unexpected IOException with stream:     [36mAnd [0m[36mUser select [0m[36m[1mFilter Status[0m[36m point[0m              [90m# AuditStepDefs.selectSpecificPoint(String)[0m
+
+
+# Created at 2019-11-07T15:44:27.573
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click next button[0m                       [90m# AuditStepDefs.clickNextButton()[0m
+
+
+# Created at 2019-11-07T15:44:27.573
+Unexpected IOException with stream:     [36mAnd [0m[36mUser change Template name to [0m[36m[1mEdited Template[0m [90m# AuditStepDefs.changeTempleteName(String)[0m
+
+
+# Created at 2019-11-07T15:44:27.574
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Save button[0m                       [90m# WebsiteStepDefs.areaTabSaveButton()[0m
+
+
+# Created at 2019-11-07T15:44:27.574
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mEdited Template[0m[36m is created[0m         [90m# SystemsStepDefs.checkSystem(String)[0m
+
+
+# Created at 2019-11-07T15:44:27.576
+Unexpected IOException: 7,1,Audit Tests,Edit Specific Audit Template(Audit Tests),null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,null,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver,org.openqa.selenium.WebDriverException: \000Ajava.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: driver.version: RemoteWebDriver\000ACaused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:20312\000ACaused by: java.net.ConnectException: Connection refused: connect\000A
+
+
+# Created at 2019-11-07T15:44:27.577
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-07T15:44:27.578
+Unexpected IOException with stream:   Background: Steps That execute before every scenario                                [90m# src/test/resource/Audit.feature:4[0m
+
+
+# Created at 2019-11-07T15:44:27.578
+Unexpected IOException: 5,1,Audit Tests,Delete Specific Audit Template(Audit Tests),null,null,null
+
+
