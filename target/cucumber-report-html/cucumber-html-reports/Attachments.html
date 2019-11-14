@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Tag: @Attachments</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>KodeLabs Automation Tests</td>
+                          <td>1</td>
+                        <td>14 Nov 2019, 14:12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Tag Report</h2>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        <thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="6">Steps</th>
+    <th colspan="2">Totals</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+        <tbody>
+        <tr>
+          <td class="tagname">@Attachments</td>
+                    <td  class="passed"    >9</td>
+          <td >0</td>
+          <td class="total">9</td>
+          <td      class="passed"    >69</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">69</td>
+          <td class="duration" data-value="41390875700">41s 390ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="src-test-resource-DeviceDetails-feature.html">View Feature</a> <i>Devices Tests</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Device.html">@Device</a>
+       <a href="Attachments.html">@Attachments</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Add Image to Device Attachments</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Click on Flex Device</span>
+  
+  <span class="lead-duration duration">108ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click at Device details button</span>
+  
+  <span class="lead-duration duration">1s 172ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if Flex Device details page appears</span>
+  
+  <span class="lead-duration duration">1s 023ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click Attachment button</span>
+  
+  <span class="lead-duration duration">119ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User open Photos dialog</span>
+  
+  <span class="lead-duration duration">260ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User upload image</span>
+  
+  <span class="lead-duration duration">4s 068ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if image is uploaded successfully</span>
+  
+  <span class="lead-duration duration">027ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="src-test-resource-DeviceDetails-feature.html">View Feature</a> <i>Devices Tests</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Device.html">@Device</a>
+       <a href="Attachments.html">@Attachments</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Edit Image name at Device Attachments</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Click on Flex Device</span>
+  
+  <span class="lead-duration duration">110ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click at Device details button</span>
+  
+  <span class="lead-duration duration">1s 191ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if Flex Device details page appears</span>
+  
+  <span class="lead-duration duration">1s 025ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click Attachment button</span>
+  
+  <span class="lead-duration duration">142ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User open Photos dialog</span>
+  
+  <span class="lead-duration duration">285ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click edit image button</span>
+  
+  <span class="lead-duration duration">557ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User change name to editedName</span>
+  
+  <span class="lead-duration duration">263ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if image name is updated successfully</span>
+  
+  <span class="lead-duration duration">538ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="src-test-resource-DeviceDetails-feature.html">View Feature</a> <i>Devices Tests</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Device.html">@Device</a>
+       <a href="Attachments.html">@Attachments</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Delete Image name at Device Attachments</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Click on Flex Device</span>
+  
+  <span class="lead-duration duration">097ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click at Device details button</span>
+  
+  <span class="lead-duration duration">1s 185ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if Flex Device details page appears</span>
+  
+  <span class="lead-duration duration">1s 021ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click Attachment button</span>
+  
+  <span class="lead-duration duration">113ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User open Photos dialog</span>
+  
+  <span class="lead-duration duration">274ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click edit image button</span>
+  
+  <span class="lead-duration duration">540ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click delete image button</span>
+  
+  <span class="lead-duration duration">080ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if image is deleted successfully</span>
+  
+  <span class="lead-duration duration">533ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="src-test-resource-DeviceDetails-feature.html">View Feature</a> <i>Devices Tests</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Device.html">@Device</a>
+       <a href="Attachments.html">@Attachments</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Add Document to Device Attachments</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Click on Flex Device</span>
+  
+  <span class="lead-duration duration">106ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click at Device details button</span>
+  
+  <span class="lead-duration duration">1s 177ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if Flex Device details page appears</span>
+  
+  <span class="lead-duration duration">1s 024ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click Attachment button</span>
+  
+  <span class="lead-duration duration">107ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User open Documents dialog</span>
+  
+  <span class="lead-duration duration">267ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User upload document</span>
+  
+  <span class="lead-duration duration">4s 068ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if document is uploaded successfully</span>
+  
+  <span class="lead-duration duration">023ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="src-test-resource-DeviceDetails-feature.html">View Feature</a> <i>Devices Tests</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Device.html">@Device</a>
+       <a href="Attachments.html">@Attachments</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Edit Document name at Device Attachments</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Click on Flex Device</span>
+  
+  <span class="lead-duration duration">102ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click at Device details button</span>
+  
+  <span class="lead-duration duration">1s 161ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if Flex Device details page appears</span>
+  
+  <span class="lead-duration duration">1s 024ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click Attachment button</span>
+  
+  <span class="lead-duration duration">174ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User open Documents dialog</span>
+  
+  <span class="lead-duration duration">295ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click edit document button</span>
+  
+  <span class="lead-duration duration">526ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User change name to editedName</span>
+  
+  <span class="lead-duration duration">283ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if document name is updated successfully</span>
+  
+  <span class="lead-duration duration">536ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="src-test-resource-DeviceDetails-feature.html">View Feature</a> <i>Devices Tests</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Device.html">@Device</a>
+       <a href="Attachments.html">@Attachments</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Delete Document name at Device Attachments</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Click on Flex Device</span>
+  
+  <span class="lead-duration duration">114ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click at Device details button</span>
+  
+  <span class="lead-duration duration">1s 212ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if Flex Device details page appears</span>
+  
+  <span class="lead-duration duration">1s 021ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click Attachment button</span>
+  
+  <span class="lead-duration duration">149ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User open Documents dialog</span>
+  
+  <span class="lead-duration duration">281ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click edit document button</span>
+  
+  <span class="lead-duration duration">543ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click delete document button</span>
+  
+  <span class="lead-duration duration">079ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if document is deleted successfully</span>
+  
+  <span class="lead-duration duration">537ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="src-test-resource-DeviceDetails-feature.html">View Feature</a> <i>Devices Tests</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Device.html">@Device</a>
+       <a href="Attachments.html">@Attachments</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Add Note to Device Attachments</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Click on Flex Device</span>
+  
+  <span class="lead-duration duration">106ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click at Device details button</span>
+  
+  <span class="lead-duration duration">1s 185ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if Flex Device details page appears</span>
+  
+  <span class="lead-duration duration">1s 019ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click Attachment button</span>
+  
+  <span class="lead-duration duration">123ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User open Notes dialog</span>
+  
+  <span class="lead-duration duration">282ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User create note</span>
+  
+  <span class="lead-duration duration">569ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if note is uploaded successfully</span>
+  
+  <span class="lead-duration duration">538ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="src-test-resource-DeviceDetails-feature.html">View Feature</a> <i>Devices Tests</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Device.html">@Device</a>
+       <a href="Attachments.html">@Attachments</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Edit Note name at Device Attachments</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Click on Flex Device</span>
+  
+  <span class="lead-duration duration">117ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click at Device details button</span>
+  
+  <span class="lead-duration duration">1s 196ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if Flex Device details page appears</span>
+  
+  <span class="lead-duration duration">1s 019ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click Attachment button</span>
+  
+  <span class="lead-duration duration">132ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User open Notes dialog</span>
+  
+  <span class="lead-duration duration">267ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click edit note button</span>
+  
+  <span class="lead-duration duration">575ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User change note name to editedName</span>
+  
+  <span class="lead-duration duration">249ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if note name is updated successfully</span>
+  
+  <span class="lead-duration duration">537ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="src-test-resource-DeviceDetails-feature.html">View Feature</a> <i>Devices Tests</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Device.html">@Device</a>
+       <a href="Attachments.html">@Attachments</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Delete Note name at Device Attachments</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Click on Flex Device</span>
+  
+  <span class="lead-duration duration">113ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click at Device details button</span>
+  
+  <span class="lead-duration duration">1s 178ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if Flex Device details page appears</span>
+  
+  <span class="lead-duration duration">1s 022ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click Attachment button</span>
+  
+  <span class="lead-duration duration">142ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User open Notes dialog</span>
+  
+  <span class="lead-duration duration">262ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click edit note button</span>
+  
+  <span class="lead-duration duration">569ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click delete note button</span>
+  
+  <span class="lead-duration duration">082ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if note is deleted successfully</span>
+  
+  <span class="lead-duration duration">536ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

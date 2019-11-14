@@ -355,4 +355,164 @@ public class DeviceStepDefs extends CommonStepObjects {
         PageObjectUtils.ContainsText(driver, "Confirm").click();
     }
 
+    @And("^User click Attachment button$")
+    public void userClickAttachmentButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.OpenAttachments.getBy(), 30);
+        DevicePanel.OpenAttachments.getElement().click();
+    }
+
+    @And("^User upload image$")
+    public void userUploadImage() throws Throwable {
+        Thread.sleep(1000);
+
+        //Add image
+        WebElement fileInput = DevicePanel.UploadImage.getElement();
+        Thread.sleep(1000);
+        fileInput.sendKeys(PageObjectUtils.filePathForUpload("test1.jpg"));
+        Thread.sleep(2000);
+    }
+
+    @And("^User upload document$")
+    public void userUploadDocument() throws Throwable {
+        Thread.sleep(1000);
+
+        //Add image
+        WebElement fileInput = DevicePanel.UploadDocument.getElement();
+        Thread.sleep(1000);
+        fileInput.sendKeys(PageObjectUtils.filePathForUpload("sample.pdf"));
+        Thread.sleep(2000);
+    }
+
+    @Then("^Check if image is uploaded successfully$")
+    public void checkIfImageIsUploadedSuccessfully() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "test1.jpg");
+    }
+
+    @Then("^Check if image name is updated successfully$")
+    public void checkIfImageNameIsUpdatedSuccessfully() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "editedName");
+    }
+
+    @And("^User click edit image button$")
+    public void userClickEditImageButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.HoverImage.getBy(), 15);
+
+        Actions action = new Actions(driver);
+        action.moveToElement(DevicePanel.HoverImage.getElement()).moveToElement(DevicePanel.ThreedotMenu.getElement()).click().build().perform();
+
+        PageObjectUtils.CheckContainsText(driver, "Edit File");
+    }
+
+    @And("^User change name to (.*)$")
+    public void userChangeNameToEditedName(String name) {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.EditNameInput.getBy(), 15);
+        DevicePanel.EditNameInput.getElement().clear();
+        DevicePanel.EditNameInput.getElement().sendKeys(name);
+
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.SaveButton.getBy(), 30);
+        DevicePanel.SaveButton.getElement().click();
+    }
+
+    @And("^User click edit document button$")
+    public void userClickEditDocumentButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.HoverDocuments.getBy(), 15);
+
+        Actions action = new Actions(driver);
+        action.moveToElement(DevicePanel.HoverDocuments.getElement()).moveToElement(DevicePanel.ThreedotMenu.getElement()).click().build().perform();
+
+        PageObjectUtils.CheckContainsText(driver, "Edit File");
+    }
+
+    @Then("^Check if note name is updated successfully$")
+    public void checkIfNoteNameIsUpdatedSuccessfully() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "editedName");
+    }
+
+    @And("^User click delete image button$")
+    public void userClickDeleteImageButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.DeleteButton.getBy(), 15);
+        DevicePanel.DeleteButton.getElement().click();
+    }
+
+    @Then("^Check if (.*) is deleted successfully$")
+    public void checkIfImageIsDeletedSuccessfully(String name) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Deleted Successfully");
+    }
+
+    @Then("^Check if document is uploaded successfully$")
+    public void checkIfDocumentIsUploadedSuccessfully() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "sample.pdf");
+    }
+
+    @Then("^Check if document name is updated successfully$")
+    public void checkIfDocumentNameIsUpdatedSuccessfully() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "editedName");
+    }
+
+    @And("^User click delete document button$")
+    public void userClickDeleteDocumentButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.DeleteButton.getBy(), 15);
+        DevicePanel.DeleteButton.getElement().click();
+    }
+
+    @And("^User click delete note button$")
+    public void userClickDeleteNoteButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.DeleteButton.getBy(), 15);
+        DevicePanel.DeleteButton.getElement().click();
+    }
+
+    @And("^User click edit note button$")
+    public void userClickEditNoteButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.HoverNotes.getBy(), 15);
+
+        Actions action = new Actions(driver);
+        action.moveToElement(DevicePanel.HoverNotes.getElement()).moveToElement(DevicePanel.ThreedotMenu.getElement()).click().build().perform();
+
+        PageObjectUtils.CheckContainsText(driver, "Edit Note");
+    }
+
+    @And("^User create note$")
+    public void userCreateNote() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.AddNoteButton.getBy(), 15);
+        DevicePanel.AddNoteButton.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.NoteInputField.getBy(), 15);
+        DevicePanel.NoteInputField.getElement().sendKeys("AutomationNote");
+
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.SaveButton.getBy(), 15);
+        DevicePanel.SaveButton.getElement().click();
+    }
+
+    @Then("^Check if note is uploaded successfully$")
+    public void checkIfNoteIsUploadedSuccessfully() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "AutomationNote");
+    }
+
+    @And("^User change note name to (.*)$")
+    public void userChangeNoteNameToEditedName(String name) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.NoteInputField.getBy(), 15);
+        DevicePanel.NoteInputField.getElement().clear();
+        DevicePanel.NoteInputField.getElement().sendKeys(name);
+
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.SaveButton.getBy(), 15);
+        DevicePanel.SaveButton.getElement().click();
+    }
+
+    @And("^User open Photos dialog$")
+    public void userOpenPhotosDialog() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.OpenPhotosDialog.getBy(), 15);
+        DevicePanel.OpenPhotosDialog.getElement().click();
+    }
+
+    @And("^User open Notes dialog$")
+    public void userOpenNotesDialog() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.OpenNotesDialog.getBy(), 15);
+        DevicePanel.OpenNotesDialog.getElement().click();
+    }
+
+    @And("^User open Documents dialog$")
+    public void userOpenDocumentsDialog() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.OpenDocumentsDialog.getBy(), 15);
+        DevicePanel.OpenDocumentsDialog.getElement().click();
+    }
 }

@@ -1,0 +1,2330 @@
+# Created at 2019-11-14T12:37:46.523
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2019-11-14T12:37:47.358
+Unexpected IOException with stream:     [32mThen [0m[32mCheck if the list of [0m[32m[1mDevices[0m[32m appears[0m           [90m# DashboardStepDefs.checkIfListOfPointsAppears(String)[0m
+
+
+# Created at 2019-11-14T12:37:47.362
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:37:47.363
+Unexpected IOException with stream:   @SmokeTest @Device @Attachments
+
+
+# Created at 2019-11-14T12:37:47.365
+Unexpected IOException with stream:   Scenario: Edit Image name at Device Attachments    [90m# src/test/resource/DeviceDetails.feature:46[0m
+
+
+# Created at 2019-11-14T12:37:47.475
+Unexpected IOException with stream:     [32mWhen [0m[32mUser Click on [0m[32m[1mFlex[0m[32m Device[0m                   [90m# DeviceStepDefs.clickDevice(String)[0m
+
+
+# Created at 2019-11-14T12:37:48.715
+Unexpected IOException with stream:     [32mAnd [0m[32mClick at Device details button[0m               [90m# DeviceStepDefs.openDeviceDetails()[0m
+
+
+# Created at 2019-11-14T12:37:49.739
+Unexpected IOException with stream:     [32mThen [0m[32mCheck if [0m[32m[1mFlex[0m[32m Device details page appears[0m   [90m# DeviceStepDefs.checkDeviceDetailsPage(String)[0m
+
+
+# Created at 2019-11-14T12:37:49.878
+Unexpected IOException with stream:     [32mAnd [0m[32mUser click Attachment button[0m                 [90m# DeviceStepDefs.userClickAttachmentButton()[0m
+
+
+# Created at 2019-11-14T12:37:50.159
+Unexpected IOException with stream:     [32mAnd [0m[32mUser open Photos dialog[0m                      [90m# DeviceStepDefs.userOpenPhotosDialog()[0m
+
+
+# Created at 2019-11-14T12:38:05.267
+Unexpected IOException with stream:     [31mAnd [0m[31mUser click edit image button[0m                 [90m# DeviceStepDefs.userClickEditImageButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.268
+Unexpected IOException with stream:       [31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='image-container ng-star-inserted'] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pageobjects.pages.PageObjectUtils.IsElementVisible(PageObjectUtils.java:28)
+	at stepdefs.DeviceStepDefs.userClickEditImageButton(DeviceStepDefs.java:398)
+	at ?.User click edit image button(src/test/resource/DeviceDetails.feature:52)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+*** Element info: {Using=xpath, value=//div[@class='image-container ng-star-inserted']}
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at pageobjects.pages.PageObjectUtils.IsElementVisible(PageObjectUtils.java:28)
+	at stepdefs.DeviceStepDefs.userClickEditImageButton(DeviceStepDefs.java:398)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+[0m
+
+
+# Created at 2019-11-14T12:38:05.269
+Unexpected IOException with stream:     [36mAnd [0m[36mUser change name to [0m[36m[1meditedName[0m               [90m# DeviceStepDefs.userChangeNameToEditedName(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.270
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if image name is updated successfully[0m [90m# DeviceStepDefs.checkIfImageNameIsUpdatedSuccessfully()[0m
+
+
+# Created at 2019-11-14T12:38:05.271
+Unexpected IOException: 7,1,Devices Tests,Edit Image name at Device Attachments(Devices Tests),null,Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='image-container ng-star-inserted'] (tried for 15 second(s) with 500 milliseconds interval),null,Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='image-container ng-star-inserted'] (tried for 15 second(s) with 500 milliseconds interval),Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='image-container ng-star-inserted'] (tried for 15 second(s) with 500 milliseconds interval),org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='image-container ng-star-inserted'] (tried for 15 second(s) with 500 milliseconds interval)\000ACaused by: org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56\000A*** Element info: {Using=xpath\002C value=//div[@class='image-container ng-star-inserted']}\000A
+
+
+# Created at 2019-11-14T12:38:05.273
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.274
+Unexpected IOException with stream:   Background: Steps That execute before every scenario  [90m# src/test/resource/DeviceDetails.feature:4[0m
+
+
+# Created at 2019-11-14T12:38:05.274
+Unexpected IOException: 5,1,Devices Tests,Delete Image name at Device Attachments(Devices Tests),null,null,null
+
+
+# Created at 2019-11-14T12:38:05.277
+Unexpected IOException with stream:     [31mGiven [0m[31mOpen KodeLabs Page[0m                            [90m# WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.278
+Unexpected IOException with stream:       [31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+[0m
+
+
+# Created at 2019-11-14T12:38:05.279
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                     [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.280
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click twice on [0m[36m[1mAutomation Testing[0m[36m building[0m [90m# SitesStepDefs.openBuilding(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.281
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mAutomation Testing[0m[36m Dashboard appears[0m  [90m# SitesStepDefs.checkDashboard(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.282
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Devices button[0m                    [90m# DashboardStepDefs.clickSystems()[0m
+
+
+# Created at 2019-11-14T12:38:05.284
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if the list of [0m[36m[1mDevices[0m[36m appears[0m           [90m# DashboardStepDefs.checkIfListOfPointsAppears(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.285
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.285
+Unexpected IOException with stream:   @SmokeTest @Device @Attachments
+
+
+# Created at 2019-11-14T12:38:05.286
+Unexpected IOException with stream:   Scenario: Delete Image name at Device Attachments [90m# src/test/resource/DeviceDetails.feature:57[0m
+
+
+# Created at 2019-11-14T12:38:05.287
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Click on [0m[36m[1mFlex[0m[36m Device[0m                  [90m# DeviceStepDefs.clickDevice(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.287
+Unexpected IOException with stream:     [36mAnd [0m[36mClick at Device details button[0m              [90m# DeviceStepDefs.openDeviceDetails()[0m
+
+
+# Created at 2019-11-14T12:38:05.288
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mFlex[0m[36m Device details page appears[0m  [90m# DeviceStepDefs.checkDeviceDetailsPage(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.288
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Attachment button[0m                [90m# DeviceStepDefs.userClickAttachmentButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.290
+Unexpected IOException with stream:     [36mAnd [0m[36mUser open Photos dialog[0m                     [90m# DeviceStepDefs.userOpenPhotosDialog()[0m
+
+
+# Created at 2019-11-14T12:38:05.290
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click edit image button[0m                [90m# DeviceStepDefs.userClickEditImageButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.292
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click delete image button[0m              [90m# DeviceStepDefs.userClickDeleteImageButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.293
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mimage[0m[36m is deleted successfully[0m     [90m# DeviceStepDefs.checkIfImageIsDeletedSuccessfully(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.293
+Unexpected IOException: 7,1,Devices Tests,Delete Image name at Device Attachments(Devices Tests),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56\000A
+
+
+# Created at 2019-11-14T12:38:05.294
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.296
+Unexpected IOException with stream:   Background: Steps That execute before every scenario  [90m# src/test/resource/DeviceDetails.feature:4[0m
+
+
+# Created at 2019-11-14T12:38:05.296
+Unexpected IOException: 5,1,Devices Tests,Add Document to Device Attachments(Devices Tests),null,null,null
+
+
+# Created at 2019-11-14T12:38:05.299
+Unexpected IOException with stream:     [31mGiven [0m[31mOpen KodeLabs Page[0m                            [90m# WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.300
+Unexpected IOException with stream:       [31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+[0m
+
+
+# Created at 2019-11-14T12:38:05.301
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                     [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.302
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click twice on [0m[36m[1mAutomation Testing[0m[36m building[0m [90m# SitesStepDefs.openBuilding(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.303
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mAutomation Testing[0m[36m Dashboard appears[0m  [90m# SitesStepDefs.checkDashboard(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.304
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Devices button[0m                    [90m# DashboardStepDefs.clickSystems()[0m
+
+
+# Created at 2019-11-14T12:38:05.305
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if the list of [0m[36m[1mDevices[0m[36m appears[0m           [90m# DashboardStepDefs.checkIfListOfPointsAppears(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.305
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.306
+Unexpected IOException with stream:   @SmokeTest @Device @Attachments
+
+
+# Created at 2019-11-14T12:38:05.307
+Unexpected IOException with stream:   Scenario: Add Document to Device Attachments      [90m# src/test/resource/DeviceDetails.feature:68[0m
+
+
+# Created at 2019-11-14T12:38:05.308
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Click on [0m[36m[1mFlex[0m[36m Device[0m                  [90m# DeviceStepDefs.clickDevice(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.308
+Unexpected IOException with stream:     [36mAnd [0m[36mClick at Device details button[0m              [90m# DeviceStepDefs.openDeviceDetails()[0m
+
+
+# Created at 2019-11-14T12:38:05.309
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mFlex[0m[36m Device details page appears[0m  [90m# DeviceStepDefs.checkDeviceDetailsPage(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.309
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Attachment button[0m                [90m# DeviceStepDefs.userClickAttachmentButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.310
+Unexpected IOException with stream:     [36mAnd [0m[36mUser open Documents dialog[0m                  [90m# DeviceStepDefs.userOpenDocumentsDialog()[0m
+
+
+# Created at 2019-11-14T12:38:05.311
+Unexpected IOException with stream:     [36mAnd [0m[36mUser upload document[0m                        [90m# DeviceStepDefs.userUploadDocument()[0m
+
+
+# Created at 2019-11-14T12:38:05.312
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if document is uploaded successfully[0m [90m# DeviceStepDefs.checkIfDocumentIsUploadedSuccessfully()[0m
+
+
+# Created at 2019-11-14T12:38:05.313
+Unexpected IOException: 7,1,Devices Tests,Add Document to Device Attachments(Devices Tests),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56\000A
+
+
+# Created at 2019-11-14T12:38:05.314
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.315
+Unexpected IOException with stream:   Background: Steps That execute before every scenario  [90m# src/test/resource/DeviceDetails.feature:4[0m
+
+
+# Created at 2019-11-14T12:38:05.316
+Unexpected IOException: 5,1,Devices Tests,Edit Document name at Device Attachments(Devices Tests),null,null,null
+
+
+# Created at 2019-11-14T12:38:05.319
+Unexpected IOException with stream:     [31mGiven [0m[31mOpen KodeLabs Page[0m                            [90m# WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.320
+Unexpected IOException with stream:       [31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+[0m
+
+
+# Created at 2019-11-14T12:38:05.321
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                     [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.322
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click twice on [0m[36m[1mAutomation Testing[0m[36m building[0m [90m# SitesStepDefs.openBuilding(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.323
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mAutomation Testing[0m[36m Dashboard appears[0m  [90m# SitesStepDefs.checkDashboard(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.323
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Devices button[0m                    [90m# DashboardStepDefs.clickSystems()[0m
+
+
+# Created at 2019-11-14T12:38:05.324
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if the list of [0m[36m[1mDevices[0m[36m appears[0m           [90m# DashboardStepDefs.checkIfListOfPointsAppears(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.326
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.326
+Unexpected IOException with stream:   @SmokeTest @Device @Attachments
+
+
+# Created at 2019-11-14T12:38:05.327
+Unexpected IOException with stream:   Scenario: Edit Document name at Device Attachments    [90m# src/test/resource/DeviceDetails.feature:78[0m
+
+
+# Created at 2019-11-14T12:38:05.327
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Click on [0m[36m[1mFlex[0m[36m Device[0m                      [90m# DeviceStepDefs.clickDevice(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.328
+Unexpected IOException with stream:     [36mAnd [0m[36mClick at Device details button[0m                  [90m# DeviceStepDefs.openDeviceDetails()[0m
+
+
+# Created at 2019-11-14T12:38:05.329
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mFlex[0m[36m Device details page appears[0m      [90m# DeviceStepDefs.checkDeviceDetailsPage(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.329
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Attachment button[0m                    [90m# DeviceStepDefs.userClickAttachmentButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.331
+Unexpected IOException with stream:     [36mAnd [0m[36mUser open Documents dialog[0m                      [90m# DeviceStepDefs.userOpenDocumentsDialog()[0m
+
+
+# Created at 2019-11-14T12:38:05.332
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click edit document button[0m                 [90m# DeviceStepDefs.userClickEditDocumentButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.332
+Unexpected IOException with stream:     [36mAnd [0m[36mUser change name to [0m[36m[1meditedName[0m                  [90m# DeviceStepDefs.userChangeNameToEditedName(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.333
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if document name is updated successfully[0m [90m# DeviceStepDefs.checkIfDocumentNameIsUpdatedSuccessfully()[0m
+
+
+# Created at 2019-11-14T12:38:05.334
+Unexpected IOException: 7,1,Devices Tests,Edit Document name at Device Attachments(Devices Tests),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56\000A
+
+
+# Created at 2019-11-14T12:38:05.335
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.336
+Unexpected IOException with stream:   Background: Steps That execute before every scenario  [90m# src/test/resource/DeviceDetails.feature:4[0m
+
+
+# Created at 2019-11-14T12:38:05.337
+Unexpected IOException: 5,1,Devices Tests,Delete Document name at Device Attachments(Devices Tests),null,null,null
+
+
+# Created at 2019-11-14T12:38:05.340
+Unexpected IOException with stream:     [31mGiven [0m[31mOpen KodeLabs Page[0m                            [90m# WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.341
+Unexpected IOException with stream:       [31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+[0m
+
+
+# Created at 2019-11-14T12:38:05.342
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                     [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.343
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click twice on [0m[36m[1mAutomation Testing[0m[36m building[0m [90m# SitesStepDefs.openBuilding(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.343
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mAutomation Testing[0m[36m Dashboard appears[0m  [90m# SitesStepDefs.checkDashboard(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.344
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Devices button[0m                    [90m# DashboardStepDefs.clickSystems()[0m
+
+
+# Created at 2019-11-14T12:38:05.345
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if the list of [0m[36m[1mDevices[0m[36m appears[0m           [90m# DashboardStepDefs.checkIfListOfPointsAppears(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.346
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.347
+Unexpected IOException with stream:   @SmokeTest @Device @Attachments
+
+
+# Created at 2019-11-14T12:38:05.347
+Unexpected IOException with stream:   Scenario: Delete Document name at Device Attachments [90m# src/test/resource/DeviceDetails.feature:89[0m
+
+
+# Created at 2019-11-14T12:38:05.348
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Click on [0m[36m[1mFlex[0m[36m Device[0m                     [90m# DeviceStepDefs.clickDevice(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.349
+Unexpected IOException with stream:     [36mAnd [0m[36mClick at Device details button[0m                 [90m# DeviceStepDefs.openDeviceDetails()[0m
+
+
+# Created at 2019-11-14T12:38:05.350
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mFlex[0m[36m Device details page appears[0m     [90m# DeviceStepDefs.checkDeviceDetailsPage(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.350
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Attachment button[0m                   [90m# DeviceStepDefs.userClickAttachmentButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.351
+Unexpected IOException with stream:     [36mAnd [0m[36mUser open Documents dialog[0m                     [90m# DeviceStepDefs.userOpenDocumentsDialog()[0m
+
+
+# Created at 2019-11-14T12:38:05.352
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click edit document button[0m                [90m# DeviceStepDefs.userClickEditDocumentButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.352
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click delete document button[0m              [90m# DeviceStepDefs.userClickDeleteDocumentButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.353
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mdocument[0m[36m is deleted successfully[0m     [90m# DeviceStepDefs.checkIfImageIsDeletedSuccessfully(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.354
+Unexpected IOException: 7,1,Devices Tests,Delete Document name at Device Attachments(Devices Tests),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56\000A
+
+
+# Created at 2019-11-14T12:38:05.355
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.356
+Unexpected IOException with stream:   Background: Steps That execute before every scenario  [90m# src/test/resource/DeviceDetails.feature:4[0m
+
+
+# Created at 2019-11-14T12:38:05.357
+Unexpected IOException: 5,1,Devices Tests,Add Note to Device Attachments(Devices Tests),null,null,null
+
+
+# Created at 2019-11-14T12:38:05.360
+Unexpected IOException with stream:     [31mGiven [0m[31mOpen KodeLabs Page[0m                            [90m# WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.361
+Unexpected IOException with stream:       [31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+[0m
+
+
+# Created at 2019-11-14T12:38:05.362
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                     [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.363
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click twice on [0m[36m[1mAutomation Testing[0m[36m building[0m [90m# SitesStepDefs.openBuilding(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.364
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mAutomation Testing[0m[36m Dashboard appears[0m  [90m# SitesStepDefs.checkDashboard(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.365
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Devices button[0m                    [90m# DashboardStepDefs.clickSystems()[0m
+
+
+# Created at 2019-11-14T12:38:05.366
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if the list of [0m[36m[1mDevices[0m[36m appears[0m           [90m# DashboardStepDefs.checkIfListOfPointsAppears(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.366
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.367
+Unexpected IOException with stream:   @SmokeTest @Device @Attachments
+
+
+# Created at 2019-11-14T12:38:05.368
+Unexpected IOException with stream:   Scenario: Add Note to Device Attachments         [90m# src/test/resource/DeviceDetails.feature:100[0m
+
+
+# Created at 2019-11-14T12:38:05.368
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Click on [0m[36m[1mFlex[0m[36m Device[0m                 [90m# DeviceStepDefs.clickDevice(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.369
+Unexpected IOException with stream:     [36mAnd [0m[36mClick at Device details button[0m             [90m# DeviceStepDefs.openDeviceDetails()[0m
+
+
+# Created at 2019-11-14T12:38:05.370
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mFlex[0m[36m Device details page appears[0m [90m# DeviceStepDefs.checkDeviceDetailsPage(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.371
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Attachment button[0m               [90m# DeviceStepDefs.userClickAttachmentButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.371
+Unexpected IOException with stream:     [36mAnd [0m[36mUser open Notes dialog[0m                     [90m# DeviceStepDefs.userOpenNotesDialog()[0m
+
+
+# Created at 2019-11-14T12:38:05.372
+Unexpected IOException with stream:     [36mAnd [0m[36mUser create note[0m                           [90m# DeviceStepDefs.userCreateNote()[0m
+
+
+# Created at 2019-11-14T12:38:05.374
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if note is uploaded successfully[0m    [90m# DeviceStepDefs.checkIfNoteIsUploadedSuccessfully()[0m
+
+
+# Created at 2019-11-14T12:38:05.375
+Unexpected IOException: 7,1,Devices Tests,Add Note to Device Attachments(Devices Tests),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56\000A
+
+
+# Created at 2019-11-14T12:38:05.375
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.376
+Unexpected IOException with stream:   Background: Steps That execute before every scenario  [90m# src/test/resource/DeviceDetails.feature:4[0m
+
+
+# Created at 2019-11-14T12:38:05.377
+Unexpected IOException: 5,1,Devices Tests,Edit Note name at Device Attachments(Devices Tests),null,null,null
+
+
+# Created at 2019-11-14T12:38:05.381
+Unexpected IOException with stream:     [31mGiven [0m[31mOpen KodeLabs Page[0m                            [90m# WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.383
+Unexpected IOException with stream:       [31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+[0m
+
+
+# Created at 2019-11-14T12:38:05.384
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                     [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.385
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click twice on [0m[36m[1mAutomation Testing[0m[36m building[0m [90m# SitesStepDefs.openBuilding(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.385
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mAutomation Testing[0m[36m Dashboard appears[0m  [90m# SitesStepDefs.checkDashboard(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.386
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Devices button[0m                    [90m# DashboardStepDefs.clickSystems()[0m
+
+
+# Created at 2019-11-14T12:38:05.386
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if the list of [0m[36m[1mDevices[0m[36m appears[0m           [90m# DashboardStepDefs.checkIfListOfPointsAppears(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.387
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.388
+Unexpected IOException with stream:   @SmokeTest @Device @Attachments
+
+
+# Created at 2019-11-14T12:38:05.388
+Unexpected IOException with stream:   Scenario: Edit Note name at Device Attachments    [90m# src/test/resource/DeviceDetails.feature:110[0m
+
+
+# Created at 2019-11-14T12:38:05.389
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Click on [0m[36m[1mFlex[0m[36m Device[0m                  [90m# DeviceStepDefs.clickDevice(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.390
+Unexpected IOException with stream:     [36mAnd [0m[36mClick at Device details button[0m              [90m# DeviceStepDefs.openDeviceDetails()[0m
+
+
+# Created at 2019-11-14T12:38:05.391
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mFlex[0m[36m Device details page appears[0m  [90m# DeviceStepDefs.checkDeviceDetailsPage(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.392
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Attachment button[0m                [90m# DeviceStepDefs.userClickAttachmentButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.392
+Unexpected IOException with stream:     [36mAnd [0m[36mUser open Notes dialog[0m                      [90m# DeviceStepDefs.userOpenNotesDialog()[0m
+
+
+# Created at 2019-11-14T12:38:05.393
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click edit note button[0m                 [90m# DeviceStepDefs.userClickEditNoteButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.394
+Unexpected IOException with stream:     [36mAnd [0m[36mUser change note name to [0m[36m[1meditedName[0m         [90m# DeviceStepDefs.userChangeNoteNameToEditedName(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.394
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if note name is updated successfully[0m [90m# DeviceStepDefs.checkIfNoteNameIsUpdatedSuccessfully()[0m
+
+
+# Created at 2019-11-14T12:38:05.395
+Unexpected IOException: 7,1,Devices Tests,Edit Note name at Device Attachments(Devices Tests),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56\000A
+
+
+# Created at 2019-11-14T12:38:05.397
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.397
+Unexpected IOException with stream:   Background: Steps That execute before every scenario  [90m# src/test/resource/DeviceDetails.feature:4[0m
+
+
+# Created at 2019-11-14T12:38:05.398
+Unexpected IOException: 5,1,Devices Tests,Delete Note name at Device Attachments(Devices Tests),null,null,null
+
+
+# Created at 2019-11-14T12:38:05.402
+Unexpected IOException with stream:     [31mGiven [0m[31mOpen KodeLabs Page[0m                            [90m# WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.403
+Unexpected IOException with stream:       [31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+[0m
+
+
+# Created at 2019-11-14T12:38:05.404
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if user is logged in[0m                     [90m# WebsiteStepDefs.checkIfUserIsLoggedIn()[0m
+
+
+# Created at 2019-11-14T12:38:05.405
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click twice on [0m[36m[1mAutomation Testing[0m[36m building[0m [90m# SitesStepDefs.openBuilding(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.406
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mAutomation Testing[0m[36m Dashboard appears[0m  [90m# SitesStepDefs.checkDashboard(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.407
+Unexpected IOException with stream:     [36mAnd [0m[36mUser Click on Devices button[0m                    [90m# DashboardStepDefs.clickSystems()[0m
+
+
+# Created at 2019-11-14T12:38:05.408
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if the list of [0m[36m[1mDevices[0m[36m appears[0m           [90m# DashboardStepDefs.checkIfListOfPointsAppears(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.408
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.410
+Unexpected IOException with stream:   @SmokeTest @Device @Attachments
+
+
+# Created at 2019-11-14T12:38:05.410
+Unexpected IOException with stream:   Scenario: Delete Note name at Device Attachments [90m# src/test/resource/DeviceDetails.feature:121[0m
+
+
+# Created at 2019-11-14T12:38:05.410
+Unexpected IOException with stream:     [36mWhen [0m[36mUser Click on [0m[36m[1mFlex[0m[36m Device[0m                 [90m# DeviceStepDefs.clickDevice(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.411
+Unexpected IOException with stream:     [36mAnd [0m[36mClick at Device details button[0m             [90m# DeviceStepDefs.openDeviceDetails()[0m
+
+
+# Created at 2019-11-14T12:38:05.412
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mFlex[0m[36m Device details page appears[0m [90m# DeviceStepDefs.checkDeviceDetailsPage(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.413
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click Attachment button[0m               [90m# DeviceStepDefs.userClickAttachmentButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.414
+Unexpected IOException with stream:     [36mAnd [0m[36mUser open Notes dialog[0m                     [90m# DeviceStepDefs.userOpenNotesDialog()[0m
+
+
+# Created at 2019-11-14T12:38:05.414
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click edit note button[0m                [90m# DeviceStepDefs.userClickEditNoteButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.415
+Unexpected IOException with stream:     [36mAnd [0m[36mUser click delete note button[0m              [90m# DeviceStepDefs.userClickDeleteNoteButton()[0m
+
+
+# Created at 2019-11-14T12:38:05.415
+Unexpected IOException with stream:     [36mThen [0m[36mCheck if [0m[36m[1mnote[0m[36m is deleted successfully[0m     [90m# DeviceStepDefs.checkIfImageIsDeletedSuccessfully(String)[0m
+
+
+# Created at 2019-11-14T12:38:05.416
+Unexpected IOException: 7,1,Devices Tests,Delete Note name at Device Attachments(Devices Tests),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56\000A
+
+
+# Created at 2019-11-14T12:38:05.459
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.460
+Unexpected IOException with stream: [31mFailed scenarios:[0m
+
+
+# Created at 2019-11-14T12:38:05.460
+Unexpected IOException with stream: [31msrc/test/resource/DeviceDetails.feature:36 [0m
+
+# Created at 2019-11-14T12:38:05.461
+Unexpected IOException with stream: # Add Image to Device Attachments
+
+
+# Created at 2019-11-14T12:38:05.462
+Unexpected IOException with stream: [31msrc/test/resource/DeviceDetails.feature:46 [0m
+
+# Created at 2019-11-14T12:38:05.462
+Unexpected IOException with stream: # Edit Image name at Device Attachments
+
+
+# Created at 2019-11-14T12:38:05.463
+Unexpected IOException with stream: [31msrc/test/resource/DeviceDetails.feature:57 [0m
+
+# Created at 2019-11-14T12:38:05.464
+Unexpected IOException with stream: # Delete Image name at Device Attachments
+
+
+# Created at 2019-11-14T12:38:05.464
+Unexpected IOException with stream: [31msrc/test/resource/DeviceDetails.feature:68 [0m
+
+# Created at 2019-11-14T12:38:05.465
+Unexpected IOException with stream: # Add Document to Device Attachments
+
+
+# Created at 2019-11-14T12:38:05.466
+Unexpected IOException with stream: [31msrc/test/resource/DeviceDetails.feature:78 [0m
+
+# Created at 2019-11-14T12:38:05.467
+Unexpected IOException with stream: # Edit Document name at Device Attachments
+
+
+# Created at 2019-11-14T12:38:05.467
+Unexpected IOException with stream: [31msrc/test/resource/DeviceDetails.feature:89 [0m
+
+# Created at 2019-11-14T12:38:05.468
+Unexpected IOException with stream: # Delete Document name at Device Attachments
+
+
+# Created at 2019-11-14T12:38:05.469
+Unexpected IOException with stream: [31msrc/test/resource/DeviceDetails.feature:100 [0m
+
+# Created at 2019-11-14T12:38:05.469
+Unexpected IOException with stream: # Add Note to Device Attachments
+
+
+# Created at 2019-11-14T12:38:05.470
+Unexpected IOException with stream: [31msrc/test/resource/DeviceDetails.feature:110 [0m
+
+# Created at 2019-11-14T12:38:05.470
+Unexpected IOException with stream: # Edit Note name at Device Attachments
+
+
+# Created at 2019-11-14T12:38:05.471
+Unexpected IOException with stream: [31msrc/test/resource/DeviceDetails.feature:121 [0m
+
+# Created at 2019-11-14T12:38:05.472
+Unexpected IOException with stream: # Delete Note name at Device Attachments
+
+
+# Created at 2019-11-14T12:38:05.473
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.473
+Unexpected IOException with stream: 9
+
+# Created at 2019-11-14T12:38:05.474
+Unexpected IOException with stream:  Scenarios (
+
+# Created at 2019-11-14T12:38:05.474
+Unexpected IOException with stream: [31m9 failed[0m
+
+# Created at 2019-11-14T12:38:05.475
+Unexpected IOException with stream: )
+
+
+# Created at 2019-11-14T12:38:05.476
+Unexpected IOException with stream: 123
+
+# Created at 2019-11-14T12:38:05.476
+Unexpected IOException with stream:  Steps (
+
+# Created at 2019-11-14T12:38:05.477
+Unexpected IOException with stream: [31m9 failed[0m
+
+# Created at 2019-11-14T12:38:05.478
+Unexpected IOException with stream: , 
+
+# Created at 2019-11-14T12:38:05.479
+Unexpected IOException with stream: [36m92 skipped[0m
+
+# Created at 2019-11-14T12:38:05.479
+Unexpected IOException with stream: , 
+
+# Created at 2019-11-14T12:38:05.480
+Unexpected IOException with stream: [32m22 passed[0m
+
+# Created at 2019-11-14T12:38:05.481
+Unexpected IOException with stream: )
+
+
+# Created at 2019-11-14T12:38:05.482
+Unexpected IOException with stream: 1m
+
+# Created at 2019-11-14T12:38:05.482
+Unexpected IOException with stream: 4.099s
+
+
+# Created at 2019-11-14T12:38:05.483
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.484
+Unexpected IOException with stream: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@accept='image/*'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+
+# Created at 2019-11-14T12:38:05.485
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.486
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+
+# Created at 2019-11-14T12:38:05.486
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.487
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+
+# Created at 2019-11-14T12:38:05.488
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.488
+Unexpected IOException with stream: 	at pageobjects.pages.PageObjectUtils.IsElementVisible(PageObjectUtils.java:28)
+
+# Created at 2019-11-14T12:38:05.489
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.490
+Unexpected IOException with stream: 	at stepdefs.DeviceStepDefs.userUploadImage(DeviceStepDefs.java:366)
+
+# Created at 2019-11-14T12:38:05.490
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.491
+Unexpected IOException with stream: 	at ?.User upload image(src/test/resource/DeviceDetails.feature:42)
+
+# Created at 2019-11-14T12:38:05.492
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.493
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.494
+Unexpected IOException with stream: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='image-container ng-star-inserted'] (tried for 15 second(s) with 500 milliseconds interval)
+
+# Created at 2019-11-14T12:38:05.495
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.496
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+
+# Created at 2019-11-14T12:38:05.496
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.497
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+
+# Created at 2019-11-14T12:38:05.498
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.499
+Unexpected IOException with stream: 	at pageobjects.pages.PageObjectUtils.IsElementVisible(PageObjectUtils.java:28)
+
+# Created at 2019-11-14T12:38:05.500
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.500
+Unexpected IOException with stream: 	at stepdefs.DeviceStepDefs.userClickEditImageButton(DeviceStepDefs.java:398)
+
+# Created at 2019-11-14T12:38:05.501
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.502
+Unexpected IOException with stream: 	at ?.User click edit image button(src/test/resource/DeviceDetails.feature:52)
+
+# Created at 2019-11-14T12:38:05.503
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.504
+Unexpected IOException with stream: Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+*** Element info: {Using=xpath, value=//div[@class='image-container ng-star-inserted']}
+
+# Created at 2019-11-14T12:38:05.505
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.507
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+
+# Created at 2019-11-14T12:38:05.507
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.508
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2019-11-14T12:38:05.509
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.510
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created at 2019-11-14T12:38:05.510
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.511
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2019-11-14T12:38:05.511
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.512
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2019-11-14T12:38:05.513
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.514
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2019-11-14T12:38:05.516
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.517
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+
+# Created at 2019-11-14T12:38:05.517
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.518
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-11-14T12:38:05.519
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.519
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+
+# Created at 2019-11-14T12:38:05.520
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.521
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+
+# Created at 2019-11-14T12:38:05.522
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.522
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+
+# Created at 2019-11-14T12:38:05.523
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.523
+Unexpected IOException with stream: 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+
+# Created at 2019-11-14T12:38:05.524
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.525
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+
+# Created at 2019-11-14T12:38:05.525
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.526
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+
+# Created at 2019-11-14T12:38:05.527
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.527
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+
+# Created at 2019-11-14T12:38:05.528
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.529
+Unexpected IOException with stream: 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+
+# Created at 2019-11-14T12:38:05.529
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.530
+Unexpected IOException with stream: 	at pageobjects.pages.PageObjectUtils.IsElementVisible(PageObjectUtils.java:28)
+
+# Created at 2019-11-14T12:38:05.531
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.531
+Unexpected IOException with stream: 	at stepdefs.DeviceStepDefs.userClickEditImageButton(DeviceStepDefs.java:398)
+
+# Created at 2019-11-14T12:38:05.532
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.532
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created at 2019-11-14T12:38:05.533
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.534
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+# Created at 2019-11-14T12:38:05.534
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.535
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+# Created at 2019-11-14T12:38:05.535
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.536
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Method.java:498)
+
+# Created at 2019-11-14T12:38:05.537
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.537
+Unexpected IOException with stream: 	at cucumber.runtime.Utils$1.call(Utils.java:32)
+
+# Created at 2019-11-14T12:38:05.538
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.538
+Unexpected IOException with stream: 	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+
+# Created at 2019-11-14T12:38:05.539
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.540
+Unexpected IOException with stream: 	at cucumber.runtime.Utils.invoke(Utils.java:26)
+
+# Created at 2019-11-14T12:38:05.540
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.541
+Unexpected IOException with stream: 	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+
+# Created at 2019-11-14T12:38:05.541
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.542
+Unexpected IOException with stream: 	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+
+# Created at 2019-11-14T12:38:05.543
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.543
+Unexpected IOException with stream: 	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+
+# Created at 2019-11-14T12:38:05.544
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.545
+Unexpected IOException with stream: 	at cucumber.api.TestStep.run(TestStep.java:83)
+
+# Created at 2019-11-14T12:38:05.545
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.546
+Unexpected IOException with stream: 	at cucumber.api.TestCase.run(TestCase.java:58)
+
+# Created at 2019-11-14T12:38:05.547
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.547
+Unexpected IOException with stream: 	at cucumber.runner.Runner.runPickle(Runner.java:80)
+
+# Created at 2019-11-14T12:38:05.548
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.549
+Unexpected IOException with stream: 	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+
+# Created at 2019-11-14T12:38:05.549
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.550
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+
+# Created at 2019-11-14T12:38:05.550
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.551
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+
+# Created at 2019-11-14T12:38:05.552
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.552
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+
+# Created at 2019-11-14T12:38:05.553
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.553
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+
+# Created at 2019-11-14T12:38:05.554
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.555
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+
+# Created at 2019-11-14T12:38:05.555
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.556
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+
+# Created at 2019-11-14T12:38:05.556
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.557
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+
+# Created at 2019-11-14T12:38:05.558
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.558
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+
+# Created at 2019-11-14T12:38:05.559
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.560
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+
+# Created at 2019-11-14T12:38:05.561
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.562
+Unexpected IOException with stream: 	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+
+# Created at 2019-11-14T12:38:05.562
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.563
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+
+# Created at 2019-11-14T12:38:05.563
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.564
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+
+# Created at 2019-11-14T12:38:05.565
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.565
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:330)
+
+# Created at 2019-11-14T12:38:05.566
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.567
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:78)
+
+# Created at 2019-11-14T12:38:05.567
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.568
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:328)
+
+# Created at 2019-11-14T12:38:05.568
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.569
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:65)
+
+# Created at 2019-11-14T12:38:05.570
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.570
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:292)
+
+# Created at 2019-11-14T12:38:05.571
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.571
+Unexpected IOException with stream: 	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+
+# Created at 2019-11-14T12:38:05.572
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.572
+Unexpected IOException with stream: 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+
+# Created at 2019-11-14T12:38:05.573
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.574
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:305)
+
+# Created at 2019-11-14T12:38:05.574
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.575
+Unexpected IOException with stream: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:412)
+
+# Created at 2019-11-14T12:38:05.576
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.576
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+
+# Created at 2019-11-14T12:38:05.577
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.578
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+
+# Created at 2019-11-14T12:38:05.578
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.579
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+
+# Created at 2019-11-14T12:38:05.580
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.580
+Unexpected IOException with stream: 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+
+# Created at 2019-11-14T12:38:05.581
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.582
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+
+# Created at 2019-11-14T12:38:05.582
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.583
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+
+# Created at 2019-11-14T12:38:05.584
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.584
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+
+# Created at 2019-11-14T12:38:05.585
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.586
+Unexpected IOException with stream: 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+
+# Created at 2019-11-14T12:38:05.586
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.587
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.588
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+
+# Created at 2019-11-14T12:38:05.588
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.589
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+
+# Created at 2019-11-14T12:38:05.589
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.590
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2019-11-14T12:38:05.591
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.591
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created at 2019-11-14T12:38:05.592
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.592
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2019-11-14T12:38:05.593
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.593
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2019-11-14T12:38:05.594
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.595
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2019-11-14T12:38:05.595
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.596
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+
+# Created at 2019-11-14T12:38:05.596
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.597
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-11-14T12:38:05.598
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.598
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+
+# Created at 2019-11-14T12:38:05.599
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.599
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+
+# Created at 2019-11-14T12:38:05.600
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.601
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+
+# Created at 2019-11-14T12:38:05.601
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.602
+Unexpected IOException with stream: 	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+
+# Created at 2019-11-14T12:38:05.602
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.603
+Unexpected IOException with stream: 	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+
+# Created at 2019-11-14T12:38:05.604
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.604
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.605
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+
+# Created at 2019-11-14T12:38:05.605
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.606
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+
+# Created at 2019-11-14T12:38:05.607
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.607
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2019-11-14T12:38:05.608
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.608
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created at 2019-11-14T12:38:05.609
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.609
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2019-11-14T12:38:05.610
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.611
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2019-11-14T12:38:05.611
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.612
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2019-11-14T12:38:05.612
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.613
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+
+# Created at 2019-11-14T12:38:05.613
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.614
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-11-14T12:38:05.615
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.615
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+
+# Created at 2019-11-14T12:38:05.616
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.616
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+
+# Created at 2019-11-14T12:38:05.617
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.617
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+
+# Created at 2019-11-14T12:38:05.618
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.618
+Unexpected IOException with stream: 	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+
+# Created at 2019-11-14T12:38:05.619
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.620
+Unexpected IOException with stream: 	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+
+# Created at 2019-11-14T12:38:05.620
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.621
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.621
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+
+# Created at 2019-11-14T12:38:05.622
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.623
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+
+# Created at 2019-11-14T12:38:05.623
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.624
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2019-11-14T12:38:05.624
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.625
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created at 2019-11-14T12:38:05.625
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.626
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2019-11-14T12:38:05.627
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.627
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2019-11-14T12:38:05.628
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.628
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2019-11-14T12:38:05.629
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.629
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+
+# Created at 2019-11-14T12:38:05.630
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.631
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-11-14T12:38:05.631
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.632
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+
+# Created at 2019-11-14T12:38:05.632
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.633
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+
+# Created at 2019-11-14T12:38:05.634
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.634
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+
+# Created at 2019-11-14T12:38:05.635
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.635
+Unexpected IOException with stream: 	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+
+# Created at 2019-11-14T12:38:05.636
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.637
+Unexpected IOException with stream: 	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+
+# Created at 2019-11-14T12:38:05.637
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.638
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.639
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+
+# Created at 2019-11-14T12:38:05.639
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.640
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+
+# Created at 2019-11-14T12:38:05.640
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.641
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2019-11-14T12:38:05.642
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.642
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created at 2019-11-14T12:38:05.643
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.644
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2019-11-14T12:38:05.644
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.645
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2019-11-14T12:38:05.645
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.646
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2019-11-14T12:38:05.646
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.647
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+
+# Created at 2019-11-14T12:38:05.648
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.648
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-11-14T12:38:05.649
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.649
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+
+# Created at 2019-11-14T12:38:05.650
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.650
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+
+# Created at 2019-11-14T12:38:05.651
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.651
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+
+# Created at 2019-11-14T12:38:05.652
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.653
+Unexpected IOException with stream: 	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+
+# Created at 2019-11-14T12:38:05.653
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.654
+Unexpected IOException with stream: 	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+
+# Created at 2019-11-14T12:38:05.654
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.655
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.656
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+
+# Created at 2019-11-14T12:38:05.656
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.657
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+
+# Created at 2019-11-14T12:38:05.657
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.658
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2019-11-14T12:38:05.659
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.659
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created at 2019-11-14T12:38:05.660
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.660
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2019-11-14T12:38:05.661
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.661
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2019-11-14T12:38:05.662
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.662
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2019-11-14T12:38:05.662
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.664
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+
+# Created at 2019-11-14T12:38:05.664
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.664
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-11-14T12:38:05.665
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.666
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+
+# Created at 2019-11-14T12:38:05.666
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.667
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+
+# Created at 2019-11-14T12:38:05.667
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.667
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+
+# Created at 2019-11-14T12:38:05.669
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.669
+Unexpected IOException with stream: 	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+
+# Created at 2019-11-14T12:38:05.669
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.670
+Unexpected IOException with stream: 	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+
+# Created at 2019-11-14T12:38:05.671
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.671
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.672
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+
+# Created at 2019-11-14T12:38:05.672
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.673
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+
+# Created at 2019-11-14T12:38:05.674
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.674
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2019-11-14T12:38:05.675
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.676
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created at 2019-11-14T12:38:05.676
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.677
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2019-11-14T12:38:05.677
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.677
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2019-11-14T12:38:05.678
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.679
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2019-11-14T12:38:05.679
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.680
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+
+# Created at 2019-11-14T12:38:05.681
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.681
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-11-14T12:38:05.682
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.682
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+
+# Created at 2019-11-14T12:38:05.682
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.683
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+
+# Created at 2019-11-14T12:38:05.684
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.684
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+
+# Created at 2019-11-14T12:38:05.685
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.686
+Unexpected IOException with stream: 	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+
+# Created at 2019-11-14T12:38:05.686
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.687
+Unexpected IOException with stream: 	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+
+# Created at 2019-11-14T12:38:05.687
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.687
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.688
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E0L3QD7', ip: '192.168.1.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\sopja\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1ae3dba981cbe85465fa73cab5c9c56
+
+# Created at 2019-11-14T12:38:05.689
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.689
+Unexpected IOException with stream: 	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+
+# Created at 2019-11-14T12:38:05.690
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.691
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+
+# Created at 2019-11-14T12:38:05.691
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.692
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+
+# Created at 2019-11-14T12:38:05.693
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.693
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+
+# Created at 2019-11-14T12:38:05.694
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.694
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+
+# Created at 2019-11-14T12:38:05.695
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.695
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+
+# Created at 2019-11-14T12:38:05.695
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.696
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+
+# Created at 2019-11-14T12:38:05.697
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.697
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+
+# Created at 2019-11-14T12:38:05.698
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.699
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+
+# Created at 2019-11-14T12:38:05.699
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.700
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+
+# Created at 2019-11-14T12:38:05.700
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.700
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+
+# Created at 2019-11-14T12:38:05.702
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.702
+Unexpected IOException with stream: 	at stepdefs.WebsiteStepDefs.thePreconditionForTheTestGoesToWebsiteOrLogsIn(WebsiteStepDefs.java:22)
+
+# Created at 2019-11-14T12:38:05.702
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.703
+Unexpected IOException with stream: 	at ?.Open KodeLabs Page(src/test/resource/DeviceDetails.feature:5)
+
+# Created at 2019-11-14T12:38:05.704
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:05.704
+Unexpected IOException with stream: 
+
+
+# Created at 2019-11-14T12:38:09.716
+Unexpected IOException: 7,1,RunCukesTest,RunCukesTest,null,chrome not reachable\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,null,chrome not reachable\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56,RunCukesTest.TearDown:18 \00BB WebDriver chrome not reachable\000A  (Session info: chr...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=78.0.3904.97)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-E0L3QD7'\002C ip: '192.168.1.129'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_191'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 78.0.3904.97\002C chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0...\002C userDataDir: C:\005CUsers\005Csopja\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:56519}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: XP\002C platformName: XP\002C proxy: Proxy()\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify}\000ASession ID: b1ae3dba981cbe85465fa73cab5c9c56\000A\0009at RunCukesTest.TearDown(RunCukesTest.java:18)\000A
+
+
+# Created at 2019-11-14T12:38:09.717
+Unexpected IOException: 2,1,org.apache.maven.surefire.junit4.JUnit4Provider,RunCukesTest,null,null,null
+
+

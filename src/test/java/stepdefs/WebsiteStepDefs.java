@@ -241,7 +241,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         BuildingPanel.Save.getElement().click();
     }
 
-    @And("^User click delete")
+    @And("^User click delete$")
     public void deleteButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.DeleteAreas.getBy(), 15);
         Thread.sleep(1000);

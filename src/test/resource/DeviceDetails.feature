@@ -32,6 +32,102 @@ Feature: Devices Tests
     And Click at Device details button
     Then Check if Flex Device details page appears
 
+  @SmokeTest @Device @Attachments
+  Scenario: Add Image to Device Attachments
+    When User Click on Flex Device
+    And Click at Device details button
+    Then Check if Flex Device details page appears
+    And User click Attachment button
+    And User open Photos dialog
+    And User upload image
+    Then Check if image is uploaded successfully
+
+  @SmokeTest @Device @Attachments
+  Scenario: Edit Image name at Device Attachments
+    When User Click on Flex Device
+    And Click at Device details button
+    Then Check if Flex Device details page appears
+    And User click Attachment button
+    And User open Photos dialog
+    And User click edit image button
+    And User change name to editedName
+    Then Check if image name is updated successfully
+
+  @SmokeTest @Device @Attachments
+  Scenario: Delete Image name at Device Attachments
+    When User Click on Flex Device
+    And Click at Device details button
+    Then Check if Flex Device details page appears
+    And User click Attachment button
+    And User open Photos dialog
+    And User click edit image button
+    And User click delete image button
+    Then Check if image is deleted successfully
+
+  @SmokeTest @Device @Attachments
+  Scenario: Add Document to Device Attachments
+    When User Click on Flex Device
+    And Click at Device details button
+    Then Check if Flex Device details page appears
+    And User click Attachment button
+    And User open Documents dialog
+    And User upload document
+    Then Check if document is uploaded successfully
+
+  @SmokeTest @Device @Attachments
+  Scenario: Edit Document name at Device Attachments
+    When User Click on Flex Device
+    And Click at Device details button
+    Then Check if Flex Device details page appears
+    And User click Attachment button
+    And User open Documents dialog
+    And User click edit document button
+    And User change name to editedName
+    Then Check if document name is updated successfully
+
+  @SmokeTest @Device @Attachments
+  Scenario: Delete Document name at Device Attachments
+    When User Click on Flex Device
+    And Click at Device details button
+    Then Check if Flex Device details page appears
+    And User click Attachment button
+    And User open Documents dialog
+    And User click edit document button
+    And User click delete document button
+    Then Check if document is deleted successfully
+
+  @SmokeTest @Device @Attachments
+  Scenario: Add Note to Device Attachments
+    When User Click on Flex Device
+    And Click at Device details button
+    Then Check if Flex Device details page appears
+    And User click Attachment button
+    And User open Notes dialog
+    And User create note
+    Then Check if note is uploaded successfully
+
+  @SmokeTest @Device @Attachments
+  Scenario: Edit Note name at Device Attachments
+    When User Click on Flex Device
+    And Click at Device details button
+    Then Check if Flex Device details page appears
+    And User click Attachment button
+    And User open Notes dialog
+    And User click edit note button
+    And User change note name to editedName
+    Then Check if note name is updated successfully
+
+  @SmokeTest @Device @Attachments
+  Scenario: Delete Note name at Device Attachments
+    When User Click on Flex Device
+    And Click at Device details button
+    Then Check if Flex Device details page appears
+    And User click Attachment button
+    And User open Notes dialog
+    And User click edit note button
+    And User click delete note button
+    Then Check if note is deleted successfully
+
   @SmokeTest @Device
   Scenario: Update Device using Batch Update
     When User click on threedots button
