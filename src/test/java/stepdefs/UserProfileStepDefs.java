@@ -41,13 +41,13 @@ public class UserProfileStepDefs extends CommonStepObjects {
     public void addNewPassword() throws Throwable {
         Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.enterOldPassword.getBy(), 10);
-        UserProfilePanel.enterOldPassword.getElement().sendKeys("123456");
+        UserProfilePanel.enterOldPassword.getElement().sendKeys("KodeL@bs123");
 
         Thread.sleep(1000);
-        UserProfilePanel.enterNewPassword.getElement().sendKeys("123456");
+        UserProfilePanel.enterNewPassword.getElement().sendKeys("KodeL@bs123");
 
         Thread.sleep(1000);
-        UserProfilePanel.confirmNewPassword.getElement().sendKeys("123456");
+        UserProfilePanel.confirmNewPassword.getElement().sendKeys("KodeL@bs123");
 
         Thread.sleep(1000);
         UserProfilePanel.updateButton.getElement().click();

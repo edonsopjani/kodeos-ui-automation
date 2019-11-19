@@ -26,7 +26,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
         } else {
             driver.findElement(By.xpath("//*[@formcontrolname='email']")).sendKeys("user@super.com");
-            driver.findElement(By.xpath("//*[@formcontrolname='password']")).sendKeys("123456");
+            driver.findElement(By.xpath("//*[@formcontrolname='password']")).sendKeys("KodeL@bs123");
             Thread.sleep(1000);
             driver.findElement((By.xpath("//*[contains(text(),'Login')]"))).click();
         }
@@ -973,7 +973,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterPassword.getBy(), 15);
         WebElement element = BuildingPanel.EnterPassword.getElement();
         element.clear();
-        element.sendKeys("123456");
+        element.sendKeys("KodeL@bs123");
 
         //Click save
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();

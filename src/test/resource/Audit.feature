@@ -4,7 +4,7 @@ Feature: Audit Tests
   Background: Steps That execute before every scenario
     Given User goes to Login page
     Then Check If user is at Login Page
-    When User Enter user@super.com as username and 123456 as password and click Login
+    When User Enter user@super.com as username and KodeL@bs123 as password and click Login
     Then Check if user is logged in
     And User Click on Audit button
     And User select Automation Testing building
