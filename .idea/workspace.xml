@@ -3,30 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Access.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Access.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Audit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Audit.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/BuildingDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/BuildingDetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/BuildingPanel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/BuildingPanel.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Events.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Events.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/FloorDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/FloorDetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Roles.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Roles.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Schedulers.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Schedulers.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Search.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Sites.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Sites.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Systems.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Systems.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Tags.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Tags.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Templates.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Templates.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Units.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Units.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/UserPanel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/UserPanel.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/UserProfile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/UserProfile.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/VirtualDevice.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/VirtualDevice.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$LocatorType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$LocatorType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
