@@ -1,4 +1,4 @@
-Feature: Fire Dashboard Tests
+Feature: 18 Fire Dashboard Tests
   List of Fire Events, Check New Fire Event appears, create,edit and delete notes, check sites page
 
   Background: Steps That execute before every scenario

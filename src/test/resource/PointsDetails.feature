@@ -1,4 +1,4 @@
-Feature: Points Tests
+Feature: 05 Points Tests
   Check Devices list functions, Check Filters, Check Device Batch Update, Check Point Batch Update, Check Device Details Page.
 
   Background: Steps That execute before every scenario

@@ -1,4 +1,4 @@
-Feature: User Profile Tests
+Feature: 21 User Profile Tests
   Check The Search functions
 
   Background: Steps That execute before every scenario

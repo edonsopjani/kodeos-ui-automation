@@ -1,4 +1,4 @@
-Feature: Units Tests
+Feature: 16 Units Tests
 
   Background: Steps That execute before every scenario
     Given Open KodeLabs Page

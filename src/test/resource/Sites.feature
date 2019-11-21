@@ -1,4 +1,4 @@
-Feature: Sites Page Tests
+Feature: 10 Sites Page Tests
   Check The Search functions
 
   Background: Steps That execute before every scenario

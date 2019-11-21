@@ -1,4 +1,4 @@
-Feature: Tags Tests
+Feature: 17 Tags Tests
 
   Background: Steps That execute before every scenario
     Given Open KodeLabs Page

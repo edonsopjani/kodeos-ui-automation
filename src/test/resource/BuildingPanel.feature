@@ -1,4 +1,4 @@
-Feature: Building Panel Tests
+Feature: 01 Building Panel Tests
 
   Background: Steps That execute before every scenario
     Given Open KodeLabs Page
@@ -6,7 +6,7 @@ Feature: Building Panel Tests
     And User Go To admin panel
     Then Check if user is at Admin panel
 
-  @Admin @SmokeTest @BuildingPanel
+  @Admin @SmokeTest @BuildingPanel @Discover
   Scenario: Add New Building
     When User clicks on Add new button
     And User add Auto Test Building as Name
@@ -96,7 +96,7 @@ Feature: Building Panel Tests
     Then Check if user Edon disappears from list
 
   @Admin @SmokeTest @BuildingPanel
-  Scenario: Add Connector
+  Scenario: Add Connector @Discover
     When User Open Auto Test Building
     And User goto on Connectors Tab
     And User click create new connector
@@ -118,15 +118,3 @@ Feature: Building Panel Tests
     And User change connector name to AutoJace
     Then Check if connector with name AutoJace appears on list
 
-  @Admin @SmokeTest @BuildingPanel
-  Scenario: Delete Connector
-    When User Open Auto Test Building
-    And User goto on Connectors Tab
-    And User delete connector from building
-    Then Check if connector with name AutoJace disappears from list
-
-  @Admin @SmokeTest @BuildingPanel
-  Scenario: Delete Building
-    When User Open Auto Test Building
-    And Click on Delete Button, then click Delete again
-    Then Check if Auto Test Building is removed from list

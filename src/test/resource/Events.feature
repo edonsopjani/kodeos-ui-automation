@@ -1,4 +1,4 @@
-Feature: Events
+Feature: 11 Events
 Create Event Config, Create Event, Acknowledge Events etc.
 
   Background: Steps That execute before every scenario

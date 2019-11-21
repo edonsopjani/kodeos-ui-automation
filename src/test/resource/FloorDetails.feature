@@ -1,4 +1,4 @@
-Feature:Floor Tests
+Feature: 19 Floor Tests
   Go To Floor, add plan, add zones, add devices at different tabs, check Hide Zones and Names etc.
 
   Background: Steps That execute before every scenario

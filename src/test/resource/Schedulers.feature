@@ -1,4 +1,4 @@
-Feature: Schedulers Tests
+Feature: 09 Schedulers Tests
   Check Schedulers discover, add,edit,delete scheduler, check if it appears on calendar
 
   Background: Steps That execute before every scenario

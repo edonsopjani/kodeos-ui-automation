@@ -1,4 +1,4 @@
-Feature: Search Tests
+Feature: 08 Search Tests
   Check The Search functions
 
   Background: Steps That execute before every scenario

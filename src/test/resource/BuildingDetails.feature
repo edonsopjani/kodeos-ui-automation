@@ -1,4 +1,4 @@
-Feature: Dashboard Tests
+Feature: 03 Dashboard Tests
   Check Dashboard functions, Check Widgets, Navigate through buildings, floors and devices
 
   Background: Steps That execute before every scenario

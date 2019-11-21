@@ -1,4 +1,4 @@
-Feature: Templates Tests
+Feature: 15 Templates Tests
 
   Background: Steps That execute before every scenario
     Given Open KodeLabs Page

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.util.List;
 
 public class PageObjectUtils {
 
@@ -101,6 +102,26 @@ public class PageObjectUtils {
                 return webDriver.findElement(By.name(ref));
             case TAGNAME:
                 return webDriver.findElement(By.tagName(ref));
+        }
+        return null;
+    }
+
+    public static List<WebElement> locateElements(WebDriver webDriver, LocatorType type, String ref) {
+        switch (type) {
+            case ID:
+                return webDriver.findElements(By.id(ref));
+            case CLASSNAME:
+                return webDriver.findElements(By.className(ref));
+            case XPATH:
+                return webDriver.findElements(By.xpath(ref));
+            case CSS:
+                return webDriver.findElements(By.cssSelector(ref));
+            case LINK:
+                return webDriver.findElements(By.linkText(ref));
+            case NAME:
+                return webDriver.findElements(By.name(ref));
+            case TAGNAME:
+                return webDriver.findElements(By.tagName(ref));
         }
         return null;
     }

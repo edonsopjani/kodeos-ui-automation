@@ -1,4 +1,4 @@
-Feature:Virtual Devices Tests
+Feature: 06 Virtual Devices Tests
   Create Virtual Device, add points to virtual device, remove points from Virtual device
 
   Background: Steps That execute before every scenario

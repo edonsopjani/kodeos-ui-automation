@@ -4,10 +4,29 @@
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Access.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Access.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Audit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Audit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/BuildingDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/BuildingDetails.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/BuildingPanel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/BuildingPanel.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Events.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Events.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/FloorDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/FloorDetails.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/PointsDetails.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Roles.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Roles.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Schedulers.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Schedulers.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Sites.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Sites.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Systems.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Systems.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Tags.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Tags.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Templates.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Templates.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Units.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Units.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/UserPanel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/UserPanel.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/UserProfile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/UserProfile.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/VirtualDevice.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/VirtualDevice.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$LocatorType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils$LocatorType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/UserProfileStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/UserProfileStepDefs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +91,45 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Add Image to Device Attachments">
+  <component name="RunManager" selected="Cucumber java.Feature: DiscoverDevices">
+    <configuration name="Feature: BuildingPanel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/BuildingPanel.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: BuildingPanel" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://qa-kode.kode-dev.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: DiscoverDevices" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DiscoverDevices.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: DiscoverDevices" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://qa-kode.kode-dev.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Add Image to Device Attachments" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" />
@@ -113,26 +170,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Deactivate User Account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserPanel.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Deactivate User Account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Deactivate User Account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Deactivate User Account" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: Delete Global Audit Template" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Audit.feature" />
@@ -153,16 +190,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Update User Account Password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User make new discover devices from all Edge Devices" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DiscoverDevices.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Update User Account Password$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Update User Account Password$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Update User Account Password" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
+      <option name="NAME_FILTER" value="^User make new discover devices from all Edge Devices$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User make new discover devices from all Edge Devices$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User make new discover devices from all Edge Devices" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://qa-kode.kode-dev.com" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -173,36 +210,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Update User to User Account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User make update discover devices from all Edge Devices" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/UserPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DiscoverDevices.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Update User to User Account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Update User to User Account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Update User to User Account" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -Denvironment=qa -DwebsiteUrl=https://qa-kode.kode-dev.com/real-estate/buildings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: User request access to building" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Access.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^User request access to building$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User request access to building$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User request access to building" />
-      <option name="VM_PARAMETERS" value="-ea -DwebsiteBrowser=chrome -DwebsiteUrl=https://qa-kode.kode-dev.com" />
+      <option name="NAME_FILTER" value="^User make update discover devices from all Edge Devices$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User make update discover devices from all Edge Devices$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User make update discover devices from all Edge Devices" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://qa-kode.kode-dev.com" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -216,19 +233,19 @@
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Scenario: Update User Account Password" />
-      <item itemvalue="Cucumber java.Scenario: Deactivate User Account" />
-      <item itemvalue="Cucumber java.Scenario: Update User to User Account" />
-      <item itemvalue="Cucumber java.Scenario: User request access to building" />
       <item itemvalue="Cucumber java.Scenario: Add Image to Device Attachments" />
+      <item itemvalue="Cucumber java.Feature: BuildingPanel" />
+      <item itemvalue="Cucumber java.Scenario: User make update discover devices from all Edge Devices" />
+      <item itemvalue="Cucumber java.Scenario: User make new discover devices from all Edge Devices" />
+      <item itemvalue="Cucumber java.Feature: DiscoverDevices" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: DiscoverDevices" />
+        <item itemvalue="Cucumber java.Scenario: User make update discover devices from all Edge Devices" />
+        <item itemvalue="Cucumber java.Scenario: User make new discover devices from all Edge Devices" />
+        <item itemvalue="Cucumber java.Feature: BuildingPanel" />
         <item itemvalue="Cucumber java.Scenario: Add Image to Device Attachments" />
-        <item itemvalue="Cucumber java.Scenario: User request access to building" />
-        <item itemvalue="Cucumber java.Scenario: Update User to User Account" />
-        <item itemvalue="Cucumber java.Scenario: Deactivate User Account" />
-        <item itemvalue="Cucumber java.Scenario: Update User Account Password" />
       </list>
     </recent_temporary>
   </component>
