@@ -1,4 +1,4 @@
-Feature: 14 User Panel Tests
+Feature: 18 User Panel Tests
 
   Background: Steps That execute before every scenario
     Given Open KodeLabs Page
