@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Access.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Access.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Audit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Audit.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/FireDashboard.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/Roles.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Roles.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Attachments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Attachments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/UserProfileStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/UserProfileStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
