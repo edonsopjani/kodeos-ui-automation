@@ -31,37 +31,37 @@ public class SitesStepDefs extends CommonStepObjects {
     @And("^User click sort by down devices$")
     public void sortByDownDevice() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, SitesPanel.sortButton.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(500);
         SitesPanel.sortButton.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, SitesPanel.sortByDownDevices.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(500);
         SitesPanel.sortByDownDevices.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, SitesPanel.clickSortButton.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(500);
         SitesPanel.clickSortButton.getElement().click();
     }
 
     @And("^User click sort by active events$")
     public void sortByActiveEvents() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, SitesPanel.sortButton.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(500);
         SitesPanel.sortButton.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, SitesPanel.sortByEvents.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(500);
         SitesPanel.sortByEvents.getElement().click();
         
         PageObjectUtils.IsElementVisible(driver, SitesPanel.clickSortButton.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(500);
         SitesPanel.clickSortButton.getElement().click();
     }
 
     @Then("^Check if list of buildings is sorted by (.*)$")
     public void checkSortIsApplied(String sort) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, SitesPanel.sortButton.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(500);
         SitesPanel.sortButton.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, SitesPanel.sortIsApplied.getBy(), 15);
@@ -69,7 +69,6 @@ public class SitesStepDefs extends CommonStepObjects {
 
     @Then("^Check if (.*) Dashboard appears$")
     public void checkDashboard(String building) throws Throwable {
-        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, building);
     }
 

@@ -15,16 +15,16 @@ public class FloorStepDefs extends CommonStepObjects {
 
     @And("^User upload floor plan$")
     public void uploadFloorPlan() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         //Add floor plan
         List<WebElement> fileInput = driver.findElements(By.xpath("//input"));
-        Thread.sleep(1000);
         fileInput.get(0).sendKeys(PageObjectUtils.filePathForUpload("floor.svg"));
         Thread.sleep(2000);
     }
 
     @Then("^Check if floor plan appears$")
     public void checkFloorPlan() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'Saved Successfully')]]"), 15);
         Thread.sleep(500);
     }
 

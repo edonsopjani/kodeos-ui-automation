@@ -260,7 +260,7 @@ public class EventsStepDefs extends CommonStepObjects {
 
     @Then("^Check if (.*) event appears on list$")
     public void checkEventAppearsOnDashboard(String name) throws Throwable {
-        PageObjectUtils.CheckContainsText(driver, name);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'" + name + "')]]"), 50);
     }
 
     @Then("^Check if (.*) event disappears on list$")

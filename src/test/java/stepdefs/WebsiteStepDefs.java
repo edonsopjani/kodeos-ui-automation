@@ -268,6 +268,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         inside.get(1).sendKeys(test);
         //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, test);
+        Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, test).click();
     }
 
@@ -483,6 +484,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     public void openConnectorsTab() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.GoToConnectorTab.getBy(), 15);
         WebElement inside = driver.findElement(BuildingPanel.GoToConnectorTab.getBy());
+        Thread.sleep(200);
         inside.click();
     }
 
@@ -524,7 +526,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         WebElement inside = driver.findElement(BuildingPanel.ThreedotMenu.getBy());
         inside.click();
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.DeleteButton.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(1000);
         BuildingPanel.DeleteButton.getElement().click();
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.ConfirmationYesButton.getBy(), 15);
         BuildingPanel.ConfirmationYesButton.getElement().click();
@@ -577,7 +579,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @Then("^Check if connector with name (.*) disappears from list$")
     public void checkDeletedConnector(String connector) throws Throwable {
-       // Thread.sleep(2500);
+       Thread.sleep(1500);
 
         List<WebElement> conn = driver.findElements(By.xpath("//*[text()[contains(.,'" + connector + "')]]"));
         Assert.assertTrue("Connector is not added", conn.isEmpty());
@@ -614,8 +616,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @Then("^Check if (.*) is removed from list$")
     public void checkDeletedBuilding(String building) throws Throwable {
-        //Thread.sleep(4000);
-        //PageObjectUtils.IsElementVisible(driver, BuildingPanel.CheckIsRemoved.getBy(),5);
+        Thread.sleep(2000);
         List<WebElement> buildings = driver.findElements(By.xpath("//*[text()[contains(.,'" + building + "')]]"));
         Assert.assertTrue("Building is still on list", buildings.isEmpty());
     }

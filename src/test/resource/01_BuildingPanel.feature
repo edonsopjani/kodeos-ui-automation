@@ -117,4 +117,3 @@ Feature: 01 Building Panel Tests
     And User click edit connector
     And User change connector name to AutoJace
     Then Check if connector with name AutoJace appears on list
-
