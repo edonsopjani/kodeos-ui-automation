@@ -17,10 +17,10 @@ public class UnitsStepDefs extends CommonStepObjects {
 
     @And("^user add (.*) as Category Name and click Add$")
     public void addCategory(String name) throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UnitsPanel.addCategoryName.getBy(), 15);
+        Thread.sleep(500);
         UnitsPanel.addCategoryName.getElement().sendKeys(name);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         UnitsPanel.saveCategory.getElement().click();
     }
 
@@ -37,8 +37,8 @@ public class UnitsStepDefs extends CommonStepObjects {
 
     @And("^Click category options button$")
     public void categoryOptions() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UnitsPanel.openCategoryMenu.getBy(), 15);
+        Thread.sleep(500);
         UnitsPanel.openCategoryMenu.getElement().click();
     }
 
@@ -50,14 +50,14 @@ public class UnitsStepDefs extends CommonStepObjects {
     @And("^Click Add new Unit$")
     public void addNewUnit() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, UnitsPanel.addUnit.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         UnitsPanel.addUnit.getElement().click();
     }
 
     @And("^User fill mandatory fields and click add$")
     public void fillMandatoryFields() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UnitsPanel.addUnitName.getBy(), 15);
+        Thread.sleep(500);
         UnitsPanel.addUnitName.getElement().sendKeys("AutoUnit");
         UnitsPanel.addUnitSymbol.getElement().sendKeys("~!");
         UnitsPanel.addUnitCOV.getElement().sendKeys("0.1");
@@ -74,44 +74,43 @@ public class UnitsStepDefs extends CommonStepObjects {
 
     @And("^User click unit with name (.*)$")
     public void clickUnit(String unit) throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, unit);
+        Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, unit).click();
     }
 
     @And("^Change symbol to (.*)$")
     public void changeSymbol(String name) throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         UnitsPanel.addUnitSymbol.getElement().clear();
         UnitsPanel.addUnitSymbol.getElement().sendKeys(name);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         UnitsPanel.saveButton.getElement().click();
-        Thread.sleep(2000);
+        Thread.sleep(500);
     }
 
     @Then("^Check if Unit symbol is changed to (.*)$")
     public void checkSymbol(String name) throws Throwable {
-        Thread.sleep(2000);
         PageObjectUtils.CheckContainsText(driver, name);
     }
 
     @And("^user Click delete Unit button$")
     public void deleteButton() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UnitsPanel.deleteUnit.getBy(), 15);
+        Thread.sleep(500);
         UnitsPanel.deleteUnit.getElement().click();
     }
 
     @And("^User click Yes button to delete Unit$")
     public void yesButton() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UnitsPanel.yesButton.getBy(), 15);
+        Thread.sleep(500);
         UnitsPanel.yesButton.getElement().click();
     }
 
     @Then("^Check if Unit with name (.*) disappears from list$")
     public void checkUnitIsDeleted(String name) throws Throwable {
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         List<WebElement> units = driver.findElements(By.xpath("//*[text()[contains(.,'" + name + "')]]"));
         Assert.assertTrue("unit is not deleted", units.isEmpty());
     }

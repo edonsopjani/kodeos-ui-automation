@@ -95,8 +95,8 @@ Feature: 01 Building Panel Tests
     And User click Save changes
     Then Check if user Edon disappears from list
 
-  @Admin @SmokeTest @BuildingPanel
-  Scenario: Add Connector @Discover
+  @Admin @SmokeTest @BuildingPanel @Discover
+  Scenario: Add Connector
     When User Open Auto Test Building
     And User goto on Connectors Tab
     And User click create new connector

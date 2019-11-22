@@ -41,7 +41,6 @@ Feature: 09 Schedulers Tests
     And User go to calendar
     Then Check if exactlogicschedule Scheduler disappears on calendar
 
-  @Schedulers
   Scenario: Hide/Show Scheduler Point
     When User click exactlogicschedule three dots menu
     And User click disabled Button

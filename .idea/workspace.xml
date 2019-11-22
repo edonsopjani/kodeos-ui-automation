@@ -3,8 +3,41 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/14_FireDashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/14_FireDashboard.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/PageObjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/AccessStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/AccessStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/AuditStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/AuditStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/DashboardStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/DashboardStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/EventsStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/EventsStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/FireDashboardStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/FireDashboardStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/FloorStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/FloorStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/SchedulersStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/SchedulersStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/SearchStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/SearchStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/SitesStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/SitesStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/SystemsStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/SystemsStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/TagsStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/TagsStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/UnitsStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/UnitsStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/VirtualDeviceStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/VirtualDeviceStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/01_BuildingPanel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/01_BuildingPanel.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/09_Schedulers.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/09_Schedulers.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/12_Audit.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/12_Audit.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/21_UserProfile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/21_UserProfile.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/PageObjectUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/AuditStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/AuditStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/DashboardStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/DashboardStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/DeviceStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/DeviceStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/EventsStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/EventsStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/PointsStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/PointsStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/SchedulersStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/SchedulersStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/SearchStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/SearchStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/SitesStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/SitesStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/SystemsStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/SystemsStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/UserProfileStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/UserProfileStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/VirtualDeviceStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/VirtualDeviceStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,15 +102,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: DiscoverDevices">
-    <configuration name="Feature: BuildingPanel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Feature: 21_UserProfile">
+    <configuration name="Feature: 17_Tags" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/BuildingPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/17_Tags.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: BuildingPanel" />
+      <option name="SUGGESTED_NAME" value="Feature: 17_Tags" />
       <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://qa-kode.kode-dev.com" />
       <extension name="coverage">
         <pattern>
@@ -89,14 +122,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: DiscoverDevices" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: 18_UserPanel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DiscoverDevices.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: DiscoverDevices" />
+      <option name="SUGGESTED_NAME" value="Feature: 18_UserPanel" />
       <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://qa-kode.kode-dev.com" />
       <extension name="coverage">
         <pattern>
@@ -108,16 +141,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Add Image to Device Attachments" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: 19_FloorDetails" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DeviceDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/19_FloorDetails.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Add Image to Device Attachments$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add Image to Device Attachments$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add Image to Device Attachments" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://qa-kode.kode-dev.com" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: 19_FloorDetails" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://qa-kode.kode-dev.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: 20_Roles" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/20_Roles.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: 20_Roles" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://qa-kode.kode-dev.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: 21_UserProfile" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/21_UserProfile.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: 21_UserProfile" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://qa-kode.kode-dev.com" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -168,62 +238,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User make new discover devices from all Edge Devices" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DiscoverDevices.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^User make new discover devices from all Edge Devices$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User make new discover devices from all Edge Devices$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User make new discover devices from all Edge Devices" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://qa-kode.kode-dev.com" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: User make update discover devices from all Edge Devices" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/DiscoverDevices.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^User make update discover devices from all Edge Devices$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User make update discover devices from all Edge Devices$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User make update discover devices from all Edge Devices" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://qa-kode.kode-dev.com" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Scenario: Add Image to Device Attachments" />
-      <item itemvalue="Cucumber java.Feature: BuildingPanel" />
-      <item itemvalue="Cucumber java.Scenario: User make update discover devices from all Edge Devices" />
-      <item itemvalue="Cucumber java.Scenario: User make new discover devices from all Edge Devices" />
-      <item itemvalue="Cucumber java.Feature: DiscoverDevices" />
+      <item itemvalue="Cucumber java.Feature: 17_Tags" />
+      <item itemvalue="Cucumber java.Feature: 18_UserPanel" />
+      <item itemvalue="Cucumber java.Feature: 19_FloorDetails" />
+      <item itemvalue="Cucumber java.Feature: 20_Roles" />
+      <item itemvalue="Cucumber java.Feature: 21_UserProfile" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Feature: DiscoverDevices" />
-        <item itemvalue="Cucumber java.Scenario: User make update discover devices from all Edge Devices" />
-        <item itemvalue="Cucumber java.Scenario: User make new discover devices from all Edge Devices" />
-        <item itemvalue="Cucumber java.Feature: BuildingPanel" />
-        <item itemvalue="Cucumber java.Scenario: Add Image to Device Attachments" />
+        <item itemvalue="Cucumber java.Feature: 21_UserProfile" />
+        <item itemvalue="Cucumber java.Feature: 20_Roles" />
+        <item itemvalue="Cucumber java.Feature: 19_FloorDetails" />
+        <item itemvalue="Cucumber java.Feature: 18_UserPanel" />
+        <item itemvalue="Cucumber java.Feature: 17_Tags" />
       </list>
     </recent_temporary>
   </component>

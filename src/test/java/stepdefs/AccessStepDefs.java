@@ -15,13 +15,12 @@ public class AccessStepDefs extends CommonStepObjects {
     @When("^User Click on Access button$")
     public void clickAccess() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Access.accessButton.getBy(), 15);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         Access.accessButton.getElement().click();
     }
 
     @Then("^Check if Access page appears$")
     public void checkIfAccessPageAppears() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, Access.createRequestButton.getBy(), 15);
     }
 
@@ -34,16 +33,16 @@ public class AccessStepDefs extends CommonStepObjects {
     @And("^User select (.*) and select (.*) building for access$")
     public void selectUserAndBuilding(String user, String building) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Access.userInput.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Access.userInput.getElement().sendKeys("Access");
-        Thread.sleep(2000);
+        Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, user).click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, "Request Access").click();
 
         PageObjectUtils.IsElementVisible(driver, Access.buildingInput.getBy(), 15);
         Access.allBuildings.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @And("^User select request from (.*) until (.*)$")
@@ -54,28 +53,28 @@ public class AccessStepDefs extends CommonStepObjects {
 
         PageObjectUtils.IsElementVisible(driver, Access.startInput.getBy(), 15);
         Access.startInput.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         driver.findElement(By.xpath("//td//div[contains(text(), '" + StartDay + "')]")).click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         PageObjectUtils.IsElementVisible(driver, Access.endInput.getBy(), 15);
         Access.endInput.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         driver.findElement(By.xpath("//td//div[contains(text(), '" + EndDay + "')]")).click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @And("^User select shift and (.*) as reason and click save$")
     public void selectShiftAndReason(String reason) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Access.shiftInput.getBy(), 15);
         Access.shiftInput.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Access.shift.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Access.reasonInput.getBy(), 15);
         Access.reasonInput.getElement().sendKeys(reason);
 
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Access.saveButton.getElement().click();
     }
 
@@ -90,9 +89,9 @@ public class AccessStepDefs extends CommonStepObjects {
         PageObjectUtils.ContainsText(driver, name).click();
 
         PageObjectUtils.IsElementVisible(driver, Access.approveButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Access.approveButton.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Access.confirmButton.getElement().click();
     }
 
@@ -112,12 +111,12 @@ public class AccessStepDefs extends CommonStepObjects {
         PageObjectUtils.ContainsText(driver, user).click();
 
         PageObjectUtils.IsElementVisible(driver, Access.rejectButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Access.rejectButton.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.IsElementVisible(driver, Access.reasonInput.getBy(), 15);
         Access.reasonInput.getElement().sendKeys(reason);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Access.saveButton.getElement().click();
     }
 
@@ -127,9 +126,9 @@ public class AccessStepDefs extends CommonStepObjects {
         PageObjectUtils.ContainsText(driver, user).click();
 
         PageObjectUtils.IsElementVisible(driver, Access.deleteButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Access.deleteButton.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.IsElementVisible(driver, Access.yesButton.getBy(), 15);
         Access.yesButton.getElement().click();
     }

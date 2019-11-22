@@ -19,14 +19,14 @@ public class PointsStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.AddTag.getBy(), 15);
         PointsPanel.AddTag.getElement().click();
         PointsPanel.AddTag.getElement().sendKeys(tag);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PointsPanel.AddTag.getElement().sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, PointsPanel.SaveButton.getBy(), 15);
         PointsPanel.SaveButton.getElement().click();
         PageObjectUtils.IsElementVisible(driver, PointsPanel.ConfirmButton.getBy(), 15);
         PointsPanel.ConfirmButton.getElement().click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
     }
 
     @When("^remove Tag (.*) and update point$")
@@ -34,14 +34,14 @@ public class PointsStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.RemoveTag.getBy(), 15);
         PointsPanel.RemoveTag.getElement().click();
         PointsPanel.RemoveTag.getElement().sendKeys(tag);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PointsPanel.RemoveTag.getElement().sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, PointsPanel.SaveButton.getBy(), 15);
         PointsPanel.SaveButton.getElement().click();
         PageObjectUtils.IsElementVisible(driver, PointsPanel.ConfirmButton.getBy(), 15);
         PointsPanel.ConfirmButton.getElement().click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
     }
 
     @And("^Click Point batch update button$")
@@ -52,21 +52,21 @@ public class PointsStepDefs extends CommonStepObjects {
 
     @And("^User Click edit Points button$")
     public void editPointButton() throws Throwable {
-        Thread.sleep(2000);
         PageObjectUtils.IsElementVisible(driver, PointsPanel.EditPointsButton.getBy(), 15);
+        Thread.sleep(500);
         PointsPanel.EditPointsButton.getElement().click();
     }
 
     @And("^Select Point with name (.*)$")
     public void selectPoint(String point) throws Throwable {
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + point + "')]]"), 15);
         driver.findElement(By.xpath("//label[text()[contains(.,'" + point + "')]]")).click();
     }
 
     @Then("^Check if point name is changed to (.*)$")
     public void checkPoint(String point) throws Throwable {
-        Thread.sleep(2000);
+        Thread.sleep(500);
         List<WebElement> points = driver.findElements(By.xpath("//label[text()[contains(.,'" + point + "')]]"));
         Assert.assertFalse(points.isEmpty());
     }
@@ -74,9 +74,9 @@ public class PointsStepDefs extends CommonStepObjects {
     @And("^Change point name to (.*)$")
     public void changePointName(String point) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.EditName.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(150);
         PointsPanel.EditName.getElement().clear();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PointsPanel.EditName.getElement().sendKeys(point);
         PageObjectUtils.IsElementVisible(driver, PointsPanel.SaveButton.getBy(), 15);
         PointsPanel.SaveButton.getElement().click();
@@ -85,49 +85,49 @@ public class PointsStepDefs extends CommonStepObjects {
     @And("^User click connect points button$")
     public void connectPointsButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.ConnectPointsButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PointsPanel.ConnectPointsButton.getElement().click();
     }
 
     @And("^User click (.*) point write button$")
     public void clickWritePoint(String point) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.WritePoint.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PointsPanel.WritePoint.getElement().click();
     }
 
     @And("^User add (.*) as reason$")
     public void addReason(String reason) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.AddReason.getBy(), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PointsPanel.AddReason.getElement().sendKeys(reason);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
     }
 
     @And("^User turn on point and click save$")
     public void turnOnPoint() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.TurnOn.getBy(), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PointsPanel.TurnOn.getElement().click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PointsPanel.SaveChanges.getElement().click();
     }
 
     @And("^User click save changes$")
     public void saveChanges() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.TurnOn.getBy(), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PointsPanel.TurnOn.getElement().click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PointsPanel.SaveChanges.getElement().click();
     }
 
     @And("^User turn off point and click save$")
     public void turnOffPoint() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.TurnOff.getBy(), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PointsPanel.TurnOff.getElement().click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PointsPanel.SaveChanges.getElement().click();
     }
 
@@ -138,13 +138,13 @@ public class PointsStepDefs extends CommonStepObjects {
 
     @And("^User connect point (.*) with (.*)$")
     public void connectTwoPoints(String point1, String point2) throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + point1 + "')]]"), 15);
         driver.findElement(By.xpath("//label[text()[contains(.,'" + point1 + "')]]")).click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + point2 + "')]]"), 15);
         driver.findElement(By.xpath("//label[text()[contains(.,'" + point2 + "')]]")).click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, PointsPanel.SaveConnectedPointsButton.getBy(), 15);
         PointsPanel.SaveConnectedPointsButton.getElement().click();
     }
@@ -152,12 +152,12 @@ public class PointsStepDefs extends CommonStepObjects {
     @Then("^Check if points are connected$")
     public void checkPointsConnected() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.ConnectPointsButton.getBy(), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
     }
 
     @Then("^Check if Point is updated$")
     public void CheckPointUpdated() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.AddTag.getBy(), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
     }
 }

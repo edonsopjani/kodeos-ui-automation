@@ -10,8 +10,8 @@ public class UserProfileStepDefs extends CommonStepObjects {
 
     @When("^Go to User Profile$")
     public void goToUserProfile() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.goToUserProfile.getBy(), 15);
+        Thread.sleep(500);
         UserProfilePanel.goToUserProfile.getElement().click();
     }
 
@@ -27,8 +27,8 @@ public class UserProfileStepDefs extends CommonStepObjects {
 
     @When("^User is at User Profile, click change password$")
     public void changePassword() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.clickChangePassword.getBy(), 15);
+        Thread.sleep(500);
         UserProfilePanel.clickChangePassword.getElement().click();
     }
 
@@ -39,24 +39,24 @@ public class UserProfileStepDefs extends CommonStepObjects {
 
     @And("^User add existing password then user add new password and click save$")
     public void addNewPassword() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.enterOldPassword.getBy(), 10);
+        Thread.sleep(500);
         UserProfilePanel.enterOldPassword.getElement().sendKeys("KodeL@bs123");
 
-        Thread.sleep(1000);
+        Thread.sleep(200);
         UserProfilePanel.enterNewPassword.getElement().sendKeys("KodeL@bs123");
 
-        Thread.sleep(1000);
+        Thread.sleep(200);
         UserProfilePanel.confirmNewPassword.getElement().sendKeys("KodeL@bs123");
 
-        Thread.sleep(1000);
+        Thread.sleep(200);
         UserProfilePanel.updateButton.getElement().click();
     }
 
     @When("^User Click logout button$")
     public void clickLogout() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.clickLogout.getBy(), 10);
+        Thread.sleep(500);
         UserProfilePanel.clickLogout.getElement().click();
     }
 
@@ -97,12 +97,12 @@ public class UserProfileStepDefs extends CommonStepObjects {
 
     @When("^User Click Terminate Session$")
     public void clickTerminateSession() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.clickTerminateSession.getBy(), 15);
+        Thread.sleep(500);
         UserProfilePanel.clickTerminateSession.getElement().click();
 
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.confirmButton.getBy(), 15);
+        Thread.sleep(500);
         UserProfilePanel.confirmButton.getElement().click();
     }
 
@@ -118,7 +118,6 @@ public class UserProfileStepDefs extends CommonStepObjects {
         driver.findElement(By.xpath("//*[@formcontrolname='email']")).sendKeys(username);
         driver.findElement(By.xpath("//*[@formcontrolname='password']")).sendKeys(password);
 
-        Thread.sleep(1000);
         driver.findElement((By.xpath("//*[contains(text(),'Login')]"))).click();
     }
 

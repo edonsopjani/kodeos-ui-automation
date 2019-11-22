@@ -20,7 +20,7 @@ public class EventsStepDefs extends CommonStepObjects {
 
     @And("^Click Events tab$")
     public void eventsTab() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.IsElementVisible(driver, Events.events.getBy(), 15);
         Events.events.getElement().click();
     }
@@ -32,7 +32,7 @@ public class EventsStepDefs extends CommonStepObjects {
 
     @And("^User click Add Event$")
     public void addEventPopUp() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.IsElementVisible(driver, Events.addButton.getBy(), 15);
         Events.addButton.getElement().click();
     }
@@ -44,7 +44,7 @@ public class EventsStepDefs extends CommonStepObjects {
 
     @And("^User Fill mandatory fields for Event Class$")
     public void fillMandatoryFieldsClass() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.IsElementVisible(driver, Events.addName.getBy(), 15);
         Events.addName.getElement().sendKeys("Automation");
         Events.addDescription.getElement().sendKeys("Test Description");
@@ -55,50 +55,49 @@ public class EventsStepDefs extends CommonStepObjects {
         Events.selectSuperAdmin.getElement().click();
 
         Schedulers.closeDropdown.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         roles.get(1).click();
         Events.selectSuperAdmin.getElement().click();
 
         Schedulers.closeDropdown.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         roles.get(2).click();
         Events.selectSuperAdmin.getElement().click();
 
         Schedulers.closeDropdown.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         Events.saveButton.getElement().click();
     }
 
     @And("^User Click edit button$")
     public void editButtonEvents() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         Actions action = new Actions(driver);
         action.moveToElement(Events.selectElement.getElement()).click(Events.openThreeDotMenu.getElement()).build().perform();
 
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         Events.editButton.getElement().click();
     }
 
     @And("^User Fill mandatory fields for Event Type$")
     public void typeFillMandatoryFields() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.IsElementVisible(driver, Events.addName.getBy(), 15);
         Events.addName.getElement().sendKeys("Automation");
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Events.addDescription.getElement().sendKeys("Test Description");
-
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Events.saveButton.getElement().click();
     }
 
     @And("^User change Event name to (.*)$")
     public void changeName(String name) throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.IsElementVisible(driver, Events.addName.getBy(), 15);
         Events.addName.getElement().clear();
         Events.addName.getElement().sendKeys(name);
@@ -110,33 +109,31 @@ public class EventsStepDefs extends CommonStepObjects {
     public void goToTypes() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.typesTab.getBy(), 15);
         Events.typesTab.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @And("^User Click delete button$")
     public void deleteButton() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         Actions action = new Actions(driver);
         action.moveToElement(Events.selectElement.getElement()).click(Events.openThreeDotMenu.getElement()).build().perform();
 
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         Events.deleteButton.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Events.yesButton.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @Then("^Check if name is Changed to (.*)$")
     public void checkNameIsChanged(String name) throws Throwable {
-        Thread.sleep(2000);
         PageObjectUtils.CheckContainsText(driver, name);
     }
 
     @Then("^Check if Event Type (.*) Appears on List$")
     public void checkEventTypeAppearsOnList(String name) throws Throwable {
-        Thread.sleep(2000);
         PageObjectUtils.CheckContainsText(driver, name);
     }
 
@@ -150,13 +147,11 @@ public class EventsStepDefs extends CommonStepObjects {
     @And("^User wait until event is created$")
     public void waitForEvent() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.waitForInactiveElement.getBy(), 50);
-        Thread.sleep(5000);
     }
 
     @And("^User wait until event is finished$")
     public void waitForEventIsFinished() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.waitForActiveElement.getBy(), 50);
-        Thread.sleep(5000);
     }
 
     @And("^Click (.*) Event$")
@@ -181,13 +176,13 @@ public class EventsStepDefs extends CommonStepObjects {
 
         PageObjectUtils.IsElementVisible(driver, Events.stateSelectNone.getBy(), 30);
         Events.stateSelectNone.getElement().click();
-        Thread.sleep(2000);
+        Thread.sleep(500);
     }
 
     @And("^Click Ack button and then Click Acknowledge$")
     public void acknowledgeEvent() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.ackEventButton.getBy(), 15);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         List<WebElement> events = driver.findElements(Events.ackEventButton.getBy());
         preNrEvents = events.size();
@@ -200,7 +195,7 @@ public class EventsStepDefs extends CommonStepObjects {
     @Then("^Check if Event is Acknowledged$")
     public void checkEventIsAcknowledge() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.ackEventButton.getBy(), 15);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         List<WebElement> events = driver.findElements(Events.ackEventButton.getBy());
         afterNrEvents = events.size();
@@ -225,63 +220,51 @@ public class EventsStepDefs extends CommonStepObjects {
     @And("^Click disable config button$")
     public void disableConfig() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.disableConfig.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Events.disableConfig.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Events.yesButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Events.yesButton.getElement().click();
     }
 
     @Then("^Check if config is disabled$")
     public void checkConfigIsDisabled() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, Events.enableConfig.getBy(), 15);
     }
 
     @Then("^Check if config is enabled$")
     public void checkConfigIsEnabled() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.disableConfig.getBy(), 15);
-        Thread.sleep(1000);
     }
 
     @And("^Click enable config button$")
     public void enableConfig() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.enableConfig.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Events.enableConfig.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Events.yesButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Events.yesButton.getElement().click();
     }
 
     @And("^User make point value false and click save$")
     public void turnOffPoint() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.TurnOffAgain.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PointsPanel.TurnOffAgain.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PointsPanel.SaveChanges.getElement().click();
     }
 
     @Then("^Check if (.*) event appears on list$")
     public void checkEventAppearsOnDashboard(String name) throws Throwable {
-        //Thread.sleep(2000);
         PageObjectUtils.CheckContainsText(driver, name);
-        //List<WebElement> units = driver.findElements(By.xpath("//*[text()[contains(.,'" + name + "')]]"));
-        //Assert.assertFalse("event is not created", units.isEmpty());
-
-        //PageObjectUtils.IsElementVisible(driver, Events.sites.getBy(), 15);
-        //Events.sites.getElement().click();
     }
 
     @Then("^Check if (.*) event disappears on list$")
     public void checkEventDisappearsOnDashboard(String name) throws Throwable {
-//        Thread.sleep(2000);
-//        List<WebElement> units = driver.findElements(By.xpath("//*[text()[contains(.,'" + name + "')]]"));
-//        Assert.assertTrue("event is not created", units.isEmpty());
-
         PageObjectUtils.ElementIsNotVisible(driver, By.xpath("//*[text()[contains(.,'" + name + "')]]"),50);
     }
 
@@ -300,25 +283,25 @@ public class EventsStepDefs extends CommonStepObjects {
         Events.moveDevice.getElement().click();
 
         Actions act = new Actions(driver);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         act.dragAndDrop(Events.dragPoint.getElement(), Events.dropPoint.getElement()).build().perform();
     }
 
     @And("^Setup event class and click save button$")
     public void setupEventClassAndSaveConfig() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.selectEventClass.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Events.selectEventClass.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Events.selectFireClass.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         Events.selectFireClass.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Events.saveButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Events.saveButton.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @And("^Remove device from list$")

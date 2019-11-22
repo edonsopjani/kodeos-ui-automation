@@ -22,5 +22,3 @@ Feature: 21 User Profile Tests
   Scenario: Terminate Session
     When User Click Terminate Session
     Then Check if User session is terminated
-
-

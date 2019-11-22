@@ -24,17 +24,17 @@ public class DeviceStepDefs extends CommonStepObjects {
     @When("^User is Searching for (.*)$")
     public void searchField(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.SearchField.getBy(), 15);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         DevicePanel.SearchField.getElement().sendKeys(test);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
     }
 
     @When("^User is Search connector (.*)$")
     public void searchConnectors(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.SearchForConnectors.getBy(), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         DevicePanel.SearchForConnectors.getElement().sendKeys(test);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
     }
 
     @And("^Click Filter by (.*) type$")
@@ -46,13 +46,13 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @Then("^Check if all Devices with (.*) type appears$")
     public void checkType(String Type) throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, Type);
     }
 
     @Then("^Check if (.*) Device appears on list$")
     public void checkDeviceAppearsOnList(String device) throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + device + "')]]"), 15);
     }
 
@@ -65,7 +65,7 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @Then("^Check if all Devices with (.*) area appears$")
     public void checkArea(String area) throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, area);
     }
 
@@ -77,14 +77,14 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @And("^Click checkbox$")
     public void clickCheckbox() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ClickCheckBox.getBy(), 5);
         DevicePanel.ClickCheckBox.getElement().click();
     }
 
     @Then("^Check if all Devices with (.*) connector appears$")
     public void checkConnector(String connector) throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, connector);
     }
 
@@ -96,20 +96,20 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @Then("^Check if (.*) Device details page appears$")
     public void checkDeviceDetailsPage(String device) throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, device);
     }
 
     @Then("^Check if (.*) popup appears$")
     public void checkPointPopup(String device) throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + device + "')]]"), 15);
     }
 
     @And("^Click at Device details button$")
     public void openDeviceDetails() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceDetailsButton.getBy(), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         DevicePanel.DeviceDetailsButton.getElement().click();
     }
 
@@ -149,92 +149,91 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @And("^Select (.*) as Tag$")
     public void selectTag(String type) throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
 
         //Add State
         WebElement element = DevicePanel.AppendTag.getElement();
         DevicePanel.AppendTag.getElement().click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         DevicePanel.AppendTag.getElement().sendKeys(type);
         DevicePanel.AppendTag.getElement().sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
     }
 
     @And("^Select (.*) as Tags$")
     public void selectMultipleTags(String type) throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         //Add State
         WebElement element = DevicePanel.Tag.getElement();
         DevicePanel.Tag.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         DevicePanel.Tag.getElement().sendKeys(type);
         DevicePanel.Tag.getElement().sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @And("^User close autofill popup$")
     public void closeSuggestFillTag() throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ClickPopUp.getBy(), 15);
         DevicePanel.ClickPopUp.getElement().click();
     }
 
     @And("^Open Device Details Pop-up$")
     public void openDeviceDetailsPopUp() throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceDetailsPopUp.getBy(), 15);
         DevicePanel.DeviceDetailsPopUp.getElement().click();
     }
 
     @And("^User click references button$")
     public void DeviceReferences() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceReferences.getBy(), 15);
+        Thread.sleep(500);
         DevicePanel.DeviceReferences.getElement().click();
     }
 
     @And("^User click change details view to dashboard view$")
     public void changeToDashboardView() throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ChangeView.getBy(), 15);
         DevicePanel.ChangeView.getElement().click();
     }
 
     @And("^User click change details view to default view$")
     public void changeToDefaultView() throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ChangeView.getBy(), 15);
         DevicePanel.ChangeView.getElement().click();
     }
 
     @Then("^Check if device details view is changed to dashboard view$")
     public void checkDeviceViewIsChangedToDashboardView() throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, " Other Points");
     }
 
     @Then("^Check if device details view is changed to default view$")
     public void checkDeviceViewIsChangedToDefaultView() throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, "INPUT");
     }
 
     @Then("^Check if Device references appears on list$")
     public void checkDeviceReferences() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, "ExactLogic");
     }
 
     @Then("^Check if Device has tag (.*)$")
     public void checkTagIsAddedToDevice(String type) throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, type);
     }
 
     @Then("^Check if Device are Discover successfully$")
     public void checkDiscover() throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.CheckDiscover.getBy(), 15);
     }
 
@@ -244,7 +243,7 @@ public class DeviceStepDefs extends CommonStepObjects {
         PageObjectUtils.ContainsText(driver, device).click();
 
         PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceDetailsButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         DevicePanel.DeviceDetailsButton.getElement().click();
     }
 
@@ -252,34 +251,34 @@ public class DeviceStepDefs extends CommonStepObjects {
     public void openDeviceFromPointPage(String device) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, device);
         PageObjectUtils.ContainsText(driver, device).click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
     }
 
     @And("^User click open (.*) point pop-up$")
     public void openPointPopUp(String device) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + device + "')]]"), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         driver.findElement(By.xpath("//label[text()[contains(.,'" + device + "')]]")).click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
     }
 
     @And("^User Click edit Device button$")
     public void openEditDevicePage() throws Throwable {
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.EditDeviceButton.getBy(), 15);
         DevicePanel.EditDeviceButton.getElement().click();
     }
 
     @And("^User click edit button$")
     public void clickEditButton() throws Throwable {
-        Thread.sleep(2000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.EditButton.getBy(), 15);
+        Thread.sleep(500);
         DevicePanel.EditButton.getElement().click();
     }
 
     @And("^User Click edit groups button$")
     public void clickEditGroupButton() throws Throwable {
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.EditGroupButton.getBy(), 15);
         DevicePanel.EditGroupButton.getElement().click();
     }
@@ -287,17 +286,17 @@ public class DeviceStepDefs extends CommonStepObjects {
     @And("^User Click Add new Points group button$")
     public void addGroupPoints() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.AddPointGroupButton.getBy(), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         DevicePanel.AddPointGroupButton.getElement().click();
     }
 
     @And("^User Click delete group$")
     public void deleteGroupPoints() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ThreedotMenu.getBy(), 15);
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         DevicePanel.ThreedotMenu.getElement().click();
         PageObjectUtils.IsElementVisible(driver, DevicePanel.DeleteGroupButton.getBy(), 15);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         DevicePanel.DeleteGroupButton.getElement().click();
     }
 
@@ -324,7 +323,7 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @Then("^Check if Point appears on Template$")
     public void checkPointAppearsOnTemplate() throws Throwable {
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         List<WebElement> groups = driver.findElements(By.xpath("//*[@class='template-item ng-star-inserted']//*[text()[contains(.,'systemStatus')]]"));
         Assert.assertFalse(groups.isEmpty());
     }
@@ -338,19 +337,19 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @Then("^Check if Point appears on new (.*)$")
     public void checkPointAppearsOnNewGroup(String group) throws Throwable {
-        Thread.sleep(2500);
+        //Thread.sleep(2500);
     }
 
     @Then("^Checks if (.*) is deleted$")
     public void checkGroupIsDeleted(String group) throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         List<WebElement> groups = driver.findElements(By.xpath("//*[@ng-reflect-model='Group 1']"));
         Assert.assertTrue(groups.isEmpty());
     }
 
     @And("^User click Confirm button$")
     public void confirmButton() throws Throwable {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, "Confirm");
         PageObjectUtils.ContainsText(driver, "Confirm").click();
     }
@@ -363,24 +362,24 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @And("^User upload image$")
     public void userUploadImage() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         //Add image
         WebElement fileInput = DevicePanel.UploadImage.getElement();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         fileInput.sendKeys(PageObjectUtils.filePathForUpload("test1.jpg"));
-        Thread.sleep(2000);
+        Thread.sleep(1000);
     }
 
     @And("^User upload document$")
     public void userUploadDocument() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         //Add image
         WebElement fileInput = DevicePanel.UploadDocument.getElement();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         fileInput.sendKeys(PageObjectUtils.filePathForUpload("sample.pdf"));
-        Thread.sleep(2000);
+        Thread.sleep(1000);
     }
 
     @Then("^Check if image is uploaded successfully$")

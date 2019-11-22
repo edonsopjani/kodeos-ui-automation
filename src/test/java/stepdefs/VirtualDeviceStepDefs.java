@@ -23,7 +23,7 @@ public class VirtualDeviceStepDefs extends CommonStepObjects {
 
     @Then("^Check if user is at Virtual Device page$")
     public void checkIfVirtualDevicesPageAppears() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.CheckContainsText(driver, "ExactLogic");
     }
 
@@ -40,11 +40,11 @@ public class VirtualDeviceStepDefs extends CommonStepObjects {
 
         PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.AddButton.getBy(), 15);
         VirtualDevicePanel.AddButton.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.VirtualDeviceName.getBy(), 15);
         VirtualDevicePanel.VirtualDeviceName.getElement().sendKeys(name + n);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         VirtualDevicePanel.CreateVirtualDevice.getElement().click();
     }
 
@@ -62,11 +62,11 @@ public class VirtualDeviceStepDefs extends CommonStepObjects {
     @And("^User check all points and move to Virtual device$")
     public void checkPointsAreAddedToVirtualDevice() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.CheckBox.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         VirtualDevicePanel.CheckBox.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         VirtualDevicePanel.MoveToVirtual.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @And("^User check all points and move to real device$")
@@ -81,22 +81,22 @@ public class VirtualDeviceStepDefs extends CommonStepObjects {
         }
 
         VirtualDevicePanel.MoveToDevice.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
         VirtualDevicePanel.Confrim.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @And("^User save the changes$")
     public void saveChanges() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.IsElementVisible(driver, VirtualDevicePanel.SaveButton.getBy(), 15);
         VirtualDevicePanel.SaveButton.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @And("^Change Virtual device name to (.*) and click save$")
     public void editVirtualDevice(String device) throws Throwable {
-        Thread.sleep(20000);
+        Thread.sleep(200);
     }
 
     @And("^Check if points are moved to Virtual Device$")

@@ -16,13 +16,13 @@ public class AuditStepDefs extends CommonStepObjects {
     @When("^User Click on Audit button$")
     public void clickAudit() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Audit.auditButton.getBy(), 15);
-        Thread.sleep(2000);
+        Thread.sleep(500);
         Audit.auditButton.getElement().click();
     }
 
     @Then("^Check if Audit page appears$")
     public void checkIfAuditPageAppears() throws Throwable {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         try {
             driver.findElement(By.xpath("//*[contains(text(), 'No templates have been created')]")).isDisplayed();
         } catch (Exception e) {
@@ -47,19 +47,16 @@ public class AuditStepDefs extends CommonStepObjects {
 
     @And("^User select (.*) type and select (.*) and (.*)$")
     public void selectTypeAndPoints(String type, String point1, String point2) throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, type);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, type).click();
-        Thread.sleep(1000);
 
         PageObjectUtils.CheckContainsText(driver, point1);
+        Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, point1).click();
 
         PageObjectUtils.CheckContainsText(driver, point2);
         PageObjectUtils.ContainsText(driver, point2).click();
-
-
     }
 
     @And("^User Add (.*) as Template name$")
@@ -80,14 +77,14 @@ public class AuditStepDefs extends CommonStepObjects {
     @And("^User click Add Template Button$")
     public void addTemplate() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Audit.addTemplateButton.getBy(), 15);
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         Audit.addTemplateButton.getElement().click();
     }
 
     @And("^User Click All Buildings button$")
     public void clickAllBuildingsButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Audit.allBuildings.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Audit.allBuildings.getElement().click();
     }
 
@@ -99,9 +96,8 @@ public class AuditStepDefs extends CommonStepObjects {
 
     @And("^User click apply button$")
     public void clickApplyButton() throws Throwable {
-        Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, Audit.applyButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         Audit.applyButton.getElement().click();
     }
 
@@ -115,7 +111,7 @@ public class AuditStepDefs extends CommonStepObjects {
     public void saveFilters() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Audit.saveFilters.getBy(), 15);
         Audit.saveFilters.getElement().click();
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @And("^User add (.*) as filter name$")
@@ -134,9 +130,8 @@ public class AuditStepDefs extends CommonStepObjects {
     @And("^User click Edit Template Button$")
     public void editTemplate() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Audit.editTemplate.getBy(), 15);
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         Audit.editTemplate.getElement().click();
-        Thread.sleep(1000);
     }
 
     @And("^User click Point Selection button$")
@@ -148,24 +143,26 @@ public class AuditStepDefs extends CommonStepObjects {
     @And("^User select (.*) point$")
     public void selectSpecificPoint(String point) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, point);
-        Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, point).click();
     }
 
     @And("^User change Template name to (.*)$")
     public void changeTempleteName(String name) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Audit.addTemplateName.getBy(), 15);
+        Thread.sleep(500);
         Audit.addTemplateName.getElement().click();
+        Thread.sleep(500);
         Audit.addTemplateName.getElement().clear();
+        Thread.sleep(500);
         Audit.addTemplateName.getElement().sendKeys(name);
     }
 
     @And("^User click Delete Template Button$")
     public void deleteTemplate() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Audit.deleteTemplate.getBy(), 15);
-        Thread.sleep(2000);
+        Thread.sleep(100);
         Audit.deleteTemplate.getElement().click();
-        Thread.sleep(1000);
     }
 
     @And("^User click yes button$")
