@@ -109,7 +109,7 @@ public class DeviceStepDefs extends CommonStepObjects {
     @And("^Click at Device details button$")
     public void openDeviceDetails() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.DeviceDetailsButton.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(200);
         DevicePanel.DeviceDetailsButton.getElement().click();
     }
 
@@ -507,11 +507,13 @@ public class DeviceStepDefs extends CommonStepObjects {
     public void userOpenNotesDialog() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.OpenNotesDialog.getBy(), 15);
         DevicePanel.OpenNotesDialog.getElement().click();
+        Thread.sleep(500);
     }
 
     @And("^User open Documents dialog$")
     public void userOpenDocumentsDialog() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.OpenDocumentsDialog.getBy(), 15);
         DevicePanel.OpenDocumentsDialog.getElement().click();
+        Thread.sleep(500);
     }
 }

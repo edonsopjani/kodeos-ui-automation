@@ -24,7 +24,7 @@ public class SitesStepDefs extends CommonStepObjects {
 
     @And("^User click twice on (.*) building$")
     public void openBuilding(String building) throws Throwable {
-        //Thread.sleep(1000);
+        Thread.sleep(200);
         PageObjectUtils.ContainsText(driver, building).click();
     }
 

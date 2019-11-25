@@ -206,6 +206,7 @@ public class EventsStepDefs extends CommonStepObjects {
     @And("^User goes to Event Dashboard$")
     public void goToEventDashboard() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.eventsDashboard.getBy(), 15);
+        Thread.sleep(300);
         Events.eventsDashboard.getElement().click();
 
     }
@@ -247,6 +248,7 @@ public class EventsStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, Events.yesButton.getBy(), 15);
         Thread.sleep(500);
         Events.yesButton.getElement().click();
+        Thread.sleep(500);
     }
 
     @And("^User make point value false and click save$")

@@ -210,8 +210,8 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @And("^User opens menu popup$")
     public void openMenuTab() throws Throwable {
-        Thread.sleep(500);
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.OpenMenu.getBy(), 15);
+        Thread.sleep(1000);
         BuildingPanel.OpenMenu.getElement().click();
     }
 
@@ -233,8 +233,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @And("^User click Save changes$")
     public void saveButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Save.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(200);
         BuildingPanel.Save.getElement().click();
+        Thread.sleep(200);
     }
 
     @And("^User click delete$")
@@ -920,10 +921,11 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.CheckContainsText(driver, "Edit");
         //Thread.sleep(1000);
         BuildingPanel.EnterLastName.getElement().clear();
-        //Thread.sleep(1000);
+        Thread.sleep(200);
         BuildingPanel.EnterLastName.getElement().sendKeys("sopo");
 
         //Click save
+        Thread.sleep(200);
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
     }
 

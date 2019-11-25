@@ -122,7 +122,7 @@ public class DiscoveryStepDefs extends CommonStepObjects {
         Discovery.SaveButton.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Discovery.FinishButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(1500);
         Discovery.FinishButton.getElement().click();
 
         PageObjectUtils.IsElementVisible(driver, Discovery.OKButton.getBy(), 5);

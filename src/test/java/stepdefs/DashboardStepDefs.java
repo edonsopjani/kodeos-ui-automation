@@ -16,18 +16,15 @@ public class DashboardStepDefs extends CommonStepObjects {
     @When("^User clicks on (.*) building from the list$")
     public void goToBuilding(String test) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DashboardPanel.ExpandButton.getBy(), 15);
-        //Thread.sleep(1000);
         DashboardPanel.ExpandButton.getElement().click();
-        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, test);
         PageObjectUtils.ContainsText(driver, test).click();
     }
 
     @When("^User Click on floors button$")
     public void clickFloors() throws Throwable {
-        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DashboardPanel.FloorsButton.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(300);
         DashboardPanel.FloorsButton.getElement().click();
     }
 
