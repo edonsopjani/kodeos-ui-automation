@@ -84,7 +84,6 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @Then("^Check if all Devices with (.*) connector appears$")
     public void checkConnector(String connector) throws Throwable {
-        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, connector);
     }
 
@@ -96,13 +95,11 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @Then("^Check if (.*) Device details page appears$")
     public void checkDeviceDetailsPage(String device) throws Throwable {
-        //Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, device);
     }
 
     @Then("^Check if (.*) popup appears$")
     public void checkPointPopup(String device) throws Throwable {
-        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + device + "')]]"), 15);
     }
 
