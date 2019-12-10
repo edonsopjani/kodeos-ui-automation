@@ -141,19 +141,16 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @When("^User Open (.*)")
     public void openBuilding(String building) throws Throwable {
         try {
-            //Thread.sleep(3000);
-
+            PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(),'" + building + "')]"), 15);
+            Thread.sleep(100);
             driver.findElement((By.xpath("//*[contains(text(),'" + building + "')]"))).click();
         } catch (Exception ex) {
             BuildingPanel.AddNewBuildingButton.getElement().click();
             PageObjectUtils.CheckContainsText(driver, "Add Building");
-
             PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
 
             //Add Name
             BuildingPanel.Name.getElement().sendKeys("Auto Test Building");
-            //Thread.sleep(1000);
-
             PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
 
             //Add Address 1
@@ -194,10 +191,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
             PageObjectUtils.IsElementVisible(driver, BuildingPanel.Save.getBy(), 15);
 
             //Save
-            //Thread.sleep(1000);
             BuildingPanel.Save.getElement().click();
 
-            //Thread.sleep(2000);
+            PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(),'" + building + "')]"), 15);
             driver.findElement((By.xpath("//*[contains(text(),'" + building + "')]"))).click();
         }
     }
@@ -372,7 +368,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
         //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
         BuildingPanel.Name.getElement().sendKeys(test);
+        Thread.sleep(200);
         BuildingPanel.From.getElement().sendKeys(n);
+        Thread.sleep(200);
         BuildingPanel.To.getElement().sendKeys(m);
     }
 

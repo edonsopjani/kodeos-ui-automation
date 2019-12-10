@@ -363,9 +363,8 @@ public class DeviceStepDefs extends CommonStepObjects {
 
         //Add image
         WebElement fileInput = DevicePanel.UploadImage.getElement();
-        Thread.sleep(500);
         fileInput.sendKeys(PageObjectUtils.filePathForUpload("test1.jpg"));
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     @And("^User upload document$")
@@ -374,9 +373,8 @@ public class DeviceStepDefs extends CommonStepObjects {
 
         //Add image
         WebElement fileInput = DevicePanel.UploadDocument.getElement();
-        Thread.sleep(500);
         fileInput.sendKeys(PageObjectUtils.filePathForUpload("sample.pdf"));
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     @Then("^Check if image is uploaded successfully$")
