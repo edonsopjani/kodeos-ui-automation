@@ -27,7 +27,7 @@ Feature: 18 User Panel Tests
     And User Fill don@kodelabs.co as Email
     And User Fill 123-456-7889 as Phone number
     And User Fill User as Role
-    And User click create account
+#    And User click create account
     And User click Save changes
     Then Check if User with name Michael appear on the list
 
@@ -54,8 +54,7 @@ Feature: 18 User Panel Tests
     When User click Michael User
     And Click on deactivate Button and click save
     Then Check if user account is deactivated
-
-  @Admin @SmokeTest @UserPanel
+    
   Scenario: Update User to User Account
     When User click Edonis User
     And Click on Create account Button
