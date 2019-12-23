@@ -49,7 +49,7 @@ Feature: 18 User Panel Tests
     And Click on Edit password Button, change password and click save
     Then Check if password is updated
 
-  @Admin @SmokeTest @UserPanel
+
   Scenario: Deactivate User Account
     When User click Michael User
     And Click on deactivate Button and click save
