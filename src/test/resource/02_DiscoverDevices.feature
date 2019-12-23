@@ -34,7 +34,7 @@ Feature: 02 Discover Devices Tests
     And User click save changes and click finish
     Then Check if BR129 device appears on the list
     And User Click on BR129 Device
-    Then Check if Room-Temperature point appears on device details
+    Then Check if Cooling_Demand point appears on device details
 
   @Admin @SmokeTest @BuildingPanel @Discover
   Scenario: Delete Connector
