@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber-JVM Reports  - Tag: @Attachments</title>
+<title>Cucumber-JVM Reports  - Feature: 15 Templates Tests</title>
 
 </head>
 <body>
@@ -87,7 +87,7 @@ $(document).ready(function() {
 <div id="report-lead" class="container-fluid>
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <h2>Tag Report</h2>
+      <h2>Feature Report</h2>
           </div>
   </div>
 </div>
@@ -105,7 +105,7 @@ $(document).ready(function() {
     <th colspan="2">Totals</th>
   </tr>
   <tr>
-    <th>Tag</th>
+    <th>Feature</th>
         <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="total">Total</th>
@@ -122,17 +122,17 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@Attachments</td>
-                    <td  class="passed"    >9</td>
+          <td class="tagname">15 Templates Tests</td>
+                    <td  class="passed"    >6</td>
           <td >0</td>
-          <td class="total">9</td>
+          <td class="total">6</td>
           <td      class="passed"    >69</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">69</td>
-          <td class="duration" data-value="32542561400">32s 542ms</td>
+          <td class="duration" data-value="44840620500">44s 840ms</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -147,27 +147,35 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="elements">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
 
-                  
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">15 Templates Tests</span>
+  
+
+  </div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+                      
 <div class="element">
-      <div class="indention">
-      <a href="src-test-resource-04_DeviceDetails-feature.html">View Feature</a> <i>04 Devices Tests</i>
-    </div>
   
   
 <div class="tags indention">
-       <a href="SmokeTest.html">@SmokeTest</a>
-       <a href="Device.html">@Device</a>
-       <a href="Attachments.html">@Attachments</a>
   </div>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Add Image to Device Attachments</span>
+  <span class="keyword indention">Background</span>
+  <span class="name">Steps That execute before every scenario</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -198,31 +206,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">User Click on Flex Device</span>
+  <span class="keyword indention">Given</span>
+  <span class="name">Open KodeLabs Page</span>
   
-  <span class="lead-duration duration">092ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Click at Device details button</span>
-  
-  <span class="lead-duration duration">882ms</span>
+  <span class="lead-duration duration">473ms</span>
 
   </div>
 
@@ -241,9 +228,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if Flex Device details page appears</span>
+  <span class="name">Check if user is logged in</span>
   
-  <span class="lead-duration duration">535ms</span>
+  <span class="lead-duration duration">2s 086ms</span>
 
   </div>
 
@@ -262,51 +249,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">User click Attachment button</span>
+  <span class="name">User Go To admin panel</span>
   
-  <span class="lead-duration duration">114ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User open Photos dialog</span>
-  
-  <span class="lead-duration duration">271ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User upload image</span>
-  
-  <span class="lead-duration duration">3s 569ms</span>
+  <span class="lead-duration duration">066ms</span>
 
   </div>
 
@@ -325,9 +270,51 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if image is uploaded successfully</span>
+  <span class="name">Check if user is at Admin panel</span>
   
-  <span class="lead-duration duration">024ms</span>
+  <span class="lead-duration duration">557ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Templates tab</span>
+  
+  <span class="lead-duration duration">096ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if user is at Templates page</span>
+  
+  <span class="lead-duration duration">541ms</span>
 
   </div>
 
@@ -351,17 +338,14 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  
+                      
 <div class="element">
-      <div class="indention">
-      <a href="src-test-resource-04_DeviceDetails-feature.html">View Feature</a> <i>04 Devices Tests</i>
-    </div>
   
   
 <div class="tags indention">
+       <a href="Admin.html">@Admin</a>
        <a href="SmokeTest.html">@SmokeTest</a>
-       <a href="Device.html">@Device</a>
-       <a href="Attachments.html">@Attachments</a>
+       <a href="Template.html">@Template</a>
   </div>
 
 
@@ -369,7 +353,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Edit Image name at Device Attachments</span>
+  <span class="name">Add New Section and Add new Point</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -401,9 +385,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">User Click on Flex Device</span>
+  <span class="name">User go to CHILLER template</span>
   
-  <span class="lead-duration duration">107ms</span>
+  <span class="lead-duration duration">685ms</span>
 
   </div>
 
@@ -422,9 +406,30 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Click at Device details button</span>
+  <span class="name">Click add new section button</span>
   
-  <span class="lead-duration duration">899ms</span>
+  <span class="lead-duration duration">130ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">enter Auto for this section name</span>
+  
+  <span class="lead-duration duration">165ms</span>
 
   </div>
 
@@ -443,9 +448,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if Flex Device details page appears</span>
+  <span class="name">Check if template with Auto name appears on list</span>
   
-  <span class="lead-duration duration">021ms</span>
+  <span class="lead-duration duration">535ms</span>
 
   </div>
 
@@ -464,9 +469,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">User click Attachment button</span>
+  <span class="name">Click add new point button</span>
   
-  <span class="lead-duration duration">157ms</span>
+  <span class="lead-duration duration">758ms</span>
 
   </div>
 
@@ -485,51 +490,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">User open Photos dialog</span>
+  <span class="name">Fill point mandatory fields with name NewPoint</span>
   
-  <span class="lead-duration duration">599ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click edit image button</span>
-  
-  <span class="lead-duration duration">534ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User change name to editedName</span>
-  
-  <span class="lead-duration duration">255ms</span>
+  <span class="lead-duration duration">1s 335ms</span>
 
   </div>
 
@@ -548,9 +511,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if image name is updated successfully</span>
+  <span class="name">Check if Point with name NewPoint is added on Section with name Auto</span>
   
-  <span class="lead-duration duration">534ms</span>
+  <span class="lead-duration duration">538ms</span>
 
   </div>
 
@@ -574,25 +537,19 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  
+                      
 <div class="element">
-      <div class="indention">
-      <a href="src-test-resource-04_DeviceDetails-feature.html">View Feature</a> <i>04 Devices Tests</i>
-    </div>
   
   
 <div class="tags indention">
-       <a href="SmokeTest.html">@SmokeTest</a>
-       <a href="Device.html">@Device</a>
-       <a href="Attachments.html">@Attachments</a>
   </div>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Delete Image name at Device Attachments</span>
+  <span class="keyword indention">Background</span>
+  <span class="name">Steps That execute before every scenario</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -623,31 +580,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">User Click on Flex Device</span>
+  <span class="keyword indention">Given</span>
+  <span class="name">Open KodeLabs Page</span>
   
-  <span class="lead-duration duration">101ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Click at Device details button</span>
-  
-  <span class="lead-duration duration">898ms</span>
+  <span class="lead-duration duration">444ms</span>
 
   </div>
 
@@ -666,9 +602,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if Flex Device details page appears</span>
+  <span class="name">Check if user is logged in</span>
   
-  <span class="lead-duration duration">532ms</span>
+  <span class="lead-duration duration">2s 110ms</span>
 
   </div>
 
@@ -687,72 +623,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">User click Attachment button</span>
+  <span class="name">User Go To admin panel</span>
   
-  <span class="lead-duration duration">109ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User open Photos dialog</span>
-  
-  <span class="lead-duration duration">301ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click edit image button</span>
-  
-  <span class="lead-duration duration">1s 032ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click delete image button</span>
-  
-  <span class="lead-duration duration">087ms</span>
+  <span class="lead-duration duration">068ms</span>
 
   </div>
 
@@ -771,9 +644,51 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if image is deleted successfully</span>
+  <span class="name">Check if user is at Admin panel</span>
   
-  <span class="lead-duration duration">533ms</span>
+  <span class="lead-duration duration">558ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Templates tab</span>
+  
+  <span class="lead-duration duration">091ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if user is at Templates page</span>
+  
+  <span class="lead-duration duration">530ms</span>
 
   </div>
 
@@ -797,17 +712,14 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  
+                      
 <div class="element">
-      <div class="indention">
-      <a href="src-test-resource-04_DeviceDetails-feature.html">View Feature</a> <i>04 Devices Tests</i>
-    </div>
   
   
 <div class="tags indention">
+       <a href="Admin.html">@Admin</a>
        <a href="SmokeTest.html">@SmokeTest</a>
-       <a href="Device.html">@Device</a>
-       <a href="Attachments.html">@Attachments</a>
+       <a href="Template.html">@Template</a>
   </div>
 
 
@@ -815,7 +727,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Add Document to Device Attachments</span>
+  <span class="name">Edit Section Name</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -847,9 +759,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">User Click on Flex Device</span>
+  <span class="name">User go to CHILLER template</span>
   
-  <span class="lead-duration duration">085ms</span>
+  <span class="lead-duration duration">676ms</span>
 
   </div>
 
@@ -868,9 +780,30 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Click at Device details button</span>
+  <span class="name">Click add new section button</span>
   
-  <span class="lead-duration duration">883ms</span>
+  <span class="lead-duration duration">114ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">enter Auto2 for this section name</span>
+  
+  <span class="lead-duration duration">165ms</span>
 
   </div>
 
@@ -889,9 +822,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if Flex Device details page appears</span>
+  <span class="name">Check if template with Auto2 name appears on list</span>
   
-  <span class="lead-duration duration">028ms</span>
+  <span class="lead-duration duration">534ms</span>
 
   </div>
 
@@ -910,9 +843,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">User click Attachment button</span>
+  <span class="name">Click add new point button</span>
   
-  <span class="lead-duration duration">074ms</span>
+  <span class="lead-duration duration">697ms</span>
 
   </div>
 
@@ -931,30 +864,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">User open Documents dialog</span>
+  <span class="name">Fill point mandatory fields with name NewPoint2</span>
   
-  <span class="lead-duration duration">1s 275ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User upload document</span>
-  
-  <span class="lead-duration duration">3s 569ms</span>
+  <span class="lead-duration duration">1s 338ms</span>
 
   </div>
 
@@ -973,9 +885,51 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if document is uploaded successfully</span>
+  <span class="name">Check if Point with name NewPoint2 is added on Section with name Auto2</span>
   
-  <span class="lead-duration duration">023ms</span>
+  <span class="lead-duration duration">027ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Edit Button, then change section name to AutoSection2</span>
+  
+  <span class="lead-duration duration">2s 394ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if template with AutoSection2 name appears on list</span>
+  
+  <span class="lead-duration duration">534ms</span>
 
   </div>
 
@@ -999,25 +953,19 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  
+                      
 <div class="element">
-      <div class="indention">
-      <a href="src-test-resource-04_DeviceDetails-feature.html">View Feature</a> <i>04 Devices Tests</i>
-    </div>
   
   
 <div class="tags indention">
-       <a href="SmokeTest.html">@SmokeTest</a>
-       <a href="Device.html">@Device</a>
-       <a href="Attachments.html">@Attachments</a>
   </div>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Edit Document name at Device Attachments</span>
+  <span class="keyword indention">Background</span>
+  <span class="name">Steps That execute before every scenario</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1048,31 +996,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">User Click on Flex Device</span>
+  <span class="keyword indention">Given</span>
+  <span class="name">Open KodeLabs Page</span>
   
-  <span class="lead-duration duration">100ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Click at Device details button</span>
-  
-  <span class="lead-duration duration">393ms</span>
+  <span class="lead-duration duration">455ms</span>
 
   </div>
 
@@ -1091,9 +1018,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if Flex Device details page appears</span>
+  <span class="name">Check if user is logged in</span>
   
-  <span class="lead-duration duration">027ms</span>
+  <span class="lead-duration duration">2s 102ms</span>
 
   </div>
 
@@ -1112,72 +1039,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">User click Attachment button</span>
+  <span class="name">User Go To admin panel</span>
   
-  <span class="lead-duration duration">253ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User open Documents dialog</span>
-  
-  <span class="lead-duration duration">797ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click edit document button</span>
-  
-  <span class="lead-duration duration">372ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User change name to editedName</span>
-  
-  <span class="lead-duration duration">359ms</span>
+  <span class="lead-duration duration">059ms</span>
 
   </div>
 
@@ -1196,9 +1060,51 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if document name is updated successfully</span>
+  <span class="name">Check if user is at Admin panel</span>
   
-  <span class="lead-duration duration">551ms</span>
+  <span class="lead-duration duration">555ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Templates tab</span>
+  
+  <span class="lead-duration duration">095ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if user is at Templates page</span>
+  
+  <span class="lead-duration duration">527ms</span>
 
   </div>
 
@@ -1222,17 +1128,14 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  
+                      
 <div class="element">
-      <div class="indention">
-      <a href="src-test-resource-04_DeviceDetails-feature.html">View Feature</a> <i>04 Devices Tests</i>
-    </div>
   
   
 <div class="tags indention">
+       <a href="Admin.html">@Admin</a>
        <a href="SmokeTest.html">@SmokeTest</a>
-       <a href="Device.html">@Device</a>
-       <a href="Attachments.html">@Attachments</a>
+       <a href="Template.html">@Template</a>
   </div>
 
 
@@ -1240,7 +1143,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Delete Document name at Device Attachments</span>
+  <span class="name">Edit Point</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1272,9 +1175,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">User Click on Flex Device</span>
+  <span class="name">User go to CHILLER template</span>
   
-  <span class="lead-duration duration">092ms</span>
+  <span class="lead-duration duration">668ms</span>
 
   </div>
 
@@ -1293,9 +1196,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Click at Device details button</span>
+  <span class="name">Click on Edit Button, then change point name to EditedPoint</span>
   
-  <span class="lead-duration duration">894ms</span>
+  <span class="lead-duration duration">516ms</span>
 
   </div>
 
@@ -1314,114 +1217,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if Flex Device details page appears</span>
+  <span class="name">Check if Point name is changed from NewPoint to EditedPoint</span>
   
-  <span class="lead-duration duration">027ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click Attachment button</span>
-  
-  <span class="lead-duration duration">236ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User open Documents dialog</span>
-  
-  <span class="lead-duration duration">752ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click edit document button</span>
-  
-  <span class="lead-duration duration">349ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click delete document button</span>
-  
-  <span class="lead-duration duration">071ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Check if document is deleted successfully</span>
-  
-  <span class="lead-duration duration">534ms</span>
+  <span class="lead-duration duration">535ms</span>
 
   </div>
 
@@ -1445,25 +1243,19 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  
+                      
 <div class="element">
-      <div class="indention">
-      <a href="src-test-resource-04_DeviceDetails-feature.html">View Feature</a> <i>04 Devices Tests</i>
-    </div>
   
   
 <div class="tags indention">
-       <a href="SmokeTest.html">@SmokeTest</a>
-       <a href="Device.html">@Device</a>
-       <a href="Attachments.html">@Attachments</a>
   </div>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Add Note to Device Attachments</span>
+  <span class="keyword indention">Background</span>
+  <span class="name">Steps That execute before every scenario</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1494,31 +1286,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">User Click on Flex Device</span>
+  <span class="keyword indention">Given</span>
+  <span class="name">Open KodeLabs Page</span>
   
-  <span class="lead-duration duration">090ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Click at Device details button</span>
-  
-  <span class="lead-duration duration">881ms</span>
+  <span class="lead-duration duration">449ms</span>
 
   </div>
 
@@ -1537,9 +1308,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if Flex Device details page appears</span>
+  <span class="name">Check if user is logged in</span>
   
-  <span class="lead-duration duration">024ms</span>
+  <span class="lead-duration duration">2s 107ms</span>
 
   </div>
 
@@ -1558,51 +1329,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">User click Attachment button</span>
+  <span class="name">User Go To admin panel</span>
   
-  <span class="lead-duration duration">212ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User open Notes dialog</span>
-  
-  <span class="lead-duration duration">733ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User create note</span>
-  
-  <span class="lead-duration duration">421ms</span>
+  <span class="lead-duration duration">065ms</span>
 
   </div>
 
@@ -1621,9 +1350,51 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if note is uploaded successfully</span>
+  <span class="name">Check if user is at Admin panel</span>
   
-  <span class="lead-duration duration">532ms</span>
+  <span class="lead-duration duration">527ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Templates tab</span>
+  
+  <span class="lead-duration duration">103ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if user is at Templates page</span>
+  
+  <span class="lead-duration duration">530ms</span>
 
   </div>
 
@@ -1647,17 +1418,14 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  
+                      
 <div class="element">
-      <div class="indention">
-      <a href="src-test-resource-04_DeviceDetails-feature.html">View Feature</a> <i>04 Devices Tests</i>
-    </div>
   
   
 <div class="tags indention">
+       <a href="Admin.html">@Admin</a>
        <a href="SmokeTest.html">@SmokeTest</a>
-       <a href="Device.html">@Device</a>
-       <a href="Attachments.html">@Attachments</a>
+       <a href="Template.html">@Template</a>
   </div>
 
 
@@ -1665,7 +1433,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Edit Note name at Device Attachments</span>
+  <span class="name">Link Points</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1697,9 +1465,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">User Click on Flex Device</span>
+  <span class="name">User go to CHILLER template</span>
   
-  <span class="lead-duration duration">118ms</span>
+  <span class="lead-duration duration">675ms</span>
 
   </div>
 
@@ -1718,9 +1486,72 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Click at Device details button</span>
+  <span class="name">user select Connect Points</span>
   
-  <span class="lead-duration duration">398ms</span>
+  <span class="lead-duration duration">083ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user select point with name EditedPoint</span>
+  
+  <span class="lead-duration duration">112ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">it links it with point with name NewPoint2</span>
+  
+  <span class="lead-duration duration">103ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Connect Button</span>
+  
+  <span class="lead-duration duration">106ms</span>
 
   </div>
 
@@ -1739,114 +1570,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if Flex Device details page appears</span>
+  <span class="name">Check if points EditedPoint and NewPoint2 are linked</span>
   
-  <span class="lead-duration duration">029ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click Attachment button</span>
-  
-  <span class="lead-duration duration">255ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User open Notes dialog</span>
-  
-  <span class="lead-duration duration">717ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click edit note button</span>
-  
-  <span class="lead-duration duration">374ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User change note name to editedName</span>
-  
-  <span class="lead-duration duration">256ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Check if note name is updated successfully</span>
-  
-  <span class="lead-duration duration">535ms</span>
+  <span class="lead-duration duration">045ms</span>
 
   </div>
 
@@ -1870,25 +1596,19 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  
+                      
 <div class="element">
-      <div class="indention">
-      <a href="src-test-resource-04_DeviceDetails-feature.html">View Feature</a> <i>04 Devices Tests</i>
-    </div>
   
   
 <div class="tags indention">
-       <a href="SmokeTest.html">@SmokeTest</a>
-       <a href="Device.html">@Device</a>
-       <a href="Attachments.html">@Attachments</a>
   </div>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Delete Note name at Device Attachments</span>
+  <span class="keyword indention">Background</span>
+  <span class="name">Steps That execute before every scenario</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1919,10 +1639,188 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Open KodeLabs Page</span>
+  
+  <span class="lead-duration duration">449ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if user is logged in</span>
+  
+  <span class="lead-duration duration">2s 084ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User Go To admin panel</span>
+  
+  <span class="lead-duration duration">061ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if user is at Admin panel</span>
+  
+  <span class="lead-duration duration">554ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Templates tab</span>
+  
+  <span class="lead-duration duration">085ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if user is at Templates page</span>
+  
+  <span class="lead-duration duration">536ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+       <a href="Admin.html">@Admin</a>
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Template.html">@Template</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Delete Point</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">User Click on Flex Device</span>
+  <span class="name">User go to CHILLER template</span>
   
-  <span class="lead-duration duration">092ms</span>
+  <span class="lead-duration duration">669ms</span>
 
   </div>
 
@@ -1941,9 +1839,51 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Click at Device details button</span>
+  <span class="name">Click add new point button</span>
   
-  <span class="lead-duration duration">887ms</span>
+  <span class="lead-duration duration">717ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Fill point mandatory fields with name Newone</span>
+  
+  <span class="lead-duration duration">1s 328ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Open Point with name Newone and click Delete</span>
+  
+  <span class="lead-duration duration">1s 845ms</span>
 
   </div>
 
@@ -1962,9 +1902,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if Flex Device details page appears</span>
+  <span class="name">Check if point with name Newone is deleted from list</span>
   
-  <span class="lead-duration duration">024ms</span>
+  <span class="lead-duration duration">1s 011ms</span>
 
   </div>
 
@@ -1979,76 +1919,62 @@ $(document).ready(function() {
         
 
       </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click Attachment button</span>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
   
-  <span class="lead-duration duration">240ms</span>
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name">Steps That execute before every scenario</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
 
   </div>
 
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User open Notes dialog</span>
+  <span class="keyword indention">Given</span>
+  <span class="name">Open KodeLabs Page</span>
   
-  <span class="lead-duration duration">794ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click edit note button</span>
-  
-  <span class="lead-duration duration">364ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User click delete note button</span>
-  
-  <span class="lead-duration duration">068ms</span>
+  <span class="lead-duration duration">429ms</span>
 
   </div>
 
@@ -2067,7 +1993,91 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Check if note is deleted successfully</span>
+  <span class="name">Check if user is logged in</span>
+  
+  <span class="lead-duration duration">2s 112ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User Go To admin panel</span>
+  
+  <span class="lead-duration duration">063ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if user is at Admin panel</span>
+  
+  <span class="lead-duration duration">553ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Templates tab</span>
+  
+  <span class="lead-duration duration">091ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if user is at Templates page</span>
   
   <span class="lead-duration duration">531ms</span>
 
@@ -2093,7 +2103,123 @@ $(document).ready(function() {
   </div>
 </div>
 
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+       <a href="Admin.html">@Admin</a>
+       <a href="SmokeTest.html">@SmokeTest</a>
+       <a href="Template.html">@Template</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Delete Section</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+          <div class="step">
         
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User go to CHILLER template</span>
+  
+  <span class="lead-duration duration">670ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Delete Button, then click delete Section</span>
+  
+  <span class="lead-duration duration">1s 347ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Check if template with AutoSection name Disappears from list</span>
+  
+  <span class="lead-duration duration">1s 010ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
       </div>
     </div>
   </div>
