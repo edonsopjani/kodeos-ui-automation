@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/02_DiscoverDevices.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/02_DiscoverDevices.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563461684713" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resource" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resource/Tenant Platform" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -45,15 +44,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="stepdefs" />
       <recent name="pageobjects.pages" />
+      <recent name="stepdefs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\KODE Labs Automation Framework\src\test\resource\Tenant Platform" />
       <recent name="C:\KODE Labs Automation Framework\src\test\resource" />
       <recent name="C:\cmdCucumber\src\main" />
       <recent name="C:\cmdCucumber\src\main\java" />
       <recent name="C:\cmdCucumber\src\test\java\stepdefs" />
-      <recent name="C:\cmdCucumber\src\test\resource" />
     </key>
   </component>
   <component name="RunDashboard">
