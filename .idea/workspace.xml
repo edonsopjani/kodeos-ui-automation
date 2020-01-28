@@ -3,6 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Tenant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Tenant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/TenantStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/TenantStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Attachments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Attachments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Discover.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Discover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-01_BuildingPanel-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-01_BuildingPanel-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-02_DiscoverDevices-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-02_DiscoverDevices-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-03_BuildingDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-03_BuildingDetails-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-04_DeviceDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-04_DeviceDetails-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-05_PointsDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-05_PointsDetails-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-06_VirtualDevice-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-06_VirtualDevice-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-07_Systems-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-07_Systems-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-08_Search-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-08_Search-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-09_Schedulers-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-09_Schedulers-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-10_Sites-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-10_Sites-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-11_Events-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-11_Events-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-12_Audit-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-12_Audit-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-13_Access-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-13_Access-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-14_FireDashboard-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-14_FireDashboard-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-15_Templates-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-15_Templates-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-16_Units-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-16_Units-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-17_Tags-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-17_Tags-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-18_UserPanel-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-18_UserPanel-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-19_FloorDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-19_FloorDetails-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,35 +95,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: User make update discover devices from all Edge Devices">
-    <configuration name="Feature: 01_BuildingPanel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Feature: TenantManagment">
+    <configuration name="Feature: TenantManagment" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/01_BuildingPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: 01_BuildingPanel" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://staging-kode.kode-dev.com" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: 08_Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/08_Search.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: 08_Search" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://qa-kode.kode-dev.com" />
+      <option name="SUGGESTED_NAME" value="Feature: TenantManagment" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -146,16 +155,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Search has 3 different part" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Engineer complete Tenant request for HVAC" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/08_Search.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Search has 3 different part$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Search has 3 different part$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Search has 3 different part" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://qa-kode.kode-dev.com" />
+      <option name="NAME_FILTER" value="^Engineer complete Tenant request for HVAC$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Engineer complete Tenant request for HVAC$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Engineer complete Tenant request for HVAC" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -166,16 +175,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User make new discover devices from all Edge Devices" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Property Manager accept Tenant request for HVAC" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/02_DiscoverDevices.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^User make new discover devices from all Edge Devices$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User make new discover devices from all Edge Devices$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User make new discover devices from all Edge Devices" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://staging-kode.kode-dev.com" />
+      <option name="NAME_FILTER" value="^Property Manager accept Tenant request for HVAC$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Property Manager accept Tenant request for HVAC$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Property Manager accept Tenant request for HVAC" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -186,16 +195,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User make update discover devices from all Edge Devices" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Property Manager reject Tenant request for HVAC" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/02_DiscoverDevices.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^User make update discover devices from all Edge Devices$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^User make update discover devices from all Edge Devices$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User make update discover devices from all Edge Devices" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://staging-kode.kode-dev.com" />
+      <option name="NAME_FILTER" value="^Property Manager reject Tenant request for HVAC$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Property Manager reject Tenant request for HVAC$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Property Manager reject Tenant request for HVAC" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="NAME_FILTER" value="^Tenant Admin create request for AfterHours HVAC with weekly repeat$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Tenant Admin create request for AfterHours HVAC with weekly repeat$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -209,19 +238,19 @@
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Feature: 08_Search" />
-      <item itemvalue="Cucumber java.Scenario: Search has 3 different part" />
-      <item itemvalue="Cucumber java.Feature: 01_BuildingPanel" />
-      <item itemvalue="Cucumber java.Scenario: User make new discover devices from all Edge Devices" />
-      <item itemvalue="Cucumber java.Scenario: User make update discover devices from all Edge Devices" />
+      <item itemvalue="Cucumber java.Scenario: Property Manager reject Tenant request for HVAC" />
+      <item itemvalue="Cucumber java.Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat" />
+      <item itemvalue="Cucumber java.Scenario: Property Manager accept Tenant request for HVAC" />
+      <item itemvalue="Cucumber java.Scenario: Engineer complete Tenant request for HVAC" />
+      <item itemvalue="Cucumber java.Feature: TenantManagment" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: User make update discover devices from all Edge Devices" />
-        <item itemvalue="Cucumber java.Scenario: User make new discover devices from all Edge Devices" />
-        <item itemvalue="Cucumber java.Feature: 01_BuildingPanel" />
-        <item itemvalue="Cucumber java.Scenario: Search has 3 different part" />
-        <item itemvalue="Cucumber java.Feature: 08_Search" />
+        <item itemvalue="Cucumber java.Feature: TenantManagment" />
+        <item itemvalue="Cucumber java.Scenario: Engineer complete Tenant request for HVAC" />
+        <item itemvalue="Cucumber java.Scenario: Property Manager accept Tenant request for HVAC" />
+        <item itemvalue="Cucumber java.Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat" />
+        <item itemvalue="Cucumber java.Scenario: Property Manager reject Tenant request for HVAC" />
       </list>
     </recent_temporary>
   </component>
