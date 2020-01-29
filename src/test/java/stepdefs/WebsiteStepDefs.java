@@ -20,6 +20,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     public void thePreconditionForTheTestGoesToWebsiteOrLogsIn() throws Throwable {
         if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
         driver.navigate().to(System.getProperty("websiteUrl"));
+        Thread.sleep(250);
         List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
         if (isLoggedIn.isEmpty()) {
 
@@ -849,7 +850,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @And("^User Fill (.*) as Last Name$")
     public void u_LastName(String lastName) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterLastName.getBy(), 15);
-
+        Thread.sleep(200);
         //Add Last Name
         BuildingPanel.EnterLastName.getElement().sendKeys(lastName);
     }
@@ -857,7 +858,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @And("^User Fill (.*) as Email$")
     public void u_Email(String email) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterEmail.getBy(), 15);
-
+        Thread.sleep(100);
         //Add Email
         BuildingPanel.EnterEmail.getElement().sendKeys(email);
     }

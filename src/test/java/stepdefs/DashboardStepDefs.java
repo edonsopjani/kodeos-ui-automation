@@ -102,15 +102,15 @@ public class DashboardStepDefs extends CommonStepObjects {
 
     @And("^Add (.*) and (.*) points for (.*) Device at Summary Widget$")
     public void addPointsToWidget(String point1, String point2, String device) throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='mat-row ng-star-inserted']"), 15);
-        List<WebElement> elements = driver.findElements(By.xpath("//*[@class='mat-row ng-star-inserted']"));
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@class='mat-row cdk-row ng-star-inserted']"), 15);
+        List<WebElement> elements = driver.findElements(By.xpath("//*[@class='mat-row cdk-row ng-star-inserted']"));
         for (WebElement element : elements
         ) {
             String text = element.getText();
             if (text.contains(device)) {
-                PageObjectUtils.IsElementVisible(driver, By.xpath("//tr[@class='mat-row ng-star-inserted']//*[contains(text(),'" + device + "')]"), 15);
+                PageObjectUtils.IsElementVisible(driver, By.xpath("//tr[@class='mat-row cdk-row ng-star-inserted']//*[contains(text(),'" + device + "')]"), 15);
                 //Thread.sleep(1000);
-                driver.findElement(By.xpath("//tr[@class='mat-row ng-star-inserted']//*[contains(text(),'" + device + "')]")).click();
+                driver.findElement(By.xpath("//tr[@class='mat-row cdk-row ng-star-inserted']//*[contains(text(),'" + device + "')]")).click();
                 break;
             }
 
