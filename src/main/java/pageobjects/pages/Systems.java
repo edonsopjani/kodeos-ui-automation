@@ -15,7 +15,7 @@ public enum Systems implements PageObjects {
     selectChillerWaterPlant(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' Chilled Water Plant ')]]"),
     linkOffButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' link_off ')]]"),
     SearchField(PageObjectUtils.LocatorType.CLASSNAME, "search-input"),
-    dragDevicesHere(PageObjectUtils.LocatorType.XPATH, "//*[@class='device-container']"),
+    dragDevicesHere(PageObjectUtils.LocatorType.XPATH, "//*[@id='device-container']"),
     saveButton(PageObjectUtils.LocatorType.XPATH, "//mat-icon[text()[contains(.,'save')]]"),
     saveChanges(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,' Save ')]]"),
     createButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,' Create ')]]"),

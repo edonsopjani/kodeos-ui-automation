@@ -1,5 +1,5 @@
-Feature: Tenant APP Test Cases
- Create Tenant, Assign Buildings, Create Tenant admin/user, Create After Hours HVAC and Work Orders etc.
+Feature: Tenant APP
+  Create Tenant, Assign Buildings, Create Tenant admin/user, Create After Hours HVAC and Work Orders etc.
 
   Background: Steps That execute before every scenario
     Given Open Tenant Page
@@ -30,7 +30,7 @@ Feature: Tenant APP Test Cases
 #    And User save changes on tenant page
 #    Then Check if tenant is updated successfully
 
-#   @Tenant
+  @Tenant @SmokeTest
   Scenario: Property Manager Add Tenant admin/user
     When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
     Then Check if user is logged in on Tenant app
@@ -42,7 +42,18 @@ Feature: Tenant APP Test Cases
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
 
-#  @Tenant
+  @Tenant @SmokeTest
+  Scenario: Property Manager Delete Tenant admin/user
+    When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
+    Then Check if user is logged in on Tenant app
+    And User goes to Tenant Management page
+    And User open Burger King tenant page
+    And User delete Automation Tenant tenant user
+    Then Check if Automation Tenant disappears for that Tenant
+    And User logs out from propertyManager role on tenant side
+    Then Check if user is at Tenant login page
+
+  @Tenant @SmokeTest
   Scenario: Tenant Admin create request for AfterHours HVAC
     When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
     Then Check if tenant is logged in
@@ -58,7 +69,7 @@ Feature: Tenant APP Test Cases
     And User logs out from tenant role on tenant side
     Then Check if user is at Tenant login page
 
-#  @Tenant
+  @Tenant @SmokeTest
   Scenario: Property Manager reject Tenant request for HVAC
     When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
     Then Check if user is logged in on Tenant app
@@ -69,7 +80,7 @@ Feature: Tenant APP Test Cases
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
 
-#  @Tenant
+  @Tenant @SmokeTest
   Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat
     When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
     Then Check if tenant is logged in
@@ -87,7 +98,7 @@ Feature: Tenant APP Test Cases
     And User logs out from tenant role on tenant side
     Then Check if user is at Tenant login page
 
-#   @Tenant
+  @Tenant @SmokeTest
   Scenario: Property Manager accept Tenant request for HVAC
     When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
     Then Check if user is logged in on Tenant app
@@ -98,7 +109,7 @@ Feature: Tenant APP Test Cases
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
 
-#  @Tenant
+  @Tenant @SmokeTest
   Scenario: Engineer complete Tenant request for HVAC
     When User Enter sopjaniedon@outlook.com as username and KodeL@bs123 as password and click tenant Login
     Then Check if user is logged in on Tenant app
@@ -110,80 +121,80 @@ Feature: Tenant APP Test Cases
     And User logs out from engineer role on tenant side
     Then Check if user is at Tenant login page
 
-##  @Tenant
-#  Scenario: Tenant Admin create Work Order request
-#    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
-#    Then Check if tenant is logged in
-#    And User goes to Work Orders page
-#    And User click add button on tenant page
-#    And User select floor
-#    And User select request category
-#    And User add issue description
-#    And User add issue images
-#    And User click submit request button
-#    Then Check if Work Order request is created successfully
-#    And User logs out from tenant role on tenant side
-#    Then Check if user is at Tenant login page
-#
-##  @Tenant
-#  Scenario: Engineer assign itself Work Order request and Marks as done
-#    When User Enter sopjaniedon@outlook.com as username and KodeL@bs123 as password and click tenant Login
-#    Then Check if user is logged in on Tenant app
-#    And User goes to Work Orders page
-#    And User open request for Work Order request
-#    And User click assign me button
-#    Then Check if request status is changed to In Progress
-#    And User click Mark as Done button
-#    Then Check if request status is changed to Completed
-#    And User logs out from engineer role on tenant side
-#    Then Check if user is at Tenant login page
-#
-##   @Tenant
-#  Scenario: Tenant Admin Evaluate Work Order request
-#    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
-#    Then Check if tenant is logged in
-#    And User goes to Work Orders page
-#    And User open request for Work Order request
-#    And User click Evaluate button
-#    Then Check if request status is changed to Closed
-#    And User logs out from tenant role on tenant side
-#    Then Check if user is at Tenant login page
-#
-##  @Tenant
-#  Scenario: Tenant user create Work Order request
-#    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
-#    Then Check if tenant is logged in
-#    And User goes to Work Orders page
-#    And User click add button on tenant page
-#    And User select floor
-#    And User select request category
-#    And User add issue description
-#    And User add issue images
-#    And User click submit request button
-#    Then Check if Work Order request is created successfully
-#    And User logs out from tenant role on tenant side
-#    Then Check if user is at Tenant login page
-#
-##  @Tenant
-#  Scenario: Engineer assign itself Work Order request and Marks as done
-#    When User Enter sopjaniedon@outlook.com as username and KodeL@bs123 as password and click tenant Login
-#    Then Check if user is logged in on Tenant app
-#    And User goes to Work Orders page
-#    And User open request for Work Order request
-#    And User click assign me button
-#    Then Check if request status is changed to In Progress
-#    And User click Mark as Done button
-#    Then Check if request status is changed to Completed
-#    And User logs out from engineer role on tenant side
-#    Then Check if user is at Tenant login page
-#
-##  @Tenant
-#  Scenario: Tenant Admin Reject Work Order request
-#    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
-#    Then Check if tenant is logged in
-#    And User goes to Work Orders page
-#    And User open request for Work Order request
-#    And User click Evaluate button and reject work order
-#    Then Check if request status is changed to Rejected
-#    And User logs out from tenant role on tenant side
-#    Then Check if user is at Tenant login page
+  @Tenant @SmokeTest
+  Scenario: Tenant Admin create Work Order request
+    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
+    Then Check if tenant is logged in
+    And User goes to Work Orders page
+    And User click add button on tenant page
+    And User add issue images
+    And User select floor
+    And User select request category
+    And User add issue description
+    And User click submit request button
+    Then Check if Work Order request is created successfully
+    And User logs out from tenant role on tenant side
+    Then Check if user is at Tenant login page
+
+  @Tenant @SmokeTest
+  Scenario: Engineer assign itself Work Order request and Marks as done
+    When User Enter sopjaniedon@outlook.com as username and KodeL@bs123 as password and click tenant Login
+    Then Check if user is logged in on Tenant app
+    And User goes to Work Orders page
+    And User open request for Work Order request
+    And User click assign me button
+    Then Check if request status is changed to In Progress
+    And User click Mark as Done button
+    Then Check if request status is changed to Completed
+    And User logs out from engineer role on tenant side
+    Then Check if user is at Tenant login page
+
+  @Tenant @SmokeTest
+  Scenario: Tenant Admin Evaluate Work Order request
+    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
+    Then Check if tenant is logged in
+    And User goes to Work Orders page
+    And User open request for Work Order request
+    And User click Evaluate button
+    Then Check if request status is changed to Closed
+    And User logs out from tenant role on tenant side
+    Then Check if user is at Tenant login page
+
+  @Tenant @SmokeTest
+  Scenario: Tenant user create Work Order request
+    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
+    Then Check if tenant is logged in
+    And User goes to Work Orders page
+    And User click add button on tenant page
+    And User select floor
+    And User select request category
+    And User add issue description
+    And User add issue images
+    And User click submit request button
+    Then Check if Work Order request is created successfully
+    And User logs out from tenant role on tenant side
+    Then Check if user is at Tenant login page
+
+  @Tenant @SmokeTest
+  Scenario: Engineer assign itself Work Order request and Marks as done again
+    When User Enter sopjaniedon@outlook.com as username and KodeL@bs123 as password and click tenant Login
+    Then Check if user is logged in on Tenant app
+    And User goes to Work Orders page
+    And User open request for Work Order request
+    And User click assign me button
+    Then Check if request status is changed to In Progress
+    And User click Mark as Done button
+    Then Check if request status is changed to Completed
+    And User logs out from engineer role on tenant side
+    Then Check if user is at Tenant login page
+
+  @Tenant @SmokeTest
+  Scenario: Tenant Admin Reject Work Order request
+    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
+    Then Check if tenant is logged in
+    And User goes to Work Orders page
+    And User open request for Work Order request
+    And User click Evaluate button and reject work order
+    Then Check if request status is changed to Rejected
+    And User logs out from tenant role on tenant side
+    Then Check if user is at Tenant login page

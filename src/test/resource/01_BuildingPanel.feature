@@ -20,7 +20,7 @@ Feature: 01 Building Panel Tests
     And User add -83.0458 as Longitude
     And User add 2009 as Year build
     And User add 208 as Area
-#    And User add test1.jpg as Image
+    And User add test1.jpg as Image
     And User click Save changes
     Then Check if Auto Test Building appear on list
 

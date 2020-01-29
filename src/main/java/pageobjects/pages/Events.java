@@ -12,7 +12,7 @@ public enum Events implements PageObjects {
     openThreeDotMenu(PageObjectUtils.LocatorType.XPATH, "//li[@class='table-list-item ng-star-inserted' and contains(.,'Automation')]//*[text()[contains(.,'more_vert')]]"),
     addName(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='name']"),
     addDescription(PageObjectUtils.LocatorType.XPATH, "//*[@formcontrolname='description']"),
-    selectSuperAdmin(PageObjectUtils.LocatorType.XPATH, "//mat-option[@class='mat-option mat-option-multiple ng-star-inserted mat-active']"),
+    selectSuperAdmin(PageObjectUtils.LocatorType.XPATH, "(//mat-option[@role='option'])[2]"),
     editButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Edit')]]"),
     typesTab(PageObjectUtils.LocatorType.XPATH, "//label[text()[contains(.,'Types')]]"),
     deleteButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Delete')]]"),

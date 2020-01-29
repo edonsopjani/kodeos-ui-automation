@@ -3,9 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Audit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Audit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Events.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Systems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Systems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Tenant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Tenant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/SearchStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/SearchStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/TenantStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/TenantStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/01_BuildingPanel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/01_BuildingPanel.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/Audit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/Audit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/DevicePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/DevicePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/Events.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/Events.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/Systems.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/Systems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/Tenant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/Tenant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/cmdCucumber-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Attachments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Attachments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Discover.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/Discover.html" afterDir="false" />
@@ -28,9 +39,11 @@
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-17_Tags-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-17_Tags-feature.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-18_UserPanel-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-18_UserPanel-feature.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-19_FloorDetails-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-19_FloorDetails-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-20_UserProfile-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-20_UserProfile-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-21_Roles-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/src-test-resource-21_Roles-feature.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/SearchStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/SearchStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/TenantStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/TenantStepDefs.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +117,7 @@
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: TenantManagment" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -155,15 +168,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Engineer complete Tenant request for HVAC" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Engineer assign itself Work Order request and Marks as done" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Engineer complete Tenant request for HVAC$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Engineer complete Tenant request for HVAC$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Engineer complete Tenant request for HVAC" />
+      <option name="NAME_FILTER" value="^Engineer assign itself Work Order request and Marks as done$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Engineer assign itself Work Order request and Marks as done$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Engineer assign itself Work Order request and Marks as done" />
       <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
       <extension name="coverage">
         <pattern>
@@ -175,15 +188,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Property Manager accept Tenant request for HVAC" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Property Manager Add Tenant admin/user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Property Manager accept Tenant request for HVAC$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Property Manager accept Tenant request for HVAC$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Property Manager accept Tenant request for HVAC" />
+      <option name="NAME_FILTER" value="^Property Manager Add Tenant admin\/user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Property Manager Add Tenant admin\/user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Property Manager Add Tenant admin/user" />
       <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
       <extension name="coverage">
         <pattern>
@@ -195,15 +208,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Property Manager reject Tenant request for HVAC" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Property Manager Delete Tenant admin/user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Property Manager reject Tenant request for HVAC$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Property Manager reject Tenant request for HVAC$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Property Manager reject Tenant request for HVAC" />
+      <option name="NAME_FILTER" value="^Property Manager Delete Tenant admin\/user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Property Manager Delete Tenant admin\/user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Property Manager Delete Tenant admin/user" />
       <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
       <extension name="coverage">
         <pattern>
@@ -215,15 +228,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Tenant Admin create Work Order request" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Tenant Admin create request for AfterHours HVAC with weekly repeat$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Tenant Admin create request for AfterHours HVAC with weekly repeat$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat" />
+      <option name="NAME_FILTER" value="^Tenant Admin create Work Order request$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Tenant Admin create Work Order request$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Tenant Admin create Work Order request" />
       <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
       <extension name="coverage">
         <pattern>
@@ -238,19 +251,19 @@
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Scenario: Property Manager reject Tenant request for HVAC" />
-      <item itemvalue="Cucumber java.Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat" />
-      <item itemvalue="Cucumber java.Scenario: Property Manager accept Tenant request for HVAC" />
-      <item itemvalue="Cucumber java.Scenario: Engineer complete Tenant request for HVAC" />
       <item itemvalue="Cucumber java.Feature: TenantManagment" />
+      <item itemvalue="Cucumber java.Scenario: Tenant Admin create Work Order request" />
+      <item itemvalue="Cucumber java.Scenario: Engineer assign itself Work Order request and Marks as done" />
+      <item itemvalue="Cucumber java.Scenario: Property Manager Add Tenant admin/user" />
+      <item itemvalue="Cucumber java.Scenario: Property Manager Delete Tenant admin/user" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber java.Feature: TenantManagment" />
-        <item itemvalue="Cucumber java.Scenario: Engineer complete Tenant request for HVAC" />
-        <item itemvalue="Cucumber java.Scenario: Property Manager accept Tenant request for HVAC" />
-        <item itemvalue="Cucumber java.Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat" />
-        <item itemvalue="Cucumber java.Scenario: Property Manager reject Tenant request for HVAC" />
+        <item itemvalue="Cucumber java.Scenario: Property Manager Delete Tenant admin/user" />
+        <item itemvalue="Cucumber java.Scenario: Property Manager Add Tenant admin/user" />
+        <item itemvalue="Cucumber java.Scenario: Engineer assign itself Work Order request and Marks as done" />
+        <item itemvalue="Cucumber java.Scenario: Tenant Admin create Work Order request" />
       </list>
     </recent_temporary>
   </component>

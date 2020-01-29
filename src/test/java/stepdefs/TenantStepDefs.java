@@ -17,10 +17,9 @@ public class TenantStepDefs extends CommonStepObjects {
     @Given("^Open Tenant Page$")
     public void openTenantPage() throws Throwable {
         if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
-        driver.navigate().to(System.getProperty("websiteUrl"));
+        driver.navigate().to(System.getProperty("tenantUrl"));
         List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
     }
-
 
     @Then("^Check if user is at Tenant login page$")
     public void checkIfUserIsAtTenantLoginPage() throws Throwable {
@@ -150,6 +149,7 @@ public class TenantStepDefs extends CommonStepObjects {
 
     @Then("^Check if (.*) disappears for that Tenant$")
     public void checkIfAutomationTenantDisappearsForThatTenant(String tenant) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//span[text()[contains(.,'Deleted Successfully')]]"), 20);
         PageObjectUtils.ElementIsNotVisible(driver, By.xpath("//label[text()[contains(.,'" + tenant + "')]]"), 10);
     }
 
@@ -214,7 +214,7 @@ public class TenantStepDefs extends CommonStepObjects {
     @And("^User select weekly repeat$")
     public void userSelectWeeklyRepeat() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Tenant.weeklyCheckbox.getBy(), 10);
-        Thread.sleep(200);
+        Thread.sleep(500);
         Tenant.weeklyCheckbox.getElement().click();
 
     }
@@ -222,14 +222,21 @@ public class TenantStepDefs extends CommonStepObjects {
     @And("^User select every Tuesday$")
     public void userSelectEveryTuesday() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Tenant.selectTuesday.getBy(), 10);
-        Thread.sleep(200);
+        Thread.sleep(500);
         Tenant.selectTuesday.getElement().click();
+        Tenant.selectWen.getElement().click();
+        Tenant.selectThu.getElement().click();
+        Tenant.selectFri.getElement().click();
+        Tenant.selectSun.getElement().click();
+        Tenant.selectSat.getElement().click();
+        Tenant.selectMon.getElement().click();
+        Thread.sleep(5200);
     }
 
     @And("^User click submit request button$")
     public void userClickSubmitRequestButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Tenant.submitRequestButton.getBy(), 10);
-        Thread.sleep(200);
+        Thread.sleep(500);
         Tenant.submitRequestButton.getElement().click();
     }
 
@@ -278,6 +285,22 @@ public class TenantStepDefs extends CommonStepObjects {
                 Thread.sleep(220);
                 driver.findElement(By.xpath("//h2[text()[contains(.,'Request Details')]]")).click();
                 break;
+            case "In Progress":
+                PageObjectUtils.IsElementVisible(driver, By.xpath("//div[text()[contains(.,'In Progress')]]"), 10);
+                Thread.sleep(220);
+                break;
+            case "Completed":
+                PageObjectUtils.IsElementVisible(driver, By.xpath("//div[text()[contains(.,'Completed')]]"), 10);
+                Thread.sleep(220);
+                break;
+            case "Rejected":
+                PageObjectUtils.IsElementVisible(driver, By.xpath("//div[text()[contains(.,'Rejected')]]"), 10);
+                Thread.sleep(220);
+                break;
+            case "Closed":
+                PageObjectUtils.IsElementVisible(driver, By.xpath("//div[text()[contains(.,'Closed')]]"), 10);
+                Thread.sleep(220);
+                break;
         }
     }
 
@@ -301,5 +324,125 @@ public class TenantStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, Tenant.completeRequestButton.getBy(), 10);
         Thread.sleep(200);
         Tenant.completeRequestButton.getElement().click();
+    }
+
+    @And("^User goes to Work Orders page$")
+    public void userGoesToWorkOrdersPage() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.workOrders.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.workOrders.getElement().click();
+    }
+
+    @And("^User select request category$")
+    public void userSelectRequestCategory() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.selectCategoryDropdown.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.selectCategoryDropdown.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.selectFirstOption.getBy(), 10);
+        Tenant.selectFirstOption.getElement().click();
+    }
+
+    @And("^User add issue description$")
+    public void userAddIssueDescription() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.issueDescriptionTextArea.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.issueDescriptionTextArea.getElement().sendKeys("Automation Description");
+    }
+
+    @And("^User add issue images$")
+    public void userAddIssueImages() throws Throwable {
+        //Add building image
+        WebElement fileInput = Tenant.inputPhotos.getElement();
+        fileInput.sendKeys(PageObjectUtils.filePathForUpload("test1.jpg"));
+        Thread.sleep(1000);
+    }
+
+    @Then("^Check if Work Order request is created successfully$")
+    public void checkIfWorkOrderRequestIsCreatedSuccessfully() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//span[text()[contains(.,'Saved Successfully')]]"), 20);
+        Thread.sleep(1000);
+    }
+
+    @And("^User open request for Work Order request$")
+    public void userOpenRequestForWorkOrderRequest() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'Admin Tenant')]]"), 10);
+        Thread.sleep(200);
+        driver.findElement(By.xpath("//label[text()[contains(.,'Admin Tenant')]]")).click();
+    }
+
+    @And("^User click assign me button$")
+    public void userClickAssignMeButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.assignMeButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.assignMeButton.getElement().click();
+    }
+
+    @And("^User click Mark as Done button$")
+    public void userClickMarkAsDoneButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.markAsDoneButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.markAsDoneButton.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.sourceOfIssueDropdown.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.sourceOfIssueDropdown.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.selectFirstOption.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.selectFirstOption.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.issueDescriptionTextArea.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.issueDescriptionTextArea.getElement().sendKeys("Automation");
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.submitButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.submitButton.getElement().click();
+    }
+
+    @And("^User click Evaluate button and reject work order$")
+    public void userClickEvaluateButtonAndRejectWorkOrder() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.evaluateButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.evaluateButton.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.rejectButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.rejectButton.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.issueDescriptionTextArea.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.issueDescriptionTextArea.getElement().sendKeys("Automation");
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.submitButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.submitButton.getElement().click();
+    }
+
+    @And("^User click Evaluate button$")
+    public void userClickEvaluateButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.evaluateButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.evaluateButton.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.issueDescriptionTextArea.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.issueDescriptionTextArea.getElement().sendKeys("Automation");
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.submitButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.submitButton.getElement().click();
+    }
+
+    @And("^User delete (.*) tenant user$")
+    public void userDeleteTenantUser(String tenant) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + tenant + "')]]/.."), 10);
+        Thread.sleep(500);
+        driver.findElement(By.xpath("//label[text()[contains(.,'" + tenant + "')]]/..")).click();
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.deleteButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.deleteButton.getElement().click();
     }
 }

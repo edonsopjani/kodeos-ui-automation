@@ -19,9 +19,9 @@ public enum Audit implements PageObjects {
     saveFilters(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Save Filters')]]"),
     applyButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Apply')]]"),
     yesButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Yes')]]"),
-    addTemplateName(PageObjectUtils.LocatorType.XPATH, "//div[@class='mat-form-field-infix']//input"),
+    addTemplateName(PageObjectUtils.LocatorType.ID, "templateName"),
     addFilterName(PageObjectUtils.LocatorType.XPATH, "//div[@class='mat-form-field-infix']//input"),
-    addTemplateDescription(PageObjectUtils.LocatorType.XPATH, "//div[@class='mat-form-field-infix']//textarea"),
+    addTemplateDescription(PageObjectUtils.LocatorType.XPATH, "templateDescription"),
     next(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Next')]]"),
     saveFiltersButton(PageObjectUtils.LocatorType.XPATH, "//div[@class='dialog-container']//span[text()[contains(.,'Save')]]");
 
