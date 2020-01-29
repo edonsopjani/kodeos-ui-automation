@@ -1071,6 +1071,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         inside.get(1).sendKeys(test);
        // Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.clickBuilding.getBy(), 15);
+        Thread.sleep(200);
         BuildingPanel.clickBuilding.getElement().click();
     }
 
