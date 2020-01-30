@@ -21,7 +21,7 @@ public enum BuildingPanel implements PageObjects {
     AddMultipleFloor(PageObjectUtils.LocatorType.XPATH, "//i[contains(text(), 'playlist_add')]"),
     AddFloor(PageObjectUtils.LocatorType.XPATH, "//i[contains(text(), 'exposure_plus_1')]"),
     editButton(PageObjectUtils.LocatorType.XPATH, "//i[contains(text(), 'edit')]"),
-    clickBuilding(PageObjectUtils.LocatorType.XPATH, "//td//*[contains(text(), 'KODE Labs')]"),
+    clickBuilding(PageObjectUtils.LocatorType.XPATH, "//label[contains(text(), 'Assign Buildings')]/..//td//*[contains(text(), 'KODE Labs')]"),
     RemoveUsers(PageObjectUtils.LocatorType.XPATH, "//i[contains(text(), 'delete_outline')]"),
     AddFloorOverlay(PageObjectUtils.LocatorType.XPATH, "//input[@type='file' and @accept='.svg']"),
     CheckFloorOverlay(PageObjectUtils.LocatorType.XPATH, "//*[@class='leaflet-zoom-animated']"),

@@ -1290,9 +1290,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
     public void deletePointName(String template) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, template);
         PageObjectUtils.ContainsText(driver, template).click();
-       // Thread.sleep(1000);
+        Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, "Delete").click();
-       // Thread.sleep(1000);
+        Thread.sleep(200);
         PageObjectUtils.ContainsText(driver, "Yes").click();
        // Thread.sleep(1000);
     }
