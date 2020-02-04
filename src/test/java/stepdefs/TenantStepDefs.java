@@ -242,14 +242,14 @@ public class TenantStepDefs extends CommonStepObjects {
 
     @Then("^Check if After Hours HVAC request is created successfully$")
     public void checkIfAfterHoursHVACRequestIsCreatedSuccessfully() {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'Admin Tenant')]]"), 10);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'Tristan Thomson')]]"), 10);
     }
 
     @And("^User open request for After Hours request$")
     public void userOpenRequestForAfterHoursRequest() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'Admin Tenant')]]"), 10);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'Tristan Thomson')]]"), 10);
         Thread.sleep(200);
-        driver.findElement(By.xpath("//label[text()[contains(.,'Admin Tenant')]]")).click();
+        driver.findElement(By.xpath("//label[text()[contains(.,'Tristan Thomson')]]")).click();
     }
 
     @And("^User click reject button$")
@@ -329,8 +329,9 @@ public class TenantStepDefs extends CommonStepObjects {
     @And("^User goes to Work Orders page$")
     public void userGoesToWorkOrdersPage() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Tenant.workOrders.getBy(), 10);
-        Thread.sleep(200);
+        Thread.sleep(250);
         Tenant.workOrders.getElement().click();
+        Thread.sleep(50);
     }
 
     @And("^User select request category$")
@@ -366,9 +367,9 @@ public class TenantStepDefs extends CommonStepObjects {
 
     @And("^User open request for Work Order request$")
     public void userOpenRequestForWorkOrderRequest() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'Admin Tenant')]]"), 10);
-        Thread.sleep(200);
-        driver.findElement(By.xpath("//label[text()[contains(.,'Admin Tenant')]]")).click();
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'Tristan Thomson')]]"), 13);
+        Thread.sleep(700);
+        driver.findElement(By.xpath("//label[text()[contains(.,'Tristan Thomson')]]")).click();
     }
 
     @And("^User click assign me button$")

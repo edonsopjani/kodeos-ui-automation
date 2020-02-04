@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/BuildingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/BuildingPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/BuildingPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/BuildingPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/TenantStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/TenantStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/TenantStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/TenantStepDefs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: 15_Templates">
+  <component name="RunManager" selected="Cucumber java.Feature: TenantManagment">
     <configuration name="Feature: 15_Templates" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/15_Templates.feature" />
@@ -118,27 +117,7 @@
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: TenantManagment" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://tenant.qa.kode-dev.com" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Add New Building" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/01_BuildingPanel.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Add New Building$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add New Building$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add New Building" />
-      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=chrome -DwebsiteUrl=https://bms.qa.kode-dev.com" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteBrowser=headless -DwebsiteUrl=https://bms.staging.kode-dev.com -DtenantUrl=https://tenant.staging.kode-dev.com " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -209,22 +188,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Engineer assign itself Work Order request and Marks as done again" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="NAME_FILTER" value="^Engineer assign itself Work Order request and Marks as done again$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Engineer assign itself Work Order request and Marks as done again$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Engineer assign itself Work Order request and Marks as done again" />
+      <option name="VM_PARAMETERS" value="-ea -Denvironment=qa -DwebsiteUrl=https://bms.staging.kode-dev.com -DtenantUrl=https://tenant.staging.kode-dev.com -DwebsiteBrowser=chrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
       <item itemvalue="Cucumber java.Feature: TenantManagment" />
-      <item itemvalue="Cucumber java.Scenario: Add New Building" />
       <item itemvalue="Cucumber java.Scenario: Edit Summary Widget on Dashboard" />
       <item itemvalue="Cucumber java.Feature: 18_UserPanel" />
       <item itemvalue="Cucumber java.Feature: 15_Templates" />
+      <item itemvalue="Cucumber java.Scenario: Engineer assign itself Work Order request and Marks as done again" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: TenantManagment" />
+        <item itemvalue="Cucumber java.Scenario: Engineer assign itself Work Order request and Marks as done again" />
         <item itemvalue="Cucumber java.Feature: 15_Templates" />
         <item itemvalue="Cucumber java.Feature: 18_UserPanel" />
         <item itemvalue="Cucumber java.Scenario: Edit Summary Widget on Dashboard" />
-        <item itemvalue="Cucumber java.Scenario: Add New Building" />
-        <item itemvalue="Cucumber java.Feature: TenantManagment" />
       </list>
     </recent_temporary>
   </component>
