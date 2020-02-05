@@ -4,6 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import generalUtils.ConfigFile;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pageobjects.pages.PageObjectUtils;
@@ -17,7 +18,7 @@ public class TenantStepDefs extends CommonStepObjects {
     @Given("^Open Tenant Page$")
     public void openTenantPage() throws Throwable {
         if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
-        driver.navigate().to(System.getProperty("tenantUrl"));
+        driver.navigate().to(ConfigFile.getInstance().getTenantUrl());
         List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
     }
 
@@ -31,8 +32,8 @@ public class TenantStepDefs extends CommonStepObjects {
     public void loginAs(String username, String password) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Tenant.username.getBy(), 10);
         Thread.sleep(100);
-        Tenant.username.getElement().sendKeys(username);
-        Tenant.password.getElement().sendKeys(password);
+        Tenant.username.getElement().sendKeys(ConfigFile.getInstance().getConfigFileValueFromName(username));
+        Tenant.password.getElement().sendKeys(ConfigFile.getInstance().getConfigFileValueFromName(password));
 
         Tenant.loginButton.getElement().click();
     }

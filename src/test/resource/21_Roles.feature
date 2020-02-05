@@ -6,7 +6,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as Super Admin
-    When User Enter user@super.com as username and KodeL@bs123 as password and click Login
+    When User Enter SuperAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And Go to User Profile
     Then Check if user role is SuperAdmin
@@ -15,7 +15,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as System Admin
-    When User Enter user@system.com as username and KodeL@bs123 as password and click Login
+    When User Enter SystemAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And Go to User Profile
     Then Check if user role is SystemAdmin
@@ -24,7 +24,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as User Admin
-    When User Enter user@admin.com as username and KodeL@bs123 as password and click Login
+    When User Enter UserAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And Go to User Profile
     Then Check if user role is UserAdmin
@@ -33,7 +33,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as User Admin can't add Units
-    When User Enter user@admin.com as username and KodeL@bs123 as password and click Login
+    When User Enter UserAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And User Go To admin panel
     Then Check if user is at Admin panel
@@ -46,7 +46,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as System Admin can't add Units
-    When User Enter user@system.com as username and KodeL@bs123 as password and click Login
+    When User Enter SystemAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And User Go To admin panel
     Then Check if user is at Admin panel
@@ -59,7 +59,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as User Admin can't add Tags
-    When User Enter user@admin.com as username and KodeL@bs123 as password and click Login
+    When User Enter UserAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And User Go To admin panel
     Then Check if user is at Admin panel
@@ -72,7 +72,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as System Admin can't add Tags
-    When User Enter user@system.com as username and KodeL@bs123 as password and click Login
+    When User Enter SystemAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And User Go To admin panel
     Then Check if user is at Admin panel
@@ -86,7 +86,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as User Admin can't see unassigned buildings
-    When User Enter user@admin.com as username and KodeL@bs123 as password and click Login
+    When User Enter UserAdmin as username and Password as password and click Login
     Then Check if user is logged in
     Then Check if Chrysler House Building do not appear at Buildings list
     And Go to User Profile
@@ -95,7 +95,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as User Only can't see unassigned buildings
-    When User Enter user@only.com as username and KodeL@bs123 as password and click Login
+    When User Enter User as username and Password as password and click Login
     Then Check if user is logged in
     Then Check if Chrysler House Building do not appear at Buildings list
     And Go to User Profile
@@ -104,7 +104,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as ViewOnly User can't see unassigned buildings
-    When User Enter user@viewonly.com as username and KodeL@bs123 as password and click Login
+    When User Enter ViewOnly as username and Password as password and click Login
     Then Check if user is logged in
     Then Check if Chrysler House Building do not appear at Buildings list
     And Go to User Profile
@@ -114,7 +114,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as User Admin can't edit building dashboard
-    When User Enter user@admin.com as username and KodeL@bs123 as password and click Login
+    When User Enter UserAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And User click twice on Automation Testing building
     Then Check if Automation Testing Dashboard appears
@@ -125,7 +125,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as User Only can't edit building dashboard
-    When User Enter user@only.com as username and KodeL@bs123 as password and click Login
+    When User Enter User as username and Password as password and click Login
     Then Check if user is logged in
     And User click twice on Automation Testing building
     Then Check if Automation Testing Dashboard appears
@@ -136,7 +136,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as ViewOnly User can't edit building dashboard
-    When User Enter user@viewonly.com as username and KodeL@bs123 as password and click Login
+    When User Enter ViewOnly as username and Password as password and click Login
     Then Check if user is logged in
     And User click twice on Automation Testing building
     Then Check if Automation Testing Dashboard appears
@@ -147,7 +147,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as User Admin can't see Templates on Admin Panel
-    When User Enter user@admin.com as username and KodeL@bs123 as password and click Login
+    When User Enter UserAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And User Go To admin panel
     Then Check if Template page do not appear
@@ -157,7 +157,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as System Admin can't see Templates on Admin Panel
-    When User Enter user@system.com as username and KodeL@bs123 as password and click Login
+    When User Enter SystemAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And User Go To admin panel
     Then Check if Template page do not appear
@@ -168,7 +168,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as User
-    When User Enter user@only.com as username and KodeL@bs123 as password and click Login
+    When User Enter User as username and Password as password and click Login
     Then Check if user is logged in
     And Go to User Profile
     Then Check if user role is User
@@ -177,7 +177,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as User can't see Admin Panel
-    When User Enter user@only.com as username and KodeL@bs123 as password and click Login
+    When User Enter User as username and Password as password and click Login
     Then Check if user is logged in
     Then Check if Admin Panel button do not appear
     And Go to User Profile
@@ -186,7 +186,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as ViewOnly
-    When User Enter user@viewonly.com as username and KodeL@bs123 as password and click Login
+    When User Enter ViewOnly as username and Password as password and click Login
     Then Check if user is logged in
     And Go to User Profile
     Then Check if user role is ViewOnly
@@ -195,7 +195,7 @@ Feature: 21 User Roles Tests
 
   @SmokeTest @Roles
   Scenario: Login as ViewOnly can't see Admin Panel
-    When User Enter user@viewonly.com as username and KodeL@bs123 as password and click Login
+    When User Enter ViewOnly as username and Password as password and click Login
     Then Check if user is logged in
     Then Check if Admin Panel button do not appear
     And Go to User Profile

@@ -7,7 +7,7 @@ Feature: 13 Access Tests
 
   @Access @SmokeTest
   Scenario: User request access to building
-    When User Enter user@access.com as username and KodeL@bs123 as password and click Login
+    When User Enter AccessUser as username and Password as password and click Login
     Then Check if user is logged in
     And User Click on Access button
     Then Check if Access page appears
@@ -19,7 +19,7 @@ Feature: 13 Access Tests
 
   @Access @SmokeTest
   Scenario: Admin approve request from user to specific building
-    When User Enter user@super.com as username and KodeL@bs123 as password and click Login
+    When User Enter SuperAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And User Click on Access button
     Then Check if Access page appears
@@ -28,13 +28,13 @@ Feature: 13 Access Tests
 
   @Access @SmokeTest
   Scenario: User log in to see if building appears on Sites page
-    When User Enter user@access.com as username and KodeL@bs123 as password and click Login
+    When User Enter AccessUser as username and Password as password and click Login
     Then Check if user is logged in
     Then Check if Automation Testing building appears on list
 
   @Access @SmokeTest
   Scenario: Admin reject request from user to specific building
-    When User Enter user@super.com as username and KodeL@bs123 as password and click Login
+    When User Enter SuperAdmin as username and Password as password and click Login
     Then Check if user is logged in
     And User Click on Access button
     Then Check if Access page appears
@@ -43,7 +43,7 @@ Feature: 13 Access Tests
 
   @Access @SmokeTest
   Scenario: User delete the request from access page
-    When User Enter user@access.com as username and KodeL@bs123 as password and click Login
+    When User Enter AccessUser as username and Password as password and click Login
     Then Check if user is logged in
     And User Click on Access button
     Then Check if Access page appears

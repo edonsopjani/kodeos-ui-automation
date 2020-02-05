@@ -1,5 +1,6 @@
 package selenium;
 
+import generalUtils.ConfigFile;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -32,7 +33,7 @@ public class WebDriverFactory {
     private WebDriver createWebDriver() {
         WebDriver driver = null;
         char b;
-        String browser = System.getProperty("websiteBrowser").toLowerCase();
+        String browser = ConfigFile.getInstance().getBrowser().toLowerCase();
         if (browser.equals("headless")) {
             b = 'h';
         } else if(browser.equals("chrome")){

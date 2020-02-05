@@ -3,6 +3,7 @@ package stepdefs;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import generalUtils.ConfigFile;
 import org.openqa.selenium.By;
 import pageobjects.pages.*;
 
@@ -115,8 +116,8 @@ public class UserProfileStepDefs extends CommonStepObjects {
     public void loginAs(String username, String password) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@formcontrolname='email']"), 15);
 
-        driver.findElement(By.xpath("//*[@formcontrolname='email']")).sendKeys(username);
-        driver.findElement(By.xpath("//*[@formcontrolname='password']")).sendKeys(password);
+        driver.findElement(By.xpath("//*[@formcontrolname='email']")).sendKeys(ConfigFile.getInstance().getConfigFileValueFromName(username));
+        driver.findElement(By.xpath("//*[@formcontrolname='password']")).sendKeys(ConfigFile.getInstance().getConfigFileValueFromName(password));
 
         driver.findElement((By.xpath("//*[contains(text(),'Login')]"))).click();
     }

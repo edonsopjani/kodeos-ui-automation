@@ -8,7 +8,7 @@ Feature: Tenant APP
 #    TODO:
 # @Tenant
 #  Scenario: Create New Tenant
-#    When User Enter user@super.com as username and KodeL@bs123 as password and click tenant Login
+#    When User Enter SuperAdmin as username and Password as password and click tenant Login
 #    Then Check if user is logged in on Tenant app
 #    And User goes to Tenant Management page
 #    And User click add button on tenant page
@@ -18,7 +18,7 @@ Feature: Tenant APP
 #    TODO:
 #  @Tenant
 #  Scenario: Configure Tenant
-#    When User Enter user@super.com as username and KodeL@bs123 as password and click tenant Login
+#    When User Enter SuperAdmin as username and Password as password and click tenant Login
 #    Then Check if user is logged in on Tenant app
 #    And User goes to Tenant Management page
 #    And User open tenantName tenant page
@@ -32,7 +32,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Property Manager Add Tenant admin/user
-    When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Tenant Management page
     And User open Burger King tenant page
@@ -44,7 +44,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Property Manager Delete Tenant admin/user
-    When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Tenant Management page
     And User open Burger King tenant page
@@ -55,7 +55,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Tenant Admin create request for AfterHours HVAC
-    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
+    When User Enter TenantAdmin as username and Password as password and click tenant Login
     Then Check if tenant is logged in
     And User goes to After Hours HVAC page
     And User click add button on tenant page
@@ -71,7 +71,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Property Manager reject Tenant request for HVAC
-    When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User open request for After Hours request
     And User click reject button
@@ -82,7 +82,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat
-    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
+    When User Enter TenantAdmin as username and Password as password and click tenant Login
     Then Check if tenant is logged in
     And User goes to After Hours HVAC page
     And User click add button on tenant page
@@ -100,7 +100,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Property Manager accept Tenant request for HVAC
-    When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User open request for After Hours request
     And User click approve button
@@ -111,7 +111,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Engineer complete Tenant request for HVAC
-    When User Enter sopjaniedon@outlook.com as username and KodeL@bs123 as password and click tenant Login
+    When User Enter Engineer as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to approved tab
     And User open request for After Hours request
@@ -123,7 +123,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Tenant Admin create Work Order request
-    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
+    When User Enter TenantAdmin as username and Password as password and click tenant Login
     Then Check if tenant is logged in
     And User goes to Work Orders page
     And User click add button on tenant page
@@ -138,7 +138,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Engineer assign itself Work Order request and Marks as done
-    When User Enter sopjaniedon@outlook.com as username and KodeL@bs123 as password and click tenant Login
+    When User Enter Engineer as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
     And User open request for Work Order request
@@ -151,7 +151,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Tenant Admin Evaluate Work Order request
-    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
+    When User Enter TenantAdmin as username and Password as password and click tenant Login
     Then Check if tenant is logged in
     And User goes to Work Orders page
     And User open request for Work Order request
@@ -162,7 +162,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Property manager create Work Order request
-    When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
     And User click add button on tenant page
@@ -178,7 +178,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Engineer assign itself Work Order request and Marks as done again
-    When User Enter sopjaniedon@outlook.com as username and KodeL@bs123 as password and click tenant Login
+    When User Enter Engineer as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
     And User open request for Work Order
@@ -191,7 +191,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Property manager Reject Work Order request
-    When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
     And User open request for Work Order
