@@ -161,18 +161,19 @@ Feature: Tenant APP
     Then Check if user is at Tenant login page
 
   @Tenant @SmokeTest
-  Scenario: Tenant user create Work Order request
-    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
-    Then Check if tenant is logged in
+  Scenario: Property manager create Work Order request
+    When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
+    Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
     And User click add button on tenant page
+    And User select tenant
     And User select floor
     And User select request category
     And User add issue description
     And User add issue images
     And User click submit request button
     Then Check if Work Order request is created successfully
-    And User logs out from tenant role on tenant side
+    And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
 
   @Tenant @SmokeTest
@@ -180,7 +181,7 @@ Feature: Tenant APP
     When User Enter sopjaniedon@outlook.com as username and KodeL@bs123 as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
-    And User open request for Work Order request
+    And User open request for Work Order
     And User click assign me button
     Then Check if request status is changed to In Progress
     And User click Mark as Done button
@@ -189,12 +190,12 @@ Feature: Tenant APP
     Then Check if user is at Tenant login page
 
   @Tenant @SmokeTest
-  Scenario: Tenant Admin Reject Work Order request
-    When User Enter edonicardi@gmail.com as username and KodeL@bs123 as password and click tenant Login
-    Then Check if tenant is logged in
+  Scenario: Property manager Reject Work Order request
+    When User Enter es30323@ubt-uni.net as username and KodeL@bs123 as password and click tenant Login
+    Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
-    And User open request for Work Order request
+    And User open request for Work Order
     And User click Evaluate button and reject work order
     Then Check if request status is changed to Rejected
-    And User logs out from tenant role on tenant side
+    And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page

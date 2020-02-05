@@ -329,9 +329,9 @@ public class TenantStepDefs extends CommonStepObjects {
     @And("^User goes to Work Orders page$")
     public void userGoesToWorkOrdersPage() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Tenant.workOrders.getBy(), 10);
-        Thread.sleep(250);
+        Thread.sleep(1000);
         Tenant.workOrders.getElement().click();
-        Thread.sleep(50);
+        Thread.sleep(250);
     }
 
     @And("^User select request category$")
@@ -370,6 +370,13 @@ public class TenantStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'Tristan Thomson')]]"), 13);
         Thread.sleep(700);
         driver.findElement(By.xpath("//label[text()[contains(.,'Tristan Thomson')]]")).click();
+    }
+
+    @And("^User open request for Work Order$")
+    public void propertyManagerOpenRequestForWorkOrderRequest() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'KODE Labs')]]"), 13);
+        Thread.sleep(700);
+        driver.findElement(By.xpath("//label[text()[contains(.,'KODE Labs')]]")).click();
     }
 
     @And("^User click assign me button$")
@@ -445,5 +452,16 @@ public class TenantStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, Tenant.deleteButton.getBy(), 10);
         Thread.sleep(200);
         Tenant.deleteButton.getElement().click();
+    }
+
+    @And("^User select tenant$")
+    public void userSelectTenant() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.selectBuildingDropdown.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.selectBuildingDropdown.getElement().click();
+
+        PageObjectUtils.IsElementVisible(driver, Tenant.selectFirstOption.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.selectFirstOption.getElement().click();
     }
 }
