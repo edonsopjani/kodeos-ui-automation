@@ -11,7 +11,7 @@ Feature: 12 Audit Tests
   @Audit @SmokeTest
   Scenario: Create Specific Building Audit Template
     When User click Add Audit template
-    And User select VAV type and select Zone Temperature and Zone Temperature Setpoint
+    And User select VAV type and select Discharge Air Temperature and Zone Temperature Setpoint
     And User click next button
     And User Add VAV Template as Template name
     And User click Save button

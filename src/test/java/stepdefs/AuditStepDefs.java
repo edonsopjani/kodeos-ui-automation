@@ -42,6 +42,7 @@ public class AuditStepDefs extends CommonStepObjects {
     @And("^User click next button$")
     public void clickNextButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Audit.next.getBy(), 15);
+        Thread.sleep(500);
         Audit.next.getElement().click();
     }
 
