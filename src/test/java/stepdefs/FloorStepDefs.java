@@ -24,7 +24,7 @@ public class FloorStepDefs extends CommonStepObjects {
 
     @Then("^Check if floor plan appears$")
     public void checkFloorPlan() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'Saved Successfully')]]"), 15);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'Saved Successfully')]]"), 35);
         Thread.sleep(500);
     }
 
