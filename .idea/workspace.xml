@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/FloorStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/FloorStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/02_DiscoverDevices.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/02_DiscoverDevices.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/FloorStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/FloorStepDefs.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: 19_FloorDetails">
+  <component name="RunManager" selected="Cucumber java.Feature: TenantManagment">
     <configuration name="Feature: 01_BuildingPanel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/01_BuildingPanel.feature" />
@@ -89,14 +90,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: 12_Audit" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: 19_FloorDetails" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/12_Audit.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/19_FloorDetails.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: 12_Audit" />
+      <option name="SUGGESTED_NAME" value="Feature: 19_FloorDetails" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -107,14 +108,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: 19_FloorDetails" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: TenantManagment" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/19_FloorDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: 19_FloorDetails" />
+      <option name="SUGGESTED_NAME" value="Feature: TenantManagment" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -206,19 +207,19 @@
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Feature: 12_Audit" />
       <item itemvalue="Cucumber java.Scenario: Add point to Template from Point Batch Update" />
       <item itemvalue="Cucumber java.Scenario: Remove point from Template at Point Batch Update" />
       <item itemvalue="Cucumber java.Feature: 01_BuildingPanel" />
       <item itemvalue="Cucumber java.Feature: 19_FloorDetails" />
+      <item itemvalue="Cucumber java.Feature: TenantManagment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: TenantManagment" />
         <item itemvalue="Cucumber java.Feature: 19_FloorDetails" />
         <item itemvalue="Cucumber java.Feature: 01_BuildingPanel" />
         <item itemvalue="Cucumber java.Scenario: Remove point from Template at Point Batch Update" />
         <item itemvalue="Cucumber java.Scenario: Add point to Template from Point Batch Update" />
-        <item itemvalue="Cucumber java.Feature: 12_Audit" />
       </list>
     </recent_temporary>
   </component>
