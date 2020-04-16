@@ -338,7 +338,7 @@ public class TenantStepDefs extends CommonStepObjects {
     @And("^User goes to Tenant Control page$")
     public void userGoesToTenantControl() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Tenant.tenantControl.getBy(), 10);
-        Thread.sleep(500);
+        Thread.sleep(800);
         Tenant.tenantControl.getElement().click();
         Thread.sleep(250);
     }
@@ -478,6 +478,8 @@ public class TenantStepDefs extends CommonStepObjects {
     public void checkIfUserIsAtCardView(String view) {
         switch (view) {
             case "card":
+                PageObjectUtils.IsElementVisible(driver, Tenant.switchToCardView.getBy(), 10);
+                Tenant.switchToCardView.getElement().click();
                 PageObjectUtils.IsElementVisible(driver, Tenant.checkCardView.getBy(), 10);
                 break;
             case "map":

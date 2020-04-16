@@ -19,6 +19,7 @@ public enum Tenant implements PageObjects {
     checkCardView(PageObjectUtils.LocatorType.XPATH, "//h4[contains(text(), 'Goat Room')]"),
     checkMapView(PageObjectUtils.LocatorType.XPATH, "//label[contains(text(), 'Goat Room')]"),
     switchToMapView(PageObjectUtils.LocatorType.XPATH, "(//div[@class='flex items-center rounded overflow-hidden bg-white text-primary']//div)[2]"),
+    switchToCardView(PageObjectUtils.LocatorType.XPATH, "(//div[@class='flex items-center rounded overflow-hidden bg-white text-primary']//div)[1]"),
     editNameInputField(PageObjectUtils.LocatorType.TAGNAME, "input"),
     tenantControlEditDeviceButton(PageObjectUtils.LocatorType.XPATH, "//mat-icon[text()[contains(.,'more_vert')]]"),
     selectBuildingsFilterDropdown(PageObjectUtils.LocatorType.XPATH, "//mat-select[@aria-label='Select Buildings']"),

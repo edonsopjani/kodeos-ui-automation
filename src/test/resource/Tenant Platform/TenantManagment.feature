@@ -3,7 +3,6 @@ Feature: Tenant APP
 
   Background: Steps That execute before every scenario
     Given Open Tenant Page
-    Then Check if user is at Tenant login page
 
 #    TODO:
 # @Tenant
@@ -200,16 +199,7 @@ Feature: Tenant APP
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
-  Scenario: Tenant Admin check Card and Map View
-    When User Enter TenantAdmin as username and Password as password and click tenant Login
-    Then Check if tenant is logged in
-    And User goes to Tenant Control page
-    Then Check if User is at card view
-    And User switch to Map view
-    Then Check if User is at map view
-
-  @Tenant @SmokeTest
+  @Tenant @SmokeTest @TenantControl
   Scenario: Tenant Admin change device location name
     When User Enter TenantAdmin as username and Password as password and click tenant Login
     Then Check if tenant is logged in
@@ -224,10 +214,8 @@ Feature: Tenant APP
     And User save the changes on tenant control
     Then Check if device name is changed to Goat Room
 
-  @Tenant @SmokeTest
+  @Tenant @SmokeTest @TenantControl
   Scenario: Tenant Admin write on Point from List view
-    When User Enter TenantAdmin as username and Password as password and click tenant Login
-    Then Check if tenant is logged in
     And User goes to Tenant Control page
     Then Check if User is at card view
     And Tenant goes to Light tab
@@ -237,10 +225,8 @@ Feature: Tenant APP
     And Tenant writes point with value Active
     Then User save the changes on tenant control
 
-  @Tenant @SmokeTest
+  @Tenant @SmokeTest @TenantControl
   Scenario: Tenant Admin write on Point from Map view
-    When User Enter TenantAdmin as username and Password as password and click tenant Login
-    Then Check if tenant is logged in
     And User goes to Tenant Control page
     Then Check if User is at card view
     And Tenant goes to Light tab

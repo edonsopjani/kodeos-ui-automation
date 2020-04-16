@@ -5,15 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Tenant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/Tenant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/FloorStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/FloorStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/TenantStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/TenantStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/Tenant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/Tenant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/FloorStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/FloorStepDefs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/TenantStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/TenantStepDefs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefs/WebsiteStepDefs.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,15 +76,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Tenant Admin write on Point from Map view">
-    <configuration name="Feature: 11_Events" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Feature: TenantManagment">
+    <configuration name="Feature: TenantManagment" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/11_Events.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: 11_Events" />
+      <option name="SUGGESTED_NAME" value="Feature: TenantManagment" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -218,19 +214,19 @@
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Feature: 11_Events" />
       <item itemvalue="Cucumber java.Scenario: Tenant Admin check Card and Map View" />
       <item itemvalue="Cucumber java.Scenario: Tenant Admin change device location name" />
       <item itemvalue="Cucumber java.Scenario: Tenant Admin write on Point" />
       <item itemvalue="Cucumber java.Scenario: Tenant Admin write on Point from Map view" />
+      <item itemvalue="Cucumber java.Feature: TenantManagment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: TenantManagment" />
         <item itemvalue="Cucumber java.Scenario: Tenant Admin write on Point from Map view" />
         <item itemvalue="Cucumber java.Scenario: Tenant Admin write on Point" />
         <item itemvalue="Cucumber java.Scenario: Tenant Admin change device location name" />
         <item itemvalue="Cucumber java.Scenario: Tenant Admin check Card and Map View" />
-        <item itemvalue="Cucumber java.Feature: 11_Events" />
       </list>
     </recent_temporary>
   </component>
