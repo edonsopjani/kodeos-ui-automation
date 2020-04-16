@@ -15,6 +15,7 @@ Feature: 01 Building Panel Tests
     And User add 48127 as ZIP code
     And User add Detroit as City
     And User add Alabama as State
+    And User add Office as Category
     And User add USA as Country
     And User add 42.3314 as Latitude
     And User add -83.0458 as Longitude

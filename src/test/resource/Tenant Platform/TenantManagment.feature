@@ -111,7 +111,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Engineer complete Tenant request for HVAC
-    When User Enter Engineer as username and Password as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to approved tab
     And User open request for After Hours request
@@ -138,7 +138,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Engineer assign itself Work Order request and Marks as done
-    When User Enter Engineer as username and Password as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
     And User open request for Work Order request
@@ -178,7 +178,7 @@ Feature: Tenant APP
 
   @Tenant @SmokeTest
   Scenario: Engineer assign itself Work Order request and Marks as done again
-    When User Enter Engineer as username and Password as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
     And User open request for Work Order

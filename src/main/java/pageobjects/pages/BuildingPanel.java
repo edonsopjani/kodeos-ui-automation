@@ -51,6 +51,7 @@ public enum BuildingPanel implements PageObjects {
     ZipCode(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='zip']"),
     City(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='city']"),
     State(PageObjectUtils.LocatorType.XPATH, "//mat-select[@formcontrolname='state']"),
+    Category(PageObjectUtils.LocatorType.XPATH, "//mat-select[@formcontrolname='primaryFunction']"),
     ClickDeactivate(PageObjectUtils.LocatorType.XPATH, "//*[@class='user-account-enabled-content ng-star-inserted']//i"),
     ClickCreateAccountButton(PageObjectUtils.LocatorType.XPATH, "//i[@mattooltip='Create Account']"),
     ClickUpdateEmail(PageObjectUtils.LocatorType.XPATH, "//i[@mattooltip='Update User Email']"),

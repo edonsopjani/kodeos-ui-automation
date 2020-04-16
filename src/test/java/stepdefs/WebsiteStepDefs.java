@@ -34,7 +34,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @Given("^User goes to Login page$")
     public void goToKodeLabsPage() throws Throwable {
-        try{
+        try {
             PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'New Version Released')]]", 2);
             if (driver.findElement(By.xpath("//*[text()[contains(.,'New Version Released')]]")).isDisplayed()) {
                 driver.findElement(By.xpath("//*[text()[contains(.,'Skip')]]")).click();
@@ -56,7 +56,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
             } else {
 
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
             driver.navigate().to(ConfigFile.getInstance().getBMSUrl());
             //Thread.sleep(2000);
@@ -80,14 +80,14 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @Given("^User goes to Fire Dashboard Login page$")
     public void goToKodeLabsFirePage() throws Throwable {
-        try{
+        try {
             PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'New Version Released')]]", 2);
             if (driver.findElement(By.xpath("//*[text()[contains(.,'New Version Released')]]")).isDisplayed()) {
                 driver.findElement(By.xpath("//*[text()[contains(.,'Skip')]]")).click();
             }
 
             if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
-            driver.navigate().to(ConfigFile.getInstance().getBMSUrl()+"/fire-dashboard/events");
+            driver.navigate().to(ConfigFile.getInstance().getBMSUrl() + "/fire-dashboard/events");
             //Thread.sleep(2000);
 
             List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
@@ -104,9 +104,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
             } else {
 
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
-            driver.navigate().to(ConfigFile.getInstance().getBMSUrl()+"/fire-dashboard/events");
+            driver.navigate().to(ConfigFile.getInstance().getBMSUrl() + "/fire-dashboard/events");
             //Thread.sleep(2000);
 
             List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
@@ -142,62 +142,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @When("^User Open (.*)")
     public void openBuilding(String building) throws Throwable {
-        try {
-            PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(),'" + building + "')]"), 15);
-            Thread.sleep(100);
-            driver.findElement((By.xpath("//*[contains(text(),'" + building + "')]"))).click();
-        } catch (Exception ex) {
-            BuildingPanel.AddNewBuildingButton.getElement().click();
-            PageObjectUtils.CheckContainsText(driver, "Add Building");
-            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
-
-            //Add Name
-            BuildingPanel.Name.getElement().sendKeys("Auto Test Building");
-            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
-
-            //Add Address 1
-            BuildingPanel.Address1.getElement().sendKeys("277 Gratiot Ave");
-
-            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
-
-            //Add ZIP code
-            BuildingPanel.ZipCode.getElement().sendKeys("48127");
-
-            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
-
-            //Add City
-            BuildingPanel.City.getElement().sendKeys("Detroid");
-
-            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
-
-            //Add State
-            BuildingPanel.State.getElement().click();
-            PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//span[contains( text(),'Alabama')]", 15);
-            driver.findElement(By.xpath("//span[contains( text(),'Alabama')]")).click();
-
-            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
-
-            //Add Country
-            BuildingPanel.Country.getElement().sendKeys("USA");
-
-            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
-
-            //Add latitude
-            BuildingPanel.Latitude.getElement().sendKeys("42.3314");
-
-            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
-
-            //Add longitude
-            BuildingPanel.Longitude.getElement().sendKeys("-83.0458");
-
-            PageObjectUtils.IsElementVisible(driver, BuildingPanel.Save.getBy(), 15);
-
-            //Save
-            BuildingPanel.Save.getElement().click();
-
-            PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(),'" + building + "')]"), 15);
-            driver.findElement((By.xpath("//*[contains(text(),'" + building + "')]"))).click();
-        }
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(),'" + building + "')]"), 15);
+        Thread.sleep(200);
+        driver.findElement((By.xpath("//*[contains(text(),'" + building + "')]"))).click();
     }
 
     @And("^User click on Areas Tab$")
@@ -351,15 +298,15 @@ public class WebsiteStepDefs extends CommonStepObjects {
             BuildingPanel.Name.getElement().sendKeys("autoArea");
 
             PageObjectUtils.IsElementVisible(driver, BuildingPanel.Save.getBy(), 15);
-           // Thread.sleep(1000);
+            // Thread.sleep(1000);
             BuildingPanel.Save.getElement().click();
-           // Thread.sleep(1000);
+            // Thread.sleep(1000);
 
             PageObjectUtils.IsElementVisible(driver, BuildingPanel.SearchField.getBy(), 15);
-          //  Thread.sleep(1000);
+            //  Thread.sleep(1000);
             BuildingPanel.SearchField.getElement().clear();
             BuildingPanel.SearchField.getElement().sendKeys("autoArea");
-          //  Thread.sleep(1000);
+            //  Thread.sleep(1000);
 
             BuildingPanel.ThreedotMenu.getElement().click();
         }
@@ -548,7 +495,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         BuildingPanel.AreaConnectors.getElement().click();
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.SelectArea.getBy(), 15);
         BuildingPanel.SelectArea.getElement().click();
-       // Thread.sleep(1000);
+        // Thread.sleep(1000);
         BuildingPanel.IP.getElement().sendKeys("178.132.223.132");
         BuildingPanel.Port.getElement().sendKeys("80");
         BuildingPanel.Model.getElement().sendKeys("Automation");
@@ -574,13 +521,13 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @Then("^Check if connector connection is good$")
     public void checkConnectConnector() throws Throwable {
-      //  Thread.sleep(1000);
+        //  Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'check_circle')]]"), 15);
     }
 
     @Then("^Check if connector with name (.*) disappears from list$")
     public void checkDeletedConnector(String connector) throws Throwable {
-       Thread.sleep(1500);
+        Thread.sleep(1500);
 
         List<WebElement> conn = driver.findElements(By.xpath("//*[text()[contains(.,'" + connector + "')]]"));
         Assert.assertTrue("Connector is not added", conn.isEmpty());
@@ -634,7 +581,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
         //Add Name
         BuildingPanel.Name.getElement().sendKeys(name);
-      //  Thread.sleep(1000);
+        //  Thread.sleep(1000);
     }
 
     @And("^User add (.*) as Address 1")
@@ -676,6 +623,15 @@ public class WebsiteStepDefs extends CommonStepObjects {
         //Add State
         WebElement element = BuildingPanel.State.getElement();
         BuildingPanel.State.getElement().click();
+        PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//span[contains( text(),'" + state + "')]", 15);
+        driver.findElement(By.xpath("//span[contains( text(),'" + state + "')]")).click();
+    }
+
+    @And("^User add (.*) as Category")
+    public void fillCategory(String state) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
+
+        BuildingPanel.Category.getElement().click();
         PageObjectUtils.IsElementVisible(driver, PageObjectUtils.LocatorType.XPATH, "//span[contains( text(),'" + state + "')]", 15);
         driver.findElement(By.xpath("//span[contains( text(),'" + state + "')]")).click();
     }
@@ -727,14 +683,14 @@ public class WebsiteStepDefs extends CommonStepObjects {
         WebElement fileInput = BuildingPanel.AddBuildingImage.getElement();
         //Thread.sleep(1000);
         fileInput.sendKeys(PageObjectUtils.filePathForUpload(image));
-       // Thread.sleep(2000);
+        // Thread.sleep(2000);
     }
 
     @Then("^Check if (.*) appear on list$")
     public void checkBuildingIsAdded(String building) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, building);
         PageObjectUtils.ContainsText(driver, building);
-       // Thread.sleep(2000);
+        // Thread.sleep(2000);
     }
 
     @When("^User clicks on Add new button$")
@@ -1061,7 +1017,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
         //Click save
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Save')]")).click();
-       // Thread.sleep(1000);
+        // Thread.sleep(1000);
     }
 
     @And("^User select building (.*)$")
@@ -1070,7 +1026,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         //Thread.sleep(1000);
         List<WebElement> inside = driver.findElements(BuildingPanel.SecondSearchField.getBy());
         inside.get(1).sendKeys(test);
-       // Thread.sleep(1000);
+        // Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.clickBuilding.getBy(), 15);
         Thread.sleep(200);
         BuildingPanel.clickBuilding.getElement().click();
@@ -1095,13 +1051,13 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.CheckContainsText(driver, "Remove Buildings");
         driver.findElement(By.xpath("//*[@class='search-widget']//*[@placeholder='Search for Buildings']")).sendKeys(building);
         PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin']", 15);
-       // Thread.sleep(1000);
+        // Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@class='mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin']")).click();
-      //  Thread.sleep(1000);
+        //  Thread.sleep(1000);
 
         //Click delete
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Delete')]")).click();
-       //Thread.sleep(1000);
+        //Thread.sleep(1000);
     }
 
     @Then("^Check if (.*) is removed from user$")
@@ -1116,7 +1072,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         //Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Delete')]")).click();
         PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-button-wrapper' and contains(text(), 'Yes')]", 15);
-       // Thread.sleep(1000);
+        // Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Yes')]")).click();
         //Thread.sleep(1000);
     }
@@ -1218,7 +1174,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     public void changeDeletedSectionName() throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "more_vert");
         PageObjectUtils.ContainsText(driver, "more_vert").click();
-       // Thread.sleep(1000);
+        // Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, "Delete Group");
         Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, "Delete Group").click();
@@ -1245,14 +1201,14 @@ public class WebsiteStepDefs extends CommonStepObjects {
         Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, "Add Point").click();
 
-       // Thread.sleep(1000);
+        // Thread.sleep(1000);
     }
 
     @And("^Fill point mandatory fields with name (.*)$")
     public void fillPointFields(String name) throws Throwable {
         Thread.sleep(500);
         BuildingPanel.DisplayName.getElement().sendKeys(name);
-       // Thread.sleep(1000);
+        // Thread.sleep(1000);
         BuildingPanel.Description.getElement().sendKeys(name);
         Thread.sleep(500);
         PageObjectUtils.ContainsText(driver, "Choose type").click();
@@ -1295,7 +1251,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.ContainsText(driver, "Delete").click();
         Thread.sleep(200);
         PageObjectUtils.ContainsText(driver, "Yes").click();
-       // Thread.sleep(1000);
+        // Thread.sleep(1000);
     }
 
     @Then("^Check if point with name (.*) is deleted from list$")
@@ -1331,7 +1287,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @Then("^Check if points (.*) and (.*) are linked$")
     public void checkPointIsLinked(String point1, String point2) throws Throwable {
-       // Thread.sleep(2000);
+        // Thread.sleep(2000);
         PageObjectUtils.CheckContainsText(driver, point1);
         PageObjectUtils.CheckContainsText(driver, point2);
     }
