@@ -1282,12 +1282,13 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @And("^Click Connect Button$")
     public void connectPointsSave() throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "Save");
+        Thread.sleep(100);
         PageObjectUtils.ContainsText(driver, "Save").click();
     }
 
     @Then("^Check if points (.*) and (.*) are linked$")
     public void checkPointIsLinked(String point1, String point2) throws Throwable {
-        // Thread.sleep(2000);
+        Thread.sleep(1000);
         PageObjectUtils.CheckContainsText(driver, point1);
         PageObjectUtils.CheckContainsText(driver, point2);
     }

@@ -199,3 +199,55 @@ Feature: Tenant APP
     Then Check if request status is changed to Rejected
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
+
+  @Tenant @SmokeTest
+  Scenario: Tenant Admin check Card and Map View
+    When User Enter TenantAdmin as username and Password as password and click tenant Login
+    Then Check if tenant is logged in
+    And User goes to Tenant Control page
+    Then Check if User is at card view
+    And User switch to Map view
+    Then Check if User is at map view
+
+  @Tenant @SmokeTest
+  Scenario: Tenant Admin change device location name
+    When User Enter TenantAdmin as username and Password as password and click tenant Login
+    Then Check if tenant is logged in
+    And User goes to Tenant Control page
+    Then Check if User is at card view
+    And Tenant click edit device button
+    And Tenant change name to Automation
+    And User save the changes on tenant control
+    Then Check if device name is changed to Automation
+    And Tenant click edit device button
+    And Tenant change name to Goat Room
+    And User save the changes on tenant control
+    Then Check if device name is changed to Goat Room
+
+  @Tenant @SmokeTest
+  Scenario: Tenant Admin write on Point from List view
+    When User Enter TenantAdmin as username and Password as password and click tenant Login
+    Then Check if tenant is logged in
+    And User goes to Tenant Control page
+    Then Check if User is at card view
+    And Tenant goes to Light tab
+    And Tenant click Meeting Room device from Card view
+    And Tenant writes point with value Inactive
+    Then User save the changes on tenant control
+    And Tenant writes point with value Active
+    Then User save the changes on tenant control
+
+  @Tenant @SmokeTest
+  Scenario: Tenant Admin write on Point from Map view
+    When User Enter TenantAdmin as username and Password as password and click tenant Login
+    Then Check if tenant is logged in
+    And User goes to Tenant Control page
+    Then Check if User is at card view
+    And Tenant goes to Light tab
+    And User switch to Map view
+    Then Check if User is at map view
+    And Tenant click Meeting Room device from Map view
+    And Tenant writes point with value Inactive
+    Then User save the changes on tenant control
+    And Tenant writes point with value Active
+    Then User save the changes on tenant control
