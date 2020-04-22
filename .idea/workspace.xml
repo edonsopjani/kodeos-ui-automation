@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/UserProfilePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/UserProfilePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/UserProfilePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/UserProfilePanel.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: TenantManagment">
+  <component name="RunManager" selected="Cucumber java.Scenario: Property Manager Delete Tenant admin/user">
     <configuration name="Feature: TenantManagment" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
@@ -128,15 +132,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Tenant Admin change device location name" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Property Manager Add Tenant admin/user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Tenant Admin change device location name$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Tenant Admin change device location name$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Tenant Admin change device location name" />
+      <option name="NAME_FILTER" value="^Property Manager Add Tenant admin\/user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Property Manager Add Tenant admin\/user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Property Manager Add Tenant admin/user" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -147,15 +151,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Tenant Admin check Card and Map View" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Property Manager Delete Tenant admin/user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Tenant Admin check Card and Map View$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Tenant Admin check Card and Map View$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Tenant Admin check Card and Map View" />
+      <option name="NAME_FILTER" value="^Property Manager Delete Tenant admin\/user$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Property Manager Delete Tenant admin\/user$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Property Manager Delete Tenant admin/user" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -207,19 +211,19 @@
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Scenario: Tenant Admin check Card and Map View" />
-      <item itemvalue="Cucumber java.Scenario: Tenant Admin change device location name" />
       <item itemvalue="Cucumber java.Scenario: Tenant Admin write on Point" />
       <item itemvalue="Cucumber java.Scenario: Tenant Admin write on Point from Map view" />
       <item itemvalue="Cucumber java.Feature: TenantManagment" />
+      <item itemvalue="Cucumber java.Scenario: Property Manager Add Tenant admin/user" />
+      <item itemvalue="Cucumber java.Scenario: Property Manager Delete Tenant admin/user" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Scenario: Property Manager Delete Tenant admin/user" />
+        <item itemvalue="Cucumber java.Scenario: Property Manager Add Tenant admin/user" />
         <item itemvalue="Cucumber java.Feature: TenantManagment" />
         <item itemvalue="Cucumber java.Scenario: Tenant Admin write on Point from Map view" />
         <item itemvalue="Cucumber java.Scenario: Tenant Admin write on Point" />
-        <item itemvalue="Cucumber java.Scenario: Tenant Admin change device location name" />
-        <item itemvalue="Cucumber java.Scenario: Tenant Admin check Card and Map View" />
       </list>
     </recent_temporary>
   </component>

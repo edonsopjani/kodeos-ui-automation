@@ -6,7 +6,7 @@ import pageobjects.PageElementIds;
 
 public enum UserProfilePanel implements PageObjects {
 
-    goToUserProfile(PageObjectUtils.LocatorType.XPATH, "//*[@routerlink='/real-estate/profile']"),
+    goToUserProfile(PageObjectUtils.LocatorType.XPATH, "//*[@routerlink='/profile']"),
     clickLogout(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Logout')]]"),
     adminPanel(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Admin')]]"),
     templatesPage(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Templates')]]"),
