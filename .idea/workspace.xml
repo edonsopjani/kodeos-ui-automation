@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/UserProfilePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/UserProfilePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/pages/UserProfilePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobjects/pages/UserProfilePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configuration.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
