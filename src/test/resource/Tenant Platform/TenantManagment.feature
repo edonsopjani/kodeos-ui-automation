@@ -34,7 +34,7 @@ Feature: Tenant APP
     When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Tenant Management page
-    And User open Burger King tenant page
+    And User open BelAmi tenant page
     And User click add new tenant user
     And User fill mandatory fields for tenant user input
     Then Check if Automation Tenant appears for that Tenant
@@ -46,7 +46,7 @@ Feature: Tenant APP
     When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Tenant Management page
-    And User open Burger King tenant page
+    And User open BelAmi tenant page
     And User delete Automation Tenant tenant user
     Then Check if Automation Tenant disappears for that Tenant
     And User logs out from propertyManager role on tenant side

@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +37,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563461684713" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/API Testing" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -72,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Search has 3 different part">
+  <component name="RunManager" selected="Cucumber java.Feature: TenantManagment">
     <configuration name="Feature: TenantManagment" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
@@ -81,6 +79,44 @@
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: TenantManagment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Add Document to Device Attachments" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/04_DeviceDetails.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="NAME_FILTER" value="^Add Document to Device Attachments$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add Document to Device Attachments$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add Document to Device Attachments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Add Image to Device Attachments" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/04_DeviceDetails.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="NAME_FILTER" value="^Add Image to Device Attachments$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add Image to Device Attachments$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add Image to Device Attachments" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -131,25 +167,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Property Manager Add Tenant admin/user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Property Manager Add Tenant admin\/user$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Property Manager Add Tenant admin\/user$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Property Manager Add Tenant admin/user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: Property Manager Delete Tenant admin/user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
@@ -188,41 +205,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Tenant Admin write on Point from Map view" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Tenant Platform/TenantManagment.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Tenant Admin write on Point from Map view$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Tenant Admin write on Point from Map view$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Tenant Admin write on Point from Map view" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Cucumber java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber java.Scenario: Tenant Admin write on Point from Map view" />
       <item itemvalue="Cucumber java.Feature: TenantManagment" />
-      <item itemvalue="Cucumber java.Scenario: Property Manager Add Tenant admin/user" />
       <item itemvalue="Cucumber java.Scenario: Property Manager Delete Tenant admin/user" />
       <item itemvalue="Cucumber java.Scenario: Search has 3 different part" />
+      <item itemvalue="Cucumber java.Scenario: Add Document to Device Attachments" />
+      <item itemvalue="Cucumber java.Scenario: Add Image to Device Attachments" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: TenantManagment" />
+        <item itemvalue="Cucumber java.Scenario: Add Image to Device Attachments" />
+        <item itemvalue="Cucumber java.Scenario: Add Document to Device Attachments" />
         <item itemvalue="Cucumber java.Scenario: Search has 3 different part" />
         <item itemvalue="Cucumber java.Scenario: Property Manager Delete Tenant admin/user" />
-        <item itemvalue="Cucumber java.Scenario: Property Manager Add Tenant admin/user" />
-        <item itemvalue="Cucumber java.Feature: TenantManagment" />
-        <item itemvalue="Cucumber java.Scenario: Tenant Admin write on Point from Map view" />
       </list>
     </recent_temporary>
   </component>
