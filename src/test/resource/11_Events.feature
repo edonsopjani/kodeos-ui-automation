@@ -101,8 +101,8 @@ Create Event Config, Create Event, Acknowledge Events etc.
   Scenario: Go To Event Details
     And User goes to Event Dashboard
     And Change Filters to Events that are Unacknowledged
-    And Click High/Low Temp Event
-    Then Check if High/Low Temp Event details page appear
+    And Click Light is OFF Event
+    Then Check if Light is OFF Event details page appear
 
   @SmokeTest @EventsConfig @Events
   Scenario: Disable/Enable event configuration
