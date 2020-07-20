@@ -11,7 +11,7 @@ Feature: 02 Discover Devices Tests
     And User Click on Devices button
     Then Check if the list of Devices appears
 
-  @SmokeTest @Device @Discover
+  @Device @Discover
   Scenario: User make new discover devices from all Edge Devices
     When User click on threedots button
     And User click Device Discovery button
@@ -21,7 +21,7 @@ Feature: 02 Discover Devices Tests
     And User click save changes after discover
     Then Check if Devices appears on the list
 
-  @SmokeTest @Discover
+  @Discover
   Scenario: User make update discover devices from all Edge Devices
     When User delete BR129 device from list
     And User click on threedots button
@@ -34,7 +34,7 @@ Feature: 02 Discover Devices Tests
     And User click save changes and click finish
     Then Check if BR129 device appears on the list
     And User Click on BR129 Device
-    Then Check if Cooling_Demand point appears on device details
+    Then Check if point appears on device details
 
   @Admin @SmokeTest @BuildingPanel @Discover
   Scenario: Delete Connector

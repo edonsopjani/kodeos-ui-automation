@@ -24,7 +24,7 @@ public class DashboardStepDefs extends CommonStepObjects {
     @When("^User Click on floors button$")
     public void clickFloors() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DashboardPanel.FloorsButton.getBy(), 15);
-        Thread.sleep(300);
+        Thread.sleep(600);
         DashboardPanel.FloorsButton.getElement().click();
     }
 

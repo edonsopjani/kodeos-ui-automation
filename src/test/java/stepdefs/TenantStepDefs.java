@@ -335,6 +335,14 @@ public class TenantStepDefs extends CommonStepObjects {
         Thread.sleep(250);
     }
 
+    @And("^User goes to Tenant Control page$")
+    public void userGoesToTenantControl() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.tenantControl.getBy(), 10);
+        Thread.sleep(800);
+        Tenant.tenantControl.getElement().click();
+        Thread.sleep(250);
+    }
+
     @And("^User select request category$")
     public void userSelectRequestCategory() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Tenant.selectCategoryDropdown.getBy(), 10);
@@ -464,5 +472,91 @@ public class TenantStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, Tenant.selectFirstOption.getBy(), 10);
         Thread.sleep(200);
         Tenant.selectFirstOption.getElement().click();
+    }
+
+    @Then("^Check if User is at (.*) view$")
+    public void checkIfUserIsAtCardView(String view) {
+        switch (view) {
+            case "card":
+                PageObjectUtils.IsElementVisible(driver, Tenant.switchToCardView.getBy(), 10);
+                Tenant.switchToCardView.getElement().click();
+                PageObjectUtils.IsElementVisible(driver, Tenant.checkCardView.getBy(), 10);
+                break;
+            case "map":
+                PageObjectUtils.IsElementVisible(driver, Tenant.checkMapView.getBy(), 10);
+                break;
+            default:
+                break;
+        }
+    }
+
+    @And("^User switch to Map view$")
+    public void userSwitchToMapView() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.switchToMapView.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.switchToMapView.getElement().click();
+    }
+
+    @And("^Tenant click edit device button$")
+    public void tenantClickEditDeviceButton() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.tenantControlEditDeviceButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.tenantControlEditDeviceButton.getElement().click();
+    }
+
+    @And("^Tenant change name to (.*)$")
+    public void tenantChangeNameToAutomation(String name) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.editNameInputField.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.editNameInputField.getElement().clear();
+        Thread.sleep(100);
+        Tenant.editNameInputField.getElement().sendKeys(name);
+        Thread.sleep(100);
+    }
+
+    @And("^User save the changes on tenant control$")
+    public void userSaveTheChangesOnTenantControl() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.saveButton.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.saveButton.getElement().click();
+        Thread.sleep(400);
+    }
+
+    @Then("^Check if device name is changed to (.*)$")
+    public void checkIfDeviceNameIsChangedToAutomation(String name) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//h4[contains(text(), '"+name+"')]"), 10);
+        Thread.sleep(200);
+    }
+
+    @And("^Tenant goes to Light tab$")
+    public void tenantGoesToLightTab() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, Tenant.gotoLightsTab.getBy(), 10);
+        Thread.sleep(200);
+        Tenant.gotoLightsTab.getElement().click();
+    }
+
+    @And("^Tenant click (.*) device from (.*) view$")
+    public void tenantClickMeetingRoomDevice(String name,String view) throws Throwable {
+        switch (view){
+            case "Card":
+                PageObjectUtils.IsElementVisible(driver, By.xpath("//h4[contains(text(), '"+name+"')]"), 10);
+                Thread.sleep(200);
+                driver.findElement(By.xpath("//h4[contains(text(), '"+name+"')]")).click();
+                break;
+            case "Map":
+                PageObjectUtils.IsElementVisible(driver, By.xpath("//label[contains(text(), '"+name+"')]"), 10);
+                Thread.sleep(200);
+                driver.findElement(By.xpath("//label[contains(text(), '"+name+"')]")).click();
+                break;
+        }
+
+    }
+
+    @And("^Tenant writes point with value (.*)$")
+    public void tenantWritesPoint(String value) throws Throwable {
+        Thread.sleep(1000);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//div[contains(text(), '"+value+"')]"), 10);
+        Thread.sleep(200);
+        driver.findElement(By.xpath("//div[contains(text(), '"+value+"')]")).click();
     }
 }

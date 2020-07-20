@@ -3,7 +3,6 @@ Feature: Tenant APP
 
   Background: Steps That execute before every scenario
     Given Open Tenant Page
-    Then Check if user is at Tenant login page
 
 #    TODO:
 # @Tenant
@@ -30,30 +29,30 @@ Feature: Tenant APP
 #    And User save changes on tenant page
 #    Then Check if tenant is updated successfully
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Property Manager Add Tenant admin/user
     When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Tenant Management page
-    And User open Burger King tenant page
+    And User open BelAmi tenant page
     And User click add new tenant user
     And User fill mandatory fields for tenant user input
     Then Check if Automation Tenant appears for that Tenant
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Property Manager Delete Tenant admin/user
     When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Tenant Management page
-    And User open Burger King tenant page
+    And User open BelAmi tenant page
     And User delete Automation Tenant tenant user
     Then Check if Automation Tenant disappears for that Tenant
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Tenant Admin create request for AfterHours HVAC
     When User Enter TenantAdmin as username and Password as password and click tenant Login
     Then Check if tenant is logged in
@@ -69,7 +68,7 @@ Feature: Tenant APP
     And User logs out from tenant role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Property Manager reject Tenant request for HVAC
     When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
@@ -80,7 +79,7 @@ Feature: Tenant APP
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Tenant Admin create request for AfterHours HVAC with weekly repeat
     When User Enter TenantAdmin as username and Password as password and click tenant Login
     Then Check if tenant is logged in
@@ -98,7 +97,7 @@ Feature: Tenant APP
     And User logs out from tenant role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Property Manager accept Tenant request for HVAC
     When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
@@ -109,9 +108,9 @@ Feature: Tenant APP
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Engineer complete Tenant request for HVAC
-    When User Enter Engineer as username and Password as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to approved tab
     And User open request for After Hours request
@@ -121,7 +120,7 @@ Feature: Tenant APP
     And User logs out from engineer role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Tenant Admin create Work Order request
     When User Enter TenantAdmin as username and Password as password and click tenant Login
     Then Check if tenant is logged in
@@ -136,9 +135,9 @@ Feature: Tenant APP
     And User logs out from tenant role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Engineer assign itself Work Order request and Marks as done
-    When User Enter Engineer as username and Password as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
     And User open request for Work Order request
@@ -149,7 +148,7 @@ Feature: Tenant APP
     And User logs out from engineer role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Tenant Admin Evaluate Work Order request
     When User Enter TenantAdmin as username and Password as password and click tenant Login
     Then Check if tenant is logged in
@@ -160,7 +159,7 @@ Feature: Tenant APP
     And User logs out from tenant role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Property manager create Work Order request
     When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
@@ -176,9 +175,9 @@ Feature: Tenant APP
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Engineer assign itself Work Order request and Marks as done again
-    When User Enter Engineer as username and Password as password and click tenant Login
+    When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
     And User goes to Work Orders page
     And User open request for Work Order
@@ -189,7 +188,7 @@ Feature: Tenant APP
     And User logs out from engineer role on tenant side
     Then Check if user is at Tenant login page
 
-  @Tenant @SmokeTest
+#  @Tenant @SmokeTest
   Scenario: Property manager Reject Work Order request
     When User Enter PropertyManager as username and Password as password and click tenant Login
     Then Check if user is logged in on Tenant app
@@ -199,3 +198,42 @@ Feature: Tenant APP
     Then Check if request status is changed to Rejected
     And User logs out from propertyManager role on tenant side
     Then Check if user is at Tenant login page
+
+#  @Tenant @SmokeTest @TenantControl
+  Scenario: Tenant Admin change device location name
+    When User Enter TenantAdmin as username and Password as password and click tenant Login
+    Then Check if tenant is logged in
+    And User goes to Tenant Control page
+    Then Check if User is at card view
+    And Tenant click edit device button
+    And Tenant change name to Automation
+    And User save the changes on tenant control
+    Then Check if device name is changed to Automation
+    And Tenant click edit device button
+    And Tenant change name to Goat Room
+    And User save the changes on tenant control
+    Then Check if device name is changed to Goat Room
+
+#  @Tenant @SmokeTest @TenantControl
+  Scenario: Tenant Admin write on Point from List view
+    And User goes to Tenant Control page
+    Then Check if User is at card view
+    And Tenant goes to Light tab
+    And Tenant click Meeting Room device from Card view
+    And Tenant writes point with value Inactive
+    Then User save the changes on tenant control
+    And Tenant writes point with value Active
+    Then User save the changes on tenant control
+
+#  @Tenant @SmokeTest @TenantControl
+  Scenario: Tenant Admin write on Point from Map view
+    And User goes to Tenant Control page
+    Then Check if User is at card view
+    And Tenant goes to Light tab
+    And User switch to Map view
+    Then Check if User is at map view
+    And Tenant click Meeting Room device from Map view
+    And Tenant writes point with value Inactive
+    Then User save the changes on tenant control
+    And Tenant writes point with value Active
+    Then User save the changes on tenant control

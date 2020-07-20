@@ -20,7 +20,7 @@ public enum Audit implements PageObjects {
     applyButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Apply')]]"),
     yesButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Yes')]]"),
     addTemplateName(PageObjectUtils.LocatorType.ID, "templateName"),
-    addFilterName(PageObjectUtils.LocatorType.XPATH, "//input"),
+    addFilterName(PageObjectUtils.LocatorType.XPATH, "//div[@class='dialog-container']//input"),
     addTemplateDescription(PageObjectUtils.LocatorType.XPATH, "templateDescription"),
     next(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Next')]]"),
     saveFiltersButton(PageObjectUtils.LocatorType.XPATH, "//div[@class='dialog-container']//span[text()[contains(.,'Save')]]");

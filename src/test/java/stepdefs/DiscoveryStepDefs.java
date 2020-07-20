@@ -3,6 +3,7 @@ package stepdefs;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pageobjects.pages.BuildingPanel;
@@ -44,7 +45,7 @@ public class DiscoveryStepDefs extends CommonStepObjects {
 
     @Then("^Check if devices are discovered successfully$")
     public void checkDiscovery() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, Discovery.DiscoverSuccessfulMessage.getBy(), 15);
+        PageObjectUtils.IsElementVisible(driver, Discovery.DiscoverSuccessfulMessage.getBy(), 40);
     }
 
     @Then("^Check if (.*) device appears on the list$")
@@ -101,14 +102,16 @@ public class DiscoveryStepDefs extends CommonStepObjects {
         }
     }
 
-    @Then("^Check if (.*) point appears on device details$")
-    public void checkPointAppears(String point) throws Throwable {
+    @Then("^Check if point appears on device details$")
+    public void checkPointAppears() throws Throwable {
         Thread.sleep(1000);
-        PageObjectUtils.CheckContainsText(driver, point);
+        List<WebElement> points = driver.findElements(By.xpath("//label[@class='point-name']"));
+
+        Assert.assertEquals(points.size(), 1);
     }
 
     @And("^User click save changes after discover$")
-    public void userClickSaveChangesAfterDiscover() throws Throwable{
+    public void userClickSaveChangesAfterDiscover() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Discovery.SaveButton.getBy(), 5);
         Discovery.SaveButton.getElement().click();
 
@@ -117,7 +120,7 @@ public class DiscoveryStepDefs extends CommonStepObjects {
     }
 
     @And("^User click save changes and click finish$")
-    public void userClickSaveChangesAndClickFinish() throws Throwable{
+    public void userClickSaveChangesAndClickFinish() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Discovery.SaveButton.getBy(), 15);
         Discovery.SaveButton.getElement().click();
 

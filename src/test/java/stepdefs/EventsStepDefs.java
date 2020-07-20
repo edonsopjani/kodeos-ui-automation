@@ -182,12 +182,12 @@ public class EventsStepDefs extends CommonStepObjects {
     @And("^Click Ack button and then Click Acknowledge$")
     public void acknowledgeEvent() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.ackEventButton.getBy(), 15);
-        Thread.sleep(1000);
+        Thread.sleep(1200);
 
         List<WebElement> events = driver.findElements(Events.ackEventButton.getBy());
         preNrEvents = events.size();
 
-        Events.ackEventButton.getElement().click();
+        events.get(1).click();
         PageObjectUtils.IsElementVisible(driver, Events.acknowledgeEvent.getBy(), 15);
         Events.acknowledgeEvent.getElement().click();
     }
