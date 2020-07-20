@@ -988,6 +988,11 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.CheckContainsText(driver, "Inactive");
     }
 
+    @Then("^Check if user account is activated$")
+    public void checkUserIsActivated() throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, "Active");
+    }
+
     @And("^User go to buildings tab$")
     public void goToBuildingsTab() throws Throwable {
         //click building tab
@@ -1068,9 +1073,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @And("^User click on Delete user button$")
     public void removedUser() throws Throwable {
         //remove user
-        PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-button-wrapper' and contains(text(), 'Delete')]", 15);
+        PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//button[contains(text(), 'Delete Account ')]", 15);
         //Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Delete')]")).click();
+        driver.findElement(By.xpath("//button[contains(text(), 'Delete Account ')]")).click();
         PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-button-wrapper' and contains(text(), 'Yes')]", 15);
         // Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Yes')]")).click();

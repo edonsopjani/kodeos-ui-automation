@@ -49,16 +49,17 @@ Feature: 18 User Panel Tests
     And Click on Edit password Button, change password and click save
     Then Check if password is updated
 
+  @Admin @SmokeTest @UserPanel
+  Scenario: Activate User Account
+    When User click Michael User
+    And Click on deactivate Button and click save
+    Then Check if user account is activated
 
+  @Admin @SmokeTest @UserPanel
   Scenario: Deactivate User Account
     When User click Michael User
     And Click on deactivate Button and click save
     Then Check if user account is deactivated
-    
-  Scenario: Update User to User Account
-    When User click Edonis User
-    And Click on Create account Button
-    Then Check if User account is updated
 
   @Admin @SmokeTest @UserPanel
   Scenario: Edit User
