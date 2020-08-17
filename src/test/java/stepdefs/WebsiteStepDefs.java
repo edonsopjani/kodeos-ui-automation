@@ -143,7 +143,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @When("^User Open (.*)")
     public void openBuilding(String building) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, By.xpath("//*[contains(text(),'" + building + "')]"), 15);
-        Thread.sleep(200);
+        Thread.sleep(400);
         driver.findElement((By.xpath("//*[contains(text(),'" + building + "')]"))).click();
     }
 
@@ -285,7 +285,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     public void threeDotMenu() throws Throwable {
 
         try {
-            Thread.sleep(500);
+            Thread.sleep(1000);
             BuildingPanel.ThreedotMenu.getElement().click();
         } catch (Exception ex) {
             PageObjectUtils.IsElementVisible(driver, BuildingPanel.OpenMenu.getBy(), 15);

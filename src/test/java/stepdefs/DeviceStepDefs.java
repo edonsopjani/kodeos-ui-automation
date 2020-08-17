@@ -172,7 +172,6 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @And("^User close autofill popup$")
     public void closeSuggestFillTag() throws Throwable {
-        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ClickPopUp.getBy(), 15);
         DevicePanel.ClickPopUp.getElement().click();
     }
