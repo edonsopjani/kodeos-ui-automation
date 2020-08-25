@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/03_BuildingDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/03_BuildingDetails.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,12 +198,12 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber Java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber Java.Scenario: Delete Document name at Device Attachments" />
+      <item itemvalue="Cucumber Java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber Java.Scenario: Edit Note name at Device Attachments" />
-      <item itemvalue="Cucumber Java.Scenario: Update Device from device page" />
-      <item itemvalue="Cucumber Java.Scenario: Update Device from Details page" />
       <item itemvalue="Cucumber Java.Scenario: Edit Point at Device Details page" />
+      <item itemvalue="Cucumber Java.Scenario: Update Device from Details page" />
+      <item itemvalue="Cucumber Java.Scenario: Update Device from device page" />
     </list>
     <recent_temporary>
       <list>
