@@ -163,7 +163,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     @And("^User click Save button$")
     public void areaTabSaveButton() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.SaveButton.getBy(), 15);
-        //Thread.sleep(1000);
+        Thread.sleep(1000);
         PointsPanel.SaveButton.getElement().click();
         Thread.sleep(500);
     }
