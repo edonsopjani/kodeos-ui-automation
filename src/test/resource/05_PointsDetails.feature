@@ -69,6 +69,18 @@ Feature: 05 Points Tests
     Then Check if point name is changed to BO1
 
   @SmokeTest @Points
+  Scenario: Check Event list on Point Details
+    And User Click on Devices button
+    Then Check if the list of Devices appears
+    When User is Searching for BR127
+    Then Check if BR127 Device appears on list
+    And User click open BR127 Device Page
+    And User click BO1 point from device details
+    And User switch at Events Tab
+    And User click show past events
+    Then Check if Event Light is OFF appears on the list
+
+  @SmokeTest @Points
   Scenario: Open Point detail pop-up
     And User Click on Points button
     Then Check if the list of BO1 appears

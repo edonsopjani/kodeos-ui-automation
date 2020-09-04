@@ -160,4 +160,19 @@ public class PointsStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, PointsPanel.AddTag.getBy(), 15);
         //Thread.sleep(1000);
     }
+
+    @And("^User click (.*) point from device details$")
+    public void userClickBOPointFromDeviceDetails(String arg0)  throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'BO1')]]"), 15);
+        Thread.sleep(200);
+        driver.findElement(By.xpath("//label[text()[contains(.,'BO1')]]")).click();
+    }
+
+    @And("^User switch at Events Tab$")
+    public void userSwitchAtEventsTab()  throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'EVENTS')]]"), 15);
+        Thread.sleep(200);
+        driver.findElement(By.xpath("//label[text()[contains(.,'EVENTS')]]")).click();
+        Thread.sleep(500);
+    }
 }

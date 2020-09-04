@@ -19,6 +19,8 @@ public enum DevicePanel implements PageObjects {
     OpenAttachments(PageObjectUtils.LocatorType.XPATH, "//div[@mattooltip='Attachments']"),
     AddNoteButton(PageObjectUtils.LocatorType.XPATH, "(//mat-icon[text()[contains(.,'add')]])[3]"),
     EditNameInput(PageObjectUtils.LocatorType.XPATH, "//div[@class='forms-container']//input"),
+    ClickEventButton(PageObjectUtils.LocatorType.XPATH, "//div[@mattooltip='Events']"),
+    ShowPastEvents(PageObjectUtils.LocatorType.XPATH, "//label[text()[contains(.,'Show Inactive Events')]]"),
     NoteInputField(PageObjectUtils.LocatorType.XPATH, "//textarea"),
     UploadImage(PageObjectUtils.LocatorType.XPATH, "//input[@accept='image/*']"),
     UploadDocument(PageObjectUtils.LocatorType.XPATH, "//input[@accept='application/*']"),

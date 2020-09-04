@@ -126,4 +126,12 @@ public class FloorStepDefs extends CommonStepObjects {
     public void checkFloorIsReset() throws Throwable {
         Thread.sleep(500);
     }
+
+    @When("^User switch to Event Tab in floor details$")
+    public void userSwitchToEventTabInFloorDetails() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//h4[text()[contains(.,'Events')]]"), 15);
+        Thread.sleep(200);
+        driver.findElement(By.xpath("//h4[text()[contains(.,'Events')]]")).click();
+        Thread.sleep(500);
+    }
 }

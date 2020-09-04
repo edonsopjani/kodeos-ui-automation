@@ -510,4 +510,32 @@ public class DeviceStepDefs extends CommonStepObjects {
         DevicePanel.OpenDocumentsDialog.getElement().click();
         Thread.sleep(500);
     }
+
+    @And("^User open Event list on Device details$")
+    public void userOpenEventListOnDeviceDetails() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.ClickEventButton.getBy(), 15);
+        DevicePanel.ClickEventButton.getElement().click();
+        Thread.sleep(500);
+    }
+
+    @And("^User click show past events$")
+    public void userClickShowPastEvents() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.ShowPastEvents.getBy(), 15);
+        DevicePanel.ShowPastEvents.getElement().click();
+        Thread.sleep(500);
+    }
+
+    @Then("^Check if Event (.*) appears on the list$")
+    public void checkIfEventLightIsOffAppearsOnTheList(String event) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[text()[contains(.,'"+event+"')]]"), 15);
+        Thread.sleep(500);
+    }
+
+    @Then("^Check if Electric Meter device details appears$")
+    public void checkIfElectricMeterDeviceDetailsAppears() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'TOTAL TODAY')]]"), 15);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'Energy Usage')]]"), 15);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'Daily peak demand per month')]]"), 15);
+        Thread.sleep(500);
+    }
 }

@@ -188,6 +188,20 @@ Feature: 04 Devices Tests
     Then Check if Device has tag AutomationTag
 
   @SmokeTest @Device
+  Scenario: Check Event List on Device Details
+    When User Search for BR127
+    And User click open BR127 Device Page
+    And User open Event list on Device details
+    And User click show past events
+    Then Check if Event Light is OFF appears on the list
+
+  @SmokeTest @Device
+  Scenario: Go to Electric Meter device details
+    When User Search for EMon_1
+    And User click open EMon_1 Device Page
+    Then Check if Electric Meter device details appears
+
+  @SmokeTest @Device
   Scenario: Show Device References on Details page
     When User Search for BR126
     And User click open BR126 Device Page

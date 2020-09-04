@@ -31,6 +31,12 @@ Feature: 19 Floor Tests
     Then Check if Names are hided from Floor
 
   @SmokeTest @FloorPlan
+  Scenario: Check Event List on Floor Plan
+    When User switch to Event Tab in floor details
+    And User click show past events
+    Then Check if Event Light is OFF appears on the list
+
+  @SmokeTest @FloorPlan
   Scenario: Reset Floor to Default
     When User go to edit page
     And user Click reset floor to default
