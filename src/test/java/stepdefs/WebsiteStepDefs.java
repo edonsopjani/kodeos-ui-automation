@@ -292,6 +292,13 @@ public class WebsiteStepDefs extends CommonStepObjects {
         }
     }
 
+    @And("^User click on three dots button on devices list$")
+    public void threeDotMenuDevice() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, BuildingPanel.ThreedotMenu.getBy(), 15);
+        Thread.sleep(500);
+        BuildingPanel.ThreedotMenu.getElement().click();
+    }
+
     @And("^User Enter (.*) in name field and Range from (.*) to (.*)$")
     public void addMultipleFloorField(String test, String n, String m) throws Throwable {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.Name.getBy(), 15);
@@ -659,7 +666,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @Then("^Check if (.*) appear on list$")
     public void checkBuildingIsAdded(String building) throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'"+building+"')]]"), 15);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'" + building + "')]]"), 15);
     }
 
     @When("^User clicks on Add new button$")

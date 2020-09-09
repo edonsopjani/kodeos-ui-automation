@@ -169,13 +169,11 @@ Feature: 04 Devices Tests
 
   @SmokeTest @Device
   Scenario: Update Device from device page
-    When User click on three dots button
+    When User click on three dots button on devices list
     And User click edit button
-    And Select AutomationTag as Tags
+    And Select AutomationDevice as Location
     And User click Save button
-    And User click open ExactLogic Device Page
-    And Open Device Details Pop-up
-    Then Check if Device has tag AutomationTag
+    Then Check if Device has tag AutomationDevice
 
   @SmokeTest @Device
   Scenario: Update Device from Details page

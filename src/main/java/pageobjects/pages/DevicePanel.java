@@ -10,6 +10,7 @@ public enum DevicePanel implements PageObjects {
     ConnectorsButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'device_hub')]]"),
     ThreedotMenu(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'more_horiz')]]"),
     SaveButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Save')]]"),
+    LocationField(PageObjectUtils.LocatorType.XPATH, "//input[@formcontrolname='location']"),
     DiscoverDevices(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Discover Devices')]]"),
     DeviceBatchUpdate(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Devices - Batch Update')]]"),
     PointsBatchUpdate(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Points - Apply Template')]]"),

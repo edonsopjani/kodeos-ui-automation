@@ -170,6 +170,13 @@ public class DeviceStepDefs extends CommonStepObjects {
         Thread.sleep(500);
     }
 
+    @And("^Select (.*) as Location$")
+    public void changeLocation(String type) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DevicePanel.LocationField.getBy(), 15);
+        DevicePanel.LocationField.getElement().clear();
+        DevicePanel.LocationField.getElement().sendKeys(type);
+    }
+
     @And("^User close autofill popup$")
     public void closeSuggestFillTag() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ClickPopUp.getBy(), 15);
