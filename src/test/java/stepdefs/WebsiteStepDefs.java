@@ -59,7 +59,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         } catch (Exception e) {
             if (driver == null) driver = WebDriverFactory.getInstance().getWebDriver();
             driver.navigate().to(ConfigFile.getInstance().getBMSUrl());
-            //Thread.sleep(2000);
+            Thread.sleep(500);
 
             List<WebElement> isLoggedIn = driver.findElements(By.xpath("//*[@formcontrolname='email']"));
             if (isLoggedIn.isEmpty()) {
