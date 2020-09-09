@@ -659,9 +659,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
 
     @Then("^Check if (.*) appear on list$")
     public void checkBuildingIsAdded(String building) throws Throwable {
-        PageObjectUtils.CheckContainsText(driver, building);
-        PageObjectUtils.ContainsText(driver, building);
-        // Thread.sleep(2000);
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//label[text()[contains(.,'"+building+"')]]"), 15);
     }
 
     @When("^User clicks on Add new button$")
