@@ -150,7 +150,7 @@ public class DashboardStepDefs extends CommonStepObjects {
         ) {
             String text = element.getText();
             if (text.contains(building)) {
-
+                Thread.sleep(250);
                 element.findElement(By.tagName("i")).click();
                 break;
             }

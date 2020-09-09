@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/FloorStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/FloorStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/PointsStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/04_DeviceDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/04_DeviceDetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/05_PointsDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/05_PointsDetails.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/19_FloorDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/19_FloorDetails.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/DashboardStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/DashboardStepDefs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,7 @@
       <recent name="C:\cmdCucumber\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Check Event List on Floor Plan">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Edit Navigation Widget on Dashboard">
     <configuration name="Scenario: Add New Event Class" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Events.feature" />
@@ -82,15 +76,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Check Event List on Device Details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Add Widget on Dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/04_DeviceDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/03_BuildingDetails.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Check Event List on Device Details$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Check Event List on Device Details$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Check Event List on Device Details" />
+      <option name="NAME_FILTER" value="^Add Widget on Dashboard$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add Widget on Dashboard$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add Widget on Dashboard" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -162,15 +156,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Edit Point at Device Details page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Edit Navigation Widget on Dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/05_PointsDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/03_BuildingDetails.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Edit Point at Device Details page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Edit Point at Device Details page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Edit Point at Device Details page" />
+      <option name="NAME_FILTER" value="^Edit Navigation Widget on Dashboard$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Edit Navigation Widget on Dashboard$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Edit Navigation Widget on Dashboard" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -205,19 +199,19 @@
     <list>
       <item itemvalue="Cucumber Java.Scenario: Add New Event Class" />
       <item itemvalue="Cucumber Java.Scenario: Delete Global Audit Template" />
-      <item itemvalue="Cucumber Java.Scenario: Edit Point at Device Details page" />
-      <item itemvalue="Cucumber Java.Scenario: Check Event List on Device Details" />
-      <item itemvalue="Cucumber Java.Scenario: Go to Electric Meter device details" />
-      <item itemvalue="Cucumber Java.Scenario: Check Event list on Point Details" />
       <item itemvalue="Cucumber Java.Scenario: Check Event List on Floor Plan" />
+      <item itemvalue="Cucumber Java.Scenario: Check Event list on Point Details" />
+      <item itemvalue="Cucumber Java.Scenario: Go to Electric Meter device details" />
+      <item itemvalue="Cucumber Java.Scenario: Add Widget on Dashboard" />
+      <item itemvalue="Cucumber Java.Scenario: Edit Navigation Widget on Dashboard" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Edit Navigation Widget on Dashboard" />
+        <item itemvalue="Cucumber Java.Scenario: Add Widget on Dashboard" />
         <item itemvalue="Cucumber Java.Scenario: Check Event List on Floor Plan" />
         <item itemvalue="Cucumber Java.Scenario: Check Event list on Point Details" />
         <item itemvalue="Cucumber Java.Scenario: Go to Electric Meter device details" />
-        <item itemvalue="Cucumber Java.Scenario: Check Event List on Device Details" />
-        <item itemvalue="Cucumber Java.Scenario: Edit Point at Device Details page" />
       </list>
     </recent_temporary>
   </component>
@@ -247,24 +241,28 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1599214492292">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1599645815786">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599645815786" />
     <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558048" />
-    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1599214492292">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1599645815786">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599645815786" />
     <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
-    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1599214492292">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1599645815785">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599645815785" />
     <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
-    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1599214492292">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1599645815786">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599645815786" />
     <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
   </component>
