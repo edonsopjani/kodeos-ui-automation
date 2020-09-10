@@ -74,20 +74,12 @@ Create Event Config, Create Event, Acknowledge Events etc.
     And User click twice on KODE Labs building
     Then Check if KODE Labs Dashboard appears
     And User click BO1 point write button
-#    And User add automation as reason
     And User make point value false and click save
     Then Check if write point is saved successfully
-#    And User wait until event is created
-#    And User goes to Event Dashboard
     Then Check if Light is OFF event appears on list
-#    And User click twice on KODE Labs building
-#    Then Check if KODE Labs Dashboard appears
     And User click BO1 point write button
-#    And User add automation as reason
     And User turn on point and click save
     Then Check if write point is saved successfully
-#    And User wait until event is finished
-#    And User goes to Event Dashboard
     Then Check if Light is OFF event disappears on list
 
   @SmokeTest @EventsDashboard @Events

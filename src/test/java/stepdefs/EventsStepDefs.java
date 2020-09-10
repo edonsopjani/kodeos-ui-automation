@@ -206,7 +206,7 @@ public class EventsStepDefs extends CommonStepObjects {
     @And("^User goes to Event Dashboard$")
     public void goToEventDashboard() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, Events.eventsDashboard.getBy(), 15);
-        Thread.sleep(300);
+        Thread.sleep(900);
         Events.eventsDashboard.getElement().click();
 
     }
