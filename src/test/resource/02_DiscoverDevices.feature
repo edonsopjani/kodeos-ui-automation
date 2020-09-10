@@ -11,7 +11,7 @@ Feature: 02 Discover Devices Tests
     And User Click on Devices button
     Then Check if the list of Devices appears
 
-  @Device @Discover
+  @Discover @SmokeTest
   Scenario: User make new discover devices from all Edge Devices
     When User click on threedots button
     And User click Device Discovery button
@@ -21,9 +21,10 @@ Feature: 02 Discover Devices Tests
     And User click save changes after discover
     Then Check if Devices appears on the list
 
-  @Discover
+  @Discover @SmokeTest
   Scenario: User make update discover devices from all Edge Devices
-    When User delete BR129 device from list
+    When User Search for VAV_5
+    And User delete VAV_5 device from list
     And User click on threedots button
     And User click Device Discovery button
     And User select all Edge Devices
@@ -32,8 +33,9 @@ Feature: 02 Discover Devices Tests
     And User click add BR129 device from discover results
     And User remove points from device and let only one
     And User click save changes and click finish
-    Then Check if BR129 device appears on the list
-    And User Click on BR129 Device
+    And User Search for VAV_5
+    Then Check if VAV_5 device appears on the list
+    And User Click on VAV_5 Device
     Then Check if point appears on device details
 
   @Admin @SmokeTest @BuildingPanel @Discover

@@ -13,7 +13,7 @@ public enum Discovery implements PageObjects {
     NewDiscovery(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'New Discovery')]]"),
     SaveButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Save')]]"),
     OKButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Ok')]]"),
-    BR129ThreeDotButton(PageObjectUtils.LocatorType.XPATH, "//label[contains(text(),'BR129')]/../..//mat-icon[@aria-label='More']"),
+    BR129ThreeDotButton(PageObjectUtils.LocatorType.XPATH, "//label[contains(text(),'VAV_5')]/../..//mat-icon[@aria-label='More']"),
     DeleteButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Delete')]]"),
     YesButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Yes')]]"),
     UpdateDiscovery(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Update')]]"),
