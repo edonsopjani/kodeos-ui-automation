@@ -45,7 +45,7 @@ public class DiscoveryStepDefs extends CommonStepObjects {
 
     @Then("^Check if devices are discovered successfully$")
     public void checkDiscovery() throws Throwable {
-        PageObjectUtils.IsElementVisible(driver, Discovery.DiscoverSuccessfulMessage.getBy(), 40);
+        PageObjectUtils.IsElementVisible(driver, Discovery.DiscoverSuccessfulMessage.getBy(), 55);
     }
 
     @Then("^Check if (.*) device appears on the list$")

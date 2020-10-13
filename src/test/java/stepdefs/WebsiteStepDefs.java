@@ -867,9 +867,9 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickUpdateRole.getBy(), 15);
         BuildingPanel.ClickUpdateRole.getElement().click();
 
-        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.EnterRole.getBy(), 15);
         WebElement element = BuildingPanel.EnterRole.getElement();
+        Thread.sleep(800);
         element.click();
         PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'ViewOnly')]]", 15);
         driver.findElement(By.xpath("//span[text()[contains(.,'ViewOnly')]]")).click();

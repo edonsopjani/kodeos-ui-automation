@@ -13,7 +13,7 @@ public enum FloorPanel implements PageObjects {
     OpenInsideMenu(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'more_vert')]]"),
     ResetButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Reset')]]"),
     ListView(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,' List View ')]]"),
-    DragDeviceHere(PageObjectUtils.LocatorType.XPATH, "//div[contains(@class,'device-container')]"),
+    DragDeviceHere(PageObjectUtils.LocatorType.XPATH, "//div[contains(@class,'leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom')]"),
     DragPointHere(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Drop Points Here ')]]"),
     CatchDevice(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'BR126')]]"),
     CatchPoint(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'systemStatus')]]"),

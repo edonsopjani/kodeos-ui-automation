@@ -14,7 +14,7 @@ Feature: 18 User Panel Tests
     And User Fill Edonis as First Name
     And User Fill Sopi as Last Name
     And User Fill edon@kodelabs.co as Email
-    And User Fill 123-456-7889 as Phone number
+    And User Fill 205-377-6353 as Phone number
     And User Fill User as Role
     And User click Save changes
     Then Check if User with name Edonis appear on the list
@@ -25,7 +25,7 @@ Feature: 18 User Panel Tests
     And User Fill Michael as First Name
     And User Fill Sopi as Last Name
     And User Fill don@kodelabs.co as Email
-    And User Fill 123-456-7889 as Phone number
+    And User Fill 205-377-6353 as Phone number
     And User Fill User as Role
 #    And User click create account
     And User click Save changes

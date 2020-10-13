@@ -199,8 +199,8 @@ public class DeviceStepDefs extends CommonStepObjects {
 
     @And("^User click change details view to dashboard view$")
     public void changeToDashboardView() throws Throwable {
-        //Thread.sleep(1000);
         PageObjectUtils.IsElementVisible(driver, DevicePanel.ChangeView.getBy(), 15);
+        Thread.sleep(500);
         DevicePanel.ChangeView.getElement().click();
     }
 

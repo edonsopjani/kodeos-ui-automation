@@ -16,25 +16,25 @@ Feature: 19 Floor Tests
     And User save the changes at Floor
     Then Check if floor plan appears
 
-  @SmokeTest @FloorPlan
-  Scenario: Add Devices at Floor
-    When User go to edit page
-    And user go to list view
-    And user drag and drop the device to floor
-    And user drag and drop point to device
-    And User save the changes at Floor
-    Then Check if device appears at floor plan
+#  @SmokeTest @FloorPlan
+#  Scenario: Add Devices at Floor
+#    When User go to edit page
+#    And user go to list view
+#    And user drag and drop the device to floor
+#    And user drag and drop point to device
+#    And User save the changes at Floor
+#    Then Check if device appears at floor plan
 
-  @SmokeTest @FloorPlan
-  Scenario: Hide Zones and Names at Floor
-    When User click hide Names
-    Then Check if Names are hided from Floor
-
-  @SmokeTest @FloorPlan
-  Scenario: Check Event List on Floor Plan
-    When User switch to Event Tab in floor details
-    And User click show past events
-    Then Check if Event Light is OFF appears on the list
+#  @SmokeTest @FloorPlan
+#  Scenario: Hide Zones and Names at Floor
+#    When User click hide Names
+#    Then Check if Names are hided from Floor
+#
+#  @SmokeTest @FloorPlan
+#  Scenario: Check Event List on Floor Plan
+#    When User switch to Event Tab in floor details
+#    And User click show past events
+#    Then Check if Event Light is OFF appears on the list
 
   @SmokeTest @FloorPlan
   Scenario: Reset Floor to Default
