@@ -52,7 +52,7 @@ public enum DevicePanel implements PageObjects {
     ClickPopUp(PageObjectUtils.LocatorType.XPATH, "//span[@class='mat-option-text']"),
     SelectFCUFilter(PageObjectUtils.LocatorType.XPATH, "//label[@class='filters-list-item__name' and contains(text(),'FCU')]"),
     SelectBasementFilter(PageObjectUtils.LocatorType.XPATH, "//label[@class='filters-list-item__name' and contains(text(),'Basement')]"),
-    ApplyButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Apply')]]"),
+    ApplyButton(PageObjectUtils.LocatorType.XPATH, "//span[text()[contains(.,'Close')]]"),
     ClickCheckBox(PageObjectUtils.LocatorType.CSS, ".mat-checkbox-inner-container.mat-checkbox-inner-container-no-side-margin");
 
     public PageObjectUtils.LocatorType locator;

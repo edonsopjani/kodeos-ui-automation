@@ -85,14 +85,14 @@ Create Event Config, Create Event, Acknowledge Events etc.
   @SmokeTest @EventsDashboard @Events
   Scenario: Acknowledge Event
     And User goes to Event Dashboard
-    And Change Filters to Events that are Unacknowledged
+#    And Change Filters to Events that are Unacknowledged
     And Click Ack button and then Click Acknowledge
     Then Check if Event is Acknowledged
 
   @SmokeTest @EventsDetails @Events
   Scenario: Go To Event Details
     And User goes to Event Dashboard
-    And Change Filters to Events that are Unacknowledged
+#    And Change Filters to Events that are Unacknowledged
     And Click Light is OFF Event
     Then Check if Light is OFF Event details page appear
 

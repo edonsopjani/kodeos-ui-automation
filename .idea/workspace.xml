@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/FloorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/FloorPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/DeviceStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/DiscoveryStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/DiscoveryStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/19_FloorDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/19_FloorDetails.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/11_Events.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/11_Events.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,35 +57,16 @@
       <recent name="C:\cmdCucumber\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Reset Floor to Default">
-    <configuration name="Feature: 18_UserPanel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Filter by Area">
+    <configuration name="Scenario: Activate User Account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: 18_UserPanel" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Add Devices at Floor" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/19_FloorDetails.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Add Devices at Floor$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add Devices at Floor$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add Devices at Floor" />
+      <option name="NAME_FILTER" value="^Activate User Account$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Activate User Account$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Activate User Account" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -160,15 +138,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Reset Floor to Default" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Filter By Type" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/19_FloorDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/04_DeviceDetails.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Reset Floor to Default$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Reset Floor to Default$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Reset Floor to Default" />
+      <option name="NAME_FILTER" value="^Filter By Type$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Filter By Type$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Filter By Type" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -180,15 +158,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Update User Account Role" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Filter by Area" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/04_DeviceDetails.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Update User Account Role$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Update User Account Role$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Update User Account Role" />
+      <option name="NAME_FILTER" value="^Filter by Area$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Filter by Area$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Filter by Area" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Go To Event Details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/11_Events.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="NAME_FILTER" value="^Go To Event Details$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Go To Event Details$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Go To Event Details" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -203,19 +201,19 @@
     <list>
       <item itemvalue="Cucumber Java.Scenario: Add New Event Class" />
       <item itemvalue="Cucumber Java.Scenario: Delete Global Audit Template" />
-      <item itemvalue="Cucumber Java.Feature: 18_UserPanel" />
+      <item itemvalue="Cucumber Java.Scenario: Go To Event Details" />
       <item itemvalue="Cucumber Java.Scenario: Add New User Account" />
-      <item itemvalue="Cucumber Java.Scenario: Update User Account Role" />
-      <item itemvalue="Cucumber Java.Scenario: Add Devices at Floor" />
-      <item itemvalue="Cucumber Java.Scenario: Reset Floor to Default" />
+      <item itemvalue="Cucumber Java.Scenario: Activate User Account" />
+      <item itemvalue="Cucumber Java.Scenario: Filter By Type" />
+      <item itemvalue="Cucumber Java.Scenario: Filter by Area" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Reset Floor to Default" />
-        <item itemvalue="Cucumber Java.Scenario: Add Devices at Floor" />
-        <item itemvalue="Cucumber Java.Scenario: Update User Account Role" />
+        <item itemvalue="Cucumber Java.Scenario: Filter by Area" />
+        <item itemvalue="Cucumber Java.Scenario: Filter By Type" />
+        <item itemvalue="Cucumber Java.Scenario: Activate User Account" />
         <item itemvalue="Cucumber Java.Scenario: Add New User Account" />
-        <item itemvalue="Cucumber Java.Feature: 18_UserPanel" />
+        <item itemvalue="Cucumber Java.Scenario: Go To Event Details" />
       </list>
     </recent_temporary>
   </component>
@@ -245,28 +243,28 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1602593640631">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1603205546400">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602593640631" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603205546400" />
     <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558048" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1602593640631">
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1603205546400">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602593640631" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603205546400" />
     <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1602593640631">
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1603205546399">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602593640631" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603205546399" />
     <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1602593640631">
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1603205546400">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1602593640631" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603205546400" />
     <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
   </component>
