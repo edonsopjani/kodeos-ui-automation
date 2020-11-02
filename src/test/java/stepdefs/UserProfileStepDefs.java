@@ -122,6 +122,25 @@ public class UserProfileStepDefs extends CommonStepObjects {
         driver.findElement((By.xpath("//*[contains(text(),'Login')]"))).click();
     }
 
+    @When("^User Enter (.*) as username and (.*) as password$")
+    public void loginAsWrongUser(String username, String password) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@formcontrolname='email']"), 15);
+
+        driver.findElement(By.xpath("//*[@formcontrolname='email']")).sendKeys(ConfigFile.getInstance().getConfigFileValueFromName(username));
+        driver.findElement(By.xpath("//*[@formcontrolname='password']")).sendKeys(ConfigFile.getInstance().getConfigFileValueFromName(password));
+
+        driver.findElement(By.xpath("//label")).click();
+    }
+
+    @When("^User Enter (.*) as username$")
+    public void loginAsWrongUser(String username) throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, By.xpath("//*[@formcontrolname='email']"), 15);
+
+        driver.findElement(By.xpath("//*[@formcontrolname='email']")).sendKeys(ConfigFile.getInstance().getConfigFileValueFromName(username));
+
+        driver.findElement((By.xpath("//*[contains(text(),'Send Link')]"))).click();
+    }
+
     @Then("^Check if user role is (.*)$")
     public void checkUserRole(String role) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, role);

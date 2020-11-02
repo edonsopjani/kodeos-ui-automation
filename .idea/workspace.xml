@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/pages/DevicePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/11_Events.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/11_Events.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configuration.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,7 @@
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563461684713" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/API Testing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resource" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -50,23 +51,22 @@
       <recent name="stepdefs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\KODE Labs Automation Framework\src\test\resource" />
       <recent name="C:\KODE Labs Automation Framework\src\main\resources" />
       <recent name="C:\KODE Labs Automation Framework\src\test\resource\Tenant Platform" />
-      <recent name="C:\KODE Labs Automation Framework\src\test\resource" />
       <recent name="C:\cmdCucumber\src\main" />
       <recent name="C:\cmdCucumber\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Filter by Area">
-    <configuration name="Scenario: Activate User Account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: 00_Login">
+    <configuration name="Feature: 00_Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/00_Login.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Activate User Account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Activate User Account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Activate User Account" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: 00_Login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -98,26 +98,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Add New User Account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Add New User Account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add New User Account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add New User Account" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: Delete Global Audit Template" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Audit.feature" />
@@ -138,15 +118,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Filter By Type" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Reset password using Forgot Password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/04_DeviceDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/00_Login.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Filter By Type$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Filter By Type$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Filter By Type" />
+      <option name="NAME_FILTER" value="^Reset password using Forgot Password$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Reset password using Forgot Password$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Reset password using Forgot Password" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -158,15 +138,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Filter by Area" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Try to login with wrong password(password is incorrect)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/04_DeviceDetails.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/00_Login.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Filter by Area$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Filter by Area$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Filter by Area" />
+      <option name="NAME_FILTER" value="^Try to login with wrong password\(password is incorrect\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Try to login with wrong password\(password is incorrect\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Try to login with wrong password(password is incorrect)" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -178,15 +158,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Go To Event Details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Try to login with wrong password(password is short)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/11_Events.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/00_Login.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Go To Event Details$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Go To Event Details$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Go To Event Details" />
+      <option name="NAME_FILTER" value="^Try to login with wrong password\(password is short\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Try to login with wrong password\(password is short\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Try to login with wrong password(password is short)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Try to login with wrong username(not a exist user)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/00_Login.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="NAME_FILTER" value="^Try to login with wrong username\(not a exist user\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Try to login with wrong username\(not a exist user\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Try to login with wrong username(not a exist user)" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -201,19 +201,19 @@
     <list>
       <item itemvalue="Cucumber Java.Scenario: Add New Event Class" />
       <item itemvalue="Cucumber Java.Scenario: Delete Global Audit Template" />
-      <item itemvalue="Cucumber Java.Scenario: Go To Event Details" />
-      <item itemvalue="Cucumber Java.Scenario: Add New User Account" />
-      <item itemvalue="Cucumber Java.Scenario: Activate User Account" />
-      <item itemvalue="Cucumber Java.Scenario: Filter By Type" />
-      <item itemvalue="Cucumber Java.Scenario: Filter by Area" />
+      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong username(not a exist user)" />
+      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is short)" />
+      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is incorrect)" />
+      <item itemvalue="Cucumber Java.Scenario: Reset password using Forgot Password" />
+      <item itemvalue="Cucumber Java.Feature: 00_Login" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Filter by Area" />
-        <item itemvalue="Cucumber Java.Scenario: Filter By Type" />
-        <item itemvalue="Cucumber Java.Scenario: Activate User Account" />
-        <item itemvalue="Cucumber Java.Scenario: Add New User Account" />
-        <item itemvalue="Cucumber Java.Scenario: Go To Event Details" />
+        <item itemvalue="Cucumber Java.Feature: 00_Login" />
+        <item itemvalue="Cucumber Java.Scenario: Reset password using Forgot Password" />
+        <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is incorrect)" />
+        <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is short)" />
+        <item itemvalue="Cucumber Java.Scenario: Try to login with wrong username(not a exist user)" />
       </list>
     </recent_temporary>
   </component>
@@ -243,30 +243,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1603205546400">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1604312539729">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603205546400" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604312539729" />
     <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558048" />
-    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1603205546400">
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1604312539729">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603205546400" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604312539729" />
     <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
-    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1603205546399">
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1604312539729">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603205546399" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604312539729" />
     <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
-    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1603205546400">
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1604312539729">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603205546400" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604312539729" />
     <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1604311740860">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604311740860" />
   </component>
   <component name="masterDetails">
     <states>

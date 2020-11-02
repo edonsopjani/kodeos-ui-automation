@@ -1273,4 +1273,14 @@ public class WebsiteStepDefs extends CommonStepObjects {
         PageObjectUtils.CheckContainsText(driver, point1);
         PageObjectUtils.CheckContainsText(driver, point2);
     }
+
+    @Then("^Error message should be (.*)$")
+    public void errorMessageShouldBeEnterAValidEmail(String errorMessage) throws Throwable {
+        PageObjectUtils.CheckContainsText(driver, errorMessage);
+    }
+
+    @And("^User click Forgot password button in login page$")
+    public void userClickForgotPasswordButtonInLoginPage() {
+        PageObjectUtils.ContainsText(driver, "Forgot Password").click();
+    }
 }
