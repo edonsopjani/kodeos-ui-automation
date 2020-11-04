@@ -69,18 +69,18 @@ Create Event Config, Create Event, Acknowledge Events etc.
     And User Click delete button
     Then Check if event with name Automation2 is deleted
 
-  @SmokeTest @EventsDashboard @Events
-  Scenario: Create Event and check if it appears on Event Dashboard
-    And User click twice on KODE Labs building
-    Then Check if KODE Labs Dashboard appears
-    And User click BO1 point write button
-    And User make point value false and click save
-    Then Check if write point is saved successfully
-    Then Check if Light is OFF event appears on list
-    And User click BO1 point write button
-    And User turn on point and click save
-    Then Check if write point is saved successfully
-    Then Check if Light is OFF event disappears on list
+#  @SmokeTest @EventsDashboard @Events
+#  Scenario: Create Event and check if it appears on Event Dashboard
+#    And User click twice on KODE Labs building
+#    Then Check if KODE Labs Dashboard appears
+#    And User click BO1 point write button
+#    And User make point value false and click save
+#    Then Check if write point is saved successfully
+#    Then Check if Light is OFF event appears on list
+#    And User click BO1 point write button
+#    And User turn on point and click save
+#    Then Check if write point is saved successfully
+#    Then Check if Light is OFF event disappears on list
 
   @SmokeTest @EventsDashboard @Events
   Scenario: Acknowledge Event

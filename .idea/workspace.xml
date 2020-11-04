@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/11_Events.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/11_Events.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,13 +197,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Feature: 00_Login" />
       <item itemvalue="Cucumber Java.Scenario: Add New Event Class" />
       <item itemvalue="Cucumber Java.Scenario: Delete Global Audit Template" />
-      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong username(not a exist user)" />
-      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is short)" />
-      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is incorrect)" />
       <item itemvalue="Cucumber Java.Scenario: Reset password using Forgot Password" />
-      <item itemvalue="Cucumber Java.Feature: 00_Login" />
+      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is incorrect)" />
+      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is short)" />
+      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong username(not a exist user)" />
     </list>
     <recent_temporary>
       <list>
@@ -243,28 +241,28 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1604312539729">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1604331068595">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604312539729" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604331068595" />
     <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558048" />
-    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1604312539729">
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1604331068595">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604312539729" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604331068595" />
     <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
-    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1604312539729">
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1604331068595">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604312539729" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604331068595" />
     <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
-    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1604312539729">
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1604331068595">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604312539729" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604331068595" />
     <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599214492292" />
     <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597677558047" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1604311740860">
