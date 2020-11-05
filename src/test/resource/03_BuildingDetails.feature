@@ -47,7 +47,7 @@ Feature: 03 Dashboard Tests
   Scenario: Edit Summary Widget on Dashboard
     When User Click on Edit Dashboard
     And Click edit for Summary Widget
-    And Add systemStatus and Zone Temperature points for BR126 Device at Summary Widget
+    And Add systemStatus and BO1 points for BR126 Device at Summary Widget
     Then Check if systemStatus and BO1 points appears on Summary Widget
 
   @SmokeTest @Dashboard
