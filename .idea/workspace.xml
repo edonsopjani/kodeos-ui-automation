@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resource/03_BuildingDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/03_BuildingDetails.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/WebsiteStepDefs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
       <recent name="C:\cmdCucumber\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: 00_Login">
+  <component name="RunManager" selected="Cucumber Java.Feature: 18_UserPanel">
     <configuration name="Feature: 00_Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/00_Login.feature" />
@@ -64,6 +65,25 @@
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: 00_Login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: 18_UserPanel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="KODE Labs Automation Framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: 18_UserPanel" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -175,42 +195,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Try to login with wrong username(not a exist user)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/00_Login.feature" />
-      <option name="GLUE" value="stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="NAME_FILTER" value="^Try to login with wrong username\(not a exist user\)$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Try to login with wrong username\(not a exist user\)$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Try to login with wrong username(not a exist user)" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Feature: 00_Login" />
       <item itemvalue="Cucumber Java.Scenario: Add New Event Class" />
       <item itemvalue="Cucumber Java.Scenario: Delete Global Audit Template" />
+      <item itemvalue="Cucumber Java.Feature: 00_Login" />
       <item itemvalue="Cucumber Java.Scenario: Reset password using Forgot Password" />
       <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is incorrect)" />
       <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is short)" />
-      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong username(not a exist user)" />
+      <item itemvalue="Cucumber Java.Feature: 18_UserPanel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: 18_UserPanel" />
         <item itemvalue="Cucumber Java.Feature: 00_Login" />
         <item itemvalue="Cucumber Java.Scenario: Reset password using Forgot Password" />
         <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is incorrect)" />
         <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is short)" />
-        <item itemvalue="Cucumber Java.Scenario: Try to login with wrong username(not a exist user)" />
       </list>
     </recent_temporary>
   </component>

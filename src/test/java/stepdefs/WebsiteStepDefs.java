@@ -1050,18 +1050,16 @@ public class WebsiteStepDefs extends CommonStepObjects {
     public void removedUser() throws Throwable {
         //remove user
         PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//button[contains(text(), 'Delete Account ')]", 15);
-        //Thread.sleep(1000);
         driver.findElement(By.xpath("//button[contains(text(), 'Delete Account ')]")).click();
         PageObjectUtils.IsElementClickable(driver, PageObjectUtils.LocatorType.XPATH, "//*[@class='mat-button-wrapper' and contains(text(), 'Yes')]", 15);
-        // Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@class='mat-button-wrapper' and contains(text(), 'Yes')]")).click();
-        //Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @Then("^Check if User (.*) dissapears from the list$")
     public void checkRemovedUser(String user) throws Throwable {
         PageObjectUtils.CheckContainsText(driver, "Edon");
-        Thread.sleep(1000);
+        Thread.sleep(1500);
         List<WebElement> users = driver.findElements(By.xpath("//*[text()[contains(.,'" + user + "')]]"));
         Assert.assertTrue("User is still on list", users.isEmpty());
     }
