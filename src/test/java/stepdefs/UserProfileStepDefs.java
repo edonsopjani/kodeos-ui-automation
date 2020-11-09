@@ -12,8 +12,9 @@ public class UserProfileStepDefs extends CommonStepObjects {
     @When("^Go to User Profile$")
     public void goToUserProfile() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, UserProfilePanel.goToUserProfile.getBy(), 15);
-        Thread.sleep(600);
+        Thread.sleep(1000);
         UserProfilePanel.goToUserProfile.getElement().click();
+        Thread.sleep(300);
     }
 
     @Then("^Check If user is at User Profile")
