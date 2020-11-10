@@ -14,11 +14,11 @@ Feature: 20 User Profile Tests
     Then Check if password is changed successful
 
   @SmokeTest @UserProfile
-  Scenario: Logout
-    When User Click logout button
-    Then Check if user is logged out
-
-  @SmokeTest @UserProfile
   Scenario: Terminate Session
     When User Click Terminate Session
     Then Check if User session is terminated
+
+  @SmokeTest @UserProfile
+  Scenario: Logout
+    When User Click logout button
+    Then Check if user is logged out

@@ -4,7 +4,7 @@
     <list default="true" id="365edc6d-8eea-4789-9058-428866216c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/UserProfileStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/20_UserProfile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/20_UserProfile.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,13 +195,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Scenario: Add New Event Class" />
-      <item itemvalue="Cucumber Java.Scenario: Delete Global Audit Template" />
       <item itemvalue="Cucumber Java.Feature: 00_Login" />
-      <item itemvalue="Cucumber Java.Scenario: Reset password using Forgot Password" />
-      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is incorrect)" />
       <item itemvalue="Cucumber Java.Feature: 18_UserPanel" />
       <item itemvalue="Cucumber Java.Feature: 20_UserProfile" />
+      <item itemvalue="Cucumber Java.Scenario: Add New Event Class" />
+      <item itemvalue="Cucumber Java.Scenario: Delete Global Audit Template" />
+      <item itemvalue="Cucumber Java.Scenario: Reset password using Forgot Password" />
+      <item itemvalue="Cucumber Java.Scenario: Try to login with wrong password(password is incorrect)" />
     </list>
     <recent_temporary>
       <list>
