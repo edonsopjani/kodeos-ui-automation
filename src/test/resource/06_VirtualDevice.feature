@@ -7,7 +7,7 @@ Feature: 06 Virtual Devices Tests
     And User click twice on Automation Testing building
     Then Check if Automation Testing Dashboard appears
     And User Click on Devices button
-    Then Check if the list of Devices appears
+    Then Check if the list of Name appears
     When User click on threedots button
     And User goes to Virtual Device Page
     Then Check if user is at Virtual Device page

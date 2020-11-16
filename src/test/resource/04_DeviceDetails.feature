@@ -7,7 +7,7 @@ Feature: 04 Devices Tests
     And User click twice on Automation Testing building
     Then Check if Automation Testing Dashboard appears
     And User Click on Devices button
-    Then Check if the list of Devices appears
+    Then Check if the list of Name appears
 
   @SmokeTest @Device
   Scenario: Search For Device

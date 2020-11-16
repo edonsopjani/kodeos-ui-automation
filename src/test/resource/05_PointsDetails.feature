@@ -11,7 +11,7 @@ Feature: 05 Points Tests
   @SmokeTest @Points
   Scenario: Connect Points from Edit Points page
     And User Click on Devices button
-    Then Check if the list of Devices appears
+    Then Check if the list of Name appears
     When User is Searching for BR127
     Then Check if BR127 Device appears on list
     And User click open BR127 Device Page
@@ -41,7 +41,7 @@ Feature: 05 Points Tests
   @SmokeTest @Points
   Scenario: Edit Point Using Point batch Update
     And User Click on Devices button
-    Then Check if the list of Devices appears
+    Then Check if the list of Name appears
     When User click on threedots button
     And Click Point batch update button
     And User is Searching for BO1
@@ -56,7 +56,7 @@ Feature: 05 Points Tests
   @SmokeTest @Points
   Scenario: Edit Point at Device Details page
     And User Click on Devices button
-    Then Check if the list of Devices appears
+    Then Check if the list of Name appears
     When User is Searching for BR127
     Then Check if BR127 Device appears on list
     And User click open BR127 Device Page
@@ -71,7 +71,7 @@ Feature: 05 Points Tests
   @SmokeTest @Points
   Scenario: Check Event list on Point Details
     And User Click on Devices button
-    Then Check if the list of Devices appears
+    Then Check if the list of Name appears
     When User is Searching for BR127
     Then Check if BR127 Device appears on list
     And User click open BR127 Device Page
