@@ -9,7 +9,7 @@ Feature: 02 Discover Devices Tests
     And User click twice on Auto Test Building building
     Then Check if Auto Test Building Dashboard appears
     And User Click on Devices button
-    Then Check if the list of Devices appears
+    Then Check if the list of Name appears
 
   @Discover @SmokeTest
   Scenario: User make new discover devices from all Edge Devices
