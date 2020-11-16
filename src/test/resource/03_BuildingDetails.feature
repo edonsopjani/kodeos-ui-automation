@@ -22,7 +22,7 @@ Feature: 03 Dashboard Tests
   @SmokeTest @Dashboard
   Scenario: Go to one Device from the Devices button
     When User Click on Devices button
-    Then Check if the list of Devices appears
+    Then Check if the list of Name appears
     And Click at BR126 Device
     Then Check if BR126 Device pop-up appears
 
