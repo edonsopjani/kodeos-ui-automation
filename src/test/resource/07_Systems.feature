@@ -15,22 +15,22 @@ Feature: 07 Systems Tests
     And User fill mandatory fields for System and click add
     Then Check if Automation System is created
 
-  @SmokeTest @System
-  Scenario: Add content to System
-    When User clicks Automation System from the list and go to Details page
-    And User Click Edit Content button
-    And User add Device with Linked points
-    And User Drag Device to the list
-    And User Drag point to device
-    And User Save changes for System
-    Then Check if Changes Appears on System
-
-  @SmokeTest @System
-  Scenario: Edit System
-    When User clicks Automation System from the list and go to Details page
-    And User Click Edit System button
-    And User add Automation as Tag
-    Then Check if Changes Appears on System
+#  @SmokeTest @System
+#  Scenario: Add content to System
+#    When User clicks Automation System from the list and go to Details page
+#    And User Click Edit Content button
+#    And User add Device with Linked points
+#    And User Drag Device to the list
+#    And User Drag point to device
+#    And User Save changes for System
+#    Then Check if Changes Appears on System
+#
+#  @SmokeTest @System
+#  Scenario: Edit System
+#    When User clicks Automation System from the list and go to Details page
+#    And User Click Edit System button
+#    And User add Automation as Tag
+#    Then Check if Changes Appears on System
 
   @SmokeTest @System
   Scenario: Delete Systems
