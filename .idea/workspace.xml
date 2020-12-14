@@ -90,15 +90,15 @@
       <recent name="C:\cmdCucumber\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Try to login with wrong username(not a valid email)">
-    <configuration name="Feature: 18_UserPanel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Add New Building">
+    <configuration name="Feature: 20_UserProfile" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/18_UserPanel.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/20_UserProfile.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="KODE Labs Automation Framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: 18_UserPanel" />
+      <option name="SUGGESTED_NAME" value="Feature: 20_UserProfile" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -110,14 +110,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: 20_UserProfile" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Add New Building" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/20_UserProfile.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/01_BuildingPanel.feature" />
       <option name="GLUE" value="stepdefs" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="KODE Labs Automation Framework" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: 20_UserProfile" />
+      <module name="kode-automation-ui" />
+      <option name="NAME_FILTER" value="^Add New Building$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm2SMFormatter --monochrome --name &quot;^Add New Building$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add New Building" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -231,6 +232,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Add New Building" />
         <item itemvalue="Cucumber Java.Scenario: Try to login with wrong username(not a valid email)" />
         <item itemvalue="Cucumber Java.Scenario: Try to login with wrong username(not a exist user)" />
       </list>
@@ -275,25 +277,25 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606385779702" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1607957982991">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1607965591440">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607957982991" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607965591440" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606385781699" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1607957982991">
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1607965591440">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607957982991" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607965591440" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606385781698" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1607957982991">
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1607965591439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607957982991" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607965591439" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606385781698" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1607957982991">
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1607965591440">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607957982991" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607965591440" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606385781698" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1607957982991">
       <screen x="0" y="0" width="1920" height="1040" />

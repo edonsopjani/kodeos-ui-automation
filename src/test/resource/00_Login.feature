@@ -1,4 +1,4 @@
-Feature: Login Tests
+Feature: 00 Login Tests
 
   Background: Steps That execute before every scenario
     Given User goes to Login page
