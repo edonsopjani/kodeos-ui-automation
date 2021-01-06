@@ -914,6 +914,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
     public void deactivateUserAccount() throws Throwable {
         //click user
         PageObjectUtils.IsElementVisible(driver, BuildingPanel.ClickDeactivate.getBy(), 15);
+        Thread.sleep(500);
         BuildingPanel.ClickDeactivate.getElement().click();
 
         //Thread.sleep(1000);

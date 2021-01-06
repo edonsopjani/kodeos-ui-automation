@@ -137,7 +137,7 @@ Feature: 04 Devices Tests
     And Select AutomatedTag as Tag
     And User click Save button
     And User click Confirm button
-    Then Check if Device has tag AutomationTag
+    Then Check if Device has tag AutomatedTag
 
   @SmokeTest @Device
   Scenario: Add point to Template from Point Batch Update

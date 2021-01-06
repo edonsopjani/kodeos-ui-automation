@@ -24,7 +24,7 @@ public enum DevicePanel implements PageObjects {
     ShowPastEvents(PageObjectUtils.LocatorType.XPATH, "//label[text()[contains(.,'Show Inactive Events')]]"),
     NoteInputField(PageObjectUtils.LocatorType.XPATH, "//textarea"),
     UploadImage(PageObjectUtils.LocatorType.XPATH, "//input[@accept='image/*']"),
-    UploadDocument(PageObjectUtils.LocatorType.XPATH, "//input[@accept='application/*']"),
+    UploadDocument(PageObjectUtils.LocatorType.XPATH, "(//input[@type='file'])[2]"),
     HoverImage(PageObjectUtils.LocatorType.XPATH, "//div[@class='image-container ng-star-inserted']"),
     HoverDocuments(PageObjectUtils.LocatorType.XPATH, "//div[@class='document-container ng-star-inserted']"),
     HoverNotes(PageObjectUtils.LocatorType.XPATH, "//div[@class='item-container document ng-star-inserted']"),
