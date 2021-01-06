@@ -8,11 +8,34 @@ Feature: 02 Discover Devices Tests
     Then Check if Auto Test Building appears on Search list
     And User click twice on Auto Test Building building
     Then Check if Auto Test Building Dashboard appears
-    And User Click on Devices button
+
+  @Admin @SmokeTest @BuildingPanel @Discover
+  Scenario: Add Connector
+    And User Click on Edge Device button
     Then Check if the list of Name appears
+    And User click create new connector
+    And User fill mandatory fields for connector and click add
+    Then Check if connector with name jace appears on list
+
+  @Admin @SmokeTest @BuildingPanel
+  Scenario: Test Connector
+    And User Click on Edge Device button
+    Then Check if the list of Name appears
+    And User click test connector
+    Then Check if connector connection is good
+
+  @Admin @SmokeTest @BuildingPanel
+  Scenario: Edit Connector
+    And User Click on Edge Device button
+    Then Check if the list of Name appears
+    And User click edit connector
+    And User change connector name to AutoJace
+    Then Check if connector with name AutoJace appears on list
 
   @Discover @SmokeTest
   Scenario: User make new discover devices from all Edge Devices
+    And User Click on Devices button
+    Then Check if the list of Name appears
     When User click on threedots button
     And User click Device Discovery button
     And User select all Edge Devices
@@ -23,6 +46,8 @@ Feature: 02 Discover Devices Tests
 
   @Discover @SmokeTest
   Scenario: User make update discover devices from all Edge Devices
+    And User Click on Devices button
+    Then Check if the list of Name appears
     When User Search for VAV_5
     And User delete VAV_5 device from list
     And User click on threedots button
@@ -40,10 +65,8 @@ Feature: 02 Discover Devices Tests
 
   @Admin @SmokeTest @BuildingPanel @Discover
   Scenario: Delete Connector
-    And User Go To admin panel
-    Then Check if user is at Admin panel
-    When User Open Auto Test Building
-    And User goto on Connectors Tab
+    And User Click on Edge Device button
+    Then Check if the list of Name appears
     And User delete connector from building
     Then Check if connector with name AutoJace disappears from list
 

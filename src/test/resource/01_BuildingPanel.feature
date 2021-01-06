@@ -95,26 +95,3 @@ Feature: 01 Building Panel Tests
     And User select user Edon
     And User click Save changes
     Then Check if user Edon disappears from list
-
-  @Admin @SmokeTest @BuildingPanel @Discover
-  Scenario: Add Connector
-    When User Open Auto Test Building
-    And User goto on Connectors Tab
-    And User click create new connector
-    And User fill mandatory fields for connector and click add
-    Then Check if connector with name jace appears on list
-
-  @Admin @SmokeTest @BuildingPanel
-  Scenario: Test Connector
-    When User Open Auto Test Building
-    And User goto on Connectors Tab
-    And User click test connector
-    Then Check if connector connection is good
-
-  @Admin @SmokeTest @BuildingPanel
-  Scenario: Edit Connector
-    When User Open Auto Test Building
-    And User goto on Connectors Tab
-    And User click edit connector
-    And User change connector name to AutoJace
-    Then Check if connector with name AutoJace appears on list

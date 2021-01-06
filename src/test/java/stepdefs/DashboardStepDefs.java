@@ -35,6 +35,13 @@ public class DashboardStepDefs extends CommonStepObjects {
         DashboardPanel.DevicesButton.getElement().click();
     }
 
+    @When("^User Click on Edge Device button$")
+    public void clickEdges() throws Throwable {
+        PageObjectUtils.IsElementVisible(driver, DashboardPanel.EdgeButton.getBy(), 15);
+        //Thread.sleep(1000);
+        DashboardPanel.EdgeButton.getElement().click();
+    }
+
     @When("^User Click on Points button$")
     public void clickPoint() throws Throwable {
         PageObjectUtils.IsElementVisible(driver, DashboardPanel.PointsButton.getBy(), 5);

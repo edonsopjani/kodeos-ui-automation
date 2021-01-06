@@ -7,6 +7,7 @@ import pageobjects.PageElementIds;
 public enum DashboardPanel implements PageObjects {
 
     DevicesButton(PageObjectUtils.LocatorType.XPATH, "//a[@class='navigation-item devices-container']"),
+    EdgeButton(PageObjectUtils.LocatorType.XPATH, "//a[@class='navigation-item connectors-container']"),
     PointsButton(PageObjectUtils.LocatorType.CSS, " .navigation-item.points-container"),
     ExpandButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'keyboard_arrow_down')]]"),
     CheckFloorList(PageObjectUtils.LocatorType.XPATH, "//*[@placeholder='Search for Areas']"),

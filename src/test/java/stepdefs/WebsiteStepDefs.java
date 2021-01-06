@@ -477,7 +477,7 @@ public class WebsiteStepDefs extends CommonStepObjects {
         BuildingPanel.IP.getElement().sendKeys("178.132.223.132");
         BuildingPanel.Port.getElement().sendKeys("80");
         BuildingPanel.Model.getElement().sendKeys("Automation");
-
+        Thread.sleep(500);
         BuildingPanel.Save.getElement().click();
     }
 
