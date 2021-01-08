@@ -38,7 +38,7 @@ public enum DevicePanel implements PageObjects {
     AddPointGroupButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Add New Group')]]"),
     PointToDrag(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'systemStatus')]]"),
     DragPointHere(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Drop Points Here')]]"),
-    RemovePointFromTemplate(PageObjectUtils.LocatorType.XPATH, "//*[@class='ungrouped']"),
+    RemovePointFromTemplate(PageObjectUtils.LocatorType.XPATH, "//*[@class='ungrouped all-point-groups-list ng-star-inserted']"),
     UpdatePointButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Update Points')]]"),
     DeleteGroupButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Delete Group')]]"),
     EditGroupButton(PageObjectUtils.LocatorType.XPATH, "//*[text()[contains(.,'Edit Groups')]]"),
