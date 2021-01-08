@@ -25,6 +25,7 @@ public enum DevicePanel implements PageObjects {
     NoteInputField(PageObjectUtils.LocatorType.XPATH, "//textarea"),
     UploadImage(PageObjectUtils.LocatorType.XPATH, "//input[@accept='image/*']"),
     UploadDocument(PageObjectUtils.LocatorType.XPATH, "(//input[@type='file'])[2]"),
+    UploadNewDocument(PageObjectUtils.LocatorType.XPATH, "(//input[@type='file'])[2]"),
     HoverImage(PageObjectUtils.LocatorType.XPATH, "//div[@class='image-container ng-star-inserted']"),
     HoverDocuments(PageObjectUtils.LocatorType.XPATH, "//div[@class='document-container ng-star-inserted']"),
     HoverNotes(PageObjectUtils.LocatorType.XPATH, "//div[@class='item-container document ng-star-inserted']"),

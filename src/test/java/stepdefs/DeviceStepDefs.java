@@ -378,7 +378,7 @@ public class DeviceStepDefs extends CommonStepObjects {
         Thread.sleep(500);
 
         //Add image
-        WebElement fileInput = DevicePanel.UploadDocument.getElement();
+        WebElement fileInput = DevicePanel.UploadNewDocument.getElement();
         fileInput.sendKeys(PageObjectUtils.filePathForUpload("sample.pdf"));
         Thread.sleep(3000);
     }
